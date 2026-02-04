@@ -40,6 +40,8 @@ Online quiz platform for Grupa II electrician certification. Includes Electroteh
    ```bash
    source .venv/bin/activate
    ```
+   
+   **Important:** After activation, you should see `(.venv)` at the beginning of your command prompt. If you don't see this, the virtual environment is not activated and you'll get an "externally-managed-environment" error.
 
 3. **Install dependencies:**
    ```bash
