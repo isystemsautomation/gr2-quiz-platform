@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - {{ subject_title }} Block {{ block_number }} - GR2 Quiz Platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>GR2 Quiz Platform</h1>
+            <div class="nav-links">
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>{{ subject_title }} - Block {{ block_number }} - Results</h2>
+        
+        <div class="result-summary">
+            <div class="score-display">
+                <h3>Your Score: {{ attempt.score }}/{{ attempt.total }}</h3>
+                <p>Percentage: {{ attempt.percentage|floatformat:1 }}%</p>
+            </div>
+        </div>
+        
+        <div class="results-list">
+            {% for result in results %}
+                <div class="question-result {% if result.is_correct == True %}result-correct{% elif result.is_correct == False %}result-incorrect{% else %}result-ungradable{% endif %}">
+                    <div class="question-header">
+                        <strong>Question {{ forloop.counter }}</strong>
+                        {% if result.is_correct == True %}
+                            <span class="result-badge correct-badge">✓ Correct</span>
+                        {% elif result.is_correct == False %}
+                            <span class="result-badge incorrect-badge">✗ Incorrect</span>
+                        {% else %}
+                            <span class="result-badge ungradable-badge">Ungradable</span>
+                        {% endif %}
+                    </div>
+                    <div class="question-text">{{ result.question.question }}</div>
+                    
+                    <div class="answer-details">
+                        {% if result.user_answer %}
+                            <p><strong>Your answer:</strong> {{ result.user_answer|upper }}</p>
+                        {% else %}
+                            <p><strong>Your answer:</strong> No answer provided</p>
+                        {% endif %}
+                        
+                        {% if result.correct_answer %}
+                            <p><strong>Correct answer:</strong> 
+                                <span class="correct-answer">{{ result.correct_answer|upper }}</span>
+                            </p>
+                        {% endif %}
+                        
+                        {% if result.is_correct == False and result.explanation %}
+                            <div class="explanation">
+                                <strong>Explanation:</strong> {{ result.explanation }}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        
+        <div class="back-link">
+            <a href="{% url 'dashboard' %}" class="btn btn-primary">Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>
+

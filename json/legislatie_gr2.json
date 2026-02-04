@@ -1,0 +1,1257 @@
+{
+  "id": "legislatie-gr-2",
+  "title": "LEGISLAȚIE GR. 2 (Mai 2023)",
+  "blockSize": 20,
+  "blockCount": 6,
+  "questionCount": 104,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Accesul la reţeaua electrica de interes public este definit ca fiind:",
+      "options": {
+        "a": "Obligaţia unor persoane fizice sau juridice de a se racorda, in condiţiile legii, la reţelele electrice de transport sau de distribuţie",
+        "b": "Obligaţia unor persoane fizice sau juridice de a consuma energie electrica achiziţionata de pe piaţa de energie electrica in regim concurenţial",
+        "c": "ansamblul de reguli prin care un terţ îşi exercită dreptul de a se racorda și de a utiliza reţelele electrice de transport şi de distribuţie, în condiţiile legii;"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 2,
+      "question": "ANRE este:",
+      "options": {
+        "a": "Agenţie naţională de reglementare în domeniul energiei termice",
+        "b": "Autoritatea Naţionala de Reglementare pentru Serviciile Publice de Gospodărie Comunala",
+        "c": "Autoritatea Naţionala de Reglementare in domeniul Energiei"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 3,
+      "question": "Asupra terenurilor aflate in proprietatea terţilor, cuprinse in zonele de protecţie si de siguranţa ale capacităţilor energetice, se stabileşte pentru deţinătorul capacităţilor energetice:",
+      "options": {
+        "a": "drept de utilizare gratuită",
+        "b": "drept de proprietate",
+        "c": "drept de servitute legală"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 4,
+      "question": "O persoană care deţinea în proprietate sau în folosinţă o reţea electrică de distribuţie proprie la data intrării în vigoare Legii nr,123/2012:",
+      "options": {
+        "a": "nu are obligaţii privind asigurarea accesului la reţea",
+        "b": "este obligată să asigure accesul la reţea numai pentru producători de energie electrică din surse regenerabile",
+        "c": "este obligată să asigure accesul la reţea, conform reglementărilor autorităţii competente"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 5,
+      "question": "Clientul casnic este clientul care:",
+      "options": {
+        "a": "Utilizează energie electrică în exclusivitate pentru iluminatul artificial din propria locuinţă şi din afara acesteia, fiind racordat la o reţea electrică monofazată de joasă tensiune",
+        "b": "Utilizează energie electrică pentru funcţionarea receptoarelor electrocasnice din propria locuinţa, precum si pentru realizarea de activităţi comerciale sau prestarea de servicii",
+        "c": "cumpără energie electrică pentru propriul consum casnic, excluzând consumul pentru activităţi comerciale sau profesionale"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 6,
+      "question": "Finanţarea lucrărilor de electrificare a localităţilor este obligaţia:",
+      "options": {
+        "a": "autorităţilor locale",
+        "b": "ministerului de resort",
+        "c": "operatorului de distribuţie în executarea contractului de concesiune"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 7,
+      "question": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice în caz de:",
+      "options": {
+        "a": "neplata abonamentului radio-tv",
+        "b": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+        "c": "depășirea cu 30 de zile a termenului scadent al unei facturi"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 8,
+      "question": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice numai în caz de:",
+      "options": {
+        "a": "consum de energie mai mare decât cel aferent puterii aprobate prin avizul tehnic de racordare",
+        "b": "consumarea unei cantităţi de energie mai mare decât cea contractată",
+        "c": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă, neplata facturilor sau în alte situaţii prevăzute de legislaţia în vigoare."
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 9,
+      "question": "În cazul constatării, conform prevederilor legale în vigoare, a unor acţiuni menite să sustragă energia electrică prin ocolirea echipamentelor de măsurare:",
+      "options": {
+        "a": "clientul final va fi sancţionat contravenţional",
+        "b": "clientului final i se va rezilia contractul de furnizare",
+        "c": "furnizorul este îndreptăţit să solicite unui client final constituirea de garanţii financiare pentru o perioadă de consum echivalent de maximum un an"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 10,
+      "question": "Pe piaţa  cu amănuntul, furnizorii vând energie electrică clienţilor finali prin:",
+      "options": {
+        "a": "Contracte bilaterale la preţuri reglementate",
+        "b": "Contracte bilaterale la tarife fixe",
+        "c": "prin contracte bilaterale, la preţuri negociate sau stabilite prin oferte-tip"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 11,
+      "question": "Tarifele de racordare la reţea sunt:",
+      "options": {
+        "a": "stabilite de operatorii de reţea",
+        "b": "negociate cu solicitantul",
+        "c": "reglementate de ANRE"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 12,
+      "question": "ANRE poate aplica sancţiuni contravenţionale în cazul în care un electrician :",
+      "options": {
+        "a": "deține adeverință de electrician autorizat și comite o faptă prevăzută în Regulamentul de autorizare ca fiind permisă",
+        "b": "autorizat graduk 1, execută în calitate de persoană fizică autorizată o instalație electrică de joasă tensiune având o putere totală instalată de 9 kW.",
+        "c": "deține adeverință de electrician autorizat și desfăşoară activităţi de realizare de instalații electrice într-o formă care nu este prevăzută în regulamentul de autorizare"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 13,
+      "question": "ANRE poate aplica sancţiuni contravenţionale în cazul în care un electrician :",
+      "options": {
+        "a": "deține adeverință de electrician autorizat și comite o faptă prevăzută în Regulamentul de autorizare ca fiind permisă",
+        "b": "desfăşoară activităţi de realizare de instalații electrice, pe cont propriu, fără a deține adeverință de electrician autorizat",
+        "c": "autorizat gradul 1, execută în calitate de persoană fizică autorizată o instalație electrică de joasă tensiune având o putere totală instalată de 9 kW."
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 14,
+      "question": "Autorizarea electricienilor în domeniul instalaţiilor electrice, respectiv a verificatorilor de proiecte şi a experţilor tehnici de calitate şi extrajudiciari în domeniul instalaţiilor electrice tehnologice se realizează",
+      "options": {
+        "a": "de către Ministerul învăţământului",
+        "b": "de către operatorul de distribuţie",
+        "c": "numai conform reglementărilor emise de ANRE"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 15,
+      "question": "ANRE - Autoritatea Naţională de Reglementare în domeniul Energiei este abilitată prin lege să constate şi să sancţioneze:",
+      "options": {
+        "a": "nerespectarea normelor tehnice emise de către ANRE;",
+        "b": "sistarea justificată a alimentării cu energie electrică a clienţilor;",
+        "c": "încălcarea prevederilor legislaţiei muncii"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 16,
+      "question": "Electricienii care doresc să solicite autorizarea, pentru a fi acceptaţi la examen trebuie să îndeplinească următoarele condiţii:",
+      "options": {
+        "a": "Să transmită la ANRE o cerere şi documentaţie anexată, din care să reiasă doar calificarea profesională",
+        "b": "Să transmită la ANRE o cerere şi documentaţie anexată, din care să reiasă doar experienţa practică în domeniul instalaţiilor electrice",
+        "c": "Să transmită la ANRE o cerere şi documentaţie anexată, din care să reiasă atât calificarea cât si experienţa profesională în domeniul instalaţiilor electrice"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 17,
+      "question": "În cazul în care electricianul autorizat îşi pierde Legitimaţia/Adeverinţa de electrician autorizat, la solicitarea sa, ANRE poate emite un duplicat, dacă:",
+      "options": {
+        "a": "Legitimaţia/Adeverinţa de electrician autorizat este declarată nulă, într-un ziar local şi titularul achită tariful de autorizare aprobat",
+        "b": "Legitimaţia/Adeverinţa de electrician autorizat este declarată nulă, într-un ziar local şi titularul achită o penalitate în cuantum de 200 RON indiferent de gradul şi tipul de autorizare",
+        "c": "Legitimaţia/Adeverinţa de electrician autorizat este declarată nulă, într-un ziar local şi titularul achită un tarif de emitere a duplicatului, conform prevederilor din regulamentul de autorizare"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 18,
+      "question": "În vederea înscrierii la examenul de autorizare, electricianul trebuie să prezinte  în documentaţia anexată cererii de autorizare ,,Detalii privind lucrările realizate\"; acest document este:",
+      "options": {
+        "a": "Opţional (solicitantul decide dacă îl transmite sau nu)",
+        "b": "Nerelevant",
+        "c": "Un document obligatoriu, care trebuie întocmit corelat cu documenteie ,,Experienţă profesională\" și ,,Pagina de informaţii anexate cererii de autorizare\""
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 19,
+      "question": "Pentru a fi valabilă, adeverinţa de electrician autorizat",
+      "options": {
+        "a": "va fi prezentață ANRE pentru a fi vizată, la termenul prevăzut, după achitarea în prealabil a tariful de vizare, egal cu tariful de acordare a respectivului tip şi grad de autorizare",
+        "b": "va fi prezentață ANRE pentru a fi vizată, la termenul prevăzut, după susținerea în prealabil a unui nou examen",
+        "c": "va fi prezentață ANRE pentru a fi vizată, la termenul prevăzut, după achitarea în prealabil a tariful de vizare, diferit de tariful de acordare a respectivului tip şi grad de autorizare"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 20,
+      "question": "Termenul de vizare a adeverinţei de electrician autorizat,  de la data emiterii documentului sau, după caz, de la data ultimei vizări, este de",
+      "options": {
+        "a": "3 ani",
+        "b": "4 ani",
+        "c": "5 ani"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 1
+    },
+    {
+      "id": 21,
+      "question": "Trecerea la un grad de autorizare superior se poate face:",
+      "options": {
+        "a": "după 5 ani de experienţă în baza gradului de autorizare deţinut",
+        "b": "prin vizarea la termen de către ANRE a adeverinței de electrician autorizat",
+        "c": "pe bază de examen"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 22,
+      "question": "Pot face obiectul unei concesiuni energetice:",
+      "options": {
+        "a": "bunurile proprietate publică sau privată a statului",
+        "b": "bunurile aflate în proprietatea oricărui operator econimic",
+        "c": "bunurile utilizate în activitatea de furnizare a energiei electrice"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 23,
+      "question": "Constituie contravenţie:",
+      "options": {
+        "a": "refuzul clienţilor finali de a permite accesul la grupurile de măsurare",
+        "b": "modificarea fără drept a componentelor instalaţiilor energetice",
+        "c": "sustragerea de energie electrica"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 24,
+      "question": "Constituie infracţiune:",
+      "options": {
+        "a": "Executarea de săpături sau lucrări de orice fel in zonele de protecţie a instalaţiilor, fara consimţământul prealabil al proprietarului acestora",
+        "b": "modificarea fără drept a componentelor instalaţiilor energetice",
+        "c": "Nerespectarea reglementărilor emise de ANRE"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 25,
+      "question": "Criteriile de promovare a energiei electrice produse in centrale electrice de cogenerare de înalta eficienta au in vedere:",
+      "options": {
+        "a": "Promovarea utilizării eficiente a combustibililor",
+        "b": "realizarea unui randament global anual de minimum 50% în cazul unităţilor de cogenerare cu puteri electrice instalate de peste 25 MW",
+        "c": "Promovarea utilizării surselor regenerabile"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 26,
+      "question": "Codul tehnic al reţelelor electrice de distribuţie reglementează activitatea operatorilor de distribuţie:",
+      "options": {
+        "a": "la care acţionar principal este statul român",
+        "b": "la care acţionar majoritar nu este statul român",
+        "c": "tuturor operatorilor de distribuţie, indiferent de acţionarul majoritar"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 27,
+      "question": "Standardul de performanţă pentru serviciul de distribuţie a energiei electrice stabileşte indicatori de performanţă privind:",
+      "options": {
+        "a": "Evenimentele accidentale produse de terţi asupra reţelelor electrice din patrimoniul public",
+        "b": "Debranşarea consumatorilor rău-platnici de la relele electrice de distribuţie",
+        "c": "Întreruperile programate, pentru executarea lucrărilor de dezvoltare, retehnologizare şi mentenanţă"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 28,
+      "question": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+      "options": {
+        "a": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare",
+        "b": "racordare ilegală la reţeaua de distribuţie",
+        "c": "neplata facturilor"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 29,
+      "question": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+      "options": {
+        "a": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+        "b": "racordare ilegală la reţeaua de distribuţie",
+        "c": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 30,
+      "question": "În conformitate cu prevederile legii nr.123/2012  sunt considerate surse regenerabile de energie:",
+      "options": {
+        "a": "Energia electrică obţinută prin arderea gazelor naturale",
+        "b": "energia eoliană",
+        "c": "Energia electrică obţinută prin arderea combustibililor fosili"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 31,
+      "question": "Nerespectarea normelor tehnice emise de către ANRE constituie:",
+      "options": {
+        "a": "Infracţiune",
+        "b": "Contravenţie",
+        "c": "Abatere"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 32,
+      "question": "Furnizorul este obligat să analizeze plângerea clientului referitoare la factura emisă, comunicată furnizorului în termen de 30 de zile de la data emiterii facturii,",
+      "options": {
+        "a": "numai dacă factura a fost achitată",
+        "b": "numai dacă factura nu a fost achitată",
+        "c": "indiferent dacă factura a fost sau nu achitată,"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 33,
+      "question": "Actualizarea avizului tehnic de racordare atunci când se produce schimbarea titularului locului de producere sau de consum",
+      "options": {
+        "a": "este obligatorie numai dacă se modifică puterea aprobată anterior prin avizul tehnic de racordare;",
+        "b": "nu este obligatorie",
+        "c": "este obligatorie"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 34,
+      "question": "Energia electrica tranzactionata pe piata de energie electrica se masoara de catre operatorii de masurare, prin grupuri de masurare, conform reglementărilor elaborate de:",
+      "options": {
+        "a": "Ministerul de resort",
+        "b": "ANRE - Autoritatea Naţională de Reglementare în domeniul Energiei",
+        "c": "ANRSC - Autoritatea Naţională de Reglementare in domeniul Serviciilor Comunale"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 35,
+      "question": "Operatorul de distribuţie:",
+      "options": {
+        "a": "Exploatează, retehnologizează, reabilitează si dezvolta reţelele electrice de distribuţie, cu respectarea reglementarilor tehnice in vigoare",
+        "b": "Exploatează, retehnologizează, reabilitează si dezvolta reţelele electrice de iluminat public",
+        "c": "Încasează contravaloarea energiei electrice furnizate"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 36,
+      "question": "Eventualele contestaţii ale avizelor tehnice de racordare se rezolvă de către:",
+      "options": {
+        "a": "organele ierarhice ale emitentului",
+        "b": "operatorul de distribuţie care a emis avizul",
+        "c": "ANRE"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 37,
+      "question": "În cazul existenţei mai multor puncte de delimitare, se consideră un singur loc de consum şi o singură instalaţie de utilizare dacă:",
+      "options": {
+        "a": "instalaţiile din aval aferente fiecărui punct de delimitare sunt legate electric între ele prin reţele ale operatorului de distribuţie;",
+        "b": "dacă există un singur proprietar",
+        "c": "instalaţiile din aval aferente fiecărui punct de delimitare sunt legate electric între ele prin reţele ale utilizatorului."
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 38,
+      "question": "Pentru protejarea reţelelor electrice de distribuţie, persoanelor fizice si juridice:",
+      "options": {
+        "a": "li se interzice să consume energie electrica prin instalaţii racordate direct la cele ale reţelei electrice de distribuţie",
+        "b": "li se interzice să limiteze sau să îngrădească, prin execuţia de împrejmuire, prin construcţii ori prin orice alt mod, accesul la instalaţii al operatorului de distribuţie",
+        "c": "li se permite depozitarea de materiale pe culoarul de trecere si in zonele de protecţie si de siguranţa ale instalaţiilor, fara acordul operatorului de reţea, cu condiţia să fie proprietar al terenului"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 39,
+      "question": "Pentru protejarea reţelelor electrice de distribuţie, persoanelor fizice si juridice:",
+      "options": {
+        "a": "li se interzice să efectueze construcţii de orice fel în zona de siguranţă a reţelelor electrice de distribuţie, fără avizul de amplasament al operatorului de distribuţie",
+        "b": "li se interzice să consume energie electrica prin instalaţii racordate direct la cele ale reţelei electrice de distribuţie",
+        "c": "li se permite depozitarea de materiale pe culoarul de trecere si in zonele de protecţie si de siguranţa ale instalaţiilor, fara acordul operatorului de reţea, cu condiţia să fie proprietar al terenului"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 40,
+      "question": "Printre obiectivele de baza ale Legii nr. 123/2012 se regăsesc:",
+      "options": {
+        "a": "Promovarea utilizării gazelor naturale pentru producerea energiei electrice",
+        "b": "promovarea utilizării surselor noi şi regenerabile de energie",
+        "c": "Determinarea soluţiilor de racordare a utilizatorilor la reţelele electrice de interes public"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 2
+    },
+    {
+      "id": 41,
+      "question": "Reţea electrică de interes public este o reţea electrică la care sunt racordaţi cel puţin:",
+      "options": {
+        "a": "3 utilizatori",
+        "b": "2 utilizatori",
+        "c": "un utilizator"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 42,
+      "question": "Obţinerea avizului tehnic de racordare de către un utilizator:",
+      "options": {
+        "a": "nu este obligatorie pentru o durata mai mică de 6 luni",
+        "b": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+        "c": "este obligatorie pentru orice loc de consum/producere nou"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 43,
+      "question": "Sursele staţionare de energie electrică în curent continuu, dacă nu sunt racordate prin invertoare la SEN, se supun supun dispoziţiilor Legii nr. 123/2012?",
+      "options": {
+        "a": "Da",
+        "b": "Nu",
+        "c": "Da, doar sub aspectul stabilirii preţului de vânzare e energiei electrice produse"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 44,
+      "question": "Executarea sau folosirea de instalaţii clandestine în scopul racordării directe la reţea constituie:",
+      "options": {
+        "a": "contravenţie",
+        "b": "infracţiune",
+        "c": "contravenţie sau infracţiune, după caz"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 45,
+      "question": "Avizul tehnic de racordare emis îşi încetează valabilitatea:",
+      "options": {
+        "a": "la încheierea contractului de racordare",
+        "b": "în termen de 6 luni de la emitere, dacă nu a fost încheiat contractul de racordare;",
+        "c": "în termen de 12 luni de la emitere, dacă nu a fost încheiat contractul de racordare;"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 46,
+      "question": "În cazul unui ansamblu de blocuri de locuinţe, grupurile de măsurare individuale se poziţionează",
+      "options": {
+        "a": "pe tablourile din apartamente",
+        "b": "centralizat, la limita zonei de proprietate asupra terenului, in exteriorul construcţiei",
+        "c": "centralizat, la parter sau pe palier"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 47,
+      "question": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "options": {
+        "a": "utilizatorii perturbatori",
+        "b": "utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "c": "locurile de consum care se racordează la reţele electrice de medie sau joasă tensiune, indiferent de puterea solicitată, dacă soluţia de racordare este unică şi/sau evidentă"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 48,
+      "question": "Autoritatea  Naţională de Reglementare în domeniul Energiei analizează şi soluţionează eventualele contestaţii cu privire la:",
+      "options": {
+        "a": "avizele tehnice de racordare",
+        "b": "calitatea execuţiei instalaţiilor de racordare",
+        "c": "calitatea execuţiei instalaţiilor interioare ale clădirilor civile"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 49,
+      "question": "Neînţelegerile privind racordarea utilizatorilor la reţelele electrice de interes public, dintre operatorii de distribuţie şi solicitanţi, se soluţionează:",
+      "options": {
+        "a": "întotdeauna pe cale amiabilă",
+        "b": "de autoritatea competentă conform reglementărilor în vigoare",
+        "c": "întotdeauna în justiţie"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 50,
+      "question": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:",
+      "options": {
+        "a": "Desfăşurarea de activităţi fără contracte legale, în vigoare (contract de muncă individual  semnat cu un angajator sau contract de prestări servicii, în cazul în care este persoană fizică autorizată în condițiile legii)",
+        "b": "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+        "c": "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 51,
+      "question": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:",
+      "options": {
+        "a": "Comiterea unei fapte prevăzute în Regulamentul de autorizare ca fiind interzisă",
+        "b": "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+        "c": "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 52,
+      "question": "Autorizarea unui electrician se realizează în urma:",
+      "options": {
+        "a": "promovării unui examen de autorizare",
+        "b": "promovării unui concurs de autorizare, cu număr limitat de locuri",
+        "c": "unui interviu în faţa unei comisii ANRE"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 53,
+      "question": "Electricianul autorizat pentru gradul II, tip A+B are următoarele competenţe:",
+      "options": {
+        "a": "De a proiecta şi executa instalaţii electrice cu putere instalată de cel mult 10 kW şi la o tensiune nominală mai mică de 1 kV",
+        "b": "De a proiecta şi executa instalaţii electrice cu orice putere instalată tehnic realizabilă şi la o tensiune nominală mai mică de 1 kV",
+        "c": "De a proiecta şi executa instalaţii electrice cu orice putere instalată tehnic realizabilă şi la o tensiune nominală maximă de 20 kV"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 54,
+      "question": "Autorizarea pentru proiectare de instalaţii electrice este o autorizare de tip",
+      "options": {
+        "a": "A",
+        "b": "B",
+        "c": "C"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 55,
+      "question": "Este interzis electricianului autorizat:",
+      "options": {
+        "a": "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "b": "Să proiecteze instalaţii electrice în cazul în care nu deţine o autorizaţie de tip A",
+        "c": "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 56,
+      "question": "Este interzis electricianului autorizat:",
+      "options": {
+        "a": "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "b": "să execute lucrări, manevre sau intervenţii sub orice formă în instalaţiile operatorilor de reţea",
+        "c": "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 57,
+      "question": "Este interzis electricianului autorizat:",
+      "options": {
+        "a": "Să semneze documentaţii de orice fel pentru proiecte sau lucrări pe care nu le-a realizat sau supravegheat",
+        "b": "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "c": "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 58,
+      "question": "În vederea autorizării pentru ambele tipuri de autorizare (A şi B), electricienii:",
+      "options": {
+        "a": "Trebuie să îndeplinească condiţiile de calificare şi experienţă profesionale, cumulate, pentru fiecare tip de autorizare şi susţin examene separate pentru fiecare dintre aceste tipuri",
+        "b": "Trebuie să îndeplinească condiţiile de calificare si experienţă profesionale, cumulate, pentru fiecare tip şi susţin un singur examen",
+        "c": "Trebuie sa fi fost autorizaţi în prealabil în baza Ordinului MIC nr34 din 1999"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 59,
+      "question": "Regulamentul de autorizare a electricienilor defineşte următoarele tipuri de autorizări:",
+      "options": {
+        "a": "De tip E  pentru execuţie",
+        "b": "De tip A sau B  pentru proiectare şi respectiv executare",
+        "c": "Nu sunt definite tipuri de autorizare, ci doar grade de autorizare"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 60,
+      "question": "Sancţiunile contravenţionale aplicate de ANRE electricienilor autorizaţi pot fi asociate cu :",
+      "options": {
+        "a": "retragerea autorizării acordate",
+        "b": "Retragerea autorizării acordate pe o perioadă de până la doi ani",
+        "c": "Avertizarea în scris cu retragerea autorizării acordate la prima abatere constatată"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 3
+    },
+    {
+      "id": 61,
+      "question": "Un electrician autorizat care execută lucrări de instalaţii electrice:",
+      "options": {
+        "a": "Are obligaţia de a respecta proiectul în baza căruia execută instalaţia electrică",
+        "b": "Are obligaţia de a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, chiar dacă nu i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare;",
+        "c": "Are dreptul de a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 62,
+      "question": "Una dintre obligaţiile electricianului autorizat care execută lucrări de instalaţii electrice este:",
+      "options": {
+        "a": "Să respecte proiectele de execuţie a lucrărilor de instalaţii electrice doar dacă sunt întocmite de el",
+        "b": "De a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, în cazul în care i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare",
+        "c": "De a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 63,
+      "question": "Una dintre obligaţiile electricianului care deţine autorizaţie de tip A este:",
+      "options": {
+        "a": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare şi să respecte normele tehnice corespunzătoare tipurilor de instalaţii electrice proiectate",
+        "b": "Să semneze documentaţii de proiectare chiar dacă nu sunt realizate de el, astfel încât proprietarul să poată demara cât mai repede execuţia instalaţiilor",
+        "c": "Să execute sau să coordoneze execuţia instalaţiilor electrice de orice putere sau tensiune tehnic realizabilă"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 64,
+      "question": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:",
+      "options": {
+        "a": "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+        "b": "Să execute  instalaţii electrice doar conform gradului si tipului de autorizare şi să respecte prevederile din proiect",
+        "c": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 65,
+      "question": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:",
+      "options": {
+        "a": "Să execute  instalaţii electrice numai în una dintre calităţile prevăzute în regulament pentru exercitarea activităţii",
+        "b": "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+        "c": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 66,
+      "question": "Client final este:",
+      "options": {
+        "a": "orice client ce cumpără energie electrică de la un producător",
+        "b": "orice client ce cumpără energie electrică de la un trader de energie electrică",
+        "c": "orice persoană fizică sau juridică ce cumpără energie electrică pentru consum propriu"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 67,
+      "question": "Conform prevederilor referitoare la energia electrică din Legea nr. 123/2012 , noţiunile de \"client final\" şi \"consumator\" sunt:",
+      "options": {
+        "a": "diferite",
+        "b": "echivalente;",
+        "c": "echivalente numai în cazul consumatorilor casnici"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 68,
+      "question": "Codul tehnic al reţelelor electrice de distribuţie (Codul RED) este administrat de:",
+      "options": {
+        "a": "SC ELECTRICA SA, în calitate de elaborator",
+        "b": "ANRE - Autoritatea Naţională de Reglementare în domeniul Energiei",
+        "c": "CN TRANSELECTRICA SA"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 69,
+      "question": "Începând cu data de 1.01.2022, în PD, la JT, în condiții normale de exploatare, excluzând întreruperile, pe durata oricărui interval de timp de o săptămână, 95% din valorile efective, mediate pe o durată de 10 minute, ale tensiunii de alimentare, nu trebuie să aibă o abatere față de tensiunea nominală mai mare de",
+      "options": {
+        "a": "0.05",
+        "b": "+5% / -10%",
+        "c": "0.12"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 70,
+      "question": "Printre obiectivele Codului tehnic al reţelelor electrice de distribuţie (Codul RED) se regăsesc:",
+      "options": {
+        "a": "Stabilirea unui set de reguli şi norme în vederea asigurării iluminatului public",
+        "b": "Stabilirea responsabilităţilor şi obligaţiilor operatorilor de distribuţie şi ale tuturor utilizatorilor reţelelor electrice de distribuţie",
+        "c": "Stabilirea unui set de reguli şi norme în vederea asigurării accesului utilizatorilor la reţelele electrice de transport"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 71,
+      "question": "Prevederile standardului de performanţă pentru serviciul de distribuţie nu se aplică în situaţii de:",
+      "options": {
+        "a": "Întrerupere accidentală a energiei electrice",
+        "b": "Forţă majoră",
+        "c": "Evenimente accidentale determinate de angajaţii operatorului de distribuţie"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 72,
+      "question": "Pe lângă alte condiţii pe care trebuie să le îndeplinească utilizatorii, pentru a beneficia de prevederile standardului de performanţă pentru serviciul de distribuţie, trebuie ca:",
+      "options": {
+        "a": "să contracteze serviciul de distribuţie direct cu operatorul de distribuţie",
+        "b": "prin regimul lor de funcţionare să nu introducă perturbaţii inacceptabile, conform normativelor în vigoare, care să afecteze  funcţionarea RED sau alimentarea  altor utilizatori  RED din zonă",
+        "c": "să aibă contracte de furnizarea a energiei electrice încheiate cu operatorul de distribuţie"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 73,
+      "question": "Pe lângă alte condiţii pe care trebuie să le îndeplinească utilizatorii, pentru a beneficia de prevederile standardului de performanţă pentru serviciul de distribuţie, trebuie ca:",
+      "options": {
+        "a": "să respecte condiţiile prevăzute în contractul de distribuţie/furnizare",
+        "b": "să aibă contracte de furnizare a energiei electrice încheiate cu operatorul de distribuţie",
+        "c": "să aibă instalaţii electrice care funcţionează la tensiunea nominală alternativă în gama 20 kV - 400 kV şi la frecvenţa de 50 Hz"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 74,
+      "question": "Standardul de performanţă pentru serviciul de distribuţie a energiei electrice stabileşte indicatorii de performanţă privind:",
+      "options": {
+        "a": "continuitatea alimentării cu energie electrică a utilizatorilor",
+        "b": "Debranşarea consumatorilor rău-platnici de la relele electrice de distribuţie",
+        "c": "Evenimentele accidentale produse de terţi asupra reţelelor electrice din patrimoniul public"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 75,
+      "question": "După depunerea documentaţiei complete de către utilizator, în situaţia în care soluţia de racordare se stabileşte prin fişă de soluţie, operatorul de reţea are obligaţia să transmită solicitantului avizul tehnic de racordare în maximum:",
+      "options": {
+        "a": "20 zile calendaristice în cazul racordării la joasă tensiune",
+        "b": "30 zile calendaristice în cazul racordării la medie tensiune",
+        "c": "10 zile calendaristice în cazul racordării la joasă tensiune"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 76,
+      "question": "După depunerea documentaţiei complete de către utilizator, în situaţia în care soluţia de racordare se stabileşte prin fişă de soluţie, operatorul de reţea are obligaţia să transmită solicitantului avizul tehnic de racordare în maximum:",
+      "options": {
+        "a": "30 zile calendaristice în cazul racordării la joasă tensiune",
+        "b": "20 zile calendaristice în cazul racordării la joasă tensiune",
+        "c": "10 zile calendaristice în cazul racordării la joasă tensiune"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 77,
+      "question": "Cererile de racordare pentru locuri de producere cu puteri instalate de până la 50 MW inclusiv şi cele pentru locuri de consum cu puteri maxim simultan absorbite de până la 50 MW inclusiv, se adresează de către solicitanţi:",
+      "options": {
+        "a": "obligatoriu operatorului de distribuţie concesionar din zona respectivă",
+        "b": "operatorului de transport şi de sistem",
+        "c": "unui operator de distribuţie care deţine în apropierea locului de producere sau de consum o reţea electrică de distribuţie"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 78,
+      "question": "Avizul tehnic de racordare se emite de către:",
+      "options": {
+        "a": "operatorul de reţea la care a fost depusă cererea de racordare, chiar dacă opţiunea scrisă a utilizatorului este pentru o variantă de soluţie de racordare la reţeaua electrică deţinută de un alt operator de reţea",
+        "b": "operatorul de reţea la reţeaua căruia se racordează instalaţiile utilizatorului, conform soluţiei de racordare stabilite prin fişa sau studiul de solutie",
+        "c": "operatorul de reţea care a elaborat fişa sau studiul de solutie, chiar dacă opţiunea scrisă a utilizatorului este pentru o variantă de soluţie de racordare la reţeaua electrică deţinută de un alt operator de reţea"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 79,
+      "question": "În calitate de persoană fizică autorizată, electricianul autorizat gradul I poate executa instalaţii electrice interioare",
+      "options": {
+        "a": "având o putere electrică instalată de maximum 10 kW şi la o tensiune nominală mai mică de 1 kV, numai dacă deţine un atestat emis de ANRE",
+        "b": "având o putere electrică instalată de maximum 20 kW şi la o tensiune nominală mai mică de 1 kV, numai dacîă deţine un atestat emis de ANRE",
+        "c": "având o putere electrică instalată de maximum 10 kW şi la o tensiune nominală mai mică de 1 kV, fără a deţine un atestat emis de ANRE"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 80,
+      "question": "La încetarea perioadei de valabilitate a contractului de furnizare a energiei electrice, clientul final de energie electrică are dreptul să primească de la furnizor decontul final de regularizare",
+      "options": {
+        "a": "În termen de maximum 42 de zile de la încetarea contractului de furnizare a energiei electrice",
+        "b": "la  încetarea contractului de furnizare a energiei electrice",
+        "c": "În termen de maximum 10 de zile de la încetarea contractului de furnizare a energiei electrice"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 4
+    },
+    {
+      "id": 81,
+      "question": "Furnizarea energiei electrice se desfăşoară",
+      "options": {
+        "a": "numai în baza unei licenţe pentru activitatea de furnizare a energiei electrice",
+        "b": "fără licență, de către operatori de distribuție neconcesionari către clienţii alimentaţi direct din reţelele electrice pe care aceştia le exploatează",
+        "c": "fără licență, de către producători, oricărui client final"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 82,
+      "question": "În cazul furnizării energiei electrice în baza unui contract încheiat pe piaţa concurenţială, întreruperea alimentării cu energie electrică pentru nerespectarea obligaţiilor contractuale de către beneficiar se face în cazul clienților noncasnici:",
+      "options": {
+        "a": "cu un preaviz de minim 5 zile",
+        "b": "cu un preaviz de cel puţin10 zile",
+        "c": "fără preaviz"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 83,
+      "question": "Furnizarea energiei electrice către clientul final se realizează:",
+      "options": {
+        "a": "fără încheierea contractului de furnizare, pe bază de negocieri",
+        "b": "fără încheierea contractului de furnizare, pentru clienții casnici",
+        "c": "fără încheierea contractului de furnizare în situaţiile reglementate în mod distinct de către autoritatea competentă."
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 84,
+      "question": "Căminele studenţeşti se încadrează în categoria :",
+      "options": {
+        "a": "clienţilor noncasnici",
+        "b": "clienţilor casnici",
+        "c": "clienţilor casnici, dar numai dacă au o putere aprobată sub 50 kW"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 85,
+      "question": "Întreprinderile mici se încadrează în categoria",
+      "options": {
+        "a": "clienţilor noncasnici",
+        "b": "clienților casnici",
+        "c": "clienţilor noncasnici, dar numai dacă au o putere aprobată mai mare de 20 kW"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 86,
+      "question": "Neplata facturilor emise de către furnizor conform prevederilor contractului de furnizare a energiei electrice poate avea drept  consecinţă:",
+      "options": {
+        "a": "întreruperea furnizării energiei electrice",
+        "b": "obligaţia de a reface instalaţia de racordare",
+        "c": "sancţiune prin amendă contravenţională"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 87,
+      "question": "Avizul tehnic de racordare constituie:",
+      "options": {
+        "a": "angajamentul operatorului de reţea de a realiza instalaţia de racordare a utilizatorului;",
+        "b": "acceptul operatorului de reţea pentru utilizarea reţelei în anumite condiţii",
+        "c": "aprobarea de către operatorul de reţea a racordării utiizatorului în anumite condiţii."
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 88,
+      "question": "Avizul tehnic de racordare constituie:",
+      "options": {
+        "a": "angajamentul operatorului de reţea de a realiza instalaţia de racordare a utilizatorului;",
+        "b": "oferta operatorului de reţea la cererea de racordare a solicitantului;",
+        "c": "acceptul operatorului de reţea pentru utilizarea reţelei în anumite condiţii"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 89,
+      "question": "Avizul tehnic de racordare este un aviz scris valabil:",
+      "options": {
+        "a": "pentru orice  titular al locului de producere/consum respectiv",
+        "b": "numai pentru un anumit titular al locului de producere/consum",
+        "c": "pe o perioadă de timp nelimitată"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 90,
+      "question": "Cererea pentru racordare la reţea  trebuie să fie în mod obligatoriu semnată de:",
+      "options": {
+        "a": "utilizator sau de împuternicitul legal al utilizatorului.",
+        "b": "furnizor",
+        "c": "operatorul de reţea"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 91,
+      "question": "Cererea pentru racordare la reţea şi documentaţia anexată acesteia:",
+      "options": {
+        "a": "se pot depune direct la centrele teritoriale de relaţii cu clienţii organizate de operatorul de reţea;",
+        "b": "se trimit obligatoriu prin poştă",
+        "c": "se depun numai la registratura operatorului de reţea."
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 92,
+      "question": "Dacă se solicită avizul tehnic de racordare pentru o organizare de de şantier, documentaţia anexată cererii va cuprinde în mod obligatoriu şi:",
+      "options": {
+        "a": "certificatul de urbanism al obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;",
+        "b": "autorizaţia de construire a obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;",
+        "c": "contractul încheiat cu un furnizor de energie electrică"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 93,
+      "question": "Fişa de soluţie este elaborată de:",
+      "options": {
+        "a": "utilizatori",
+        "b": "operatorul de reţea",
+        "c": "orice proiectant de specialitate (societate comercială atestată pentru activităţi de proiectare)"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 94,
+      "question": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "options": {
+        "a": "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        "b": "locurile de consum şi/sau de producere care se racordează la reţele electrice având tensiunea nominală de 110 kV sau mai mare;",
+        "c": "utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 95,
+      "question": "Soluţia de racordare se stabileşte printr-un studiu de soluţie pentru:",
+      "options": {
+        "a": "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        "b": "utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "c": "utilizatorii cu o putere de peste 25 kVA"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 96,
+      "question": "Prevederile contractuale întemeiate pe dispoziţii ale actelor normative se modifică",
+      "options": {
+        "a": "la data intrării în vigoare a modificării actelor normative respective fără îndeplinirea altor formalităţi",
+        "b": "prin incheierea unui act adiţional",
+        "c": "prin incheierea unui nou contract"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 97,
+      "question": "Clienţii casnici de energie electrică:",
+      "options": {
+        "a": "pot impune furnizorului orice modalitate de plată, chiar dacă nu este pusă la dispoziţie de către acesta",
+        "b": "pot să opteze pentru orice modalitate de plată pe care furnizorul o pune la dispoziţie",
+        "c": "sunt obligaţi să achite facturile pentru energia electrică la una din casieriile furnizorului"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 98,
+      "question": "În cazul unui refuz de constituire a garanţiilor conform Regulamentului de furnizare a energiei electrice la clienţii finali  şi a procedurilor specifice",
+      "options": {
+        "a": "furnizorul are dreptul să solicite operatorului de distribuţie deconectarea clientului final de la reţea",
+        "b": "clientul final poate fi deconectat numai după o decizie a ANRE pentru cazul respectiv",
+        "c": "se reziliază contractul de furnizare a energiei electrice"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 99,
+      "question": "Furnizorul are obligaţia să deţină o pagină de internet proprie care să pună la dispoziţia clientului un formular online pentru înregistrarea plângerilor şi care să conţină și infomații privind  modalităţile de soluţionare",
+      "options": {
+        "a": "numai a neînţelegerilor precontractuale",
+        "b": "numai a neînţelegerilor  apărute pe parcursul derulării contractului;",
+        "c": "a neînţelegerilor precontractuale şi a celor apărute pe parcursul derulării contractului;"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 100,
+      "question": "Furnizorul are dreptul să recalculeze consumul de energie electrică pentru o perioadă anterioară",
+      "options": {
+        "a": "numai în cazul în care contorul a fost defect",
+        "b": "numai în cazul clienților noncasnici mari",
+        "c": "atunci când se constată înregistrarea eronată a consumului de energie electrică"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 5
+    },
+    {
+      "id": 101,
+      "question": "Furnizorul are dreptul să recalculeze consumul de energie electrică pentru o perioadă anterioară",
+      "options": {
+        "a": "în cazul unei facturări eronate a consumului",
+        "b": "numai în cazul clienților noncasnici mari",
+        "c": "numai în cazul în care contorul a fost defect"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 6
+    },
+    {
+      "id": 102,
+      "question": "Clientul vulnerabil",
+      "options": {
+        "a": "nu are dreptul să beneficieze de eşalonarea la plată a facturii",
+        "b": "are dreptul să beneficieze de eşalonarea la plată a facturii, la cerere, pe o perioadă de minimum 3 luni",
+        "c": "are dreptul să beneficieze de eşalonarea la plată a facturii, la cerere, pe o perioadă de maximum 3 luni"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 6
+    },
+    {
+      "id": 103,
+      "question": "Regulamentul pentru atestarea operatorilor economici  care proiectează, execută şi verifică  instalaţii electrice din sistemul electroenergetic este aprobat de către:",
+      "options": {
+        "a": "Guvernul României",
+        "b": "Ministerul de resort",
+        "c": "ANRE"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 6
+    },
+    {
+      "id": 104,
+      "question": "ANRE poate suspenda Atestatul acordat unui operator economic  care proiectează, execută şi verifică  instalaţii electrice dacă:",
+      "options": {
+        "a": "operatorul economic nu îndeplineşte criteriile de bonitate financiară corespunzătoare procedurii aplicabile",
+        "b": "Operatorul economic a  executat lucrări fără să aibă, în proprietate sau în folosinţă, conform prevederilor Regulamentului, dotarea tehnică minimală corespunzătoare tipului de atestat  deţinut",
+        "c": "ANRE nu are competenţa de a retrage Atestatele emise"
+      },
+      "correct": null,
+      "explanation": "",
+      "block": 6
+    }
+  ]
+}

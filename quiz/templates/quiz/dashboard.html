@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GR2 Quiz Platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>GR2 Quiz Platform</h1>
+            <div class="nav-links">
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>Welcome, {{ user.username }}!</h2>
+        
+        {% for subject in subjects %}
+            <div class="subject-section">
+                <h3>{{ subject.title }}</h3>
+                <div class="blocks-grid">
+                    {% for block in subject.blocks %}
+                        <a href="{% url 'block_take' subject.id block.number %}" class="block-tile {% if block.last_attempt %}{% if block.last_attempt.score == block.last_attempt.total %}block-green{% elif block.last_attempt.score >= block.last_attempt.total - 2 %}block-yellow{% else %}block-red{% endif %}{% else %}block-white{% endif %}">
+                            <div class="block-number">Block {{ block.number }}</div>
+                            <div class="block-score">
+                                {% if block.last_attempt %}
+                                    {{ block.last_attempt.score }}/{{ block.last_attempt.total }}
+                                {% else %}
+                                    —
+                                {% endif %}
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+

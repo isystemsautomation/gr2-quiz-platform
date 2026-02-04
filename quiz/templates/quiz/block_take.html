@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ subject_title }} - Block {{ block_number }} - GR2 Quiz Platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>GR2 Quiz Platform</h1>
+            <div class="nav-links">
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>{{ subject_title }} - Block {{ block_number }}</h2>
+        
+        <form method="post" action="{% url 'block_submit' subject block_number %}">
+            {% csrf_token %}
+            
+            {% for question in questions %}
+                <div class="question-card">
+                    <div class="question-header">
+                        <strong>Question {{ forloop.counter }}</strong>
+                    </div>
+                    <div class="question-text">{{ question.question }}</div>
+                    
+                    <div class="options">
+                        {% for key, value in question.options.items %}
+                            <label class="option-label">
+                                <input type="radio" 
+                                       name="question_{{ question.id }}" 
+                                       value="{{ key }}" 
+                                       required>
+                                <span class="option-letter">{{ key }}.</span> {{ value }}
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+            
+            <div class="submit-container">
+                <button type="submit" class="btn btn-primary btn-large">Submit Quiz</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
