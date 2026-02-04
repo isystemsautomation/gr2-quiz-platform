@@ -26,7 +26,7 @@
                 <h3>{{ subject.title }}</h3>
                 <div class="blocks-grid">
                     {% for block in subject.blocks %}
-                        <a href="{% url 'block_take' subject.id block.number %}" class="block-tile {% if block.last_attempt %}{% if block.last_attempt.score == block.last_attempt.total %}block-green{% elif block.last_attempt.score >= block.last_attempt.total - 2 %}block-yellow{% else %}block-red{% endif %}{% else %}block-white{% endif %}">
+                        <a href="{% url 'block_take' subject.id block.number %}" class="block-tile {{ block.color_class }}">
                             <div class="block-number">Block {{ block.number }}</div>
                             <div class="block-score">
                                 {% if block.last_attempt %}

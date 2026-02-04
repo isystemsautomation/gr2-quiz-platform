@@ -38,9 +38,21 @@ def dashboard(request):
                 block_number=block_num
             ).order_by('-taken_at').first()
             
+            # Determine color class based on last attempt
+            if last_attempt:
+                if last_attempt.score == last_attempt.total:
+                    color_class = 'block-green'
+                elif last_attempt.score >= last_attempt.total - 2:
+                    color_class = 'block-yellow'
+                else:
+                    color_class = 'block-red'
+            else:
+                color_class = 'block-white'
+            
             block_data.append({
                 'number': block_num,
                 'last_attempt': last_attempt,
+                'color_class': color_class,
             })
         
         subjects_data.append({
