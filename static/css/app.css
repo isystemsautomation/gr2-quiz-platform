@@ -441,6 +441,15 @@ body {
     color: var(--text-medium);
 }
 
+.block-note-indicator {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--primary-blue);
+    background-color: #eff6ff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+}
+
 /* Block Color Classes */
 .block-white {
     background-color: var(--bg-white);

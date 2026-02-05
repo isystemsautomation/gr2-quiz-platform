@@ -12,7 +12,7 @@
         <div class="header-container">
             <a href="{% url 'dashboard' %}" class="header-logo">
                 <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
-                <span class="header-logo-text">Platformă internă chestionare</span>
+                <span class="header-logo-text">Platformă internă chestionare Electricieni – Grupa 2</span>
             </a>
             <nav class="header-nav">
                 <a href="{% url 'dashboard' %}">Dashboard</a>
@@ -51,6 +51,9 @@
                                     —
                                 {% endif %}
                             </div>
+                            {% if block.note %}
+                                <div class="block-note-indicator">Notă salvată</div>
+                            {% endif %}
                         </a>
                     {% endfor %}
                 </div>

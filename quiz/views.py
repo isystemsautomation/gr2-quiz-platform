@@ -41,6 +41,10 @@ def dashboard(request):
         
         # Get blocks from database
         blocks = Question.objects.filter(subject=subject_id).values_list('block_number', flat=True).distinct().order_by('block_number')
+
+        # Personal notes for this subject / user, indexed by block number
+        notes_qs = BlockNote.objects.filter(user=request.user, subject=subject_id)
+        notes_by_block = {n.block_number: n.note for n in notes_qs}
         
         # Get last attempt for each block
         block_data = []
@@ -66,6 +70,7 @@ def dashboard(request):
                 'number': block_num,
                 'last_attempt': last_attempt,
                 'color_class': color_class,
+                'note': notes_by_block.get(block_num, ""),
             })
         
         subjects_data.append({
