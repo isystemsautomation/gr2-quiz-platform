@@ -297,6 +297,93 @@ body {
     color: #667eea;
 }
 
+.option-image {
+    max-width: 200px;
+    max-height: 150px;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+}
+
+.question-image {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.question-image img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.edit-link {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #667eea;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.edit-link:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+.question-display {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.edit-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.edit-form select,
+.edit-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.edit-form select:focus,
+.edit-form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.edit-form select:disabled,
+.edit-form textarea:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
 .submit-container {
     text-align: center;
     margin: 2rem 0;

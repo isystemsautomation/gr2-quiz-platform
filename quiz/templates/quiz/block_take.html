@@ -24,25 +24,63 @@
         <form method="post" action="{% url 'block_submit' subject block_number %}">
             {% csrf_token %}
             
-            {% for question in questions %}
+            {% for item in questions %}
+                {% with question=item.question %}
                 <div class="question-card">
                     <div class="question-header">
                         <strong>Question {{ forloop.counter }}</strong>
+                        {% if item.can_edit %}
+                            <a href="{% url 'question_edit' question.pk %}?next=block" class="edit-link">Edit / Complete</a>
+                        {% endif %}
                     </div>
-                    <div class="question-text">{{ question.question }}</div>
+                    
+                    {% if item.question_img_exists %}
+                        <div class="question-image">
+                            <img src="{{ item.question_img_url }}" alt="Question image">
+                        </div>
+                    {% endif %}
+                    
+                    <div class="question-text">{{ question.text }}</div>
                     
                     <div class="options">
-                        {% for key, value in question.options.items %}
-                            <label class="option-label">
-                                <input type="radio" 
-                                       name="question_{{ question.id }}" 
-                                       value="{{ key }}" 
-                                       required>
-                                <span class="option-letter">{{ key }}.</span> {{ value }}
-                            </label>
-                        {% endfor %}
+                        <label class="option-label">
+                            <input type="radio" 
+                                   name="question_{{ question.qid }}" 
+                                   value="a" 
+                                   required>
+                            <span class="option-letter">a.</span>
+                            {% if item.option_a_exists %}
+                                <img src="{{ item.option_a_url }}" alt="Option A" class="option-image">
+                            {% endif %}
+                            <span class="option-text">{{ question.option_a }}</span>
+                        </label>
+                        
+                        <label class="option-label">
+                            <input type="radio" 
+                                   name="question_{{ question.qid }}" 
+                                   value="b" 
+                                   required>
+                            <span class="option-letter">b.</span>
+                            {% if item.option_b_exists %}
+                                <img src="{{ item.option_b_url }}" alt="Option B" class="option-image">
+                            {% endif %}
+                            <span class="option-text">{{ question.option_b }}</span>
+                        </label>
+                        
+                        <label class="option-label">
+                            <input type="radio" 
+                                   name="question_{{ question.qid }}" 
+                                   value="c" 
+                                   required>
+                            <span class="option-letter">c.</span>
+                            {% if item.option_c_exists %}
+                                <img src="{{ item.option_c_url }}" alt="Option C" class="option-image">
+                            {% endif %}
+                            <span class="option-text">{{ question.option_c }}</span>
+                        </label>
                     </div>
                 </div>
+                {% endwith %}
             {% endfor %}
             
             <div class="submit-container">

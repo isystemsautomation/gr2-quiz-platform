@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Question - GR2 Quiz Platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>GR2 Quiz Platform</h1>
+            <div class="nav-links">
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>Edit Question</h2>
+        
+        <div class="question-display">
+            <p><strong>Question ID:</strong> {{ question.qid }}</p>
+            <p><strong>Subject:</strong> {{ question.get_subject_display }}</p>
+            <p><strong>Block:</strong> {{ question.block_number }}</p>
+            <p><strong>Question:</strong> {{ question.text }}</p>
+        </div>
+        
+        <form method="post" class="edit-form">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="correct">Correct Answer:</label>
+                {% if question.correct and not user.is_superuser %}
+                    <input type="text" value="{{ question.correct|upper }}" disabled>
+                    <input type="hidden" name="correct" value="{{ question.correct }}">
+                    <small>Current answer: {{ question.correct|upper }}. Only superusers can change existing answers.</small>
+                {% else %}
+                    <select name="correct" id="correct" {% if not question.correct %}required{% endif %}>
+                        <option value="">-- Select --</option>
+                        <option value="a" {% if question.correct == 'a' %}selected{% endif %}>A</option>
+                        <option value="b" {% if question.correct == 'b' %}selected{% endif %}>B</option>
+                        <option value="c" {% if question.correct == 'c' %}selected{% endif %}>C</option>
+                    </select>
+                    {% if not question.correct %}
+                        <small>This question is missing a correct answer. Please provide one.</small>
+                    {% endif %}
+                {% endif %}
+            </div>
+            
+            <div class="form-group">
+                <label for="explanation">Explanation:</label>
+                {% if question.explanation and not user.is_superuser %}
+                    <textarea rows="4" disabled>{{ question.explanation }}</textarea>
+                    <input type="hidden" name="explanation" value="{{ question.explanation }}">
+                    <small>Explanation exists. Only superusers can edit existing explanations.</small>
+                {% else %}
+                    <textarea name="explanation" id="explanation" rows="4">{{ question.explanation }}</textarea>
+                    {% if not question.explanation %}
+                        <small>This question is missing an explanation. Please provide one.</small>
+                    {% endif %}
+                {% endif %}
+            </div>
+            
+            {% if user.is_superuser %}
+            <div class="form-group">
+                <label for="image_base">Image Base Name (optional):</label>
+                <input type="text" name="image_base" id="image_base" value="{{ question.image_base }}" placeholder="e.g., q123 or custom/q123">
+                <small>Leave empty to use default pattern (q{{ question.qid }}). Base name without extension.</small>
+            </div>
+            {% endif %}
+            
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <a href="{% url 'block_take' question.subject question.block_number %}" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

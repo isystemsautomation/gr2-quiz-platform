@@ -6,10 +6,11 @@ from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
-from django.db.models import Max
+from django.db.models import Max, Q
+from django.utils import timezone
 
-from .models import BlockAttempt
-from .loader import list_subjects, get_blocks, get_block_questions
+from .models import BlockAttempt, Question
+from .utils import get_question_image_url, get_option_image_url
 
 
 def index(request):
@@ -17,6 +18,15 @@ def index(request):
     if request.user.is_authenticated:
         return redirect('dashboard')
     return redirect('login')
+
+
+def list_subjects():
+    """Returns list of subject IDs and titles."""
+    return [
+        {'id': 'electrotehnica', 'title': 'Electrotehnică'},
+        {'id': 'legislatie-gr-2', 'title': 'Legislație GR. 2'},
+        {'id': 'norme-tehnice-gr-2', 'title': 'Norme Tehnice GR. 2'},
+    ]
 
 
 @login_required
@@ -27,7 +37,9 @@ def dashboard(request):
     for subject_info in list_subjects():
         subject_id = subject_info['id']
         subject_title = subject_info['title']
-        blocks = get_blocks(subject_id)
+        
+        # Get blocks from database
+        blocks = Question.objects.filter(subject=subject_id).values_list('block_number', flat=True).distinct().order_by('block_number')
         
         # Get last attempt for each block
         block_data = []
@@ -74,10 +86,13 @@ def block_take(request, subject, block_number):
     if subject not in valid_subjects:
         raise Http404("Subject not found")
     
-    # Get questions for this block
-    questions = get_block_questions(subject, block_number)
+    # Get questions for this block from database
+    questions = Question.objects.filter(
+        subject=subject,
+        block_number=block_number
+    ).order_by('qid')
     
-    if not questions:
+    if not questions.exists():
         raise Http404("Block not found")
     
     # Get subject title
@@ -86,11 +101,36 @@ def block_take(request, subject, block_number):
         subject
     )
     
+    # Prepare questions with image URLs
+    questions_data = []
+    for question in questions:
+        # Check if question can be edited by this user
+        can_edit = (not question.correct or not question.explanation) or request.user.is_superuser
+        
+        # Get image URLs
+        question_img_exists, question_img_url = get_question_image_url(question, subject)
+        option_a_exists, option_a_url = get_option_image_url(question, subject, 1)
+        option_b_exists, option_b_url = get_option_image_url(question, subject, 2)
+        option_c_exists, option_c_url = get_option_image_url(question, subject, 3)
+        
+        questions_data.append({
+            'question': question,
+            'can_edit': can_edit,
+            'question_img_exists': question_img_exists,
+            'question_img_url': question_img_url,
+            'option_a_exists': option_a_exists,
+            'option_a_url': option_a_url,
+            'option_b_exists': option_b_exists,
+            'option_b_url': option_b_url,
+            'option_c_exists': option_c_exists,
+            'option_c_url': option_c_url,
+        })
+    
     return render(request, 'quiz/block_take.html', {
         'subject': subject,
         'subject_title': subject_title,
         'block_number': block_number,
-        'questions': questions,
+        'questions': questions_data,
     })
 
 
@@ -103,10 +143,13 @@ def block_submit(request, subject, block_number):
     if subject not in valid_subjects:
         raise Http404("Subject not found")
     
-    # Get questions for this block
-    questions = get_block_questions(subject, block_number)
+    # Get questions for this block from database
+    questions = Question.objects.filter(
+        subject=subject,
+        block_number=block_number
+    ).order_by('qid')
     
-    if not questions:
+    if not questions.exists():
         raise Http404("Block not found")
     
     # Grade the quiz
@@ -115,9 +158,9 @@ def block_submit(request, subject, block_number):
     results = []
     
     for question in questions:
-        q_id = str(question['id'])
+        q_id = str(question.qid)
         user_answer = request.POST.get(f'question_{q_id}')
-        correct_answer = question.get('correct')
+        correct_answer = question.correct
         
         # Skip ungradable questions (correct is null)
         if correct_answer is None:
@@ -126,7 +169,7 @@ def block_submit(request, subject, block_number):
                 'user_answer': user_answer,
                 'correct_answer': None,
                 'is_correct': None,
-                'explanation': question.get('explanation', ''),
+                'explanation': question.explanation,
             })
             continue
         
@@ -141,7 +184,7 @@ def block_submit(request, subject, block_number):
             'user_answer': user_answer,
             'correct_answer': correct_answer,
             'is_correct': is_correct,
-            'explanation': question.get('explanation', ''),
+            'explanation': question.explanation,
         })
     
     # Calculate percentage
@@ -169,5 +212,49 @@ def block_submit(request, subject, block_number):
         'block_number': block_number,
         'attempt': attempt,
         'results': results,
+    })
+
+
+@login_required
+def question_edit(request, pk):
+    """Edit a question (for normal users to fill missing data, or superuser to edit anything)."""
+    question = get_object_or_404(Question, pk=pk)
+    
+    # Check if user can edit
+    can_edit = (not question.correct or not question.explanation) or request.user.is_superuser
+    if not can_edit:
+        return redirect('dashboard')
+    
+    if request.method == 'POST':
+        # Update question
+        if not question.correct and request.POST.get('correct'):
+            question.correct = request.POST.get('correct')
+        elif request.user.is_superuser:
+            # Superuser can set or clear correct answer
+            correct_val = request.POST.get('correct', '').strip()
+            question.correct = correct_val if correct_val else None
+        
+        if not question.explanation and request.POST.get('explanation'):
+            question.explanation = request.POST.get('explanation', '')
+        elif request.user.is_superuser:
+            question.explanation = request.POST.get('explanation', '')
+        
+        if request.user.is_superuser:
+            question.image_base = request.POST.get('image_base', '').strip()
+        
+        question.edited_by = request.user
+        question.edited_at = timezone.now()
+        question.save()
+        
+        # Redirect back to block page or dashboard
+        redirect_to = request.GET.get('next', 'dashboard')
+        if redirect_to == 'block':
+            return redirect('block_take', subject=question.subject, block_number=question.block_number)
+        return redirect('dashboard')
+    
+    # GET request - show edit form
+    return render(request, 'quiz/question_edit.html', {
+        'question': question,
+        'subject': question.subject,
     })
 
