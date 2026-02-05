@@ -68,7 +68,7 @@
             <div class="form-group">
                 <label for="image_base">Image Base Name (optional):</label>
                 <input type="text" name="image_base" id="image_base" value="{{ question.image_base }}" placeholder="e.g., q123 or custom/q123">
-                <small>Leave empty to use default pattern (q{{ question.qid }}). Base name without extension.</small>
+                <small>Leave empty to use default pattern ({% if question.subject == 'electrotehnica' %}qe{% elif question.subject == 'legislatie-gr-2' %}ql{% elif question.subject == 'norme-tehnice-gr-2' %}qn{% endif %}{{ question.qid }}). Base name without extension.</small>
             </div>
             {% endif %}
             

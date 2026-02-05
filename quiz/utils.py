@@ -17,6 +17,9 @@ def check_static_file_exists(relative_path):
     Returns:
         tuple: (exists: bool, url: str)
     """
+    # Normalize path separators
+    relative_path = relative_path.replace('\\', '/')
+    
     # Try to find the file using Django's staticfiles finders
     found_path = find(relative_path)
     
@@ -32,7 +35,29 @@ def check_static_file_exists(relative_path):
             url = f"{settings.STATIC_URL}{relative_path}"
             return True, url
     
+    # Additional fallback: check in BASE_DIR/static/
+    base_dir = Path(settings.BASE_DIR)
+    static_path = base_dir / 'static' / relative_path
+    if static_path.exists():
+        url = f"{settings.STATIC_URL}{relative_path}"
+        return True, url
+    
     return False, None
+
+
+def get_image_prefix(subject):
+    """
+    Get the image prefix based on subject.
+    qe = electrotehnica
+    ql = legislatie-gr-2
+    qn = norme-tehnice-gr-2
+    """
+    prefix_map = {
+        'electrotehnica': 'qe',
+        'legislatie-gr-2': 'ql',
+        'norme-tehnice-gr-2': 'qn',
+    }
+    return prefix_map.get(subject, 'q')
 
 
 def get_question_image_url(question, subject):
@@ -42,7 +67,14 @@ def get_question_image_url(question, subject):
     Returns:
         tuple: (exists: bool, url: str or None)
     """
-    base = question.image_base if question.image_base else f"q{question.qid}"
+    if question.image_base:
+        # Custom image base provided
+        base = question.image_base
+    else:
+        # Use subject prefix: qe, ql, or qn
+        prefix = get_image_prefix(subject)
+        base = f"{prefix}{question.qid}"
+    
     relative_path = f"img/{subject}/{base}.png"
     exists, url = check_static_file_exists(relative_path)
     return exists, url if exists else None
@@ -56,7 +88,14 @@ def get_option_image_url(question, subject, option_number):
     Returns:
         tuple: (exists: bool, url: str or None)
     """
-    base = question.image_base if question.image_base else f"q{question.qid}"
+    if question.image_base:
+        # Custom image base provided
+        base = question.image_base
+    else:
+        # Use subject prefix: qe, ql, or qn
+        prefix = get_image_prefix(subject)
+        base = f"{prefix}{question.qid}"
+    
     relative_path = f"img/{subject}/{base}_{option_number}.png"
     exists, url = check_static_file_exists(relative_path)
     return exists, url if exists else None

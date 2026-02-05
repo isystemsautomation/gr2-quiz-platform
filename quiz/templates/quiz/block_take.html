@@ -34,7 +34,7 @@
                         {% endif %}
                     </div>
                     
-                    {% if item.question_img_exists %}
+                    {% if item.question_img_exists and item.question_img_url %}
                         <div class="question-image">
                             <img src="{{ item.question_img_url }}" alt="Question image">
                         </div>
@@ -49,7 +49,7 @@
                                    value="a" 
                                    required>
                             <span class="option-letter">a.</span>
-                            {% if item.option_a_exists %}
+                            {% if item.option_a_exists and item.option_a_url %}
                                 <img src="{{ item.option_a_url }}" alt="Option A" class="option-image">
                             {% endif %}
                             <span class="option-text">{{ question.option_a }}</span>
@@ -61,7 +61,7 @@
                                    value="b" 
                                    required>
                             <span class="option-letter">b.</span>
-                            {% if item.option_b_exists %}
+                            {% if item.option_b_exists and item.option_b_url %}
                                 <img src="{{ item.option_b_url }}" alt="Option B" class="option-image">
                             {% endif %}
                             <span class="option-text">{{ question.option_b }}</span>
@@ -73,7 +73,7 @@
                                    value="c" 
                                    required>
                             <span class="option-letter">c.</span>
-                            {% if item.option_c_exists %}
+                            {% if item.option_c_exists and item.option_c_url %}
                                 <img src="{{ item.option_c_url }}" alt="Option C" class="option-image">
                             {% endif %}
                             <span class="option-text">{{ question.option_c }}</span>
