@@ -59,3 +59,22 @@ class BlockAttempt(models.Model):
     def __str__(self):
         return f"{self.user.username} - {self.subject} Block {self.block_number}: {self.score}/{self.total}"
 
+
+class BlockNote(models.Model):
+    """
+    Personal note per user / subject / block.
+    Visible only to the owner. Used for \"my comments\" on a block.
+    """
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=50, choices=Question.SUBJECT_CHOICES)
+    block_number = models.PositiveIntegerField()
+    note = models.TextField(blank=True, default="")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = [['user', 'subject', 'block_number']]
+        ordering = ['user', 'subject', 'block_number']
+
+    def __str__(self):
+        return f"Note {self.user.username} {self.subject} B{self.block_number}"
+

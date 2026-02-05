@@ -27,6 +27,18 @@
                 <h2 class="page-title">{{ subject_title }} - Bloc {{ block_number }}</h2>
             </div>
 
+            <form method="post" action="{% url 'block_note' subject block_number %}" class="block-note-form" style="margin-bottom: 2rem;">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="block_note">Notă personală pentru acest bloc (vizibilă doar pentru tine):</label>
+                    <textarea name="note" id="block_note" rows="3">{{ block_note }}</textarea>
+                    <small>Poți salva observații sau planuri de lucru pentru acest bloc. Aceste informații nu sunt vizibile pentru alți utilizatori.</small>
+                </div>
+                <div style="text-align: right; margin-top: 0.5rem;">
+                    <button type="submit" class="btn btn-secondary">Salvează nota</button>
+                </div>
+            </form>
+
             <form method="post" action="{% url 'block_submit' subject block_number %}">
                 {% csrf_token %}
 
@@ -35,9 +47,7 @@
                     <div class="question-card">
                         <div class="question-header">
                             <strong>Întrebarea {{ forloop.counter }}</strong>
-                            {% if item.can_edit %}
-                                <a href="{% url 'question_edit' question.pk %}?next=block" class="edit-link">Edit / Completează</a>
-                            {% endif %}
+                            <a href="{% url 'question_edit' question.pk %}?next=block" class="edit-link">Edit / Completează</a>
                         </div>
 
                         {% if item.question_img_exists and item.question_img_url %}

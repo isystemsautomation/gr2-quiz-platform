@@ -34,6 +34,13 @@
                 </div>
             </div>
 
+            {% if block_note and block_note.note %}
+                <div class="question-display" style="margin-bottom: 2rem;">
+                    <p><strong>Nota mea pentru acest bloc:</strong></p>
+                    <p>{{ block_note.note|linebreaksbr }}</p>
+                </div>
+            {% endif %}
+
             <div class="results-list">
                 {% for result in results %}
                     <div class="question-result {% if result.is_correct == True %}result-correct{% elif result.is_correct == False %}result-incorrect{% else %}result-ungradable{% endif %}">

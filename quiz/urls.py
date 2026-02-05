@@ -6,6 +6,7 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name='dashboard'),
     path('subject/<str:subject>/block/<int:block_number>/', views.block_take, name='block_take'),
     path('subject/<str:subject>/block/<int:block_number>/submit/', views.block_submit, name='block_submit'),
+     path('subject/<str:subject>/block/<int:block_number>/note/', views.block_note_save, name='block_note'),
     path('question/<int:pk>/edit/', views.question_edit, name='question_edit'),
 ]
 

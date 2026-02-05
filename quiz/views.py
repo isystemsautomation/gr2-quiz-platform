@@ -8,8 +8,9 @@ from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 from django.db.models import Max, Q
 from django.utils import timezone
+from django.contrib import messages
 
-from .models import BlockAttempt, Question
+from .models import BlockAttempt, Question, BlockNote
 from .utils import get_question_image_url, get_option_image_url
 
 
@@ -101,6 +102,14 @@ def block_take(request, subject, block_number):
         subject
     )
     
+    # Personal note for this block (per user)
+    note_obj = BlockNote.objects.filter(
+        user=request.user,
+        subject=subject,
+        block_number=block_number,
+    ).first()
+    block_note = note_obj.note if note_obj else ""
+
     # Prepare questions with image URLs
     questions_data = []
     for question in questions:
@@ -131,6 +140,7 @@ def block_take(request, subject, block_number):
         'subject_title': subject_title,
         'block_number': block_number,
         'questions': questions_data,
+        'block_note': block_note,
     })
 
 
@@ -212,6 +222,11 @@ def block_submit(request, subject, block_number):
         'block_number': block_number,
         'attempt': attempt,
         'results': results,
+        'block_note': BlockNote.objects.filter(
+            user=request.user,
+            subject=subject,
+            block_number=block_number,
+        ).first(),
     })
 
 
@@ -226,6 +241,13 @@ def question_edit(request, pk):
         return redirect('dashboard')
     
     if request.method == 'POST':
+        # Optimistic locking: prevent overwriting newer edits
+        posted_version = request.POST.get('version', '')
+        current_version = question.edited_at.isoformat() if question.edited_at else ''
+        if posted_version and posted_version != current_version and not request.user.is_superuser:
+            messages.error(request, "Întrebarea a fost modificată între timp de un alt utilizator. Te rugăm să reîncarci pagina înainte de a salva din nou.")
+            return redirect('question_edit', pk=question.pk)
+
         # Update question
         if not question.correct and request.POST.get('correct'):
             question.correct = request.POST.get('correct')
@@ -256,5 +278,30 @@ def question_edit(request, pk):
     return render(request, 'quiz/question_edit.html', {
         'question': question,
         'subject': question.subject,
+        'version': question.edited_at.isoformat() if question.edited_at else '',
     })
+
+
+@login_required
+@require_http_methods(["POST"])
+def block_note_save(request, subject, block_number):
+    """Save or update personal note for a block (per user)."""
+    # Validate subject
+    valid_subjects = [s['id'] for s in list_subjects()]
+    if subject not in valid_subjects:
+        raise Http404("Subject not found")
+
+    note_text = request.POST.get('note', '').strip()
+
+    note_obj, _ = BlockNote.objects.get_or_create(
+        user=request.user,
+        subject=subject,
+        block_number=block_number,
+    )
+    note_obj.note = note_text
+    note_obj.save()
+
+    messages.success(request, "Nota pentru acest bloc a fost salvată.")
+    # Redirect back to block page
+    return redirect('block_take', subject=subject, block_number=block_number)
 
