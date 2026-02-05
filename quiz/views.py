@@ -113,6 +113,12 @@ def block_take(request, subject, block_number):
         option_b_exists, option_b_url = get_option_image_url(question, subject, 2)
         option_c_exists, option_c_url = get_option_image_url(question, subject, 3)
         
+        # Debug: log first question's image status
+        if question == questions.first() and settings.DEBUG:
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.debug(f"Q{question.qid}: question_img_exists={question_img_exists}, url={question_img_url}")
+        
         questions_data.append({
             'question': question,
             'can_edit': can_edit,

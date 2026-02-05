@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +8,42 @@
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1>GR2 Quiz Platform</h1>
-            <div class="nav-links">
+    <header class="header">
+        <div class="header-container">
+            <a href="{% url 'dashboard' %}" class="header-logo">
+                <img src="{% static 'img/logo.png' %}" alt="GR2 Quiz Platform Logo">
+                <span class="header-logo-text">GR2 Quiz Platform</span>
+            </a>
+            <nav class="header-nav">
                 <a href="{% url 'dashboard' %}">Dashboard</a>
                 <a href="{% url 'logout' %}">Logout</a>
-            </div>
+            </nav>
         </div>
-    </nav>
-    
-    <div class="container">
-        <h2>Welcome, {{ user.username }}!</h2>
-        
+    </header>
+
+    <div class="main-container">
+        <div class="card">
+            <h1 class="page-title">Bun venit, {{ user.username }}!</h1>
+        </div>
+
+        <div class="instructions-card">
+            <h3>📋 Instrucțiuni</h3>
+            <ul>
+                <li>Alege disciplina și apoi un bloc de întrebări.</li>
+                <li>Fiecare bloc conține ~20 întrebări (ultimul poate avea mai puține).</li>
+                <li>Culoarea blocului reprezintă ultima încercare: Alb = neînceput, Roșu = 0–17 corecte, Galben = 18–19 corecte, Verde = toate corecte.</li>
+                <li>După trimitere, vei vedea răspunsurile și explicațiile (dacă sunt completate).</li>
+                <li>Recomandare: lucrează consecvent blocurile până obții Verde.</li>
+            </ul>
+        </div>
+
         {% for subject in subjects %}
-            <div class="subject-section">
-                <h3>{{ subject.title }}</h3>
+            <div class="card subject-section">
+                <h3 class="section-title">{{ subject.title }}</h3>
                 <div class="blocks-grid">
                     {% for block in subject.blocks %}
                         <a href="{% url 'block_take' subject.id block.number %}" class="block-tile {{ block.color_class }}">
-                            <div class="block-number">Block {{ block.number }}</div>
+                            <div class="block-number">Bloc {{ block.number }}</div>
                             <div class="block-score">
                                 {% if block.last_attempt %}
                                     {{ block.last_attempt.score }}/{{ block.last_attempt.total }}
@@ -43,4 +59,3 @@
     </div>
 </body>
 </html>
-

@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - GR2 Quiz Platform</title>
+    <title>Înregistrare - GR2 Quiz Platform</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
 <body>
+    <header class="header">
+        <div class="header-container">
+            <a href="{% url 'login' %}" class="header-logo">
+                <img src="{% static 'img/logo.png' %}" alt="GR2 Quiz Platform Logo">
+                <span class="header-logo-text">GR2 Quiz Platform</span>
+            </a>
+            <nav class="header-nav">
+                <a href="#ajutor" onclick="document.getElementById('ajutor').scrollIntoView({behavior: 'smooth'}); return false;">Ajutor</a>
+            </nav>
+        </div>
+    </header>
+
     <div class="auth-container">
-        <div class="auth-box">
-            <h1>GR2 Quiz Platform</h1>
-            <h2>Register</h2>
-            
+        <div class="auth-card">
+            <div class="auth-logo">
+                <img src="{% static 'img/logo.png' %}" alt="GR2 Quiz Platform Logo">
+                <h1 class="auth-title">GR2 Quiz Platform</h1>
+                <p class="auth-subtitle">Înregistrare</p>
+            </div>
+
+            <div class="auth-instructions" id="ajutor">
+                Creează un cont nou pentru a accesa platforma de quiz. Rezultatele tale vor fi salvate automat.
+            </div>
+
             {% if form.errors %}
                 <div class="error-message">
                     {% for field in form %}
@@ -25,7 +44,7 @@
                     {% endfor %}
                 </div>
             {% endif %}
-            
+
             <form method="post">
                 {% csrf_token %}
                 <div class="form-group">
@@ -35,7 +54,7 @@
                         <small>{{ form.username.help_text }}</small>
                     {% endif %}
                 </div>
-                
+
                 <div class="form-group">
                     <label for="id_password1">Password:</label>
                     {{ form.password1 }}
@@ -43,23 +62,22 @@
                         <small>{{ form.password1.help_text }}</small>
                     {% endif %}
                 </div>
-                
+
                 <div class="form-group">
-                    <label for="id_password2">Password confirmation:</label>
+                    <label for="id_password2">Confirmă parola:</label>
                     {{ form.password2 }}
                     {% if form.password2.help_text %}
                         <small>{{ form.password2.help_text }}</small>
                     {% endif %}
                 </div>
-                
-                <button type="submit" class="btn btn-primary">Register</button>
+
+                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Înregistrează-te</button>
             </form>
-            
+
             <p class="auth-link">
-                Already have an account? <a href="{% url 'login' %}">Login here</a>
+                Ai deja cont? <a href="{% url 'login' %}" class="text-link">Autentifică-te aici</a>
             </p>
         </div>
     </div>
 </body>
 </html>
-
