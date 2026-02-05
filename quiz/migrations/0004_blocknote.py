@@ -7,8 +7,9 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        # Depend on the existing 0003 migration that already exists in this project
-        ("quiz", "0003_rename_quiz_questi_subject_123456_idx_quiz_questi_subject_1ad98e_idx"),
+        # Chain after 0003_blocknote (which is now an empty migration),
+        # so there is a single leaf in the migration graph.
+        ("quiz", "0003_blocknote"),
     ]
 
     operations = [
