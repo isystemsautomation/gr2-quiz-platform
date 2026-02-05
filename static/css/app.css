@@ -565,6 +565,17 @@ body {
     font-weight: 500;
 }
 
+.status-ok-tag {
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    background-color: #ecfdf3;
+    color: var(--success-green);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 .options {
     display: flex;
     flex-direction: column;

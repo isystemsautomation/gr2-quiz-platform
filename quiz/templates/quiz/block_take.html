@@ -61,12 +61,20 @@
                         <div class="question-text">{{ question.text }}</div>
 
                         <div class="question-meta">
-                            {% if not item.has_answer %}
-                                <span class="missing-tag">Lipsă răspuns.</span>
-                            {% endif %}
-                            {% if not item.has_explanation %}
-                                <span class="missing-tag">Lipsă explicație.</span>
-                            {% endif %}
+                            <span class="{% if item.has_answer %}status-ok-tag{% else %}missing-tag{% endif %}">
+                                {% if item.has_answer %}
+                                    Răspuns existent.
+                                {% else %}
+                                    Lipsă răspuns.
+                                {% endif %}
+                            </span>
+                            <span class="{% if item.has_explanation %}status-ok-tag{% else %}missing-tag{% endif %}">
+                                {% if item.has_explanation %}
+                                    Explicație existentă.
+                                {% else %}
+                                    Lipsă explicație.
+                                {% endif %}
+                            </span>
                         </div>
 
                         <div class="options">
