@@ -1006,7 +1006,7 @@
         "c": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — limitarea posibilităţilor de producere a unui defect în instalaţie;",
+      "explanation": "",
       "block": 5
     },
     {
@@ -1066,7 +1066,7 @@
         "c": "siguranţa fuzibilă realizează protecţia la supratensiuni;"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — siguranţa fuzibilă realizează protecţia la scurtcircuit;",
+      "explanation": "",
       "block": 5
     },
     {
@@ -1438,7 +1438,7 @@
         "c": "se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — se poate utiliza numai pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+      "explanation": "",
       "block": 6
     },
     {
@@ -1450,7 +1450,7 @@
         "c": "se poate utiliza numai pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — se poate utiliza numai pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune.",
+      "explanation": "",
       "block": 7
     },
     {
@@ -1498,7 +1498,7 @@
         "c": "separatorul de bare, separatorul de linie, întreruptorul ."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — separatorul de linie, separatorul de bare, întreruptorul;",
+      "explanation": "",
       "block": 7
     },
     {
@@ -1522,7 +1522,7 @@
         "c": "întreruptorul, separatorul de  linie, separatorul de bare."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — întreruptorul, separatorul de  linie, separatorul de bare.",
+      "explanation": "",
       "block": 7
     },
     {
@@ -1966,7 +1966,7 @@
         "c": "da, separatorul S2"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — da, separatorul S2",
+      "explanation": "",
       "block": 9
     },
     {
@@ -2914,7 +2914,7 @@
         "c": "izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — numai protecţia în caz de scurtcircuit;",
+      "explanation": "",
       "block": 13
     },
     {
@@ -3106,7 +3106,7 @@
         "c": "asigură numai izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+      "explanation": "",
       "block": 13
     },
     {
@@ -3130,7 +3130,7 @@
         "c": "nu asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+      "explanation": "",
       "block": 14
     },
     {

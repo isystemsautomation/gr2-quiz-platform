@@ -60,6 +60,15 @@
 
                         <div class="question-text">{{ question.text }}</div>
 
+                        <div class="question-meta">
+                            {% if not item.has_answer %}
+                                <span class="missing-tag">Lipsă răspuns.</span>
+                            {% endif %}
+                            {% if not item.has_explanation %}
+                                <span class="missing-tag">Lipsă explicație.</span>
+                            {% endif %}
+                        </div>
+
                         <div class="options">
                             <label class="option-label">
                                 <input type="radio" 

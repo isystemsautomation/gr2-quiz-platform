@@ -119,7 +119,9 @@ def block_take(request, subject, block_number):
     questions_data = []
     for question in questions:
         # Check if question can be edited by this user
-        can_edit = (not question.correct or not question.explanation) or request.user.is_superuser
+        has_answer = bool(question.correct)
+        has_explanation = bool(question.explanation and question.explanation.strip())
+        can_edit = (not has_answer or not has_explanation) or request.user.is_superuser
         
         # Get image URLs
         question_img_exists, question_img_url = get_question_image_url(question, subject)
@@ -130,6 +132,8 @@ def block_take(request, subject, block_number):
         questions_data.append({
             'question': question,
             'can_edit': can_edit,
+            'has_answer': has_answer,
+            'has_explanation': has_explanation,
             'question_img_exists': question_img_exists,
             'question_img_url': question_img_url,
             'option_a_exists': option_a_exists,
