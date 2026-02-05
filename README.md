@@ -141,6 +141,42 @@ gr2-quiz-platform/
      - Your personal note for that block (if filled)
    - The dashboard is updated with the new **last attempt** for that block.
 
+---
+
+## Usage – admin / superuser
+
+As a superuser you have full control over the content and configuration of the quiz.
+
+### Admin panel
+
+1. Log in with your superuser credentials.
+2. Open `/admin/` in your browser.
+3. You can manage:
+   - `Question` – all questions, answers, explanations and image settings
+   - `BlockAttempt` – attempts per user/block (read‑only for auditing)
+   - `BlockNote` – personal notes per user/block (optional)
+
+For each **Question** you can edit:
+
+- `subject`, `qid`, `block_number`
+- `text`, `option_a`, `option_b`, `option_c`
+- `correct` (a/b/c)
+- `explanation`
+- `image_base` – base filename for images (e.g. `qe23`)
+
+### Importing / exporting questions
+
+- Import (seed or update empty fields from JSON):
+  ```bash
+  python manage.py import_questions
+  ```
+- Export current database questions back into `quiz_data/*.json`:
+  ```bash
+  python manage.py export_questions
+  ```
+
+The database is the main source of truth; JSON is mainly for backup / sync / external editing.
+
 ## Database
 
 The application uses SQLite by default. The database file (`db.sqlite3`) will be created automatically when you run migrations.
@@ -157,3 +193,45 @@ The application uses SQLite by default. The database file (`db.sqlite3`) will be
 - Blocks are assigned from the JSON import based on `block` number or sequential by 20 if missing
 - The dashboard shows the **last attempt** per block, not the best attempt
 - JSON files are seed data; the **database is the source of truth** for questions and edits
+
+---
+
+## Creator – ISYSTEMS AUTOMATION
+
+ISYSTEMS AUTOMATION is an engineering company founded in 2007, engaged in the development of control systems and optimization of technological processes in energy, chemistry, and oil refining. The main goals of implementing the company's systems are to increase the efficiency of existing production by increasing productivity, reducing costs, and decreasing energy consumption, as well as improving the reliability and safety of the operated equipment.
+
+Our company conducts:
+
+- preliminary pre-project inspection;
+- development of design and estimate and/or working documentation;
+- installation or supervision of installation works;
+- commissioning works.
+
+ISYSTEMS AUTOMATION performs the design, production, and commissioning of:
+
+- automatic control systems (electrical and hydraulic) of various complexity categories;
+- emergency automation systems and incident recorders;
+- dispatch systems;
+- automated systems for technical and commercial resource accounting (electricity, water, air, steam, etc.).
+
+The company team brings together specialists in industrial automation, programmers, researchers, and test engineers, whose high qualification and experience ensure the successful implementation of modern technologies in the company's products, solutions, and services.
+
+Our specialists have experience with such control systems as:
+
+- ABB Industrial IT 800xA
+- Emerson Ovation
+- HIMA HIQuad
+- SIEMENS PCS7
+- SIEMENS TIA Portal
+- Yokogawa Centum
+
+The quality management system of ISYSTEMS AUTOMATION complies with ISO 9001 requirements and has been certified since 2009.
+
+ISYSTEMS AUTOMATION is also active in:
+
+- MES (Manufacturing Execution Systems) for real‑time production monitoring and optimization;
+- advanced controllers and optimization systems for power plants and CFB boilers;
+- smart home and building automation under the **HOMEMASTER / Home Master** brand;
+- engineering & consulting, protection systems, process control & electrical automation.
+
+© 2024 ISYSTEMS AUTOMATION S.R.L.
