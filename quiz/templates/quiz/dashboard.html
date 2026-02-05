@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - GR2 Quiz Platform</title>
+    <title>Dashboard - Chestionare Electricieni Grupa 2</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
@@ -11,8 +11,8 @@
     <header class="header">
         <div class="header-container">
             <a href="{% url 'dashboard' %}" class="header-logo">
-                <img src="{% static 'img/logo.png' %}" alt="GR2 Quiz Platform Logo">
-                <span class="header-logo-text">GR2 Quiz Platform</span>
+                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
+                <span class="header-logo-text">Platformă internă chestionare</span>
             </a>
             <nav class="header-nav">
                 <a href="{% url 'dashboard' %}">Dashboard</a>
@@ -22,19 +22,23 @@
     </header>
 
     <div class="main-container">
-        <div class="card">
-            <h1 class="page-title">Bun venit, {{ user.username }}!</h1>
-        </div>
-
         <div class="instructions-card">
-            <h3>📋 Instrucțiuni</h3>
+            <h3>Instrucțiuni</h3>
             <ul>
-                <li>Alege disciplina și apoi un bloc de întrebări.</li>
-                <li>Fiecare bloc conține ~20 întrebări (ultimul poate avea mai puține).</li>
+                <li>Selectează categoria (Grupa 2A sau Grupa 2B), apoi disciplina.</li>
+                <li>Lucrează blocurile pe rând. Fiecare bloc are ~20 întrebări (ultimul poate avea mai puține).</li>
                 <li>Culoarea blocului reprezintă ultima încercare: Alb = neînceput, Roșu = 0–17 corecte, Galben = 18–19 corecte, Verde = toate corecte.</li>
                 <li>După trimitere, vei vedea răspunsurile și explicațiile (dacă sunt completate).</li>
-                <li>Recomandare: lucrează consecvent blocurile până obții Verde.</li>
+                <li>Dacă lipsesc răspunsuri corecte/explicații, le poți completa (dacă funcția este activă).</li>
             </ul>
+        </div>
+
+        <div class="card" style="margin-top: 1rem; margin-bottom: 2rem;">
+            <h1 class="page-title" style="margin-bottom: 1rem; font-size: 2rem;">Dashboard</h1>
+            <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                <button type="button" class="btn btn-secondary" style="padding: 0.5rem 1.5rem; border-radius: 999px; font-size: 0.95rem; border-width: 1px;">Grupa 2A</button>
+                <button type="button" class="btn btn-secondary" style="padding: 0.5rem 1.5rem; border-radius: 999px; font-size: 0.95rem; border-width: 1px; opacity: 0.9;">Grupa 2B</button>
+            </div>
         </div>
 
         {% for subject in subjects %}

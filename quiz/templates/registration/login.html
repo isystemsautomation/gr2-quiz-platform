@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autentificare - GR2 Quiz Platform</title>
+    <title>Autentificare - Chestionare Electricieni Grupa 2</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
@@ -11,8 +11,8 @@
     <header class="header">
         <div class="header-container">
             <a href="{% url 'login' %}" class="header-logo">
-                <img src="{% static 'img/logo.png' %}" alt="GR2 Quiz Platform Logo">
-                <span class="header-logo-text">GR2 Quiz Platform</span>
+                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
+                <span class="header-logo-text">Platformă internă chestionare</span>
             </a>
             <nav class="header-nav">
                 <a href="#ajutor" onclick="document.getElementById('ajutor').scrollIntoView({behavior: 'smooth'}); return false;">Ajutor</a>
@@ -23,13 +23,13 @@
     <div class="auth-container">
         <div class="auth-card">
             <div class="auth-logo">
-                <img src="{% static 'img/logo.png' %}" alt="GR2 Quiz Platform Logo">
-                <h1 class="auth-title">GR2 Quiz Platform</h1>
+                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
+                <h1 class="auth-title">Chestionare Electricieni – Grupa 2</h1>
                 <p class="auth-subtitle">Autentificare</p>
             </div>
 
             <div class="auth-instructions" id="ajutor">
-                Autentifică-te cu userul primit de la administrator. Rezultatele pe blocuri se salvează automat în contul tău.
+                Poți să te autentifici cu contul tău sau să îți creezi unul nou. Rezultatele se salvează automat în cont.
             </div>
 
             {% if error %}
@@ -48,15 +48,15 @@
                     <input type="password" id="password" name="password" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Login</button>
+                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Autentificare</button>
             </form>
 
             <p class="auth-link">
-                Nu ai cont? <a href="{% url 'register' %}" class="text-link">Înregistrează-te aici</a>
+                Nu ai cont? <a href="{% url 'register' %}" class="text-link">Înregistrează-te</a>
             </p>
 
             <p class="help-text" style="text-align: center; margin-top: 1.5rem;">
-                Dacă ai uitat parola, contactează administratorul.
+                Dacă ai uitat parola, contactează administratorul intern sau creează un cont nou.
             </p>
         </div>
     </div>
