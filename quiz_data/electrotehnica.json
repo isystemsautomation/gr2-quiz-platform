@@ -10,7 +10,8 @@
         "c": "creste"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — creste"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
         "c": "compensarea curenţilor capacitivi"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — compensarea curenţilor capacitivi"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "c": "de magneţi permanenţi si de electromagneţi"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — de magneţi permanenţi si de electromagneţi"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 4,
@@ -43,7 +46,8 @@
         "c": "50 μF"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — 250 μF"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 5,
@@ -54,7 +58,8 @@
         "c": "N-L+1 ecuaţii distincte"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — L-N +1 ecuaţii distincte"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 6,
@@ -65,7 +70,8 @@
         "c": "reducerii pierderilor de energie pe linii."
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — creşterii continuităţii în alimentare;"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 7,
@@ -76,7 +82,8 @@
         "c": "de regulă, mai mari decât 1"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — cuprinse între 1 si 0"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 8,
@@ -87,7 +94,8 @@
         "c": "transformator de tensiune"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — transformator de tensiune"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 9,
@@ -98,7 +106,8 @@
         "c": "rezistorul"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — rezistorul"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 10,
@@ -109,7 +118,8 @@
         "c": "motoarele asincrone"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — motoarele asincrone"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 11,
@@ -120,7 +130,8 @@
         "c": "inductanţa mica"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — inductanţa mare"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 12,
@@ -131,7 +142,8 @@
         "c": "inducţia magnetică"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — prin: intensitatea câmpului electric"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 13,
@@ -142,7 +154,8 @@
         "c": "necesitatea unor amenajări speciale la instalare"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — necesitatea unor amenajări speciale la instalare"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 14,
@@ -153,7 +166,8 @@
         "c": "câmpul de inducţie electromagnetică"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — câmpul de inducţie electromagnetică"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 15,
@@ -164,7 +178,8 @@
         "c": "dupa punctele lor de racordare la barele statiei."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — atat inainte, cat si dupa punctele lor de racordare la barele statiei;"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 16,
@@ -175,7 +190,8 @@
         "c": "invers proporţionala cu rezistenta conductorului"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — direct proporţionala cu pătratul intensităţii curentului"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 17,
@@ -186,7 +202,8 @@
         "c": "egală cu de două ori cantitatea de electricitate cu care se încarcă fiecare condensator"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — aceeaşi cu care se încarcă fiecare element component"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 18,
@@ -197,7 +214,8 @@
         "c": "Cs=C"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — Cs=3 C"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 19,
@@ -208,7 +226,8 @@
         "c": "C"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — C/2"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 20,
@@ -219,7 +238,8 @@
         "c": "reducerea cheltuielilor de realizare a instalaţiilor."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — eliminarea totală a posibilităţii apariţiei unui scurtcircuit între faze;"
+      "explanation": "",
+      "block": 1
     },
     {
       "id": 21,
@@ -230,7 +250,8 @@
         "c": "ambele admit aceeaşi densitate de curent"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — cupru"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 22,
@@ -241,7 +262,8 @@
         "c": "inducţia electrică=sarcina x intensitatea câmpului electric"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — inducţia electrică = permitivitatea x intensitatea câmpului electric"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 23,
@@ -252,7 +274,8 @@
         "c": "reducerea investitiei in echiparea statiei."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — reducerea investitiei in echiparea statiei."
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 24,
@@ -263,7 +286,8 @@
         "c": "800 Wh"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — 400 Wh"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 25,
@@ -274,7 +298,8 @@
         "c": "creşterea capacităţii de rupere a întreruptoarelor."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — creşterea capacităţii de rupere a întreruptoarelor."
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 26,
@@ -285,7 +310,8 @@
         "c": "de inducţie electromagnetică"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — de inducţie electromagnetică"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 27,
@@ -296,7 +322,8 @@
         "c": "numai pentru staţii de conexiuni de medie tensiune până la 6o kV"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — pentru toate treptele de tensiune din reţelele de distribuţie"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 28,
@@ -307,7 +334,8 @@
         "c": "eliminarea totală a posibilităţii de producere a unui scurtcircuit între faze"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — securitate ridicată a persoanelor;"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 29,
@@ -318,7 +346,8 @@
         "c": "suma căderilor de tensiune            de-a lungul conturului"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — suma algebrică a curenţilor care străbat conturul"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 30,
@@ -329,7 +358,8 @@
         "c": "necesitatea unor amenajări speciale la instalare"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — o bună rezistenţă la foc;"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 31,
@@ -340,7 +370,8 @@
         "c": "creste de 1,73 ori"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — creste de 1,73 ori"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 32,
@@ -350,8 +381,9 @@
         "b": "numai  în scopul protejării personalului de exploatare;",
         "c": "protecţiei la supratensiuni"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — în scopul evitării extinderii avariilor;"
+      "correct": null,
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 33,
@@ -362,7 +394,8 @@
         "c": "compartimentul circuitelor secundare."
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — compartimentul aparatajului de comutaţie;"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 34,
@@ -373,7 +406,8 @@
         "c": "compartimentul circuitelor secundare."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — compartimentul de legătură cu reţeaua electrică;"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 35,
@@ -384,7 +418,8 @@
         "c": "oscilaţii ale rotorului"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — cuplul util"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 36,
@@ -395,7 +430,8 @@
         "c": "direct proporţională cu distanţa"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — invers proporţională cu pătratul distanţei"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 37,
@@ -406,7 +442,8 @@
         "c": "1/(RC)"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — RC"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 38,
@@ -417,7 +454,8 @@
         "c": "evitării extinderii avariilor."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — evitării extinderii avariilor."
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 39,
@@ -428,7 +466,8 @@
         "c": "53,4 A"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — 44 A"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 40,
@@ -439,7 +478,8 @@
         "c": "cu puterile reactive generate"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — cu tensiunea între faze"
+      "explanation": "",
+      "block": 2
     },
     {
       "id": 41,
@@ -450,7 +490,8 @@
         "c": "scade odată cu creşterea tensiunii"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — scade odată cu creşterea tensiunii"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 42,
@@ -461,7 +502,8 @@
         "c": "curent electric de deplasare (Maxwell)"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — curent electric de conducţie"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 43,
@@ -472,7 +514,8 @@
         "c": "nesinusoidal sau sinusoidal, depinde de natura elementelor neliniare"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — întotdeauna nesinusoidal"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 44,
@@ -483,7 +526,8 @@
         "c": "sinusoidal"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — mai puţin deformat decât tensiunea care i-a dat naştere"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 45,
@@ -494,7 +538,8 @@
         "c": "mai puţin deformat decât tensiune care i-a dat naştere"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — mult mai deformat decât tensiunea care i-a dat naştere"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 46,
@@ -505,7 +550,8 @@
         "c": "densitatea de curent este uniformă pe ambele părţi ale conductoarelor"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — densitatea de curent crește în părţile apropiate ale conductoarelor"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 47,
@@ -516,7 +562,8 @@
         "c": "S=ExH"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — S=ExH"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 48,
@@ -527,7 +574,8 @@
         "c": "un curent I/2"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — un curent - (minus) I"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 49,
@@ -538,7 +586,8 @@
         "c": "în fază cu curentul"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — defazată cu 90 de grade în urma curentului"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 50,
@@ -549,7 +598,8 @@
         "c": "reducerea puterii tranzitate"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — reducerea puterii tranzitate"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 51,
@@ -560,7 +610,8 @@
         "c": "solicitărilor mecanice"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — supratensiunilor"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 52,
@@ -571,7 +622,8 @@
         "c": "protecţiei împotriva supracurenţilor"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — protecţiei împotriva supratensiunilor"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 53,
@@ -582,7 +634,8 @@
         "c": "diferenţa de potenţial a unui condensator împărţită la n"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — suma diferenţelor de potenţial la bornele fiecărui condensator"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 54,
@@ -593,7 +646,8 @@
         "c": "raportul perioadelor lor este egal cu 1/2"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — raportul perioadelor lor este un număr întreg oarecare"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 55,
@@ -603,8 +657,9 @@
         "b": "au aceleaşi componente inverse (negative)",
         "c": "au aceleaşi componente homopolare (zero)"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — au numai aceleaşi componente directe (pozitive)"
+      "correct": null,
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 56,
@@ -615,7 +670,8 @@
         "c": "tensiunea de linie este egala cu ~1,73 x tensiunea de faza"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — tensiunea de linie este egala cu ~1,73 x tensiunea de faza"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 57,
@@ -626,7 +682,8 @@
         "c": "eliminarea distorsiunilor undelor de curent"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — încălzirea materialelor prin inducţie"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 58,
@@ -637,7 +694,8 @@
         "c": "capacităţii conductorului faţă de pământ"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — numai unor forţe electromotoare induse datorită variaţiei curentului"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 59,
@@ -648,7 +706,8 @@
         "c": "se poate transforma în energie luminoasa"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — este o energie electrica complementara, care serveşte la magnetizarea bobinajelor"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 60,
@@ -659,7 +718,8 @@
         "c": "Li"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — 1/2 Li2"
+      "explanation": "",
+      "block": 3
     },
     {
       "id": 61,
@@ -670,7 +730,8 @@
         "c": "2 q V"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — 1/2 q V"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 62,
@@ -681,7 +742,8 @@
         "c": "creste curentul de alimentare a instalaţiei"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — creste curentul de alimentare a instalaţiei"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 63,
@@ -692,7 +754,8 @@
         "c": "legea lui Laplace"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — legea conservării sarcinii electrice"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 64,
@@ -703,7 +766,8 @@
         "c": "Legea Joule -Lenz"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — a doua lege a lui Kirchhoff"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 65,
@@ -714,7 +778,8 @@
         "c": "o rezistenţă"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — o forţă"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 66,
@@ -725,7 +790,8 @@
         "c": "I = U - R"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — I = U / R"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 67,
@@ -736,7 +802,8 @@
         "c": "bobine înseriate"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — shunturi"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 68,
@@ -747,7 +814,8 @@
         "c": "condensatoare montate în paralel"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — rezistente adiţionale"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 69,
@@ -758,7 +826,8 @@
         "c": "valoarea numerică q/2"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — valoarea numerică q"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 70,
@@ -769,7 +838,8 @@
         "c": "reducerea curenţilor de scurtcircuit"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — reducerea pierderilor Corona"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 71,
@@ -780,7 +850,8 @@
         "c": "f = 60 p / n"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — f =n p / 60"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 72,
@@ -791,7 +862,8 @@
         "c": "legii circuitului magnetic"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — legii inducţiei electromagnetice"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 73,
@@ -802,7 +874,8 @@
         "c": "forţă magnetomotoare"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — forţă electromagnetică (Laplace)"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 74,
@@ -813,7 +886,8 @@
         "c": "forţă magnetomotoare"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — forţă electrodinamică"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 75,
@@ -824,7 +898,8 @@
         "c": "dependentă de modul în care este produs fluxul magnetic"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — direct proporţională cu variaţia în timp a fluxului magnetic"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 76,
@@ -835,7 +910,8 @@
         "c": "nu depinde de distanţa r dintre conductoare"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — este invers proporţională cu distanţa r dintre conductoare"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 77,
@@ -846,7 +922,8 @@
         "c": "F=q/E"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — F=qE"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 78,
@@ -857,7 +934,8 @@
         "c": "fazei"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — perioadei"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 79,
@@ -868,7 +946,8 @@
         "c": "forţa electrostatica"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — curenţii turbionari"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 80,
@@ -879,7 +958,8 @@
         "c": "pentru securitatea muncii"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — pentru securitatea muncii"
+      "explanation": "",
+      "block": 4
     },
     {
       "id": 81,
@@ -890,7 +970,8 @@
         "c": "un regim inadmisibil"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — un regim temporar admisibil"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 82,
@@ -901,7 +982,8 @@
         "c": "curenţii turbionari"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — fenomenul inducţiei electromagnetice"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 83,
@@ -912,7 +994,8 @@
         "c": "inducţia magnetică"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — inductanţă"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 84,
@@ -923,7 +1006,8 @@
         "c": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — limitarea posibilităţilor de producere a unui defect în instalaţie;"
+      "explanation": "Răspuns corect: A — limitarea posibilităţilor de producere a unui defect în instalaţie;",
+      "block": 5
     },
     {
       "id": 85,
@@ -933,8 +1017,9 @@
         "b": "localizarea unor eventuale scăpări de gaz, precum şi a unor defecte interne,",
         "c": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — numai limitarea posibilităţilor de producere a unui defect în instalaţie;"
+      "correct": null,
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 86,
@@ -945,7 +1030,8 @@
         "c": "numai energie reactivă"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — numai energie activă"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 87,
@@ -956,7 +1042,8 @@
         "c": "modulele fazorilor asociaţi tensiunilor şi curenţilor"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — valorile instantanee ale tensiunilor şi curenţilor"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 88,
@@ -967,7 +1054,8 @@
         "c": "amplasarea postului se face în zone aglomerate."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — amplasarea postului se face în zone aglomerate."
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 89,
@@ -978,7 +1066,8 @@
         "c": "siguranţa fuzibilă realizează protecţia la supratensiuni;"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — siguranţa fuzibilă realizează protecţia la scurtcircuit;"
+      "explanation": "Răspuns corect: B — siguranţa fuzibilă realizează protecţia la scurtcircuit;",
+      "block": 5
     },
     {
       "id": 90,
@@ -989,7 +1078,8 @@
         "c": "releele termice realizează protecţia la supratensiuni;"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — releele termice realizează protecţia la suprasarcină;"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 91,
@@ -1000,7 +1090,8 @@
         "c": "sistemul nu are are componentă simetrică directă (pozitivă)"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — sistemul nu are componentă simetrică homopolară (zero)"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 92,
@@ -1011,7 +1102,8 @@
         "c": "de 2 ori curentul de pornire la conexiunea triunghi"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — 1/3 din curentul de pornire la conexiunea triunghi"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 93,
@@ -1022,7 +1114,8 @@
         "c": "amplasarea postului se face în zone aglomerate."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — amplasarea postului se face în zone aglomerate."
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 94,
@@ -1033,7 +1126,8 @@
         "c": "cresc tensiunile pe fazele R si T, iar pe faza defecta S rămâne neschimbata"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — tensiunea pe fazele R si T creste la valoarea tensiunii de linie iar pe faza S se apropie de 0"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 95,
@@ -1044,7 +1138,8 @@
         "c": "ele autopornesc numai dacă au rotor în dublă colivie"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — ele autopornesc, indiferent de tipul constructiv al rotorului în scurtcircuit"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 96,
@@ -1055,7 +1150,8 @@
         "c": "scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 97,
@@ -1065,8 +1161,9 @@
         "b": "atunci când se doreşte micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;",
         "c": "atunci când se doreşte scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — numai atunci când se doreşte scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;"
+      "correct": null,
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 98,
@@ -1077,7 +1174,8 @@
         "c": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă."
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;"
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 99,
@@ -1087,8 +1185,9 @@
         "b": "în rezervă rece;",
         "c": "În funcţiune"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — în rezervă caldă;"
+      "correct": null,
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 100,
@@ -1098,8 +1197,9 @@
         "b": "stinge arcul electric care apare in întrerupătoare",
         "c": "asigura ungerea mecanismelor de acţionare"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — asigură doar izolarea părților sub tensiune între ele si fatã de masã"
+      "correct": null,
+      "explanation": "",
+      "block": 5
     },
     {
       "id": 101,
@@ -1110,7 +1210,8 @@
         "c": "nu sunt necesare circuite de cuplă transversală şi de ocolire"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — nu sunt necesare circuite de cuplă transversală şi de ocolire"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 102,
@@ -1121,7 +1222,8 @@
         "c": "scoaterea în revizie a unui întreruptor, fără întreruperea alimentării pe circuitul respectiv."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — scoaterea în revizie a unui întreruptor, fără întreruperea alimentării pe circuitul respectiv."
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 103,
@@ -1132,7 +1234,8 @@
         "c": "nu este posibilă asigurarea unei răciri corespunzătoare a bobinajelor."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — amplasarea postului se face în zone aglomerate;"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 104,
@@ -1143,7 +1246,8 @@
         "c": "nu este necesară o cuplă transversală."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — nu este necesară o cuplă transversală."
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 105,
@@ -1154,7 +1258,8 @@
         "c": "calculul valorii acestui fond la N ani după PIF."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — calculul valorii acestui fond la un anumit an ales ca referinţă;"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 106,
@@ -1165,7 +1270,8 @@
         "c": "un circuit de linie dintr-o statie cu un sistem de bare colectoare si bare de ocolire."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — un circuit de linie dintr-o statie cu un sistem de bare colectoare si bare de ocolire."
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 107,
@@ -1176,7 +1282,8 @@
         "c": "securitatii personalului de exploatare"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — securitatii personalului de exploatare"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 108,
@@ -1187,7 +1294,8 @@
         "c": "de a menţine temperatura constanta a siguranţei"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — de a menţine temperatura constanta a siguranţei"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 109,
@@ -1198,7 +1306,8 @@
         "c": "de pierderile Joule-Lenz"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — de pierderile Joule-Lenz"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 110,
@@ -1209,7 +1318,8 @@
         "c": "pierderile Joule disipate într-un element de linie infinit mic"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — inductanţa uniform răspândită l, definită prin puterea reactivă absorbită într-un element de linie infinit mic"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 111,
@@ -1220,7 +1330,8 @@
         "c": "forţa electromotoare"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — fluxul propriu al bobinei"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 112,
@@ -1231,7 +1342,8 @@
         "c": "raportul dintre tensiunea aplicata unui conductor si rezistenta acestuia"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — prin raportul dintre forţa exercitata asupra unei sarcini electrice în acel punct si mărimea sarcinii"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 113,
@@ -1242,7 +1354,8 @@
         "c": "direct proporţională cu r"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — invers proporţională cu r"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 114,
@@ -1253,7 +1366,8 @@
         "c": "bifazat"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — trifazat"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 115,
@@ -1264,7 +1378,8 @@
         "c": "curentul ajunge la valoarea U/R după un timp"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — curentul ajunge la valoarea U/R după un timp"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 116,
@@ -1275,7 +1390,8 @@
         "c": "122 V"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — 122 V"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 117,
@@ -1286,7 +1402,8 @@
         "c": "comutaţia curentului în regim normal de funcţionare."
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — izolarea unei părţi din instalaţie de altă parte a instalaţiei aflată sub tensiune;"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 118,
@@ -1296,8 +1413,9 @@
         "b": "asigură izolarea unei părţi a circuitului de bara colectoare aflată sub tensiune;",
         "c": "comutaţia curentului în regim normal de funcţionare."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — asigură doar selectarea sistemului de bare pe care urmează a fi conectat circuitul;"
+      "correct": null,
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 119,
@@ -1308,7 +1426,8 @@
         "c": "mai mare la periferia conductorului"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — mai mare la periferia conductorului"
+      "explanation": "",
+      "block": 6
     },
     {
       "id": 120,
@@ -1319,7 +1438,8 @@
         "c": "se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — se poate utiliza numai pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;"
+      "explanation": "Răspuns corect: A — se poate utiliza numai pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+      "block": 6
     },
     {
       "id": 121,
@@ -1330,7 +1450,8 @@
         "c": "se poate utiliza numai pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — se poate utiliza numai pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
+      "explanation": "Răspuns corect: C — se poate utiliza numai pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune.",
+      "block": 7
     },
     {
       "id": 122,
@@ -1341,7 +1462,8 @@
         "c": "nu se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 123,
@@ -1352,7 +1474,8 @@
         "c": "4/3"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — 0,8"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 124,
@@ -1363,7 +1486,8 @@
         "c": "cu 90 de grade în urma"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — înainte cu 90 de grade"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 125,
@@ -1374,7 +1498,8 @@
         "c": "separatorul de bare, separatorul de linie, întreruptorul ."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — separatorul de linie, separatorul de bare, întreruptorul;"
+      "explanation": "Răspuns corect: A — separatorul de linie, separatorul de bare, întreruptorul;",
+      "block": 7
     },
     {
       "id": 126,
@@ -1385,7 +1510,8 @@
         "c": "95 A"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — 20 A"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 127,
@@ -1396,7 +1522,8 @@
         "c": "întreruptorul, separatorul de  linie, separatorul de bare."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — întreruptorul, separatorul de  linie, separatorul de bare."
+      "explanation": "Răspuns corect: C — întreruptorul, separatorul de  linie, separatorul de bare.",
+      "block": 7
     },
     {
       "id": 128,
@@ -1407,7 +1534,8 @@
         "c": "reactanţa totală a circuitului este =0"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — reactanţa totală a circuitului X este > 0"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 129,
@@ -1418,7 +1546,8 @@
         "c": "egala"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — egala"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 130,
@@ -1429,7 +1558,8 @@
         "c": "1/2 din energie este înmagazinată în volumul torului, iar 1/2 în afara torului"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — integral în câmpul magnetic din volumul torului"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 131,
@@ -1440,7 +1570,8 @@
         "c": "suma pătratelor rezistenţelor celor n rezistoare"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — suma inverselor rezistenţelor celor n rezistoare"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 132,
@@ -1451,7 +1582,8 @@
         "c": "rămâne constanta la variaţia sarcinii"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — rămâne constanta la variaţia sarcinii"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 133,
@@ -1462,7 +1594,8 @@
         "c": "întreruptorul, separatorul de linie, separatorul de bare."
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — separatorul de bare, separatorul de linie, întreruptorul;"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 134,
@@ -1473,7 +1606,8 @@
         "c": "întreruptorul, separatorul de bare, separatorul de linie."
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — întreruptorul, separatorul de linie, separatorul de bare;"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 135,
@@ -1484,7 +1618,8 @@
         "c": "tensiunea zero"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — tensiunea zero"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 136,
@@ -1495,7 +1630,8 @@
         "c": "nu se modifică"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — creşte faţă de tensiunea la sursă proporţional cu pătratul lungimii liniei"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 137,
@@ -1506,7 +1642,8 @@
         "c": "indiferent de natura circuitului"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — indiferent de natura circuitului"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 138,
@@ -1517,7 +1654,8 @@
         "c": "circuitelor liniare şi circuitelor neliniare"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — circuitelor liniare şi circuitelor neliniare"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 139,
@@ -1528,7 +1666,8 @@
         "c": "nu depinde de capacitate"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — invers proporţionala cu capacitatea"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 140,
@@ -1539,7 +1678,8 @@
         "c": "numai cu sarcina"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — cu frecventa"
+      "explanation": "",
+      "block": 7
     },
     {
       "id": 141,
@@ -1550,7 +1690,8 @@
         "c": "reducerea tensiunii la bornele de alimentare ale motorului"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — reducerea curentului electric absorbit de motor"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 142,
@@ -1561,7 +1702,8 @@
         "c": "pe oricare dintre înfăşurări"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — pe înfăşurarea de tensiune mai mare, deoarece curentul este mai mic"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 143,
@@ -1572,7 +1714,8 @@
         "c": "mult mai mare decât 1"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — mult mai mare decât 1"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 144,
@@ -1583,7 +1726,8 @@
         "c": "du = i/C dt"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — u= L di/dt"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 145,
@@ -1594,7 +1738,8 @@
         "c": "diferenţa de potenţial între doua puncte"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — forţa de interacţiune dintre corpuri punctuale încărcate cu sarcini electrice"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 146,
@@ -1605,7 +1750,8 @@
         "c": "nici un efect"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — nici un efect"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 147,
@@ -1616,7 +1762,8 @@
         "c": "reţele buclate"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — reţele buclate"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 148,
@@ -1627,7 +1774,8 @@
         "c": "constanta de distorsiune a liniei"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — constanta de propagare a liniei"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 149,
@@ -1638,7 +1786,8 @@
         "c": "permeanţă"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — reluctanţă"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 150,
@@ -1648,8 +1797,9 @@
         "b": "numai prin utilizarea motoarelor cu rotorul în dublă colivie",
         "c": "prin utilizarea motoarelor cu rotorul în colivie cu bare înalte"
       },
-      "correct": "b",
-      "explanation": "Răspuns corect: B — numai prin utilizarea motoarelor cu rotorul în dublă colivie"
+      "correct": null,
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 151,
@@ -1660,7 +1810,8 @@
         "c": "între întreruptor şi separatorul de linie."
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — între întreruptor şi separatorul de linie."
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 152,
@@ -1671,7 +1822,8 @@
         "c": "diminua consumul specific de material conductor"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — simplifica structura reţelelor echivalente pentru a reduce volumul de calcule"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 153,
@@ -1682,7 +1834,8 @@
         "c": "numai din motive constructive"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — reducerea curenţilor turbionari"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 154,
@@ -1693,7 +1846,8 @@
         "c": "reducerea timpului necesar reviziilor şi reparaţiilor."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — realizări constructive simple, fără blocaje suplimentare;"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 155,
@@ -1704,7 +1858,8 @@
         "c": "deoarece au randament mai mic decât al celorlalte tipuri de motoare"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — deoarece nu permit variaţia turaţiei în limite largi"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 156,
@@ -1714,8 +1869,9 @@
         "b": "numai prin încărcarea generatoarelor cu putere reactiva",
         "c": "prin utilizare de compensatoare"
       },
-      "correct": "b",
-      "explanation": "Răspuns corect: B — numai prin încărcarea generatoarelor cu putere reactiva"
+      "correct": null,
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 157,
@@ -1726,7 +1882,8 @@
         "c": "dacă funcţionează în gol"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — dacă alimentează un receptor cu impedanţă egală cu impedanţa sa caracteristică"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 158,
@@ -1737,7 +1894,8 @@
         "c": "nu produce şi nu absoarbe putere reactivă"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — produce putere reactivă"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 159,
@@ -1748,7 +1906,8 @@
         "c": "nu produce şi nu absoarbe putere reactivă"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — absoarbe putere reactivă"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 160,
@@ -1759,7 +1918,8 @@
         "c": "deconectează o jumătate dintre consumatori"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — deconectează numai consumatorul defect"
+      "explanation": "",
+      "block": 8
     },
     {
       "id": 161,
@@ -1770,7 +1930,8 @@
         "c": "descrescător"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — descrescător"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 162,
@@ -1780,8 +1941,9 @@
         "b": "se fac manevre dese cu circuitele de transformator;",
         "c": "pe legătura dintre blocuri circulă un curent mic."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — se fac manevre dese cu circuitele de linie;"
+      "correct": null,
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 163,
@@ -1792,7 +1954,8 @@
         "c": "pe legătura dintre blocuri circulă un curent mic."
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — se fac manevre dese cu circuitele de transformator;"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 164,
@@ -1803,7 +1966,8 @@
         "c": "da, separatorul S2"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — da, separatorul S2"
+      "explanation": "Răspuns corect: C — da, separatorul S2",
+      "block": 9
     },
     {
       "id": 165,
@@ -1814,7 +1978,8 @@
         "c": "Z Y = 1                                       Z=Y"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — Z Y = 1                                        J=YE"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 166,
@@ -1825,7 +1990,8 @@
         "c": "divizatã în mai multe unităţi"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — divizatã în mai multe unităţi"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 167,
@@ -1835,8 +2001,9 @@
         "b": "este o egalitate",
         "c": "este neliniară"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — este liniară"
+      "correct": null,
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 168,
@@ -1846,8 +2013,9 @@
         "b": "pătratul tensiunii reţelei",
         "c": "pătratul curentului"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — pătratul frecventei"
+      "correct": null,
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 169,
@@ -1858,7 +2026,8 @@
         "c": "da, separatorul S1"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — da, separatorul S2;"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 170,
@@ -1869,7 +2038,8 @@
         "c": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de utilizare al puterii maxime."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — energia electrica tranzitata            printr-un circuit este produsul dintre puterea medie si timpul de functionare;"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 171,
@@ -1880,7 +2050,8 @@
         "c": "impedanţe diferite de ale reţelei directe (pozitive) pentru elemente statice"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — impedanţe identice cu ale reţelei directe (pozitive) pentru elemente statice și impedanţe diferite de ale reţelei directe (pozitive) pentru maşini rotative"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 172,
@@ -1891,7 +2062,8 @@
         "c": "înseriate pe circuit, monofazate, cu miez de fier, răcite cu ulei, de tip interior;"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — înseriate pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 173,
@@ -1902,7 +2074,8 @@
         "c": "este variaţia în timp a energiei magnetice şi electrice"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — este variaţia în timp a energiei magnetice şi electrice"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 174,
@@ -1913,7 +2086,8 @@
         "c": "puterea mecanicã debitatã de motor la arbore când este alimentat la Un si absoarbe In"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — puterea mecanicã debitatã de motor la arbore când este alimentat la Un si absoarbe In"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 175,
@@ -1924,7 +2098,8 @@
         "c": "se evită plasarea pieselor metalice masive în câmpuri magnetice variabile"
       },
       "correct": "b",
-      "explanation": "Răspuns corect: B — se execută piesele metalice din tole de oţel  cu adaus de siliciu pentru mărirea rezistivităţii, subţiri și izolate între ele"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 176,
@@ -1935,7 +2110,8 @@
         "c": "este independentă de tensiunea liniei"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — se numeşte putere caracteristică sau putere naturală"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 177,
@@ -1946,7 +2122,8 @@
         "c": "energia reactivă capacitivă este mai mare decât cea inductivă"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — energiile reactive, inductivă şi capacitivă, se compensează"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 178,
@@ -1957,7 +2134,8 @@
         "c": "când U = U max"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — când factorul de putere =1"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 179,
@@ -1968,7 +2146,8 @@
         "c": "mecanică"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — magnetică"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 180,
@@ -1979,7 +2158,8 @@
         "c": "chimică"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — electrică"
+      "explanation": "",
+      "block": 9
     },
     {
       "id": 181,
@@ -1990,7 +2170,8 @@
         "c": "modificarea curentului (tensiunii) de excitaţie la generatoarele sincrone"
       },
       "correct": "c",
-      "explanation": "Răspuns corect: C — modificarea curentului (tensiunii) de excitaţie la generatoarele sincrone"
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 182,
@@ -2001,7 +2182,8 @@
         "c": "pătratul puterii active"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — pătratul curentului"
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 183,
@@ -2012,7 +2194,8 @@
         "c": "mai mari"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — mai mici"
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 184,
@@ -2023,7 +2206,8 @@
         "c": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă din punctul M până la infinit"
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — lucrul mecanic care trebuie produs spre a transporta unitatea de sarcină pozitivă de la infinit până în punctul M."
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 185,
@@ -2033,8 +2217,9 @@
         "b": "N relaţii distincte",
         "c": "N+1 relaţii distincte"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — N-1 relaţii distincte"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 186,
@@ -2044,8 +2229,9 @@
         "b": "se pot modifica curenţii din laturile cu t.e.m. adăugate",
         "c": "se modifică circulaţia de curenţi din laturile pe care nu se adaugă t.e.m."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — circulaţia de curenţi existentă anterior în reţea nu se modifică"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 187,
@@ -2055,8 +2241,9 @@
         "b": "Fierul, cuprul, zincul",
         "c": "Fierul, aluminiul, cuprul"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — Fierul, nichelul şi cobaltul"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 188,
@@ -2066,8 +2253,9 @@
         "b": "asigură protecţia echipamentului electric împotriva pătrunderii corpurilor străine şi a umezelii;",
         "c": "asigură protecţia echipamentului electric împotriva supratensiunilor."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — asigură numai protecţia persoanelor împotriva atingerii accidentale a pieselor aflate sub tensiune în funcţionare normală sau a pieselor în mişcare din interiorul învelişului;"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 189,
@@ -2077,8 +2265,9 @@
         "b": "pornirea fără dispozitiv de pornire",
         "c": "cuplul de pornire foarte bun"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — curentul mic de pornire"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 190,
@@ -2088,8 +2277,9 @@
         "b": "nu necesită întreţinere permanentă",
         "c": "prezintă o construcţie simplă şi robustă"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — permit reglarea în limite largi a turaţiei"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 191,
@@ -2099,8 +2289,9 @@
         "b": "mai mică decât rezistenţa mai mică",
         "c": "egală cu suma rezistenţelor"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — mai mare decât rezistenţa mai mare"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 192,
@@ -2110,8 +2301,9 @@
         "b": "de impurităţi ca urmare a unui montaj necorespunzător (dacă montajul se face cu mâini murdare, transpirate, urme de grăsime, praf de diferite feluri şi mai ales pilituri metalice);",
         "c": "umiditatea reziduală scăzută a gazului izolant"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — numai de produse de descompunere ale SF6 şi compuşii lor cu materiale izolante sau metale, sub influenţa umidităţii;"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 193,
@@ -2121,8 +2313,9 @@
         "b": "aplicarea unui strat protector pe izolatoare pentru micşorarea efectelor poluării din marile oraşe sau de pe unele platforme industriale;",
         "c": "micşorarea densităţii dielectricilor gazoşi."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — folosirea dispozitivelor de limitare a curenţilor de scurtcircuit;"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 194,
@@ -2132,8 +2325,9 @@
         "b": "faptul că tensiunile electromotoare nu mai sunt sinusoidale",
         "c": "apar scântei la periile colectorului"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — numai creșterea foarte mare a curentului prin circuitul rotoric"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 195,
@@ -2143,8 +2337,9 @@
         "b": "protejarea generatoarelor si motoarelor electrice împotriva punerii la pământ",
         "c": "protejarea motoarelor electrice împotriva suprasarcinilor"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — protejarea motoarelor electrice la scurtcircuit"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 196,
@@ -2154,8 +2349,9 @@
         "b": "0,66 ohm",
         "c": "6 ohm"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — 5 ohm"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 197,
@@ -2165,8 +2361,9 @@
         "b": "raportul dintre curentul primar si secundar la sarcina nominala",
         "c": "raportul dintre tensiunea primara si secundara la sarcina nominala"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — raportul dintre tensiunea primara si secundara de mers în gol"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 198,
@@ -2176,8 +2373,9 @@
         "b": "invers proporţionala cu curentul de pornire",
         "c": "invers proporţionala cu pătratul tensiunii de alimentare"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — direct proporţionala cu curentul de pornire"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 199,
@@ -2187,8 +2385,9 @@
         "b": "numai dacă undele de curent şi de tensiune sunt ambele periodice şi nesinusoidale",
         "c": "undele de curent şi tensiune sunt periodice iar cel puțin una este nesinusoidală"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — dacă undele de curent şi tensiune nu sunt periodice"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 200,
@@ -2198,8 +2397,9 @@
         "b": "admisia agentului primar la turbina",
         "c": "curentul statoric"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — tensiunea de excitaţie"
+      "correct": null,
+      "explanation": "",
+      "block": 10
     },
     {
       "id": 201,
@@ -2209,8 +2409,9 @@
         "b": "deschiderea aparatului director al turbinei",
         "c": "deconectarea rezistentei de stingere"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — modificarea curentului de excitaţie"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 202,
@@ -2220,8 +2421,9 @@
         "b": "egală",
         "c": "mai mică"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — mai mare"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 203,
@@ -2231,8 +2433,9 @@
         "b": "curentul de linie este egal cu curentul de fazã",
         "c": "curentul de fazã este mai mare de de 1,73 ori decât curentul de linie"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — curentul de linie este mai mare de 1,73 ori decât curentul de fazã"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 204,
@@ -2242,8 +2445,9 @@
         "b": "curentul primar si curentul secundar sunt foarte mici",
         "c": "o înfăşurare este conectata la reţea, iar cealaltă este deschisa"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — sarcina transformatorului este foarte mica"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 205,
@@ -2253,8 +2457,9 @@
         "b": "mediul de stingere a arcului electric;",
         "c": "realizarea capsulării: capsulare tripolară sau monopolară."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — curentul nominal al legăturilor electrice;"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 206,
@@ -2264,8 +2469,9 @@
         "b": "1 ohm",
         "c": "9 ohm"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — 3 ohm"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 207,
@@ -2275,8 +2481,9 @@
         "b": "lungime, direct proporţional",
         "c": "masa, direct proporţional"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — natura materialului"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 208,
@@ -2286,8 +2493,9 @@
         "b": "reactanţa inductivă este mai mare decât reactanţa capacitivă",
         "c": "reactanţa capacitivă este mai mare decât reactanţa inductivă"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — reactanţele inductivă şi capacitivă în valoare absolută sunt egale"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 209,
@@ -2297,8 +2505,9 @@
         "b": "numai  de a asigura spaţiul necesar dilatării si contractării uleiului",
         "c": "de a face posibila umplerea cu ulei a transformatorului"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — de a asigura o suprafaţa de contact a uleiului cu aerul mai mica"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 210,
@@ -2308,8 +2517,9 @@
         "b": "circulaţia de putere reactiva",
         "c": "nici una din cele doua"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — circulaţia de putere activa"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 211,
@@ -2319,8 +2529,9 @@
         "b": "alegerea transformatorului de tensiune presupune verificarea sa la stabilitate electrodinamica in caz de scurtcircuit",
         "c": "transformatorul de tensiune trebuie sa functioneze in domeniul de frecventa indicat de fabricant"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — alegerea transformatorului de tensiune presupune verificarea nivelului sau de izolatie;"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 212,
@@ -2330,8 +2541,9 @@
         "b": "schemele de secvenţă directă (pozitivă) şi inversă (negativă) conectate în paralel",
         "c": "schemele de secvenţă directă (pozitivă), inversă (negativă) şi homopolară (zero) conectate în paralel"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — schema de secvenţă directă (pozitivă) înseriată cu triplul impedanţei arcului"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 213,
@@ -2341,8 +2553,9 @@
         "b": "schema de secvenţă directă (pozitivă)",
         "c": "schemele de secvenţă directă (pozitivă) şi inversă (negativă) conectate în paralel"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — schemele de secvenţă directă (pozitivă) , inversă (negativă) şi homopolară (zero) conectate în serie"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 214,
@@ -2352,8 +2565,9 @@
         "b": "schema de secvenţă directă (pozitivă)",
         "c": "schema de secvenţă directă (pozitivă) înseriată cu schema de secvenţă inversă (negativă)."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — schema de secvenţă directă (pozitivă) înseriată cu triplul impedanţei arcului"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 215,
@@ -2363,8 +2577,9 @@
         "b": "numai în instalaţiile de curent alternativ de medie tensiune",
         "c": "în instalaţiile de curent continuu de înaltă şi joasă tensiune"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — în instalaţiile de curent alternativ de înaltă tensiune"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 216,
@@ -2374,8 +2589,9 @@
         "b": "siguranţei în funcţionare a instalaţiei, prin reducerea numărului de defecte în instalaţie;",
         "c": "realizării unei economii de teren."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — protecţiei personalului de exploatare a instalaţiei;"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 217,
@@ -2385,8 +2601,9 @@
         "b": "rezistenţei",
         "c": "reactanţei"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — impedanţei"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 218,
@@ -2396,8 +2613,9 @@
         "b": "pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
         "c": "nu pot fi racordate in circuitul primar cu înfăşurarea secundara deschisa"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — pot fi racordate în circuitul primar cu înfăşurarea secundara deschisa"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 219,
@@ -2407,8 +2625,9 @@
         "b": "limitarea curenţilor de scurtcircuit pe barele respective, dacă alimentarea staţiei se face printr-un singur transformator;",
         "c": "numai la limitarea curenţilor de scurtcircuit pe barele respective, dacă alimentarea staţiei se face prin două transformatoare sau printr-un transformator cu înfăşurare divizată."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — la mărirea continuităţii în alimentare a consumatorilor racordaţi la bare;"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 220,
@@ -2418,8 +2637,9 @@
         "b": "de a reduce costul instalaţiei",
         "c": "de a reduce pierderile de putere"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — de limitare a curenţilor de scurtcircuit"
+      "correct": null,
+      "explanation": "",
+      "block": 11
     },
     {
       "id": 221,
@@ -2429,8 +2649,9 @@
         "b": "întotdeauna de la bobină spre generator",
         "c": "poate avea oricare sens, în funcţie de încărcarea generatorului"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — de la generator spre bobină"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 222,
@@ -2440,8 +2661,9 @@
         "b": "de a separa vizibil un circuit",
         "c": "de a măsură nivelul de izolaţie"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — de a proteja circuitul la supracurenţi"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 223,
@@ -2451,8 +2673,9 @@
         "b": "face trecerea din linie electrica aeriana în line electrica în cablu",
         "c": "asigura protecţia personalului"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — proteja instalaţia din aval la defecte la scurtcircuit ca si la suprasarcini de lunga durata"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 224,
@@ -2462,8 +2685,9 @@
         "b": "creşterea curentului peste o valoare limita",
         "c": "scăderea curentului sub o valoare limita"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — creşterea tensiunii peste o valoare limita"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 225,
@@ -2473,8 +2697,9 @@
         "b": "supracurenţi",
         "c": "defect de izolaţie"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — supratensiuni"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 226,
@@ -2484,8 +2709,9 @@
         "b": "mărimile instantanee de curent sau de tensiune",
         "c": "valorile medii de curent sau de tensiune"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — mărimile efective de curent sau de tensiune"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 227,
@@ -2495,8 +2721,9 @@
         "b": "reprezintă artificii de calcul",
         "c": "numai sistemul direct corespunde unei realităţi fizice"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — corespund unor realităţi fizice"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 228,
@@ -2506,8 +2733,9 @@
         "b": "este simetric chiar dacă fazele sunt neegal încărcate",
         "c": "este simetric dacă fazele sunt egal încărcate"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — este întotdeauna simetric"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 229,
@@ -2517,8 +2745,9 @@
         "b": "50 V",
         "c": "100 V"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — 10 V"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 230,
@@ -2528,8 +2757,9 @@
         "b": "nulă",
         "c": "egală cu 1/2"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — egală cu 1"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 231,
@@ -2539,8 +2769,9 @@
         "b": "induse",
         "c": "de rezonanta sau de ferorezonanţa"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — numai directe"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 232,
@@ -2550,8 +2781,9 @@
         "b": "neomogen",
         "c": "neliniar"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — liniar"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 233,
@@ -2561,8 +2793,9 @@
         "b": "forţa electromagnetică",
         "c": "forţa exercitată între două conductoare paralele parcurse de curenţi"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — intensitatea câmpului magnetic produs de un curent care circulă printr-un conductor"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 234,
@@ -2572,8 +2805,9 @@
         "b": "fluxului magnetic",
         "c": "intensităţii câmpului magnetic"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — inducţiei magnetice"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 235,
@@ -2583,8 +2817,9 @@
         "b": "împiedică, dar nu elimină, pătrunderea umidităţii în interiorul rezervorului de expansiune;",
         "c": "asigură facilităţi în modul de dispunere a bornelor şi deci de racordare la reţea."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — dilatarea lichidului este compensată prin deformarea elastică a pereţilor cuvei;"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 236,
@@ -2594,8 +2829,9 @@
         "b": "5 sau 10 A",
         "c": "1 sau 10 A"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — 1 sau 5 A"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 237,
@@ -2605,8 +2841,9 @@
         "b": "0 V",
         "c": "230 V"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — 0,4 kV"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 238,
@@ -2616,8 +2853,9 @@
         "b": "cu curent fara tensiune",
         "c": "fãrã curent, fãrã tensiune sau sub tensiune, fãrã curent"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — sub tensiune si cu curent"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 239,
@@ -2627,8 +2865,9 @@
         "b": "nu pot fi lăsate în exploatare cu înfăşurarea secundara în scurtcircuit",
         "c": "pot fi puse sub tensiune cu înfăşurarea secundara in scurtcircuit"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — nu pot fi lăsate în exploatare cu înfăşurarea secundara deschisa"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 240,
@@ -2638,8 +2877,9 @@
         "b": "pur inductiv",
         "c": "pur capacitiv"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — pur rezistiv"
+      "correct": null,
+      "explanation": "",
+      "block": 12
     },
     {
       "id": 241,
@@ -2649,8 +2889,9 @@
         "b": "o siguranţă în funcţionare mai mare;",
         "c": "reducerea investiţiei în echiparea staţiei."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — scurtarea manevrelor;"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 242,
@@ -2660,8 +2901,9 @@
         "b": "prin inducţie electromagnetică",
         "c": "prin magnetizare"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — prin conducţie"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 243,
@@ -2672,7 +2914,8 @@
         "c": "izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — numai protecţia în caz de scurtcircuit;"
+      "explanation": "Răspuns corect: A — numai protecţia în caz de scurtcircuit;",
+      "block": 13
     },
     {
       "id": 244,
@@ -2682,8 +2925,9 @@
         "b": "numai comutaţia în regim normal;",
         "c": "protecţia la supratensiuni."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — protecţia în caz de scurtcircuit;"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 245,
@@ -2693,8 +2937,9 @@
         "b": "absoarbe putere activă şi produce putere reactivă",
         "c": "produce putere activă şi putere reactivă"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — absoarbe putere activă şi putere reactivă"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 246,
@@ -2704,8 +2949,9 @@
         "b": "argint, cupru, aluminiu",
         "c": "aluminiu, cupru, argint"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — aluminiu, argint, cupru"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 247,
@@ -2715,8 +2961,9 @@
         "b": "tensiunea electromotoare ne si rezistentă r/n",
         "c": "tensiunea electromotoare e si rezistenta nr."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — tensiunea electromotoare e si rezistenta r/n"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 248,
@@ -2726,8 +2973,9 @@
         "b": "rezistenţa R este egală cu rezistenţa internă a sursei de tem",
         "c": "rezistenţa R tinde spre zero"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — rezistenţa R este egală cu rezistenţa totală a circuitului văzută prin bornele AB"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 249,
@@ -2737,8 +2985,9 @@
         "b": "direct proporţională cu pătratul lui r",
         "c": "invers proporţională cu pătratul lui r"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — direct proporţională cu r"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 250,
@@ -2748,8 +2997,9 @@
         "b": "apar supratensiuni periculoase in secundar",
         "c": "nu indica aparatele de măsurare"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — împiedica circulaţia curentului primar"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 251,
@@ -2759,8 +3009,9 @@
         "b": "Axh",
         "c": "A/h"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — F"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 252,
@@ -2770,8 +3021,9 @@
         "b": "Coulombul",
         "c": "Faradul"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — V/m"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 253,
@@ -2781,8 +3033,9 @@
         "b": "Weber",
         "c": "Farad"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — Tesla"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 254,
@@ -2792,8 +3045,9 @@
         "b": "Hertz",
         "c": "Henry"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — Weber"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 255,
@@ -2803,8 +3057,9 @@
         "b": "Coulomb",
         "c": "Farad"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — V/m"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 256,
@@ -2814,8 +3069,9 @@
         "b": "greutate specifica",
         "c": "coeficient de dilataţie"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — rezistivitate"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 257,
@@ -2825,8 +3081,9 @@
         "b": "kW",
         "c": "kW/h"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — kWh"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 258,
@@ -2836,8 +3093,9 @@
         "b": "kVA",
         "c": "kW"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — kVAr"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 259,
@@ -2848,7 +3106,8 @@
         "c": "asigură numai izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;"
+      "explanation": "Răspuns corect: A — nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+      "block": 13
     },
     {
       "id": 260,
@@ -2858,8 +3117,9 @@
         "b": "numai între reţelele de              220 kV şi 400 kV",
         "c": "între reţelele de                   20 kV şi 110 kV"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — între reţelele de                     110 kV şi 220 kV"
+      "correct": null,
+      "explanation": "",
+      "block": 13
     },
     {
       "id": 261,
@@ -2870,7 +3130,8 @@
         "c": "nu asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
       "correct": "a",
-      "explanation": "Răspuns corect: A — asigură eliminarea unor greşeli de manevră datorate separatoarelor;"
+      "explanation": "Răspuns corect: A — asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+      "block": 14
     },
     {
       "id": 262,
@@ -2880,8 +3141,9 @@
         "b": "asigură numai scurtarea duratei reviziilor la celule;",
         "c": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
+      "correct": null,
+      "explanation": "",
+      "block": 14
     },
     {
       "id": 263,
@@ -2891,8 +3153,9 @@
         "b": "asigură rapiditate în restabilirea alimentării în cazul unei defectări;",
         "c": "creşte riscul de electrocutare a personalului care execută lucrări de revizie în celulă."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — asigură doar compactarea celulei;"
+      "correct": null,
+      "explanation": "",
+      "block": 14
     },
     {
       "id": 264,
@@ -2902,8 +3165,9 @@
         "b": "conduce numai la realizarea unor celule cu întreţinere mult simplificată;",
         "c": "conduce la realizarea unor celule compacte"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — conduce la realizarea unor celule cu pericol de incendiu"
+      "correct": null,
+      "explanation": "",
+      "block": 14
     },
     {
       "id": 265,
@@ -2913,8 +3177,9 @@
         "b": "realizarea unor întreruptoare cu întreţinere mult simplificată;",
         "c": "puţin silenţioase."
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — doar realizarea unor întreruptoare fără pericol de incendiu;"
+      "correct": null,
+      "explanation": "",
+      "block": 14
     },
     {
       "id": 266,
@@ -2924,8 +3189,9 @@
         "b": "nu reduce cheltuielile de întreţinere;",
         "c": "creşte masa şi gabaritul întreruptoarelor"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — reduce pericolul de incendiu;"
+      "correct": null,
+      "explanation": "",
+      "block": 14
     },
     {
       "id": 267,
@@ -2935,8 +3201,9 @@
         "b": "circulaţia puterii reactive",
         "c": "modul de tratare a neutrului reţelei"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — bilanţul puterilor active"
+      "correct": null,
+      "explanation": "",
+      "block": 14
     },
     {
       "id": 268,
@@ -2946,8 +3213,9 @@
         "b": "mai mică",
         "c": "mai mare"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — egală"
+      "correct": null,
+      "explanation": "",
+      "block": 14
     },
     {
       "id": 269,
@@ -2957,8 +3225,9 @@
         "b": "mai mare",
         "c": "mai mică"
       },
-      "correct": "a",
-      "explanation": "Răspuns corect: A — egală"
+      "correct": null,
+      "explanation": "",
+      "block": 14
     },
     {
       "id": 270,
@@ -2968,8 +3237,26 @@
         "b": "modul",
         "c": "valoare efectivă sau valoarea eficace"
       },
+      "correct": null,
+      "explanation": "",
+      "block": 14
+    },
+    {
+      "id": 271,
+      "question": "Factorul de atenuare al unui circuit format dintr-un rezistor de rezistenţă R înseriat cu o bobină de inductanţă L, alimentate de o tensiune electromotoare constantă este egal cu:",
+      "options": {
+        "a": "R/L",
+        "b": "L/R",
+        "c": 1
+      },
       "correct": "a",
-      "explanation": "Răspuns corect: A — amplitudine"
+      "explanation": "",
+      "block": 14
     }
-  ]
+  ],
+  "blockSize": 20,
+  "blockCount": 14,
+  "subject": "electrotehnica",
+  "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+  "note": "Correct answers imported from Excel highlighted cells; missing answers left null for user completion."
 }
