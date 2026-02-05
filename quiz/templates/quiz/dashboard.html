@@ -53,6 +53,9 @@
                             </div>
                             {% if block.note %}
                                 <div class="block-note-indicator">Notă salvată</div>
+                                <div class="block-note-text">
+                                    {{ block.note|truncatechars:60 }}
+                                </div>
                             {% endif %}
                         </a>
                     {% endfor %}

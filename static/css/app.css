@@ -450,6 +450,13 @@ body {
     border-radius: 999px;
 }
 
+.block-note-text {
+    margin-top: 0.35rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
 /* Block Color Classes */
 .block-white {
     background-color: var(--bg-white);
