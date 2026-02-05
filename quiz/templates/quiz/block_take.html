@@ -47,7 +47,9 @@
                     <div class="question-card">
                         <div class="question-header">
                             <strong>Întrebarea {{ forloop.counter }}</strong>
-                            <a href="{% url 'question_edit' question.pk %}?next=block" class="edit-link">Edit / Completează</a>
+                            {% if item.can_edit or user.is_superuser %}
+                                <a href="{% url 'question_edit' question.pk %}?next=block" class="edit-link">Edit / Completează</a>
+                            {% endif %}
                         </div>
 
                         {% if item.question_img_exists and item.question_img_url %}
