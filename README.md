@@ -107,26 +107,6 @@ gr2-quiz-platform/
 └── README.md
 ```
 
-## Screenshots
-
-### 1. Login Page
-![Login Page](img/1.png)
-
-The login page allows you to authenticate with your account or navigate to registration. If you forgot your password, contact the internal administrator or create a new account.
-
-### 2. Dashboard
-![Dashboard](img/2.png)
-
-The dashboard displays all available disciplines and their blocks. Each block tile shows your progress with color-coded status indicators.
-
-### 3. Quiz Taking Page
-![Quiz Page](img/3.png)
-
-When taking a quiz, you can see all questions, select answers, and edit questions that are missing answers or explanations.
-
-### 4-6. Additional Views
-![Additional Views](img/4.png) ![Additional Views](img/5.png) ![Additional Views](img/6.png)
-
 ## User Guide – "Electrician Quizzes – Group 2" Platform
 
 ### 1. Creating an Account (Registration)
@@ -145,6 +125,8 @@ To use the platform, you must create an account.
 
 ### 2. Authentication
 
+![Login Page](img/1.png)
+
 1. Enter your **Username** and **Password**
 2. Click **"Autentificare"** (Login)
 3. You will be redirected to the Dashboard
@@ -152,6 +134,8 @@ To use the platform, you must create an account.
 **Note:** If you forgot your password, contact the internal administrator or create a new account.
 
 ### 3. Dashboard – Navigation
+
+![Dashboard](img/2.png)
 
 The Dashboard contains three sections:
 
@@ -168,13 +152,19 @@ Each section contains blocks:
 
 Each block contains questions (typically ~20 questions per block).
 
-**Block Color Coding:**
+**Block Color Coding (for a typical 20-question block):**
 - **White**: No attempts yet
-- **Green**: Perfect score (all questions correct)
-- **Yellow**: Good score (18-19 correct out of 20)
-- **Red**: Needs improvement (less than 18 correct)
+- **Green**: Perfect score (20/20) – all questions correct
+- **Yellow**: Good score (18-19/20) – score is within 2 points of perfect (score ≥ total - 2)
+- **Red**: Needs improvement (0-17/20) – score is more than 2 points below perfect (score < total - 2)
+
+**Note:** The thresholds adjust automatically for blocks with different numbers of questions. For example, in a 15-question block: Green = 15/15, Yellow = 13-14/15, Red = 0-12/15.
+
+The color reflects your **last attempt** for that block, helping you quickly identify which blocks need more practice.
 
 ### 4. Taking Quizzes
+
+![Quiz Page](img/3.png)
 
 1. **Select a block** from the dashboard
 2. **Answer the questions** by selecting option **a**, **b**, or **c** for each question
@@ -184,6 +174,8 @@ Each block contains questions (typically ~20 questions per block).
    - **Correct answers**
    - **Explanations** (if available)
 5. Results are **saved automatically**
+
+![Additional Views](img/4.png) ![Additional Views](img/5.png) ![Additional Views](img/6.png)
 
 ### 5. Completing Questions Without Answer or Explanation
 
