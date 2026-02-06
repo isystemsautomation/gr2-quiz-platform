@@ -585,6 +585,75 @@ body {
     }
 }
 
+/* SEO Text Block */
+.saas-login-seo-text {
+    max-width: 960px;
+    margin: 32px auto 0;
+    padding: 0 24px 32px;
+    text-align: center;
+}
+
+.saas-login-seo-text p {
+    font-size: 15px;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.saas-login-seo-text strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* Register Info Section */
+.saas-register-info {
+    background: var(--bg-light);
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border-left: 3px solid var(--primary-blue);
+}
+
+.saas-register-simple {
+    font-size: 14px;
+    color: var(--text-medium);
+    line-height: 1.6;
+    margin: 0 0 8px 0;
+}
+
+.saas-register-simple:last-child {
+    margin-bottom: 0;
+}
+
+.saas-register-simple strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* Form Field Styling for Register */
+.saas-login-form .form-group input[type="text"],
+.saas-login-form .form-group input[type="password"],
+.saas-login-form input[type="text"],
+.saas-login-form input[type="password"] {
+    height: 44px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border-color);
+    padding: 0 16px;
+    font-size: 15px;
+    transition: all 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.saas-login-form .form-group input[type="text"]:focus,
+.saas-login-form .form-group input[type="password"]:focus,
+.saas-login-form input[type="text"]:focus,
+.saas-login-form input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
 @media (max-width: 480px) {
     .saas-login-column {
         padding: 24px 20px;
@@ -599,6 +668,14 @@ body {
     }
     
     .saas-login-benefits li {
+        font-size: 14px;
+    }
+    
+    .saas-login-seo-text {
+        padding: 0 16px 24px;
+    }
+    
+    .saas-login-seo-text p {
         font-size: 14px;
     }
 }

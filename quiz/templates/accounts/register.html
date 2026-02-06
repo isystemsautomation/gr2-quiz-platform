@@ -3,81 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Înregistrare - GR2 Quiz Platform</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Înregistrare – Chestionare ANRE Electrician Grupa II (Grupa 2)</title>
+    <meta name="description" content="Creează cont pentru chestionare ANRE Electrician Grupa II. Doar utilizator și parolă. Salvează progresul și rezultatele. Contul este opțional.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://quiz.isystemsautomation.com/accounts/register/">
+    
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Înregistrare – Chestionare ANRE Electrician Grupa II (Grupa 2)">
+    <meta property="og:description" content="Creează cont pentru chestionare ANRE Electrician Grupa II. Doar utilizator și parolă. Salvează progresul și rezultatele.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quiz.isystemsautomation.com/accounts/register/">
+    <meta property="og:site_name" content="Chestionare ANRE Electrician Grupa II">
     {% load static %}
+    <meta property="og:image" content="https://quiz.isystemsautomation.com{% static 'img/logo.png' %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
-<body>
-    <header class="header">
-        <div class="header-container">
-            <a href="{% url 'login' %}" class="header-logo">
-                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
-                <span class="header-logo-text">Platformă internă chestionare Electricieni – Grupa 2</span>
+<body class="saas-login-page">
+    <!-- Minimal Header -->
+    <header class="saas-login-header">
+        <div class="saas-login-header-container">
+            <a href="{% url 'learn_subject_list' %}" class="saas-login-logo">
+                <img src="{% static 'img/logo.png' %}" alt="ISYSTEMS AUTOMATION Logo">
             </a>
-            <nav class="header-nav">
-                <a href="#ajutor" onclick="document.getElementById('ajutor').scrollIntoView({behavior: 'smooth'}); return false;">Ajutor</a>
+            <nav class="saas-login-nav">
+                <a href="{% url 'learn_subject_list' %}" class="saas-login-nav-link">Ajutor</a>
             </nav>
         </div>
     </header>
 
-    <div class="auth-container">
-        <div class="auth-card">
-            <div class="auth-logo">
-                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
-                <h1 class="auth-title">Chestionare Electricieni – Grupa 2</h1>
-                <p class="auth-subtitle">Înregistrare</p>
+    <!-- Main Content -->
+    <main class="saas-login-main">
+        <div class="saas-login-card">
+            <!-- Left Column: Fără cont -->
+            <div class="saas-login-column saas-login-column-left">
+                <h2 class="saas-login-column-title">Vrei doar să înveți?</h2>
+                <p class="saas-login-column-subtitle">Intră fără cont</p>
+                
+                <ul class="saas-login-benefits">
+                    <li>Acces imediat la toate întrebările</li>
+                    <li>Vezi răspunsurile corecte și explicațiile</li>
+                    <li>Fără înregistrare necesară</li>
+                </ul>
+                
+                <a href="{% url 'learn_subject_list' %}" class="btn btn-secondary saas-login-cta-btn" aria-label="Continuă fără cont - acces la toate întrebările și răspunsurile">
+                    Continuă fără cont
+                </a>
+                
+                <p class="saas-login-note">Nu este necesar cont pentru învățare.</p>
             </div>
 
-            <div class="auth-instructions" id="ajutor">
-                Creează un cont nou pentru a accesa platforma de quiz. Rezultatele tale vor fi salvate automat.
-            </div>
+            <!-- Divider -->
+            <div class="saas-login-divider"></div>
 
-            {% if form.errors %}
-                <div class="error-message">
-                    {% for field in form %}
-                        {% for error in field.errors %}
+            <!-- Right Column: Înregistrare -->
+            <div class="saas-login-column saas-login-column-right">
+                <h2 class="saas-login-column-title">Creează cont</h2>
+                <p class="saas-login-column-subtitle">Salvează progresul și rezultatele</p>
+                
+                <!-- Why Create Account -->
+                <div class="saas-register-info">
+                    <p class="saas-register-simple"><strong>Pentru cont ai nevoie doar de utilizator și parolă.</strong></p>
+                    <p class="saas-register-simple">Nu cerem nume real, telefon sau email.</p>
+                    <p class="saas-register-simple">Contul este folosit doar pentru salvarea progresului și a rezultatelor.</p>
+                </div>
+                
+                <ul class="saas-login-benefits">
+                    <li>Salvezi progresul automat</li>
+                    <li>Vezi istoricul rezultatelor</li>
+                    <li>Reiei chestionarele de unde ai rămas</li>
+                </ul>
+
+                {% if form.errors %}
+                    <div class="saas-login-error" role="alert">
+                        {% for field in form %}
+                            {% for error in field.errors %}
+                                <div>{{ error }}</div>
+                            {% endfor %}
+                        {% endfor %}
+                        {% for error in form.non_field_errors %}
                             <div>{{ error }}</div>
                         {% endfor %}
-                    {% endfor %}
-                    {% for error in form.non_field_errors %}
-                        <div>{{ error }}</div>
-                    {% endfor %}
-                </div>
-            {% endif %}
+                    </div>
+                {% endif %}
 
-            <form method="post">
-                {% csrf_token %}
-                <div class="form-group">
-                    <label for="id_username">Username:</label>
-                    {{ form.username }}
-                    {% if form.username.help_text %}
-                        <small>{{ form.username.help_text }}</small>
-                    {% endif %}
-                </div>
+                <form method="post" action="{% url 'register' %}" class="saas-login-form">
+                    {% csrf_token %}
+                    
+                    <div class="form-group">
+                        <label for="id_username">Utilizator:</label>
+                        {{ form.username }}
+                        {% if form.username.help_text %}
+                            <small>{{ form.username.help_text }}</small>
+                        {% endif %}
+                    </div>
 
-                <div class="form-group">
-                    <label for="id_password1">Password:</label>
-                    {{ form.password1 }}
-                    {% if form.password1.help_text %}
-                        <small>{{ form.password1.help_text }}</small>
-                    {% endif %}
-                </div>
+                    <div class="form-group">
+                        <label for="id_password1">Parolă:</label>
+                        {{ form.password1 }}
+                        {% if form.password1.help_text %}
+                            <small>{{ form.password1.help_text }}</small>
+                        {% endif %}
+                    </div>
 
-                <div class="form-group">
-                    <label for="id_password2">Confirmă parola:</label>
-                    {{ form.password2 }}
-                    {% if form.password2.help_text %}
-                        <small>{{ form.password2.help_text }}</small>
-                    {% endif %}
-                </div>
+                    <div class="form-group">
+                        <label for="id_password2">Confirmă parola:</label>
+                        {{ form.password2 }}
+                        {% if form.password2.help_text %}
+                            <small>{{ form.password2.help_text }}</small>
+                        {% endif %}
+                    </div>
 
-                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Înregistrează-te</button>
-            </form>
+                    <button type="submit" class="btn btn-primary saas-login-submit-btn">
+                        Creează cont
+                    </button>
+                </form>
 
-            <p class="auth-link">
-                Ai deja cont? <a href="{% url 'login' %}" class="text-link">Autentifică-te aici</a>
-            </p>
+                <p class="saas-login-register-link">
+                    Ai deja cont? <a href="{% url 'login' %}" class="text-link">Autentifică-te aici</a>
+                </p>
+            </div>
         </div>
-    </div>
+        
+        <!-- SEO Text Block -->
+        <div class="saas-login-seo-text">
+            <p>Platforma oferă <strong>chestionare pentru pregătirea examenului ANRE Electrician Grupa II (Grupa 2)</strong>, cu <strong>întrebări grilă</strong>, <strong>răspunsuri corecte și explicații</strong>. Contul este opțional și se folosește doar pentru <strong>salvarea progresului</strong>.</p>
+        </div>
+    </main>
 </body>
 </html>

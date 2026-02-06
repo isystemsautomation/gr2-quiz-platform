@@ -6,19 +6,79 @@
     
     <!-- SEO Meta Tags -->
     <title>Autentificare – Chestionare ANRE Electrician Grupa II (Grupa 2)</title>
-    <meta name="description" content="Chestionare pentru examen ANRE Electrician Grupa II. Întrebări, răspunsuri corecte și explicații. Autentifică-te pentru salvarea progresului sau învață fără cont.">
+    <meta name="description" content="Chestionare pentru examen ANRE Electrician Grupa II. Întrebări grilă, răspunsuri corecte și explicații. Autentifică-te pentru salvarea progresului sau învață fără cont.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://quiz.isystemsautomation.com/accounts/login/">
     
     <!-- OpenGraph Tags -->
     <meta property="og:title" content="Autentificare – Chestionare ANRE Electrician Grupa II (Grupa 2)">
-    <meta property="og:description" content="Chestionare pentru examen ANRE Electrician Grupa II. Întrebări, răspunsuri corecte și explicații. Autentifică-te pentru salvarea progresului sau învață fără cont.">
+    <meta property="og:description" content="Chestionare pentru examen ANRE Electrician Grupa II. Întrebări grilă, răspunsuri corecte și explicații. Autentifică-te pentru salvarea progresului sau învață fără cont.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://quiz.isystemsautomation.com/accounts/login/">
     <meta property="og:site_name" content="Chestionare ANRE Electrician Grupa II">
-    
     {% load static %}
+    <meta property="og:image" content="https://quiz.isystemsautomation.com{% static 'img/logo.png' %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Acasă",
+                "item": "https://quiz.isystemsautomation.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Învață",
+                "item": "https://quiz.isystemsautomation.com/learn/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Autentificare",
+                "item": "https://quiz.isystemsautomation.com/accounts/login/"
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Pot folosi chestionarele fără cont?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Da, poți accesa toate întrebările, răspunsurile corecte și explicațiile fără cont la /learn/. Progresul nu se salvează fără cont."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "De ce să mă autentific?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autentificarea permite salvarea automată a progresului, vizualizarea istoricului rezultatelor și reluarea chestionarelor de unde ai rămas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ce îmi trebuie pentru înregistrare?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pentru înregistrare ai nevoie doar de un nume de utilizator și o parolă. Nu cerem nume real, telefon sau email."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="saas-login-page">
     <!-- Minimal Header -->
@@ -42,7 +102,7 @@
                 <p class="saas-login-column-subtitle">Acces public la întrebări și explicații</p>
                 
                 <ul class="saas-login-benefits">
-                    <li>Vezi toate întrebările</li>
+                    <li>Vezi toate întrebările grilă</li>
                     <li>Vezi răspunsurile corecte și explicațiile</li>
                     <li>Progresul nu se salvează</li>
                 </ul>
@@ -78,7 +138,7 @@
                     {% csrf_token %}
                     
                     <div class="form-group">
-                        <label for="username">Username:</label>
+                        <label for="username">Utilizator:</label>
                         <input 
                             type="text" 
                             id="username" 
@@ -92,7 +152,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="password">Password:</label>
+                        <label for="password">Parolă:</label>
                         <input 
                             type="password" 
                             id="password" 
@@ -113,6 +173,11 @@
                     Nu ai cont? <a href="{% url 'register' %}" class="text-link">Creează cont</a>
                 </p>
             </div>
+        </div>
+        
+        <!-- SEO Text Block -->
+        <div class="saas-login-seo-text">
+            <p>Platforma oferă <strong>chestionare pentru examen ANRE Electrician Grupa II (Grupa 2)</strong>, cu <strong>întrebări grilă</strong>, <strong>răspunsuri corecte și explicații</strong>. Poți utiliza platforma fără cont pentru învățare sau cu cont pentru <strong>salvarea progresului</strong> și vizualizarea istoricului rezultatelor.</p>
         </div>
     </main>
 </body>
