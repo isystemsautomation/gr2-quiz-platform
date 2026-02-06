@@ -19,207 +19,62 @@
     
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
-    
-    <style>
-        .login-page {
-            background: #f4f6f8;
-            min-height: 100vh;
-        }
-        
-        .login-header {
-            background: var(--bg-white);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1.5rem 2rem;
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .login-header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .login-header-logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-        }
-        
-        .login-header-logo img {
-            height: 40px;
-            width: auto;
-        }
-        
-        .login-header-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-blue);
-            margin: 0;
-        }
-        
-        .login-main {
-            max-width: 480px;
-            margin: 3rem auto;
-            padding: 0 2rem;
-        }
-        
-        .login-card {
-            background: var(--bg-white);
-            border-radius: 20px;
-            box-shadow: var(--shadow-xl);
-            padding: 3rem;
-            width: 100%;
-        }
-        
-        .login-explanation {
-            background: var(--bg-light);
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            border-left: 4px solid var(--primary-blue);
-        }
-        
-        .login-explanation h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 1rem;
-        }
-        
-        .login-explanation ol {
-            margin: 0;
-            padding-left: 1.5rem;
-        }
-        
-        .login-explanation li {
-            margin-bottom: 0.75rem;
-            color: var(--text-medium);
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-        
-        .login-explanation li strong {
-            color: var(--text-dark);
-            font-weight: 600;
-        }
-        
-        .cta-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .cta-buttons .btn {
-            width: 100%;
-            text-align: center;
-            padding: 1rem 2rem;
-            font-size: 1.0625rem;
-        }
-        
-        .login-form-section {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 2px solid var(--border-color);
-        }
-        
-        .login-form-section h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        
-        .seo-text {
-            margin-top: 2.5rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--text-medium);
-            line-height: 1.7;
-        }
-        
-        @media (max-width: 768px) {
-            .login-card {
-                padding: 2rem 1.5rem;
-            }
-            
-            .login-header-container {
-                padding: 1rem;
-            }
-            
-            .login-header-title {
-                font-size: 1.25rem;
-            }
-            
-            .login-main {
-                margin: 2rem auto;
-                padding: 0 1rem;
-            }
-        }
-    </style>
 </head>
-<body class="login-page">
-    <!-- Header -->
-    <header class="login-header">
-        <div class="login-header-container">
-            <a href="{% url 'learn_subject_list' %}" class="login-header-logo">
+<body class="saas-login-page">
+    <!-- Minimal Header -->
+    <header class="saas-login-header">
+        <div class="saas-login-header-container">
+            <a href="{% url 'learn_subject_list' %}" class="saas-login-logo">
                 <img src="{% static 'img/logo.png' %}" alt="ISYSTEMS AUTOMATION Logo">
-                <h1 class="login-header-title">Chestionare ANRE Electrician – Grupa II</h1>
             </a>
+            <nav class="saas-login-nav">
+                <a href="{% url 'learn_subject_list' %}" class="saas-login-nav-link">Ajutor</a>
+            </nav>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="login-main">
-        <div class="login-card">
-            <!-- Section 1: Explanation -->
-            <div class="login-explanation">
-                <h3>Două moduri de utilizare</h3>
-                <ol>
-                    <li>
-                        <strong>Fără cont</strong> (recomandat pentru învățare rapidă)
-                        <ul style="list-style: disc; margin-top: 0.5rem; padding-left: 1.5rem;">
-                            <li>poți vedea toate întrebările</li>
-                            <li>poți vedea răspunsurile corecte</li>
-                            <li>poți vedea explicațiile</li>
-                            <li>progresul NU se salvează</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Cu cont</strong> (recomandat pentru pregătire completă)
-                        <ul style="list-style: disc; margin-top: 0.5rem; padding-left: 1.5rem;">
-                            <li>progresul se salvează</li>
-                            <li>vezi istoricul rezultatelor</li>
-                            <li>poți relua chestionarele</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <!-- Section 2: Primary CTA Buttons -->
-            <div class="cta-buttons">
-                <a href="{% url 'learn_subject_list' %}" class="btn btn-secondary btn-large" aria-label="Continuă fără cont - acces la toate întrebările și răspunsurile">
+    <main class="saas-login-main">
+        <div class="saas-login-card">
+            <!-- Left Column: Fără cont -->
+            <div class="saas-login-column saas-login-column-left">
+                <h2 class="saas-login-column-title">Învață fără cont</h2>
+                <p class="saas-login-column-subtitle">Acces public la întrebări și explicații</p>
+                
+                <ul class="saas-login-benefits">
+                    <li>Vezi toate întrebările</li>
+                    <li>Vezi răspunsurile corecte și explicațiile</li>
+                    <li>Progresul nu se salvează</li>
+                </ul>
+                
+                <a href="{% url 'learn_subject_list' %}" class="btn btn-secondary saas-login-cta-btn" aria-label="Continuă fără cont - acces la toate întrebările și răspunsurile">
                     Continuă fără cont
                 </a>
+                
+                <p class="saas-login-note">Recomandat pentru învățare rapidă.</p>
             </div>
 
-            <!-- Section 3: Login Form -->
-            <div class="login-form-section">
-                <h3>Autentificare</h3>
+            <!-- Divider -->
+            <div class="saas-login-divider"></div>
+
+            <!-- Right Column: Autentificare -->
+            <div class="saas-login-column saas-login-column-right">
+                <h2 class="saas-login-column-title">Autentificare</h2>
+                <p class="saas-login-column-subtitle">Salvează progresul și rezultatele</p>
                 
+                <ul class="saas-login-benefits">
+                    <li>Progres salvat automat</li>
+                    <li>Istoric rezultate</li>
+                    <li>Reia chestionarele</li>
+                </ul>
+
                 {% if error %}
-                    <div class="error-message" role="alert">
+                    <div class="saas-login-error" role="alert">
                         {{ error }}
                     </div>
                 {% endif %}
 
-                <form method="post" action="{% url 'login' %}">
+                <form method="post" action="{% url 'login' %}" class="saas-login-form">
                     {% csrf_token %}
                     
                     <div class="form-group">
@@ -232,6 +87,7 @@
                             autofocus
                             aria-label="Nume de utilizator"
                             autocomplete="username"
+                            class="saas-login-input"
                         >
                     </div>
 
@@ -244,23 +100,18 @@
                             required
                             aria-label="Parolă"
                             autocomplete="current-password"
+                            class="saas-login-input"
                         >
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
-                        Autentificare și salvare progres
+                    <button type="submit" class="btn btn-primary saas-login-submit-btn">
+                        Autentificare și salvează progres
                     </button>
                 </form>
-            </div>
 
-            <!-- Section 4: Register Link -->
-            <p class="auth-link" style="text-align: center; margin-top: 2rem;">
-                Nu ai cont? <a href="{% url 'register' %}" class="text-link">Creează cont</a>
-            </p>
-
-            <!-- Section 5: SEO Text Block -->
-            <div class="seo-text">
-                Platforma oferă chestionare pentru pregătirea examenului ANRE Electrician Grupa II, incluzând întrebări oficiale, răspunsuri corecte și explicații tehnice. Poți utiliza platforma fără cont sau cu cont pentru salvarea progresului.
+                <p class="saas-login-register-link">
+                    Nu ai cont? <a href="{% url 'register' %}" class="text-link">Creează cont</a>
+                </p>
             </div>
         </div>
     </main>
