@@ -7,6 +7,15 @@ from .models import Question
 from .utils import get_subject_slug, get_block_slug
 
 
+def _get_subjects_list():
+    """Helper to get subjects list."""
+    return [
+        {'id': 'electrotehnica', 'title': 'Electrotehnică'},
+        {'id': 'legislatie-gr-2', 'title': 'Legislație GR. 2'},
+        {'id': 'norme-tehnice-gr-2', 'title': 'Norme Tehnice GR. 2'},
+    ]
+
+
 class SubjectSitemap(Sitemap):
     """Sitemap for subject list and detail pages."""
     changefreq = 'weekly'
@@ -14,12 +23,7 @@ class SubjectSitemap(Sitemap):
     
     def items(self):
         """Return all subjects."""
-        # Import here to avoid circular imports
-        try:
-            from .learn_views import list_subjects
-        except ImportError:
-            from .views import list_subjects
-        subjects = list_subjects()
+        subjects = _get_subjects_list()
         return [(s['id'], s['title']) for s in subjects]
     
     def location(self, item):
@@ -62,13 +66,9 @@ class BlockSitemap(Sitemap):
     def location(self, item):
         """Return URL for block detail page."""
         subject_id, block_number = item
-        try:
-            from .learn_views import list_subjects
-        except ImportError:
-            from .views import list_subjects
-        subject_info = next((s for s in list_subjects() if s['id'] == subject_id), None)
+        subject_info = next((s for s in _get_subjects_list() if s['id'] == subject_id), None)
         if not subject_info:
-            return None
+            return '/learn/'  # Fallback to learn page
         subject_slug = get_subject_slug(subject_id, subject_info['title'])
         block_slug = get_block_slug(subject_id, block_number)
         return f'/learn/{subject_slug}/{block_slug}/'
@@ -98,13 +98,9 @@ class QuestionSitemap(Sitemap):
     
     def location(self, question):
         """Return URL for question detail page."""
-        try:
-            from .learn_views import list_subjects
-        except ImportError:
-            from .views import list_subjects
-        subject_info = next((s for s in list_subjects() if s['id'] == question.subject), None)
+        subject_info = next((s for s in _get_subjects_list() if s['id'] == question.subject), None)
         if not subject_info:
-            return None
+            return '/learn/'  # Fallback to learn page
         subject_slug = get_subject_slug(question.subject, subject_info['title'])
         block_slug = get_block_slug(question.subject, question.block_number)
         return f'/learn/{subject_slug}/{block_slug}/{question.qid}/'
