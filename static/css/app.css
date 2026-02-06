@@ -169,13 +169,13 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-purple) 100%);
+    background: var(--primary-blue);
     color: white;
     box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-hover) 0%, var(--primary-purple) 100%);
+    background: var(--primary-hover);
     box-shadow: var(--shadow-lg);
     transform: translateY(-1px);
 }
@@ -270,7 +270,7 @@ body {
 }
 
 .text-link:hover {
-    color: var(--primary-purple);
+    color: var(--primary-hover);
     text-decoration: underline;
 }
 
