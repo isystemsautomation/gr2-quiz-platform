@@ -3,56 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Învață - Chestionare Electricieni Grupa 2 | Platformă Internă</title>
-    <meta name="description" content="Accesează chestionarele pentru certificarea electricienilor Grupa 2. Electrotehnică, Legislație GR. 2 și Norme Tehnice GR. 2 cu răspunsuri și explicații.">
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    
+    <!-- SEO Meta Tags -->
+    <title>Chestionare ANRE Electrician Grupa II (Grupa 2) – Întrebări și explicații</title>
+    <meta name="description" content="Chestionare ANRE Electrician Grupa II (Grupa 2) pentru pregătirea examenului: întrebări grilă, răspunsuri corecte și explicații pentru Electrotehnică, Legislație și Norme Tehnice.">
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+    <link rel="canonical" href="https://quiz.isystemsautomation.com/learn/">
+    
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Chestionare ANRE Electrician Grupa II (Grupa 2)">
+    <meta property="og:description" content="Întrebări grilă, răspunsuri corecte și explicații pentru pregătirea examenului ANRE Electrician Grupa II.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quiz.isystemsautomation.com/learn/">
+    <meta property="og:image" content="https://quiz.isystemsautomation.com/static/img/logo.png">
+    <meta property="og:site_name" content="Chestionare ANRE Electrician Grupa II">
+    <meta property="og:locale" content="ro_RO">
+    
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
-    <script type="application/ld+json">{{ structured_data }}</script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Acasă",
+                "item": "https://quiz.isystemsautomation.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Chestionare ANRE Grupa II",
+                "item": "https://quiz.isystemsautomation.com/learn/"
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Pot folosi chestionarele fără cont?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Da, poți accesa toate întrebările, răspunsurile corecte și explicațiile fără cont. Progresul nu se salvează fără cont."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Sunt pentru examenul ANRE Electrician Grupa II?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Da, chestionarele sunt pentru pregătirea examenului ANRE Electrician Grupa II (Grupa 2), incluzând Electrotehnică, Legislație și Norme Tehnice."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Conțin răspunsuri și explicații?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Da, fiecare întrebare are răspunsul corect și explicații detaliate pentru înțelegere completă."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header class="header">
         <div class="header-container">
-            <a href="/" class="header-logo">
-                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
-                <span class="header-logo-text">Platformă internă chestionare Electricieni – Grupa 2</span>
+            <a href="/learn/" class="header-logo">
+                <img src="{% static 'img/logo.png' %}" alt="ISYSTEMS AUTOMATION Logo">
+                <span class="header-logo-text">Chestionare ANRE Electrician – Grupa II (Grupa 2)</span>
             </a>
-            <nav class="header-nav">
+            <nav class="header-nav" aria-label="Navigare principală">
                 <a href="/learn/">Învață</a>
                 <a href="/accounts/login/">Autentificare</a>
             </nav>
         </div>
     </header>
 
-    <div class="main-container">
+    <div class="main-container learn-container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
             {% for crumb in breadcrumbs %}
                 {% if not forloop.last %}
-                    <a href="{{ crumb.url }}">{{ crumb.name }}</a> <span class="breadcrumb-separator">→</span>
+                    <a href="{{ crumb.url }}">{{ crumb.name }}</a> <span class="breadcrumb-separator">›</span>
                 {% else %}
                     <span class="breadcrumb-current">{{ crumb.name }}</span>
                 {% endif %}
             {% endfor %}
         </nav>
 
-        <div class="card">
-            <h1 class="page-title">Învață - Chestionare Electricieni Grupa 2</h1>
-            <p class="page-subtitle">Accesează chestionarele organizate pe discipline și blocuri. Fiecare bloc conține întrebări cu răspunsuri corecte și explicații detaliate.</p>
+        <div class="card learn-card">
+            <h1 class="page-title">Chestionare ANRE Electrician Grupa II (Grupa 2)</h1>
+            
+            <p class="learn-intro">
+                Platforma oferă chestionare pentru examenul ANRE Electrician Grupa II (Grupa 2), cu întrebări grilă, răspunsuri corecte și explicații. Alege disciplina (Electrotehnică, Legislație, Norme Tehnice) și parcurge blocurile pentru recapitulare și verificare rapidă.
+            </p>
 
-            <div class="subjects-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div class="learn-login-note">
+                <span class="learn-login-text">Vrei să salvezi progresul?</span>
+                <a href="/accounts/login/" class="learn-login-link">Autentifică-te</a>
+                <span class="learn-login-separator">•</span>
+                <span class="learn-login-text">Vrei doar să înveți rapid?</span>
+                <span class="learn-login-text-muted">Învață fără cont</span>
+            </div>
+
+            <div class="subjects-grid">
                 {% for subject in subjects %}
-                    <div class="subject-card" style="background: var(--bg-light); border-radius: 14px; padding: 2rem; border: 1px solid var(--border-color);">
-                        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark);">
-                            <a href="{% url 'learn_subject_detail' subject.slug %}" style="color: var(--primary-blue); text-decoration: none;">
+                    <div class="subject-card">
+                        <h2 class="subject-card-title">
+                            <a href="{% url 'learn_subject_detail' subject.slug %}" class="subject-card-link">
                                 {{ subject.title }}
                             </a>
                         </h2>
-                        <p style="color: var(--text-medium); margin-bottom: 1rem;">
-                            <strong>{{ subject.block_count }}</strong> blocuri<br>
-                            <strong>{{ subject.question_count }}</strong> întrebări
-                        </p>
-                        <a href="{% url 'learn_subject_detail' subject.slug %}" class="btn btn-primary" style="display: inline-block;">
-                            Vezi blocuri →
+                        <div class="subject-card-stats">
+                            <span class="subject-stat">
+                                <strong>{{ subject.block_count }}</strong> blocuri
+                            </span>
+                            <span class="subject-stat">
+                                <strong>{{ subject.question_count }}</strong> întrebări
+                            </span>
+                        </div>
+                        <a href="{% url 'learn_subject_detail' subject.slug %}" class="btn btn-primary subject-card-cta">
+                            Vezi blocuri
                         </a>
                     </div>
                 {% endfor %}
@@ -61,4 +142,3 @@
     </div>
 </body>
 </html>
-

@@ -51,10 +51,10 @@ def learn_subject_list(request):
     # Breadcrumb data
     breadcrumbs = [
         {'name': 'Acasă', 'url': '/'},
-        {'name': 'Învață', 'url': '/learn/'},
+        {'name': 'Chestionare ANRE Grupa II', 'url': '/learn/'},
     ]
     
-    # Structured data - BreadcrumbList
+    # Structured data - BreadcrumbList (for backwards compatibility, but template has its own JSON-LD)
     structured_data = json.dumps({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -63,13 +63,13 @@ def learn_subject_list(request):
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Acasă",
-                "item": request.build_absolute_uri('/')
+                "item": "https://quiz.isystemsautomation.com/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Învață",
-                "item": request.build_absolute_uri('/learn/')
+                "name": "Chestionare ANRE Grupa II",
+                "item": "https://quiz.isystemsautomation.com/learn/"
             }
         ]
     }, ensure_ascii=False)
