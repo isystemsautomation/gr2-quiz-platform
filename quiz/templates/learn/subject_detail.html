@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ subject.title }} - Învață | Chestionare Electricieni Grupa 2</title>
+    <meta name="description" content="Accesează toate blocurile pentru {{ subject.title }}. Fiecare bloc conține întrebări cu răspunsuri corecte și explicații detaliate.">
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <script type="application/ld+json">{{ structured_data }}</script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="header-logo">
+                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
+                <span class="header-logo-text">Platformă internă chestionare Electricieni – Grupa 2</span>
+            </a>
+            <nav class="header-nav">
+                <a href="/learn/">Învață</a>
+                <a href="/accounts/login/">Autentificare</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            {% for crumb in breadcrumbs %}
+                {% if not forloop.last %}
+                    <a href="{{ crumb.url }}">{{ crumb.name }}</a> <span class="breadcrumb-separator">→</span>
+                {% else %}
+                    <span class="breadcrumb-current">{{ crumb.name }}</span>
+                {% endif %}
+            {% endfor %}
+        </nav>
+
+        <div class="card">
+            <h1 class="page-title">{{ subject.title }}</h1>
+            <p class="page-subtitle">Selectează un bloc pentru a vedea toate întrebările cu răspunsuri corecte și explicații.</p>
+
+            <div class="blocks-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.25rem; margin-top: 2rem;">
+                {% for block in blocks %}
+                    <a href="{% url 'learn_block_detail' subject_slug block.slug %}" class="block-tile" style="text-decoration: none; color: inherit;">
+                        <div class="block-number">Bloc {{ block.number }}</div>
+                        <div class="block-score">{{ block.question_count }} întrebări</div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

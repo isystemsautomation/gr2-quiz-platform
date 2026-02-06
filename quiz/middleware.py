@@ -21,6 +21,12 @@ class AuthenticationRequiredMiddleware:
             '/accounts/register/',
             '/static/',
         ]
+        # Public paths that don't require authentication
+        self.public_paths = [
+            '/learn/',
+            '/sitemap.xml',
+            '/robots.txt',
+        ]
 
     def __call__(self, request):
         # Allow static files
@@ -29,6 +35,10 @@ class AuthenticationRequiredMiddleware:
         
         # Allow login and register pages
         if request.path in self.exempt_paths:
+            return self.get_response(request)
+        
+        # Allow public learn pages, sitemap, and robots.txt
+        if request.path.startswith('/learn/') or request.path in ['/sitemap.xml', '/robots.txt']:
             return self.get_response(request)
         
         # Allow logout (GET or POST)

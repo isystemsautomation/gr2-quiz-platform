@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Învață - Chestionare Electricieni Grupa 2 | Platformă Internă</title>
+    <meta name="description" content="Accesează chestionarele pentru certificarea electricienilor Grupa 2. Electrotehnică, Legislație GR. 2 și Norme Tehnice GR. 2 cu răspunsuri și explicații.">
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <script type="application/ld+json">{{ structured_data }}</script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="header-logo">
+                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
+                <span class="header-logo-text">Platformă internă chestionare Electricieni – Grupa 2</span>
+            </a>
+            <nav class="header-nav">
+                <a href="/learn/">Învață</a>
+                <a href="/accounts/login/">Autentificare</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            {% for crumb in breadcrumbs %}
+                {% if not forloop.last %}
+                    <a href="{{ crumb.url }}">{{ crumb.name }}</a> <span class="breadcrumb-separator">→</span>
+                {% else %}
+                    <span class="breadcrumb-current">{{ crumb.name }}</span>
+                {% endif %}
+            {% endfor %}
+        </nav>
+
+        <div class="card">
+            <h1 class="page-title">Învață - Chestionare Electricieni Grupa 2</h1>
+            <p class="page-subtitle">Accesează chestionarele organizate pe discipline și blocuri. Fiecare bloc conține întrebări cu răspunsuri corecte și explicații detaliate.</p>
+
+            <div class="subjects-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                {% for subject in subjects %}
+                    <div class="subject-card" style="background: var(--bg-light); border-radius: 14px; padding: 2rem; border: 1px solid var(--border-color);">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark);">
+                            <a href="{% url 'learn_subject_detail' subject.slug %}" style="color: var(--primary-blue); text-decoration: none;">
+                                {{ subject.title }}
+                            </a>
+                        </h2>
+                        <p style="color: var(--text-medium); margin-bottom: 1rem;">
+                            <strong>{{ subject.block_count }}</strong> blocuri<br>
+                            <strong>{{ subject.question_count }}</strong> întrebări
+                        </p>
+                        <a href="{% url 'learn_subject_detail' subject.slug %}" class="btn btn-primary" style="display: inline-block;">
+                            Vezi blocuri →
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

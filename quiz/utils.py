@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 from django.conf import settings
 from django.contrib.staticfiles.finders import find
+from django.utils.text import slugify
 
 
 def check_static_file_exists(relative_path):
@@ -99,4 +100,71 @@ def get_option_image_url(question, subject, option_number):
     relative_path = f"img/{subject}/{base}_{option_number}.png"
     exists, url = check_static_file_exists(relative_path)
     return exists, url if exists else None
+
+
+def get_subject_slug(subject_id, subject_title):
+    """
+    Generate a stable, unique slug for a subject.
+    Format: slugified-title-id
+    Example: 'electrotehnica' -> 'electrotehnica-electrotehnica'
+    """
+    title_slug = slugify(subject_title)
+    return f"{title_slug}-{subject_id}"
+
+
+def get_block_slug(subject_id, block_number):
+    """
+    Generate a stable, unique slug for a block.
+    Format: bloc-{number}-{subject_id}
+    Example: block 1 in electrotehnica -> 'bloc-1-electrotehnica'
+    """
+    return f"bloc-{block_number}-{subject_id}"
+
+
+def parse_subject_slug(slug):
+    """
+    Parse a subject slug back to subject_id.
+    Returns subject_id or None if invalid.
+    """
+    # Subject slugs are: slugified-title-id
+    # We can extract the id from the end
+    parts = slug.rsplit('-', 1)
+    if len(parts) == 2:
+        # Try to find matching subject
+        try:
+            from .learn_views import list_subjects
+        except ImportError:
+            from .views import list_subjects
+        for subj in list_subjects():
+            if get_subject_slug(subj['id'], subj['title']) == slug:
+                return subj['id']
+    return None
+
+
+def parse_block_slug(slug):
+    """
+    Parse a block slug back to (subject_id, block_number).
+    Format: bloc-{number}-{subject_id}
+    Returns (subject_id, block_number) or (None, None) if invalid.
+    """
+    # Block slugs are: bloc-{number}-{subject_id}
+    if not slug.startswith('bloc-'):
+        return None, None
+    
+    parts = slug[5:].rsplit('-', 1)  # Remove 'bloc-' prefix
+    if len(parts) == 2:
+        try:
+            block_number = int(parts[0])
+            subject_id = parts[1]
+            # Validate subject_id
+            try:
+                from .learn_views import list_subjects
+            except ImportError:
+                from .views import list_subjects
+            valid_subjects = [s['id'] for s in list_subjects()]
+            if subject_id in valid_subjects:
+                return subject_id, block_number
+        except ValueError:
+            pass
+    return None, None
 
