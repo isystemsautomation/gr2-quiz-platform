@@ -175,10 +175,10 @@ The color reflects your **last attempt** for that block, helping you quickly ide
    - **Explanations** (if available)
 5. Results are **saved automatically**
 
-![Additional Views](img/4.png) ![Additional Views](img/5.png) ![Additional Views](img/6.png)
+
 
 ### 5. Completing Questions Without Answer or Explanation
-
+![Additional Views](img/4.png) ![Additional Views](img/5.png) ![Additional Views](img/6.png)
 The platform marks incomplete questions with:
 
 - **"Lipsă răspuns"** (Missing answer) – red badge
@@ -194,19 +194,6 @@ The platform marks incomplete questions with:
 - Existing answers
 - Existing explanations
 
-### 6. Administrator Rights
-
-Only the Administrator can:
-- Modify existing answers
-- Modify existing explanations
-- Correct questions
-- Update the database
-- Edit image settings
-
-The Administrator has **full editing access** to all questions.
-
-### 7. How a User Completes an Incomplete Question
-
 If you see:
 - **"Lipsă răspuns"** (Missing answer)
 - or **"Lipsă explicație"** (Missing explanation)
@@ -221,7 +208,19 @@ If you see:
 
 **Note:** Once both answer and explanation exist, only administrators can edit them.
 
-### 8. How an Administrator Modifies an Existing Question
+### 6. Administrator Rights
+
+Only the Administrator can:
+- Modify existing answers
+- Modify existing explanations
+- Correct questions
+- Update the database
+- Edit image settings
+
+The Administrator has **full editing access** to all questions.
+
+
+### 7. How an Administrator Modifies an Existing Question
 
 The Administrator:
 
@@ -232,7 +231,7 @@ The Administrator:
    - Image settings (optional)
 3. Saves the changes by clicking **"Salvează"** (Save)
 
-### 9. Interpreting Results
+### 8. Interpreting Results
 
 The platform displays:
 
@@ -243,14 +242,14 @@ The platform displays:
 - **Ungradable questions** – marked with gray **"Ne-evaluabil"** badge (questions without a correct answer)
 - **Explanations** – shown for each question (if available)
 
-### 10. Saving Data
+### 9. Saving Data
 
 - Answers are **saved automatically** as you select them
 - No manual save is required
 - Your answer selections are preserved even if you navigate away to edit a question
 - Results are saved automatically after submission
 
-### 11. General Rules
+### 10. General Rules
 
 **User (Normal Account):**
 - Can complete only **missing data**
