@@ -1,5 +1,7 @@
 # Platformă internă chestionare Electricieni – Grupa 2
 
+**🌐 Live Platform:** [https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)
+
 Online quiz platform for electrician certification (Grupa 2). Includes Electrotehnică, Legislație Gr.2 and Norme Tehnice Gr.2 with automatic grading and explanations. Questions are stored in the database so they can be corrected and completed over time.
 
 ## Features
@@ -105,41 +107,170 @@ gr2-quiz-platform/
 └── README.md
 ```
 
-## Usage – normal user
+## Screenshots
 
-1. **Registration/Login**
-   - Browse to the site URL (e.g. `https://quiz.isystemsautomation.com/`)
-   - Log in with your account or click **„Înregistrează-te”** to create a new one
+### 1. Login Page
+![Login Page](img/1.png)
 
-2. **Dashboard**
-   - Shows all disciplines (Electrotehnică / Legislație / Norme tehnice)
-   - Under each discipline you see the blocks. Each block tile shows:
-     - Block number
-     - Last attempt score (or "—" if not attempted)
-     - Color coding of **last attempt**:
-       - **White**: No attempts
-       - **Green**: Perfect score (score == total)
-       - **Yellow**: Good score (score >= total - 2)
-       - **Red**: Needs improvement (score < total - 2)
-     - If you saved a note for that block: small label **„Notă salvată”**
+The login page allows you to authenticate with your account or navigate to registration. If you forgot your password, contact the internal administrator or create a new account.
 
-3. **Taking a block**
-   - Click on a block tile.
-   - At the top of the page you can write a **personal note** for that block (visible only for your user).
-   - Answer all questions by selecting `a / b / c`.
-   - For questions where the correct answer or explanation is **missing**, you will see an **„Edit / Completează”** link:
-     - You can set the correct answer and add an explanation.
-     - Once both exist, only a superuser can change them.
+### 2. Dashboard
+![Dashboard](img/2.png)
 
-4. **Submitting and results**
-   - Click **„Trimite răspunsurile”** to submit.
-   - The server grades only questions with a defined `correct` value.
-   - Questions with `correct = NULL` are shown as **„Ne-evaluabil”** and do not affect the score.
-   - The results page shows:
-     - Score `X/Y` and percentage
-     - For each question: your answer, correct answer, status (Corect / Greșit / Ne-evaluabil) and explanation
-     - Your personal note for that block (if filled)
-   - The dashboard is updated with the new **last attempt** for that block.
+The dashboard displays all available disciplines and their blocks. Each block tile shows your progress with color-coded status indicators.
+
+### 3. Quiz Taking Page
+![Quiz Page](img/3.png)
+
+When taking a quiz, you can see all questions, select answers, and edit questions that are missing answers or explanations.
+
+### 4-6. Additional Views
+![Additional Views](img/4.png) ![Additional Views](img/5.png) ![Additional Views](img/6.png)
+
+## User Guide – "Electrician Quizzes – Group 2" Platform
+
+### 1. Creating an Account (Registration)
+
+To use the platform, you must create an account.
+
+**Steps:**
+
+1. Access the platform's main page at **[https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)**
+2. Click on **"Înregistrează-te"** (Register)
+3. Fill in:
+   - **Username**
+   - **Password**
+4. Confirm registration
+5. After registration, log in using the credentials you created
+
+### 2. Authentication
+
+1. Enter your **Username** and **Password**
+2. Click **"Autentificare"** (Login)
+3. You will be redirected to the Dashboard
+
+**Note:** If you forgot your password, contact the internal administrator or create a new account.
+
+### 3. Dashboard – Navigation
+
+The Dashboard contains three sections:
+
+- **Electrotehnică** (Electrotechnics)
+- **Legislație GR. 2** (Legislation GR. 2)
+- **Norme Tehnice GR. 2** (Technical Standards GR. 2)
+
+Each section contains blocks:
+
+- **Bloc 1** (Block 1)
+- **Bloc 2** (Block 2)
+- **Bloc 3** (Block 3)
+- etc.
+
+Each block contains questions (typically ~20 questions per block).
+
+**Block Color Coding:**
+- **White**: No attempts yet
+- **Green**: Perfect score (all questions correct)
+- **Yellow**: Good score (18-19 correct out of 20)
+- **Red**: Needs improvement (less than 18 correct)
+
+### 4. Taking Quizzes
+
+1. **Select a block** from the dashboard
+2. **Answer the questions** by selecting option **a**, **b**, or **c** for each question
+3. **Submit your answers** by clicking **"Trimite răspunsurile"** (Submit answers)
+4. At the end, the system displays:
+   - Your **score** (e.g., 18/20)
+   - **Correct answers**
+   - **Explanations** (if available)
+5. Results are **saved automatically**
+
+### 5. Completing Questions Without Answer or Explanation
+
+The platform marks incomplete questions with:
+
+- **"Lipsă răspuns"** (Missing answer) – red badge
+- **"Lipsă explicație"** (Missing explanation) – red badge
+
+**Important Rules:**
+
+**Normal users can:**
+- Complete the correct answer if it's missing
+- Complete the explanation if it's missing
+
+**Normal users CANNOT modify:**
+- Existing answers
+- Existing explanations
+
+### 6. Administrator Rights
+
+Only the Administrator can:
+- Modify existing answers
+- Modify existing explanations
+- Correct questions
+- Update the database
+- Edit image settings
+
+The Administrator has **full editing access** to all questions.
+
+### 7. How a User Completes an Incomplete Question
+
+If you see:
+- **"Lipsă răspuns"** (Missing answer)
+- or **"Lipsă explicație"** (Missing explanation)
+
+**Steps:**
+
+1. Click **"Edit / Completează"** (Edit / Complete)
+2. **Select the correct answer** (if missing) – choose **a**, **b**, or **c**
+3. **Enter the explanation** (if missing) – write the explanation text
+4. Click **"Salvează"** (Save)
+5. You will be redirected back to the quiz page with your previous answer selections preserved
+
+**Note:** Once both answer and explanation exist, only administrators can edit them.
+
+### 8. How an Administrator Modifies an Existing Question
+
+The Administrator:
+
+1. Clicks **"Edit / Completează"** (Edit / Complete)
+2. Can modify:
+   - The correct answer
+   - The explanation
+   - Image settings (optional)
+3. Saves the changes by clicking **"Salvează"** (Save)
+
+### 9. Interpreting Results
+
+The platform displays:
+
+- **Total score** (e.g., 18/20)
+- **Percentage** (e.g., 90%)
+- **Correct questions** – marked with green **"Corect"** badge
+- **Incorrect questions** – marked with red **"Greșit"** badge
+- **Ungradable questions** – marked with gray **"Ne-evaluabil"** badge (questions without a correct answer)
+- **Explanations** – shown for each question (if available)
+
+### 10. Saving Data
+
+- Answers are **saved automatically** as you select them
+- No manual save is required
+- Your answer selections are preserved even if you navigate away to edit a question
+- Results are saved automatically after submission
+
+### 11. General Rules
+
+**User (Normal Account):**
+- Can complete only **missing data**
+- Cannot modify **existing data**
+- Can add personal notes per block (private, visible only to you)
+
+**Administrator (Superuser):**
+- Can modify **any question**
+- Can correct **answers**
+- Can correct **explanations**
+- Can update the **database**
+- Has full access to the admin panel at `/admin/`
 
 ---
 
