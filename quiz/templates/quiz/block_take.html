@@ -39,7 +39,7 @@
                 </div>
             </form>
 
-            <form method="post" action="{% url 'block_submit' subject block_number %}">
+            <form method="post" action="{% url 'block_submit' subject block_number %}" id="quiz-form">
                 {% csrf_token %}
 
                 {% for item in questions %}
@@ -48,7 +48,7 @@
                         <div class="question-header">
                             <strong>Întrebarea {{ forloop.counter }}</strong>
                             {% if item.can_edit or user.is_superuser %}
-                                <a href="{% url 'question_edit' question.pk %}?next=block" class="edit-link">Edit / Completează</a>
+                                <a href="{% url 'question_edit' question.pk %}?next=block" class="edit-link" data-save-form="true">Edit / Completează</a>
                             {% endif %}
                         </div>
 
@@ -124,5 +124,68 @@
             </form>
         </div>
     </div>
+
+    <script>
+        // Preserve form selections when navigating to edit page
+        (function() {
+            const form = document.getElementById('quiz-form');
+            if (!form) return;
+
+            const storageKey = 'quiz_form_{{ subject }}_{{ block_number }}';
+
+            // Save form state to localStorage
+            function saveFormState() {
+                const formData = new FormData(form);
+                const selections = {};
+                for (const [key, value] of formData.entries()) {
+                    if (key.startsWith('question_')) {
+                        selections[key] = value;
+                    }
+                }
+                localStorage.setItem(storageKey, JSON.stringify(selections));
+            }
+
+            // Restore form state from localStorage
+            function restoreFormState() {
+                const saved = localStorage.getItem(storageKey);
+                if (!saved) return;
+
+                try {
+                    const selections = JSON.parse(saved);
+                    for (const [name, value] of Object.entries(selections)) {
+                        const radio = form.querySelector(`input[name="${name}"][value="${value}"]`);
+                        if (radio) {
+                            radio.checked = true;
+                        }
+                    }
+                } catch (e) {
+                    console.error('Error restoring form state:', e);
+                }
+            }
+
+            // Save state whenever a radio button changes
+            form.addEventListener('change', function(e) {
+                if (e.target.type === 'radio') {
+                    saveFormState();
+                }
+            });
+
+            // Save state before navigating to edit page
+            const editLinks = document.querySelectorAll('a[data-save-form="true"]');
+            editLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    saveFormState();
+                });
+            });
+
+            // Restore state on page load
+            restoreFormState();
+
+            // Clear storage when form is successfully submitted
+            form.addEventListener('submit', function() {
+                localStorage.removeItem(storageKey);
+            });
+        })();
+    </script>
 </body>
 </html>
