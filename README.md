@@ -107,161 +107,298 @@ gr2-quiz-platform/
 └── README.md
 ```
 
-## User Guide – "Electrician Quizzes – Group 2" Platform
+## Ghid utilizare platformă chestionare electricieni – Grupa 2
 
-### 1. Creating an Account (Registration)
+Platforma **"Chestionare Electricieni – Grupa 2"** este o aplicație web destinată pregătirii și evaluării cunoștințelor pentru certificarea electricienilor din Grupa 2. Platforma oferă chestionare structurate pe discipline (Electrotehnică, Legislație GR. 2, Norme Tehnice GR. 2), organizate în blocuri de aproximativ 20 de întrebări fiecare.
 
-To use the platform, you must create an account.
+**Cine poate folosi platforma:**
+- **Utilizatori normali**: pot rezolva chestionare, vedea rezultatele și completa întrebări care lipsesc răspunsuri sau explicații
+- **Administratori**: au acces complet la editarea tuturor întrebărilor, răspunsurilor și explicațiilor
 
-**Steps:**
+**Acces platformă:** [https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)
 
-1. Access the platform's main page at **[https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)**
-2. Click on **"Înregistrează-te"** (Register)
-3. Fill in:
-   - **Username**
-   - **Password**
-4. Confirm registration
-5. After registration, log in using the credentials you created
+---
 
-### 2. Authentication
+### 1. Înregistrare cont
 
-![Login Page](img/1.png)
+Pentru a utiliza platforma, trebuie să îți creezi un cont.
 
-1. Enter your **Username** and **Password**
-2. Click **"Autentificare"** (Login)
-3. You will be redirected to the Dashboard
+**Pași:**
 
-**Note:** If you forgot your password, contact the internal administrator or create a new account.
+1. Accesează pagina principală a platformei la adresa **[https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)**
+2. Apasă pe linkul **"Nu ai cont? Înregistrează-te"** (Don't have an account? Register)
+3. Completează formularul de înregistrare:
+   - **Username** – alege un nume de utilizator
+   - **Password** – alege o parolă sigură
+4. Confirmă înregistrarea apăsând butonul **"Înregistrare"**
+5. După înregistrare, vei fi autentificat automat și redirecționat către Dashboard
 
-### 3. Dashboard – Navigation
+[![Pagina autentificare](img/1.png)](img/1.png)
 
-![Dashboard](img/2.png)
+### 2. Autentificare
 
-The Dashboard contains three sections:
+Dacă ai deja un cont, autentifică-te pentru a accesa platforma.
 
-- **Electrotehnică** (Electrotechnics)
-- **Legislație GR. 2** (Legislation GR. 2)
-- **Norme Tehnice GR. 2** (Technical Standards GR. 2)
+**Pași:**
 
-Each section contains blocks:
+1. Accesează pagina de autentificare la **[https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)**
+2. Introdu **Username**-ul tău în primul câmp
+3. Introdu **Parola** ta în al doilea câmp
+4. Apasă butonul **"Autentificare"** (Login)
+5. Vei fi redirecționat automat către Dashboard
 
-- **Bloc 1** (Block 1)
-- **Bloc 2** (Block 2)
-- **Bloc 3** (Block 3)
-- etc.
+**Notă:** Dacă ai uitat parola, contactează administratorul intern sau creează un cont nou.
 
-Each block contains questions (typically ~20 questions per block).
+[![Pagina autentificare](img/1.png)](img/1.png)
 
-**Block Color Coding (for a typical 20-question block):**
-- **White**: No attempts yet
-- **Green**: Perfect score (20/20) – all questions correct
-- **Yellow**: Good score (18-19/20) – score is within 2 points of perfect (score ≥ total - 2)
-- **Red**: Needs improvement (0-17/20) – score is more than 2 points below perfect (score < total - 2)
+### 3. Dashboard și navigare
 
-**Note:** The thresholds adjust automatically for blocks with different numbers of questions. For example, in a 15-question block: Green = 15/15, Yellow = 13-14/15, Red = 0-12/15.
+După autentificare, vei ajunge pe pagina **Dashboard**, care este punctul central de navigare al platformei.
 
-The color reflects your **last attempt** for that block, helping you quickly identify which blocks need more practice.
+[![Dashboard](img/2.png)](img/2.png)
 
-### 4. Taking Quizzes
+**Structura Dashboard-ului:**
 
-![Quiz Page](img/3.png)
+Dashboard-ul este organizat în **trei discipline principale**:
 
-1. **Select a block** from the dashboard
-2. **Answer the questions** by selecting option **a**, **b**, or **c** for each question
-3. **Submit your answers** by clicking **"Trimite răspunsurile"** (Submit answers)
-4. At the end, the system displays:
-   - Your **score** (e.g., 18/20)
-   - **Correct answers**
-   - **Explanations** (if available)
-5. Results are **saved automatically**
+1. **Electrotehnică** – chestionare despre principiile electrotehnicii
+2. **Legislație GR. 2** – chestionare despre legislația aplicabilă electricienilor Grupa 2
+3. **Norme Tehnice GR. 2** – chestionare despre normele tehnice specifice
 
+**Blocuri și întrebări:**
 
+- Fiecare disciplină conține mai multe **blocuri** (Bloc 1, Bloc 2, Bloc 3, etc.)
+- Fiecare bloc conține aproximativ **20 de întrebări** (ultimul bloc poate avea mai puține)
+- Fiecare întrebare are **3 opțiuni de răspuns**: a, b sau c
 
-### 5. Completing Questions Without Answer or Explanation
-![Additional Views](img/4.png) ![Additional Views](img/5.png) ![Additional Views](img/6.png)
-The platform marks incomplete questions with:
+**Culori blocuri și semnificație:**
 
-- **"Lipsă răspuns"** (Missing answer) – red badge
-- **"Lipsă explicație"** (Missing explanation) – red badge
+Culoarea fiecărui bloc indică performanța ta la **ultima încercare** pentru acel bloc:
 
-**Important Rules:**
+| Culoare | Semnificație | Scor (exemplu pentru 20 întrebări) |
+|---------|--------------|-------------------------------------|
+| **Alb** | Nu ai început acest bloc | — |
+| **Verde** | Scor perfect | 20/20 (toate corecte) |
+| **Galben** | Scor bun | 18-19/20 (la 1-2 puncte de perfect) |
+| **Roșu** | Necesită îmbunătățire | 0-17/20 (mai mult de 2 puncte sub perfect) |
 
-**Normal users can:**
-- Complete the correct answer if it's missing
-- Complete the explanation if it's missing
+**Notă:** Pragurile se ajustează automat pentru blocuri cu număr diferit de întrebări. De exemplu, pentru un bloc cu 15 întrebări: Verde = 15/15, Galben = 13-14/15, Roșu = 0-12/15.
 
-**Normal users CANNOT modify:**
-- Existing answers
-- Existing explanations
+**Informații afișate pe fiecare bloc:**
 
-If you see:
-- **"Lipsă răspuns"** (Missing answer)
-- or **"Lipsă explicație"** (Missing explanation)
+- Numărul blocului (ex: "Bloc 1")
+- Scorul ultimei încercări (ex: "18/20" sau "—" dacă nu ai încercat)
+- Indicator **"Notă salvată"** dacă ai salvat o notă personală pentru acest bloc
 
-**Steps:**
+### 4. Rezolvarea chestionarelor
 
-1. Click **"Edit / Completează"** (Edit / Complete)
-2. **Select the correct answer** (if missing) – choose **a**, **b**, or **c**
-3. **Enter the explanation** (if missing) – write the explanation text
-4. Click **"Salvează"** (Save)
-5. You will be redirected back to the quiz page with your previous answer selections preserved
+Pentru a rezolva un chestionar, selectează un bloc din Dashboard.
 
-**Note:** Once both answer and explanation exist, only administrators can edit them.
+[![Rezultate quiz](img/3.png)](img/3.png)
 
-### 6. Administrator Rights
+**Pași pentru rezolvarea unui bloc:**
 
-Only the Administrator can:
-- Modify existing answers
-- Modify existing explanations
-- Correct questions
-- Update the database
-- Edit image settings
+1. **Selectează un bloc** – apasă pe unul dintre blocurile afișate în Dashboard
+2. **Citește întrebările** – fiecare întrebare este afișată cu cele 3 opțiuni de răspuns (a, b, c)
+3. **Selectează răspunsurile** – apasă pe butonul radio corespunzător opțiunii pe care o consideri corectă
+4. **Salvează nota personală** (opțional) – în partea de sus a paginii poți scrie o notă personală pentru acest bloc, vizibilă doar pentru tine
+5. **Trimite răspunsurile** – după ce ai răspuns la toate întrebările, apasă butonul **"Trimite răspunsurile"** (Submit answers)
 
-The Administrator has **full editing access** to all questions.
+**După trimitere:**
 
+- Sistemul calculează automat scorul tău
+- Vei vedea pagina de rezultate care afișează:
+  - **Scorul total** (ex: 18/20)
+  - **Procentul** (ex: 90%)
+  - Pentru fiecare întrebare: răspunsul tău, răspunsul corect, statusul (Corect/Greșit/Ne-evaluabil) și explicația (dacă există)
 
-### 7. How an Administrator Modifies an Existing Question
+**Salvare automată:**
 
-The Administrator:
+- Răspunsurile tale sunt **salvate automat** pe măsură ce le selectezi
+- Dacă navighezi către editarea unei întrebări, răspunsurile tale vor fi păstrate când revii
+- Rezultatele sunt **salvate automat** după trimitere
 
-1. Clicks **"Edit / Completează"** (Edit / Complete)
-2. Can modify:
-   - The correct answer
-   - The explanation
-   - Image settings (optional)
-3. Saves the changes by clicking **"Salvează"** (Save)
+### 5. Întrebări cu „Lipsă răspuns" sau „Lipsă explicație"
 
-### 8. Interpreting Results
+Platforma marchează întrebările incomplete cu badge-uri colorate pentru a indica ce informații lipsesc.
 
-The platform displays:
+[![Întrebare incompletă](img/4.png)](img/4.png)
+[![Întrebare incompletă](img/5.png)](img/5.png)
+[![Editare întrebare](img/6.png)](img/6.png)
 
-- **Total score** (e.g., 18/20)
-- **Percentage** (e.g., 90%)
-- **Correct questions** – marked with green **"Corect"** badge
-- **Incorrect questions** – marked with red **"Greșit"** badge
-- **Ungradable questions** – marked with gray **"Ne-evaluabil"** badge (questions without a correct answer)
-- **Explanations** – shown for each question (if available)
+**Indicatori vizuali:**
 
-### 9. Saving Data
+- **"Lipsă răspuns"** – badge roșu care indică că întrebarea nu are răspuns corect definit
+- **"Lipsă explicație"** – badge roșu care indică că întrebarea nu are explicație
+- **"Răspuns existent."** – badge verde care indică că răspunsul corect este completat
+- **"Explicație existentă."** – badge verde care indică că explicația este completată
 
-- Answers are **saved automatically** as you select them
-- No manual save is required
-- Your answer selections are preserved even if you navigate away to edit a question
-- Results are saved automatically after submission
+**Reguli importante pentru utilizatori normali:**
 
-### 10. General Rules
+**Utilizatorul normal POATE:**
+- Completa răspunsul corect dacă lipsește (câmpul `correct` este NULL)
+- Completa explicația dacă lipsește (câmpul `explanation` este gol)
 
-**User (Normal Account):**
-- Can complete only **missing data**
-- Cannot modify **existing data**
-- Can add personal notes per block (private, visible only to you)
+**Utilizatorul normal NU POATE modifica:**
+- Răspunsuri existente (dacă `correct` este deja completat)
+- Explicații existente (dacă `explanation` este deja completată)
 
-**Administrator (Superuser):**
-- Can modify **any question**
-- Can correct **answers**
-- Can correct **explanations**
-- Can update the **database**
-- Has full access to the admin panel at `/admin/`
+**Administratorul POATE:**
+- Modifica orice întrebare, indiferent dacă are deja răspuns sau explicație
+- Corecta răspunsuri existente
+- Corecta explicații existente
+- Modifica setările de imagini
+
+**Comportament validare:**
+
+- Dacă o întrebare are deja răspuns și explicație, doar administratorul poate modifica aceste date
+- Dacă o întrebare are doar unul dintre ele (răspuns sau explicație), utilizatorul normal poate completa ceea ce lipsește
+- Odată ce ambele sunt completate, doar administratorul poate face modificări ulterioare
+
+### 6. Cum completează utilizatorul o întrebare incompletă
+
+Dacă întâlnești o întrebare marcată cu **"Lipsă răspuns"** sau **"Lipsă explicație"**, poți completa informațiile lipsă.
+
+**Pași detaliați:**
+
+1. **Apasă pe linkul "Edit / Completează"** – acest link apare lângă întrebarea incompletă
+2. **Selectează răspunsul corect** (dacă lipsește):
+   - În formularul de editare, vei vedea un meniu dropdown cu opțiunile: A, B, C
+   - Selectează opțiunea pe care o consideri corectă
+3. **Introdu explicația** (dacă lipsește):
+   - În câmpul text pentru explicație, scrie o explicație clară despre de ce acest răspuns este corect
+   - Explicația ar trebui să fie suficient de detaliată pentru a ajuta alți utilizatori să înțeleagă conceptul
+4. **Salvează modificările** – apasă butonul **"Salvează"** (Save)
+5. **Redirecționare automată** – vei fi redirecționat înapoi la pagina de quiz, iar răspunsurile tale selectate anterior vor fi păstrate
+
+**Notă importantă:** Odată ce ambele câmpuri (răspuns și explicație) sunt completate, doar administratorii pot modifica aceste date în viitor.
+
+### 7. Drepturi Administrator
+
+Administratorii (superuseri) au acces complet la toate funcționalitățile de editare ale platformei.
+
+**Ce poate face administratorul:**
+
+- **Modifică răspunsuri existente** – poate corecta răspunsurile corecte pentru orice întrebare
+- **Modifică explicații existente** – poate actualiza sau corecta explicațiile pentru orice întrebare
+- **Editează setări imagini** – poate modifica numele sau calea imaginilor asociate întrebărilor
+- **Actualizează baza de date** – are acces complet la baza de date prin panoul de administrare
+- **Gestionează toate întrebările** – poate modifica orice aspect al unei întrebări (text, opțiuni, răspuns, explicație, imagini)
+
+**Acces panou administrare:**
+
+Administratorii pot accesa panoul de administrare Django la adresa `/admin/` după autentificare, unde pot:
+
+- Gestiona toate întrebările (`Question`)
+- Vizualiza încercările utilizatorilor (`BlockAttempt`) – doar citire pentru audit
+- Gestiona notele personale (`BlockNote`) – opțional
+
+**Diferențe față de utilizatorii normali:**
+
+| Funcționalitate | Utilizator normal | Administrator |
+|----------------|-------------------|---------------|
+| Completează răspuns lipsă | ✅ Da | ✅ Da |
+| Completează explicație lipsă | ✅ Da | ✅ Da |
+| Modifică răspuns existent | ❌ Nu | ✅ Da |
+| Modifică explicație existentă | ❌ Nu | ✅ Da |
+| Modifică imagini | ❌ Nu | ✅ Da |
+| Acces panou admin | ❌ Nu | ✅ Da |
+
+### 8. Interpretare rezultate
+
+După ce trimiți răspunsurile, platforma afișează pagina de rezultate cu informații detaliate despre performanța ta.
+
+**Elemente afișate:**
+
+1. **Scor total** – afișat prominent în partea de sus (ex: "18/20")
+2. **Procent** – procentul de răspunsuri corecte (ex: "90%")
+3. **Rezultate pe întrebări** – pentru fiecare întrebare vei vedea:
+   - Răspunsul tău selectat
+   - Răspunsul corect
+   - Status badge cu una dintre următoarele:
+     - **"Corect"** (badge verde) – ai răspuns corect
+     - **"Greșit"** (badge roșu) – ai răspuns greșit
+     - **"Ne-evaluabil"** (badge gri) – întrebarea nu are răspuns corect definit, deci nu afectează scorul
+   - **Explicație** – textul explicativ (dacă este disponibil)
+
+**Cum să interpretezi rezultatele:**
+
+- **Badge-uri verzi "Corect"** – întrebări la care ai răspuns corect; continuă să menții acest nivel
+- **Badge-uri roșii "Greșit"** – întrebări la care ai răspuns greșit; recitește explicația și studiază mai mult acest subiect
+- **Badge-uri grii "Ne-evaluabil"** – întrebări care nu au încă răspuns corect definit; acestea nu afectează scorul tău, dar poți ajuta platforma completând răspunsul și explicația
+
+**Notă personală:**
+
+Dacă ai salvat o notă personală pentru acest bloc, aceasta va fi afișată în partea de jos a paginii de rezultate.
+
+### 9. Salvare și persistenta datelor
+
+Platforma salvează automat toate datele tale pentru a asigura o experiență fără pierdere de informații.
+
+**Salvare automată răspunsuri:**
+
+- Răspunsurile tale sunt **salvate automat** în browser (localStorage) pe măsură ce le selectezi
+- Nu este necesară salvare manuală
+- Dacă navighezi către editarea unei întrebări, răspunsurile tale selectate anterior vor fi **păstrate și restaurate** când revii la pagina de quiz
+- Chiar dacă închizi browserul și revii mai târziu, răspunsurile tale vor fi păstrate până când trimiți quiz-ul
+
+**Salvare rezultate:**
+
+- După ce trimiți quiz-ul, rezultatele sunt **salvate automat** în baza de date
+- Scorul tău este asociat cu contul tău și blocul respectiv
+- Dashboard-ul va afișa automat ultima încercare pentru fiecare bloc
+- Poți vedea istoricul complet al încercărilor tale (accesibil administratorilor pentru audit)
+
+**Notă personală:**
+
+- Notele personale pe care le salvezi pentru fiecare bloc sunt **salvate permanent** în baza de date
+- Sunt asociate cu contul tău și blocul respectiv
+- Sunt **private** – doar tu le poți vedea, nu sunt vizibile pentru alți utilizatori sau administratori (în mod normal)
+
+**Securitate:**
+
+- Toate datele sunt protejate prin autentificare
+- Parolele sunt hash-uite folosind algoritmi securizați
+- CSRF protection este activată pe toate formularele
+
+### 10. Reguli generale
+
+Iată un rezumat clar al permisiunilor și regulilor pentru utilizarea platformei.
+
+**Matrice permisiuni:**
+
+| Acțiune | Utilizator | Administrator |
+|---------|-----------|---------------|
+| Completează răspuns lipsă | ✅ Da | ✅ Da |
+| Completează explicație lipsă | ✅ Da | ✅ Da |
+| Modifică răspuns existent | ❌ Nu | ✅ Da |
+| Modifică explicație existentă | ❌ Nu | ✅ Da |
+| Modifică imagini | ❌ Nu | ✅ Da |
+| Rezolvă chestionare | ✅ Da | ✅ Da |
+| Vezi rezultate | ✅ Da | ✅ Da |
+| Adaugă note personale | ✅ Da | ✅ Da |
+| Acces panou admin (`/admin/`) | ❌ Nu | ✅ Da |
+
+**Reguli pentru utilizatori normali:**
+
+- Poți completa **doar datele lipsă** (răspuns sau explicație când sunt NULL/gol)
+- **Nu poți modifica** date existente (răspunsuri sau explicații deja completate)
+- Poți adăuga **note personale** per bloc (private, vizibile doar pentru tine)
+- Poți rezolva chestionare și vedea rezultatele pentru propriile încercări
+
+**Reguli pentru administratori:**
+
+- Poți modifica **orice întrebare**, indiferent de starea datelor
+- Poți corecta **răspunsuri** și **explicații** existente
+- Poți actualiza **baza de date** prin panoul de administrare
+- Ai acces complet la panoul de administrare la `/admin/`
+- Poți gestiona toate aspectele platformei
+
+**Concurrency și editare simultană:**
+
+- Platforma folosește **optimistic locking** pentru a preveni suprascrierea accidentală a modificărilor
+- Dacă doi utilizatori încearcă să editeze aceeași întrebare simultan, sistemul va preveni conflictele
+- Modificările sunt salvate cu timestamp pentru a asigura consistența datelor
 
 ---
 
