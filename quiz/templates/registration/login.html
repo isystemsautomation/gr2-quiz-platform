@@ -15,6 +15,7 @@
                 <span class="header-logo-text">Platformă internă chestionare Electricieni – Grupa 2</span>
             </a>
             <nav class="header-nav">
+                <a href="{% url 'learn_subject_list' %}">Învață fără cont</a>
                 <a href="#ajutor" onclick="document.getElementById('ajutor').scrollIntoView({behavior: 'smooth'}); return false;">Ajutor</a>
             </nav>
         </div>
@@ -53,6 +54,10 @@
 
             <p class="auth-link">
                 Nu ai cont? <a href="{% url 'register' %}" class="text-link">Înregistrează-te</a>
+            </p>
+
+            <p class="auth-link" style="text-align: center; margin-top: 1rem;">
+                <a href="{% url 'learn_subject_list' %}" class="text-link" style="font-weight: 500;">Vizualizează chestionarele fără autentificare</a>
             </p>
 
             <p class="help-text" style="text-align: center; margin-top: 1.5rem;">
