@@ -1,18 +1,20 @@
 """
 Django signals for automatic JSON synchronization.
 Automatically exports questions to JSON files when they are saved.
+Uses transaction.on_commit to avoid SQLite lock errors.
 """
 import json
-import threading
 from pathlib import Path
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
+from django.db import transaction
 from django.conf import settings
 from .models import Question
 
 
 # Thread-local storage to track if we're in a bulk import
 # This prevents auto-export during bulk operations
+import threading
 _skip_auto_export = threading.local()
 
 
@@ -105,31 +107,33 @@ def auto_export_question(sender, instance, created, **kwargs):
     """
     Automatically export questions to JSON when saved.
     Skips during bulk imports to avoid performance issues.
+    Uses transaction.on_commit to avoid SQLite lock errors.
     """
     # Skip if we're in a bulk import operation
     if get_skip_auto_export():
         return
     
     # Export only the affected subject
-    # Use a separate thread to avoid blocking the save operation
-    threading.Thread(
-        target=export_subject_to_json,
-        args=(instance.subject,),
-        daemon=True
-    ).start()
+    # Use transaction.on_commit to avoid SQLite lock errors
+    # This ensures the export happens after the transaction commits
+    transaction.on_commit(
+        lambda: export_subject_to_json(instance.subject)
+    )
 
 
 @receiver(post_delete, sender=Question)
 def auto_export_question_delete(sender, instance, **kwargs):
     """
     Automatically export when a question is deleted.
+    Uses transaction.on_commit to avoid SQLite lock errors.
     """
     if get_skip_auto_export():
         return
     
-    threading.Thread(
-        target=export_subject_to_json,
-        args=(instance.subject,),
-        daemon=True
-    ).start()
+    # Store subject_id before instance is deleted
+    subject_id = instance.subject
+    
+    transaction.on_commit(
+        lambda: export_subject_to_json(subject_id)
+    )
 

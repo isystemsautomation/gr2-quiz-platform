@@ -14,7 +14,8 @@
     <meta property="og:title" content="{{ subject.title }} – Bloc {{ block_number }} | Chestionare ANRE Electrician Grupa II">
     <meta property="og:description" content="Întrebări tip chestionar cu răspunsuri corecte și explicații pentru {{ subject.title }} – Bloc {{ block_number }}.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://quiz.isystemsautomation.com{{ request.path }}">
+    {% load site_urls %}
+    <meta property="og:url" content="{% site_url request.path %}">
     <meta property="og:site_name" content="Chestionare ANRE Electrician Grupa II">
     
     {% load static %}

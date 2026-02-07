@@ -3,8 +3,6 @@ Public Learn/SEO views for quiz platform.
 These views are accessible without authentication and are optimized for search engines.
 """
 from django.shortcuts import render, get_object_or_404, Http404
-from django.db.models import Prefetch
-from django.utils.html import escape
 import json
 
 from .models import Question
@@ -63,13 +61,13 @@ def learn_subject_list(request):
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Acasă",
-                "item": "https://quiz.isystemsautomation.com/"
+                "item": build_absolute_https_url(request, '/')
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Chestionare ANRE Grupa II",
-                "item": "https://quiz.isystemsautomation.com/learn/"
+                "item": build_absolute_https_url(request, '/learn/')
             }
         ]
     }, ensure_ascii=False)

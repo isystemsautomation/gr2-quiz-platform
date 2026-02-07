@@ -5,7 +5,7 @@ Prevents brute-force attacks on login and registration.
 from functools import wraps
 from django.core.cache import cache
 from django.http import HttpResponse
-from django.utils import timezone
+from django.conf import settings
 import time
 
 
@@ -26,8 +26,18 @@ def rate_limit(max_attempts=5, window_seconds=300, key_prefix='rate_limit'):
         @wraps(view_func)
         def wrapper(request, *args, **kwargs):
             # Get client identifier (IP address)
-            client_ip = request.META.get('HTTP_X_FORWARDED_FOR', '').split(',')[0].strip()
-            if not client_ip:
+            # Security: Only trust X-Forwarded-For if we're behind a known proxy
+            # Otherwise use REMOTE_ADDR to prevent spoofing
+            use_forwarded = getattr(settings, 'DJANGO_USE_X_FORWARDED_PROTO', False)
+            if use_forwarded:
+                # Behind proxy - trust first IP in X-Forwarded-For (proxy should sanitize)
+                forwarded = request.META.get('HTTP_X_FORWARDED_FOR', '')
+                if forwarded:
+                    client_ip = forwarded.split(',')[0].strip()
+                else:
+                    client_ip = request.META.get('REMOTE_ADDR', 'unknown')
+            else:
+                # Direct connection - use REMOTE_ADDR (cannot be spoofed)
                 client_ip = request.META.get('REMOTE_ADDR', 'unknown')
             
             # Build cache key

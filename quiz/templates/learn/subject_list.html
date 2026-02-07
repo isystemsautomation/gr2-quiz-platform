@@ -8,18 +8,17 @@
     <title>Chestionare ANRE Electrician Grupa II (Grupa 2) – Întrebări și explicații</title>
     <meta name="description" content="Chestionare ANRE Electrician Grupa II (Grupa 2) pentru pregătirea examenului: întrebări grilă, răspunsuri corecte și explicații pentru Electrotehnică, Legislație și Norme Tehnice.">
     <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-    <link rel="canonical" href="https://quiz.isystemsautomation.com/learn/">
+    {% load static site_urls %}
+    <link rel="canonical" href="{% site_url '/learn/' %}">
     
     <!-- OpenGraph Tags -->
     <meta property="og:title" content="Chestionare ANRE Electrician Grupa II (Grupa 2)">
     <meta property="og:description" content="Întrebări grilă, răspunsuri corecte și explicații pentru pregătirea examenului ANRE Electrician Grupa II.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://quiz.isystemsautomation.com/learn/">
-    <meta property="og:image" content="https://quiz.isystemsautomation.com/static/img/logo.png">
+    <meta property="og:url" content="{% site_url '/learn/' %}">
+    <meta property="og:image" content="{% site_url %}/static/img/logo.png">
     <meta property="og:site_name" content="Chestionare ANRE Electrician Grupa II">
     <meta property="og:locale" content="ro_RO">
-    
-    {% load static %}
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
     
     <!-- JSON-LD Structured Data -->
@@ -32,13 +31,13 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Acasă",
-                "item": "https://quiz.isystemsautomation.com/"
+                "item": "{% site_url '/' %}"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Chestionare ANRE Grupa II",
-                "item": "https://quiz.isystemsautomation.com/learn/"
+                "item": "{% site_url '/learn/' %}"
             }
         ]
     }

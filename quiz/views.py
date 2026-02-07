@@ -1,12 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import login, authenticate
-from django.contrib.auth.forms import UserCreationForm
-from django.http import HttpResponseRedirect, Http404
+from django.http import Http404
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
-from django.views.decorators.csrf import csrf_exempt
-from django.db.models import Max, Q
 from django.utils import timezone
 from django.contrib import messages
 
@@ -46,14 +42,28 @@ def dashboard(request):
         notes_qs = BlockNote.objects.filter(user=request.user, subject=subject_id)
         notes_by_block = {n.block_number: n.note for n in notes_qs}
         
-        # Get last attempt for each block
-        block_data = []
-        for block_num in blocks:
-            last_attempt = BlockAttempt.objects.filter(
+        # Get last attempt for each block (optimized: single query with prefetch)
+        block_numbers = list(blocks)
+        if block_numbers:
+            # Get all attempts for this subject/user in one query, ordered by block and taken_at
+            attempts_qs = BlockAttempt.objects.filter(
                 user=request.user,
                 subject=subject_id,
-                block_number=block_num
-            ).order_by('-taken_at').first()
+                block_number__in=block_numbers
+            ).order_by('block_number', '-taken_at')
+            
+            # Group by block_number and take first (latest) for each block
+            attempts_by_block = {}
+            for attempt in attempts_qs:
+                if attempt.block_number not in attempts_by_block:
+                    attempts_by_block[attempt.block_number] = attempt
+        else:
+            attempts_by_block = {}
+        
+        # Build block data
+        block_data = []
+        for block_num in blocks:
+            last_attempt = attempts_by_block.get(block_num)
             
             # Determine color class based on last attempt
             if last_attempt:

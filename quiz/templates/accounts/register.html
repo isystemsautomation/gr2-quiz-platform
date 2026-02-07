@@ -8,16 +8,16 @@
     <title>Înregistrare – Chestionare ANRE Electrician Grupa II (Grupa 2)</title>
     <meta name="description" content="Creează cont pentru chestionare ANRE Electrician Grupa II. Doar utilizator și parolă. Salvează progresul și rezultatele. Contul este opțional.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://quiz.isystemsautomation.com/accounts/register/">
+    {% load static site_urls %}
+    <link rel="canonical" href="{% site_url '/accounts/register/' %}">
     
     <!-- OpenGraph Tags -->
     <meta property="og:title" content="Înregistrare – Chestionare ANRE Electrician Grupa II (Grupa 2)">
     <meta property="og:description" content="Creează cont pentru chestionare ANRE Electrician Grupa II. Doar utilizator și parolă. Salvează progresul și rezultatele.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://quiz.isystemsautomation.com/accounts/register/">
+    <meta property="og:url" content="{% site_url '/accounts/register/' %}">
     <meta property="og:site_name" content="Chestionare ANRE Electrician Grupa II">
-    {% load static %}
-    <meta property="og:image" content="https://quiz.isystemsautomation.com{% static 'img/logo.png' %}">
+    <meta property="og:image" content="{% site_url %}{% static 'img/logo.png' %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
 <body class="saas-login-page">
