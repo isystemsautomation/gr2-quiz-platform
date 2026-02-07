@@ -3,7 +3,7 @@ Centralized subject metadata.
 Single source of truth for subject IDs, titles, and slugs.
 Prevents duplication and ensures consistency across the application.
 """
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 
 def list_subjects() -> List[Dict[str, str]]:
@@ -21,7 +21,7 @@ def list_subjects() -> List[Dict[str, str]]:
     ]
 
 
-def get_subject_by_id(subject_id: str) -> Dict[str, str] | None:
+def get_subject_by_id(subject_id: str) -> Optional[Dict[str, str]]:
     """
     Get subject metadata by ID.
     
