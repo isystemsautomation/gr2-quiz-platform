@@ -38,7 +38,7 @@ Platformă online pentru pregătirea examenului ANRE Electrician Grupa II (Grupa
 
 1. **Create a virtual environment:**
    ```bash
-   python -m venv .venv
+   python3 -m venv .venv
    ```
 
 2. **Activate the virtual environment:**
@@ -62,17 +62,17 @@ Platformă online pentru pregătirea examenului ANRE Electrician Grupa II (Grupa
 
 3. **Install dependencies:**
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 4. **Run migrations:**
    ```bash
-   python manage.py migrate
+   python3 manage.py migrate
    ```
    
    **Note:** This creates the `django_site` table required for sitemaps. After migration, create/update the Site record:
    ```bash
-   python manage.py shell
+   python3 manage.py shell
    ```
    Then in Python shell:
    ```python
@@ -86,23 +86,41 @@ Platformă online pentru pregătirea examenului ANRE Electrician Grupa II (Grupa
 
 5. **Create a superuser (optional, for admin access):**
    ```bash
-   python manage.py createsuperuser
+   python3 manage.py createsuperuser
    ```
 
 6. **Import questions from JSON into the database:**
    ```bash
-   python manage.py import_questions
+   python3 manage.py import_questions
    ```
 
 7. **Start the development server:**
    ```bash
-   python manage.py runserver
+   python3 manage.py runserver
    ```
 
 8. **Access the application:**
    - Public Learn mode: `http://127.0.0.1:8000/learn/` (no login required)
    - Quiz mode (requires login): `http://127.0.0.1:8000/` → redirects to login
    - Admin panel: `http://127.0.0.1:8000/admin/` (requires superuser)
+
+## Troubleshooting (Server)
+
+### `ModuleNotFoundError: No module named 'django'`
+
+If you see this when running `python3 manage.py ...`, the virtual environment is not active and/or dependencies are not installed for that Python interpreter.
+
+Use the exact sequence below on Ubuntu:
+
+```bash
+cd /opt/gr2-quiz/gr2-quiz-platform
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install -r requirements.txt
+python3 manage.py check
+```
+
+If your service runs via Apache `mod_wsgi` or Gunicorn, make sure it uses the same `.venv` Python path where Django is installed.
 
 ## Project Structure
 
@@ -437,21 +455,21 @@ For each **Question** you can edit:
 
 - Import (seed or update empty fields from JSON):
   ```bash
-  python manage.py import_questions
+  python3 manage.py import_questions
   ```
 - Export current database questions back into `quiz_data/*.json`:
   ```bash
-  python manage.py export_questions
+  python3 manage.py export_questions
   ```
 
 The database is the main source of truth; JSON is mainly for backup / sync / external editing.
 
 ### Management commands
 
-- **Import questions**: `python manage.py import_questions`
-- **Export questions**: `python manage.py export_questions`
-- **Check images**: `python manage.py check_images`
-- **Debug images**: `python manage.py debug_images --qid <id> --subject <subject>`
+- **Import questions**: `python3 manage.py import_questions`
+- **Export questions**: `python3 manage.py export_questions`
+- **Check images**: `python3 manage.py check_images`
+- **Debug images**: `python3 manage.py debug_images --qid <id> --subject <subject>`
 
 ## SEO Features
 
