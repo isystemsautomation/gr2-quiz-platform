@@ -96,8 +96,8 @@ def export_subject_to_json(subject_id):
     except Exception as e:
         # Log error but don't break the save operation
         import logging
-        logger = logging.getLogger(__name__)
-        logger.error(f"Failed to auto-export {subject_id} to JSON: {e}")
+        logger = logging.getLogger('quiz.signals')
+        logger.error(f"Failed to auto-export {subject_id} to JSON: {e}", exc_info=True)
 
 
 @receiver(post_save, sender=Question)
