@@ -1,19 +1,31 @@
-# Platformă internă chestionare Electricieni – Grupa 2
+# Chestionare ANRE Electrician Grupa II (Grupa 2)
 
 **🌐 Live Platform:** [https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)
 
-Online quiz platform for electrician certification (Grupa 2). Includes Electrotehnică, Legislație Gr.2 and Norme Tehnice Gr.2 with automatic grading and explanations. Questions are stored in the database so they can be corrected and completed over time.
+Platformă online pentru pregătirea examenului ANRE Electrician Grupa II (Grupa 2). Include chestionare pentru Electrotehnică, Legislație GR. 2 și Norme Tehnice GR. 2 cu evaluare automată și explicații. Întrebările sunt stocate în baza de date și pot fi corectate și completate în timp.
 
 ## Features
 
-- **Mandatory Authentication**: All pages require login except registration
-- **Block-based Quizzes**: Questions organized in blocks of ~20
-- **Progress Tracking**: Dashboard shows last attempt per block with color coding
-- **Automatic Grading**: Server-side grading with explanations
-- **Editable Questions**:
-  - Normal users can fill in missing `correct` / `explanation`
-  - Superusers can edit everything (including images)
-- **Personal Notes per Block**: Each user can save private notes per subject/block
+### Acces Public (Fără Cont)
+- **Modul Învață Public**: Acces complet la toate întrebările, răspunsuri corecte și explicații fără autentificare
+- **SEO Optimizat**: Pagini indexabile de Google cu structured data (JSON-LD), sitemap.xml, robots.txt
+- **URL-uri SEO-friendly**: Slug-uri clare pentru subiecte, blocuri și întrebări
+- **Fără salvare progres**: Progresul nu se salvează fără cont
+
+### Acces cu Cont (Autentificare)
+- **Salvare progres**: Progresul și rezultatele se salvează automat
+- **Istoric rezultate**: Vezi toate încercările tale anterioare
+- **Note personale**: Salvează note private pentru fiecare bloc
+- **Reia chestionarele**: Continuă de unde ai rămas
+
+### Funcționalități Quiz
+- **Chestionare pe blocuri**: Întrebări organizate în blocuri de ~20
+- **Tracking progres**: Dashboard-ul arată ultima încercare per bloc cu codificare pe culori
+- **Evaluare automată**: Evaluare server-side cu explicații
+- **Întrebări editabile**:
+  - Utilizatorii normali pot completa `correct` / `explanation` lipsă
+  - Superuserii pot edita totul (inclusiv imagini)
+- **Optimistic locking**: Previne suprascrierea accidentală la editări simultane
 
 ## Setup Instructions
 
@@ -57,29 +69,40 @@ Online quiz platform for electrician certification (Grupa 2). Includes Electrote
    ```bash
    python manage.py migrate
    ```
+   
+   **Note:** This creates the `django_site` table required for sitemaps. After migration, create/update the Site record:
+   ```bash
+   python manage.py shell
+   ```
+   Then in Python shell:
+   ```python
+   from django.contrib.sites.models import Site
+   site, _ = Site.objects.get_or_create(pk=1)
+   site.domain = 'quiz.isystemsautomation.com'
+   site.name = 'Chestionare ANRE Electrician Grupa II'
+   site.save()
+   exit()
+   ```
 
 5. **Create a superuser (optional, for admin access):**
    ```bash
    python manage.py createsuperuser
    ```
 
-6. **Start the development server:**
-   ```bash
-   python manage.py runserver
-   ```
-
-7. **Import questions from JSON into the database:**
+6. **Import questions from JSON into the database:**
    ```bash
    python manage.py import_questions
    ```
 
-8. **Access the application (development):**
+7. **Start the development server:**
    ```bash
    python manage.py runserver
    ```
-   - Open your browser and go to: `http://127.0.0.1:8000/`
-   - You will be redirected to the login page
-   - Register a new account or use an existing one
+
+8. **Access the application:**
+   - Public Learn mode: `http://127.0.0.1:8000/learn/` (no login required)
+   - Quiz mode (requires login): `http://127.0.0.1:8000/` → redirects to login
+   - Admin panel: `http://127.0.0.1:8000/admin/` (requires superuser)
 
 ## Project Structure
 
@@ -90,18 +113,25 @@ gr2-quiz-platform/
 │   ├── urls.py
 │   └── ...
 ├── quiz/                 # Main quiz application
-│   ├── models.py         # BlockAttempt model
-│   ├── views.py         # Quiz views
-│   ├── loader.py        # JSON data loader utility
-│   ├── templates/       # HTML templates
+│   ├── models.py         # Question, BlockAttempt, BlockNote models
+│   ├── views.py         # Quiz views (dashboard, block_take, etc.)
+│   ├── learn_views.py   # Public Learn/SEO views
+│   ├── sitemaps.py      # Sitemap configuration
+│   ├── robots_views.py  # robots.txt view
+│   ├── utils.py         # Helper functions (slugs, image URLs, etc.)
+│   ├── templates/     # HTML templates
+│   │   ├── learn/       # Public Learn mode templates
+│   │   ├── quiz/        # Quiz mode templates
+│   │   └── registration/ # Login/register templates
 │   └── ...
-├── quiz_data/            # JSON quiz data files
+├── quiz_data/            # JSON quiz data files (seed data)
 │   ├── electrotehnica.json
 │   ├── legislatie-gr-2.json
 │   └── norme-tehnice-gr-2.json
-├── static/              # Static files (CSS)
-│   └── css/
-│       └── app.css
+├── static/              # Static files
+│   ├── css/
+│   │   └── app.css      # Global styles
+│   └── img/             # Images (logo, question images)
 ├── manage.py
 ├── requirements.txt
 └── README.md
@@ -109,9 +139,10 @@ gr2-quiz-platform/
 
 ## Ghid utilizare platformă chestionare electricieni – Grupa 2
 
-Platforma **"Chestionare Electricieni – Grupa 2"** este o aplicație web destinată pregătirii și evaluării cunoștințelor pentru certificarea electricienilor din Grupa 2. Platforma oferă chestionare structurate pe discipline (Electrotehnică, Legislație GR. 2, Norme Tehnice GR. 2), organizate în blocuri de aproximativ 20 de întrebări fiecare.
+Platforma **"Chestionare ANRE Electrician Grupa II (Grupa 2)"** este o aplicație web destinată pregătirii și evaluării cunoștințelor pentru certificarea electricienilor din Grupa 2. Platforma oferă chestionare structurate pe discipline (Electrotehnică, Legislație GR. 2, Norme Tehnice GR. 2), organizate în blocuri de aproximativ 20 de întrebări fiecare.
 
 **Cine poate folosi platforma:**
+- **Utilizatori fără cont**: pot accesa modul public "Învață" pentru a vedea toate întrebările, răspunsurile corecte și explicațiile (fără salvare progres)
 - **Utilizatori normali**: pot rezolva chestionare, vedea rezultatele și completa întrebări care lipsesc răspunsuri sau explicații
 - **Administratori**: au acces complet la editarea tuturor întrebărilor, răspunsurilor și explicațiilor
 
@@ -119,43 +150,66 @@ Platforma **"Chestionare Electricieni – Grupa 2"** este o aplicație web desti
 
 ---
 
-### 1. Înregistrare cont
+### 1. Utilizare fără cont (Modul Învață)
 
-Pentru a utiliza platforma, trebuie să îți creezi un cont.
+Platforma oferă acces complet fără autentificare pentru învățare rapidă.
 
 **Pași:**
 
-1. Accesează pagina principală a platformei la adresa **[https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)**
-2. Apasă pe linkul **"Nu ai cont? Înregistrează-te"** (Don't have an account? Register)
-3. Completează formularul de înregistrare:
-   - **Username** – alege un nume de utilizator
-   - **Password** – alege o parolă sigură
-4. Confirmă înregistrarea apăsând butonul **"Înregistrare"**
+1. Accesează **[https://quiz.isystemsautomation.com/learn/](https://quiz.isystemsautomation.com/learn/)**
+2. Selectează disciplina (Electrotehnică, Legislație sau Norme Tehnice)
+3. Selectează un bloc pentru a vedea toate întrebările cu răspunsuri corecte și explicații
+4. Navighează între întrebări și blocurile pentru recapitulare
+
+**Caracteristici modul public:**
+- ✅ Vezi toate întrebările grilă
+- ✅ Vezi răspunsurile corecte și explicațiile
+- ✅ Acces imediat, fără înregistrare
+- ❌ Progresul nu se salvează
+- ❌ Nu poți rezolva chestionare (doar vizualizare)
+
+### 2. Înregistrare cont
+
+Pentru a salva progresul și rezultatele, trebuie să îți creezi un cont.
+
+**Pași:**
+
+1. Accesează pagina de înregistrare la **[https://quiz.isystemsautomation.com/accounts/register/](https://quiz.isystemsautomation.com/accounts/register/)**
+2. Completează formularul:
+   - **Utilizator** – alege un nume de utilizator
+   - **Parolă** – alege o parolă sigură
+   - **Confirmă parola** – reintrodu parola
+3. **Important:** Pentru cont ai nevoie doar de utilizator și parolă. Nu cerem email, telefon sau nume real.
+4. Confirmă înregistrarea apăsând butonul **"Creează cont"**
 5. După înregistrare, vei fi autentificat automat și redirecționat către Dashboard
 
-[![Pagina autentificare](img/1.png)](img/1.png)
+**De ce să îți creezi cont:**
+- ✅ Salvezi progresul automat
+- ✅ Vezi istoricul rezultatelor
+- ✅ Reiei chestionarele de unde ai rămas
+- ✅ Adaugi note personale per bloc
 
-### 2. Autentificare
+### 3. Autentificare
 
 Dacă ai deja un cont, autentifică-te pentru a accesa platforma.
 
 **Pași:**
 
-1. Accesează pagina de autentificare la **[https://quiz.isystemsautomation.com/](https://quiz.isystemsautomation.com/)**
-2. Introdu **Username**-ul tău în primul câmp
-3. Introdu **Parola** ta în al doilea câmp
-4. Apasă butonul **"Autentificare"** (Login)
+1. Accesează pagina de autentificare la **[https://quiz.isystemsautomation.com/accounts/login/](https://quiz.isystemsautomation.com/accounts/login/)**
+2. Introdu **Utilizator**-ul tău în primul câmp
+3. Introdu **Parolă** ta în al doilea câmp
+4. Apasă butonul **"Autentificare și salvează progres"**
 5. Vei fi redirecționat automat către Dashboard
 
 **Notă:** Dacă ai uitat parola, contactează administratorul intern sau creează un cont nou.
 
-[![Pagina autentificare](img/1.png)](img/1.png)
+**Opțiuni pe pagina de login:**
+- **"Continuă fără cont"** – accesează modul public "Învață" fără autentificare
+- **"Autentificare"** – autentifică-te pentru salvare progres
 
-### 3. Dashboard și navigare
+### 4. Dashboard și navigare
 
 După autentificare, vei ajunge pe pagina **Dashboard**, care este punctul central de navigare al platformei.
-
-[![Dashboard](img/2.png)](img/2.png)
 
 **Structura Dashboard-ului:**
 
@@ -182,19 +236,18 @@ Culoarea fiecărui bloc indică performanța ta la **ultima încercare** pentru 
 | **Galben** | Scor bun | 18-19/20 (la 1-2 puncte de perfect) |
 | **Roșu** | Necesită îmbunătățire | 0-17/20 (mai mult de 2 puncte sub perfect) |
 
-**Notă:** Pragurile se ajustează automat pentru blocuri cu număr diferit de întrebări. De exemplu, pentru un bloc cu 15 întrebări: Verde = 15/15, Galben = 13-14/15, Roșu = 0-12/15.
+**Notă:** Pragurile se ajustează automat pentru blocuri cu număr diferit de întrebări.
 
 **Informații afișate pe fiecare bloc:**
 
 - Numărul blocului (ex: "Bloc 1")
 - Scorul ultimei încercări (ex: "18/20" sau "—" dacă nu ai încercat)
 - Indicator **"Notă salvată"** dacă ai salvat o notă personală pentru acest bloc
+- Preview al notei personale (dacă există)
 
-### 4. Rezolvarea chestionarelor
+### 5. Rezolvarea chestionarelor
 
 Pentru a rezolva un chestionar, selectează un bloc din Dashboard.
-
-[![Rezultate quiz](img/3.png)](img/3.png)
 
 **Pași pentru rezolvarea unui bloc:**
 
@@ -202,7 +255,7 @@ Pentru a rezolva un chestionar, selectează un bloc din Dashboard.
 2. **Citește întrebările** – fiecare întrebare este afișată cu cele 3 opțiuni de răspuns (a, b, c)
 3. **Selectează răspunsurile** – apasă pe butonul radio corespunzător opțiunii pe care o consideri corectă
 4. **Salvează nota personală** (opțional) – în partea de sus a paginii poți scrie o notă personală pentru acest bloc, vizibilă doar pentru tine
-5. **Trimite răspunsurile** – după ce ai răspuns la toate întrebările, apasă butonul **"Trimite răspunsurile"** (Submit answers)
+5. **Trimite răspunsurile** – după ce ai răspuns la toate întrebările, apasă butonul **"Trimite răspunsurile"**
 
 **După trimitere:**
 
@@ -214,17 +267,13 @@ Pentru a rezolva un chestionar, selectează un bloc din Dashboard.
 
 **Salvare automată:**
 
-- Răspunsurile tale sunt **salvate automat** pe măsură ce le selectezi
-- Dacă navighezi către editarea unei întrebări, răspunsurile tale vor fi păstrate când revii
-- Rezultatele sunt **salvate automat** după trimitere
+- Răspunsurile tale sunt **salvate automat** în browser (localStorage) pe măsură ce le selectezi
+- Dacă navighezi către editarea unei întrebări, răspunsurile tale vor fi **păstrate** când revii
+- Rezultatele sunt **salvate automat** în baza de date după trimitere
 
-### 5. Întrebări cu „Lipsă răspuns" sau „Lipsă explicație"
+### 6. Întrebări cu „Lipsă răspuns" sau „Lipsă explicație"
 
 Platforma marchează întrebările incomplete cu badge-uri colorate pentru a indica ce informații lipsesc.
-
-[![Întrebare incompletă](img/4.png)](img/4.png)
-[![Întrebare incompletă](img/5.png)](img/5.png)
-[![Editare întrebare](img/6.png)](img/6.png)
 
 **Indicatori vizuali:**
 
@@ -249,13 +298,7 @@ Platforma marchează întrebările incomplete cu badge-uri colorate pentru a ind
 - Corecta explicații existente
 - Modifica setările de imagini
 
-**Comportament validare:**
-
-- Dacă o întrebare are deja răspuns și explicație, doar administratorul poate modifica aceste date
-- Dacă o întrebare are doar unul dintre ele (răspuns sau explicație), utilizatorul normal poate completa ceea ce lipsește
-- Odată ce ambele sunt completate, doar administratorul poate face modificări ulterioare
-
-### 6. Cum completează utilizatorul o întrebare incompletă
+### 7. Cum completează utilizatorul o întrebare incompletă
 
 Dacă întâlnești o întrebare marcată cu **"Lipsă răspuns"** sau **"Lipsă explicație"**, poți completa informațiile lipsă.
 
@@ -268,12 +311,18 @@ Dacă întâlnești o întrebare marcată cu **"Lipsă răspuns"** sau **"Lipsă
 3. **Introdu explicația** (dacă lipsește):
    - În câmpul text pentru explicație, scrie o explicație clară despre de ce acest răspuns este corect
    - Explicația ar trebui să fie suficient de detaliată pentru a ajuta alți utilizatori să înțeleagă conceptul
-4. **Salvează modificările** – apasă butonul **"Salvează"** (Save)
+4. **Salvează modificările** – apasă butonul **"Salvează"**
 5. **Redirecționare automată** – vei fi redirecționat înapoi la pagina de quiz, iar răspunsurile tale selectate anterior vor fi păstrate
 
 **Notă importantă:** Odată ce ambele câmpuri (răspuns și explicație) sunt completate, doar administratorii pot modifica aceste date în viitor.
 
-### 7. Drepturi Administrator
+**Protecție concurență:**
+
+- Platforma folosește **optimistic locking** pentru a preveni suprascrierea accidentală
+- Dacă altcineva editează întrebarea în același timp, vei primi o notificare
+- Modificările sunt salvate cu timestamp pentru consistență
+
+### 8. Drepturi Administrator
 
 Administratorii (superuseri) au acces complet la toate funcționalitățile de editare ale platformei.
 
@@ -293,7 +342,7 @@ Administratorii pot accesa panoul de administrare Django la adresa `/admin/` dup
 - Vizualiza încercările utilizatorilor (`BlockAttempt`) – doar citire pentru audit
 - Gestiona notele personale (`BlockNote`) – opțional
 
-**Diferențe față de utilizatorii normali:**
+**Matrice permisiuni:**
 
 | Funcționalitate | Utilizator normal | Administrator |
 |----------------|-------------------|---------------|
@@ -302,9 +351,12 @@ Administratorii pot accesa panoul de administrare Django la adresa `/admin/` dup
 | Modifică răspuns existent | ❌ Nu | ✅ Da |
 | Modifică explicație existentă | ❌ Nu | ✅ Da |
 | Modifică imagini | ❌ Nu | ✅ Da |
-| Acces panou admin | ❌ Nu | ✅ Da |
+| Acces panou admin (`/admin/`) | ❌ Nu | ✅ Da |
+| Rezolvă chestionare | ✅ Da | ✅ Da |
+| Vezi rezultate | ✅ Da | ✅ Da |
+| Adaugă note personale | ✅ Da | ✅ Da |
 
-### 8. Interpretare rezultate
+### 9. Interpretare rezultate
 
 După ce trimiți răspunsurile, platforma afișează pagina de rezultate cu informații detaliate despre performanța ta.
 
@@ -327,11 +379,7 @@ După ce trimiți răspunsurile, platforma afișează pagina de rezultate cu inf
 - **Badge-uri roșii "Greșit"** – întrebări la care ai răspuns greșit; recitește explicația și studiază mai mult acest subiect
 - **Badge-uri grii "Ne-evaluabil"** – întrebări care nu au încă răspuns corect definit; acestea nu afectează scorul tău, dar poți ajuta platforma completând răspunsul și explicația
 
-**Notă personală:**
-
-Dacă ai salvat o notă personală pentru acest bloc, aceasta va fi afișată în partea de jos a paginii de rezultate.
-
-### 9. Salvare și persistenta datelor
+### 10. Salvare și persistenta datelor
 
 Platforma salvează automat toate datele tale pentru a asigura o experiență fără pierdere de informații.
 
@@ -353,52 +401,14 @@ Platforma salvează automat toate datele tale pentru a asigura o experiență f�
 
 - Notele personale pe care le salvezi pentru fiecare bloc sunt **salvate permanent** în baza de date
 - Sunt asociate cu contul tău și blocul respectiv
-- Sunt **private** – doar tu le poți vedea, nu sunt vizibile pentru alți utilizatori sau administratori (în mod normal)
+- Sunt **private** – doar tu le poți vedea, nu sunt vizibile pentru alți utilizatori sau administratori
 
 **Securitate:**
 
 - Toate datele sunt protejate prin autentificare
 - Parolele sunt hash-uite folosind algoritmi securizați
 - CSRF protection este activată pe toate formularele
-
-### 10. Reguli generale
-
-Iată un rezumat clar al permisiunilor și regulilor pentru utilizarea platformei.
-
-**Matrice permisiuni:**
-
-| Acțiune | Utilizator | Administrator |
-|---------|-----------|---------------|
-| Completează răspuns lipsă | ✅ Da | ✅ Da |
-| Completează explicație lipsă | ✅ Da | ✅ Da |
-| Modifică răspuns existent | ❌ Nu | ✅ Da |
-| Modifică explicație existentă | ❌ Nu | ✅ Da |
-| Modifică imagini | ❌ Nu | ✅ Da |
-| Rezolvă chestionare | ✅ Da | ✅ Da |
-| Vezi rezultate | ✅ Da | ✅ Da |
-| Adaugă note personale | ✅ Da | ✅ Da |
-| Acces panou admin (`/admin/`) | ❌ Nu | ✅ Da |
-
-**Reguli pentru utilizatori normali:**
-
-- Poți completa **doar datele lipsă** (răspuns sau explicație când sunt NULL/gol)
-- **Nu poți modifica** date existente (răspunsuri sau explicații deja completate)
-- Poți adăuga **note personale** per bloc (private, vizibile doar pentru tine)
-- Poți rezolva chestionare și vedea rezultatele pentru propriile încercări
-
-**Reguli pentru administratori:**
-
-- Poți modifica **orice întrebare**, indiferent de starea datelor
-- Poți corecta **răspunsuri** și **explicații** existente
-- Poți actualiza **baza de date** prin panoul de administrare
-- Ai acces complet la panoul de administrare la `/admin/`
-- Poți gestiona toate aspectele platformei
-
-**Concurrency și editare simultană:**
-
-- Platforma folosește **optimistic locking** pentru a preveni suprascrierea accidentală a modificărilor
-- Dacă doi utilizatori încearcă să editeze aceeași întrebare simultan, sistemul va preveni conflictele
-- Modificările sunt salvate cu timestamp pentru a asigura consistența datelor
+- Optimistic locking previne editări conflictuale
 
 ---
 
@@ -436,15 +446,36 @@ For each **Question** you can edit:
 
 The database is the main source of truth; JSON is mainly for backup / sync / external editing.
 
+### Management commands
+
+- **Import questions**: `python manage.py import_questions`
+- **Export questions**: `python manage.py export_questions`
+- **Check images**: `python manage.py check_images`
+- **Debug images**: `python manage.py debug_images --qid <id> --subject <subject>`
+
+## SEO Features
+
+The platform includes comprehensive SEO optimization for public Learn pages:
+
+- **Structured Data (JSON-LD)**: BreadcrumbList, ItemList for question permalinks
+- **Sitemap**: `/sitemap.xml` with all public Learn pages
+- **Robots.txt**: `/robots.txt` configured for search engine crawling
+- **Meta Tags**: Optimized titles, descriptions, OpenGraph tags
+- **Canonical URLs**: All pages use absolute HTTPS canonical URLs
+- **SEO-friendly URLs**: Clean slugs for subjects, blocks, and questions
+
 ## Database
 
 The application uses SQLite by default. The database file (`db.sqlite3`) will be created automatically when you run migrations.
 
+**Important:** After running migrations, ensure the `django_site` table has a Site record with your domain for sitemaps to work correctly.
+
 ## Security
 
-- All routes except `/accounts/login/`, `/accounts/register/`, and static files require authentication
+- All routes except `/learn/`, `/accounts/login/`, `/accounts/register/`, `/sitemap.xml`, `/robots.txt`, and static files require authentication
 - CSRF protection is enabled on all forms
 - Passwords are hashed using Django's default password hashing
+- Optimistic locking prevents concurrent edit conflicts
 
 ## Notes
 
@@ -452,5 +483,61 @@ The application uses SQLite by default. The database file (`db.sqlite3`) will be
 - Blocks are assigned from the JSON import based on `block` number or sequential by 20 if missing
 - The dashboard shows the **last attempt** per block, not the best attempt
 - JSON files are seed data; the **database is the source of truth** for questions and edits
+- Public Learn mode is accessible without authentication for SEO and learning purposes
+- Image naming convention: `qe` for electrotehnica, `ql` for legislatie-gr-2, `qn` for norme-tehnice-gr-2
+
+## Deployment
+
+### Production Setup (Linux with systemd)
+
+1. **Install gunicorn:**
+   ```bash
+   pip install gunicorn
+   ```
+
+2. **Create systemd service** (`/etc/systemd/system/gr2quiz.service`):
+   ```ini
+   [Unit]
+   Description=GR2 Quiz Platform
+   After=network.target
+
+   [Service]
+   User=ubuntu
+   WorkingDirectory=/opt/gr2-quiz/gr2-quiz-platform
+   Environment="PATH=/opt/gr2-quiz/gr2-quiz-platform/.venv/bin"
+   ExecStart=/opt/gr2-quiz/gr2-quiz-platform/.venv/bin/python -m gunicorn gr2quiz.wsgi:application --bind 127.0.0.1:8000
+   Restart=always
+
+   [Install]
+   WantedBy=multi-user.target
+   ```
+
+3. **Start and enable service:**
+   ```bash
+   sudo systemctl daemon-reload
+   sudo systemctl start gr2quiz
+   sudo systemctl enable gr2quiz
+   ```
+
+4. **Configure Apache** (HTTPS vhost):
+   ```apache
+   <VirtualHost *:443>
+       ServerName quiz.isystemsautomation.com
+       SSLEngine on
+       # SSL certificate configuration...
+       
+       # Serve static files directly
+       Alias /static/ /opt/gr2-quiz/gr2-quiz-platform/static/
+       <Directory /opt/gr2-quiz/gr2-quiz-platform/static>
+           Require all granted
+       </Directory>
+       
+       # Proxy to gunicorn
+       ProxyPreserveHost On
+       ProxyPass /static/ !
+       ProxyPass / http://127.0.0.1:8000/
+       ProxyPassReverse / http://127.0.0.1:8000/
+   </VirtualHost>
+   ```
 
 © 2024 ISYSTEMS AUTOMATION S.R.L.

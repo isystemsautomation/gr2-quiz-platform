@@ -180,10 +180,22 @@
                 </p>
             </div>
             
-            <!-- SEO Text Block (inside card) -->
-            <div class="saas-login-seo-text-inside">
-                <p>Platforma oferă <strong>chestionare pentru examen ANRE Electrician Grupa II (Grupa 2)</strong>, cu <strong>întrebări grilă</strong>, <strong>răspunsuri corecte și explicații</strong>. Poți utiliza platforma fără cont pentru învățare sau cu cont pentru <strong>salvarea progresului</strong> și vizualizarea istoricului rezultatelor.</p>
-            </div>
+            <!-- Footer (Legal / About) -->
+            <footer class="saas-login-footer">
+                <div class="saas-login-footer-content">
+                    <p class="saas-login-footer-copyright">© 2024 ISYSTEMS AUTOMATION S.R.L.</p>
+                    <p class="saas-login-footer-company">
+                        Dezvoltat de <strong>ISYSTEMS AUTOMATION S.R.L.</strong> — 
+                        <a href="https://www.isystemsautomation.com" target="_blank" rel="noopener noreferrer" class="saas-login-footer-link">www.isystemsautomation.com</a>
+                    </p>
+                    <div class="saas-login-footer-links">
+                        <a href="{% url 'license' %}" class="saas-login-footer-link" rel="license">Licență</a>
+                        <span class="saas-login-footer-separator">•</span>
+                        {# TODO: Add GitHub repository URL to README.md, then update this link with the actual URL #}
+                        <span class="saas-login-footer-link-disabled" title="Link indisponibil — completați în README">GitHub</span>
+                    </div>
+                </div>
+            </footer>
         </div>
     </main>
 </body>

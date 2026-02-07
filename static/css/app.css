@@ -855,6 +855,70 @@ body {
     font-weight: 600;
 }
 
+/* Footer (Legal / About) */
+.saas-login-footer {
+    grid-column: 1 / -1;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 20px 24px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.saas-login-footer-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.saas-login-footer-copyright {
+    font-size: 13px;
+    color: var(--text-medium);
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.saas-login-footer-company {
+    font-size: 13px;
+    color: var(--text-medium);
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+}
+
+.saas-login-footer-company strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.saas-login-footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.saas-login-footer-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.saas-login-footer-link:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.saas-login-footer-link-disabled {
+    color: var(--text-light);
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.saas-login-footer-separator {
+    color: var(--text-light);
+    margin: 0 4px;
+}
+
 /* Register Info Section */
 .saas-register-info {
     background: var(--bg-light);
@@ -928,6 +992,21 @@ body {
     
     .saas-login-seo-text-inside p {
         font-size: 13px;
+    }
+    
+    .saas-login-footer {
+        padding: 16px 20px;
+        margin-top: 20px;
+    }
+    
+    .saas-login-footer-copyright,
+    .saas-login-footer-company,
+    .saas-login-footer-links {
+        font-size: 12px;
+    }
+    
+    .saas-login-footer-links {
+        gap: 6px;
     }
     
     .saas-login-trust-box {

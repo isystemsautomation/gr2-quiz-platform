@@ -1,8 +1,9 @@
 """
-Robots.txt view for SEO.
+Robots.txt and LICENSE views for SEO and legal pages.
 """
 from django.http import HttpResponse
 from django.conf import settings
+from pathlib import Path
 
 
 def robots_txt(request):
@@ -28,4 +29,19 @@ Disallow: /question/
 Sitemap: {sitemap_url}
 """
     return HttpResponse(content, content_type='text/plain')
+
+
+def license_view(request):
+    """
+    Serve LICENSE file from project root.
+    """
+    base_dir = Path(settings.BASE_DIR)
+    license_path = base_dir / 'LICENSE'
+    
+    if license_path.exists():
+        with open(license_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        return HttpResponse(content, content_type='text/plain')
+    else:
+        return HttpResponse('License file not found.', status=404, content_type='text/plain')
 

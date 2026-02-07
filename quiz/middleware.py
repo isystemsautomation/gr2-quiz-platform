@@ -26,6 +26,7 @@ class AuthenticationRequiredMiddleware:
             '/learn/',
             '/sitemap.xml',
             '/robots.txt',
+            '/LICENSE',
         ]
 
     def __call__(self, request):
@@ -37,8 +38,8 @@ class AuthenticationRequiredMiddleware:
         if request.path in self.exempt_paths:
             return self.get_response(request)
         
-        # Allow public learn pages, sitemap, and robots.txt
-        if request.path.startswith('/learn/') or request.path in ['/sitemap.xml', '/robots.txt']:
+        # Allow public learn pages, sitemap, robots.txt, and LICENSE
+        if request.path.startswith('/learn/') or request.path in ['/sitemap.xml', '/robots.txt', '/LICENSE']:
             return self.get_response(request)
         
         # Allow logout (GET or POST)

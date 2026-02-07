@@ -17,7 +17,8 @@ urlpatterns = [
     path('learn/<str:subject_slug>/<str:block_slug>/', learn_views.learn_block_detail, name='learn_block_detail'),
     path('learn/<str:subject_slug>/<str:block_slug>/<int:question_id>/', learn_views.learn_question_detail, name='learn_question_detail'),
     
-    # SEO routes
+    # SEO and legal routes
     path('robots.txt', robots_views.robots_txt, name='robots_txt'),
+    path('LICENSE', robots_views.license_view, name='license'),
 ]
 
