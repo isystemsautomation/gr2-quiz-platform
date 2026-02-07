@@ -199,6 +199,13 @@ def learn_block_detail(request, subject_slug, block_slug):
             'option_c_url': option_c_url,
         })
     
+    # Build absolute HTTPS URLs (must be before breadcrumbs)
+    base_url = build_absolute_https_url(request)
+    home_url = build_absolute_https_url(request, '/')
+    learn_url = build_absolute_https_url(request, '/learn/')
+    subject_url = build_absolute_https_url(request, f'/learn/{subject_slug}/')
+    block_url = build_absolute_https_url(request, f'/learn/{subject_slug}/{block_slug}/')
+    
     # Breadcrumb data (absolute HTTPS URLs)
     breadcrumbs = [
         {'name': 'Acasă', 'url': home_url},
@@ -206,13 +213,6 @@ def learn_block_detail(request, subject_slug, block_slug):
         {'name': subject_info['title'], 'url': subject_url},
         {'name': f'Bloc {block_number}', 'url': block_url},
     ]
-    
-    # Build absolute HTTPS URLs
-    base_url = build_absolute_https_url(request)
-    home_url = build_absolute_https_url(request, '/')
-    learn_url = build_absolute_https_url(request, '/learn/')
-    subject_url = build_absolute_https_url(request, f'/learn/{subject_slug}/')
-    block_url = build_absolute_https_url(request, f'/learn/{subject_slug}/{block_slug}/')
     
     # Structured data - BreadcrumbList
     breadcrumb_data = json.dumps({
