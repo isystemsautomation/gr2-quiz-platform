@@ -8,6 +8,7 @@ from django.contrib import messages
 
 from .models import BlockAttempt, Question, BlockNote
 from .utils import get_question_image_url, get_option_image_url
+from .subjects import list_subjects
 
 
 def index(request):
@@ -15,15 +16,6 @@ def index(request):
     if request.user.is_authenticated:
         return redirect('dashboard')
     return redirect('login')
-
-
-def list_subjects():
-    """Returns list of subject IDs and titles."""
-    return [
-        {'id': 'electrotehnica', 'title': 'Electrotehnică'},
-        {'id': 'legislatie-gr-2', 'title': 'Legislație GR. 2'},
-        {'id': 'norme-tehnice-gr-2', 'title': 'Norme Tehnice GR. 2'},
-    ]
 
 
 @login_required

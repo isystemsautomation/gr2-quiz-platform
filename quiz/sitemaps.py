@@ -4,16 +4,8 @@ Sitemap configuration for public learn pages.
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 from .models import Question
+from .subjects import list_subjects
 from .utils import get_subject_slug, get_block_slug
-
-
-def _get_subjects_list():
-    """Helper to get subjects list."""
-    return [
-        {'id': 'electrotehnica', 'title': 'Electrotehnică'},
-        {'id': 'legislatie-gr-2', 'title': 'Legislație GR. 2'},
-        {'id': 'norme-tehnice-gr-2', 'title': 'Norme Tehnice GR. 2'},
-    ]
 
 
 class SubjectSitemap(Sitemap):
@@ -23,7 +15,7 @@ class SubjectSitemap(Sitemap):
     
     def items(self):
         """Return all subjects."""
-        subjects = _get_subjects_list()
+        subjects = list_subjects()
         return [(s['id'], s['title']) for s in subjects]
     
     def location(self, item):
@@ -66,7 +58,7 @@ class BlockSitemap(Sitemap):
     def location(self, item):
         """Return URL for block detail page."""
         subject_id, block_number = item
-        subject_info = next((s for s in _get_subjects_list() if s['id'] == subject_id), None)
+        subject_info = next((s for s in list_subjects() if s['id'] == subject_id), None)
         if not subject_info:
             return '/learn/'  # Fallback to learn page
         subject_slug = get_subject_slug(subject_id, subject_info['title'])

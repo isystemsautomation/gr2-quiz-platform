@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ subject.title }} - Învață | Chestionare Electricieni Grupa 2</title>
     <meta name="description" content="Accesează toate blocurile pentru {{ subject.title }}. Fiecare bloc conține întrebări cu răspunsuri corecte și explicații detaliate.">
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
-    {% load static %}
+    {% load static site_urls %}
+    <link rel="canonical" href="{% site_url request.path %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
     <script type="application/ld+json">{{ structured_data }}</script>
 </head>

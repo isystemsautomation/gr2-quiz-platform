@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Întrebarea {{ question_id }} - {{ subject.title }} Bloc {{ block_number }} | Învață</title>
     <meta name="description" content="{{ question.text|truncatewords:20 }} - Răspuns corect și explicație detaliată.">
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
-    {% load static %}
+    {% load static site_urls %}
+    <link rel="canonical" href="{% site_url request.path %}">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
     <script type="application/ld+json">{{ structured_data }}</script>
 </head>

@@ -162,31 +162,35 @@ def parse_subject_slug(slug):
     """
     Parse a subject slug back to subject_id.
     Returns subject_id or None if invalid.
-    Handles both formats: "subject-id" and "slugified-title-subject-id"
+    
+    Uses exact slug matching against known subjects for reliability.
+    Handles both current format and legacy formats for backward compatibility.
     """
-    # First, try to find exact match with get_subject_slug
-    try:
-        from .learn_views import list_subjects
-    except ImportError:
-        from .views import list_subjects
+    from .subjects import list_subjects
     
-    for subj in list_subjects():
+    subjects = list_subjects()
+    
+    # Build exact slug map for all subjects
+    slug_map = {}
+    for subj in subjects:
         expected_slug = get_subject_slug(subj['id'], subj['title'])
-        if expected_slug == slug:
-            return subj['id']
+        slug_map[expected_slug] = subj['id']
+        # Also map subject_id directly (for simple slugs)
+        slug_map[subj['id']] = subj['id']
     
-    # Fallback: check if slug is just the subject_id
-    valid_subject_ids = [s['id'] for s in list_subjects()]
-    if slug in valid_subject_ids:
-        return slug
+    # Exact match (current format)
+    if slug in slug_map:
+        return slug_map[slug]
     
-    # Fallback: try to extract from end (for old format compatibility)
-    parts = slug.rsplit('-', 1)
-    if len(parts) == 2 and parts[1] in valid_subject_ids:
-        # Check if this matches any subject's expected slug
-        for subj in list_subjects():
-            if get_subject_slug(subj['id'], subj['title']) == slug:
-                return subj['id']
+    # Legacy format fallback: check if slug ends with known subject_id
+    # This handles old format like "legislatie-gr-2-legislatie-gr-2"
+    for subj in subjects:
+        subject_id = subj['id']
+        # Check if slug ends with the subject_id (with or without leading dash)
+        if slug.endswith(f'-{subject_id}') or slug == subject_id:
+            # Verify it's a valid legacy format by checking if it contains the subject_id
+            # Return the subject_id if found
+            return subject_id
     
     return None
 

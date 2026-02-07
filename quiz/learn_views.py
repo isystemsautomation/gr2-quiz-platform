@@ -6,19 +6,11 @@ from django.shortcuts import render, get_object_or_404, Http404
 import json
 
 from .models import Question
+from .subjects import list_subjects
 from .utils import (
     get_subject_slug, get_block_slug, parse_subject_slug, parse_block_slug,
     get_question_image_url, get_option_image_url, build_absolute_https_url
 )
-
-
-def list_subjects():
-    """Returns list of subject IDs and titles."""
-    return [
-        {'id': 'electrotehnica', 'title': 'Electrotehnică'},
-        {'id': 'legislatie-gr-2', 'title': 'Legislație GR. 2'},
-        {'id': 'norme-tehnice-gr-2', 'title': 'Norme Tehnice GR. 2'},
-    ]
 
 
 def learn_subject_list(request):
@@ -123,19 +115,19 @@ def learn_subject_detail(request, subject_slug):
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Acasă",
-                "item": request.build_absolute_uri('/')
+                "item": build_absolute_https_url(request, '/')
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Învață",
-                "item": request.build_absolute_uri('/learn/')
+                "item": build_absolute_https_url(request, '/learn/')
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": subject_title,
-                "item": request.build_absolute_uri(f'/learn/{subject_slug}/')
+                "item": build_absolute_https_url(request, f'/learn/{subject_slug}/')
             }
         ]
     }, ensure_ascii=False)
@@ -337,31 +329,31 @@ def learn_question_detail(request, subject_slug, block_slug, question_id):
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Acasă",
-                "item": request.build_absolute_uri('/')
+                "item": build_absolute_https_url(request, '/')
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Învață",
-                "item": request.build_absolute_uri('/learn/')
+                "item": build_absolute_https_url(request, '/learn/')
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": subject_info['title'],
-                "item": request.build_absolute_uri(f'/learn/{subject_slug}/')
+                "item": build_absolute_https_url(request, f'/learn/{subject_slug}/')
             },
             {
                 "@type": "ListItem",
                 "position": 4,
                 "name": f"Bloc {block_number}",
-                "item": request.build_absolute_uri(f'/learn/{subject_slug}/{block_slug}/')
+                "item": build_absolute_https_url(request, f'/learn/{subject_slug}/{block_slug}/')
             },
             {
                 "@type": "ListItem",
                 "position": 5,
                 "name": f"Întrebarea {question_id}",
-                "item": request.build_absolute_uri(f'/learn/{subject_slug}/{block_slug}/{question_id}/')
+                "item": build_absolute_https_url(request, f'/learn/{subject_slug}/{block_slug}/{question_id}/')
             }
         ]
     }, ensure_ascii=False)
