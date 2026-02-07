@@ -78,8 +78,10 @@ User=ubuntu
 Group=www-data
 WorkingDirectory=/opt/gr2-quiz/gr2-quiz-platform
 Environment="PATH=/opt/gr2-quiz/gr2-quiz-platform/.venv/bin"
+Environment="DJANGO_SECRET_KEY=your-secret-key-here"
 Environment="DJANGO_ALLOWED_HOSTS=quiz.isystemsautomation.com,localhost,127.0.0.1"
 Environment="DJANGO_CSRF_TRUSTED_ORIGINS=https://quiz.isystemsautomation.com"
+Environment="DJANGO_SITE_DOMAIN=quiz.isystemsautomation.com"
 ExecStart=/opt/gr2-quiz/gr2-quiz-platform/.venv/bin/python -m gunicorn \
   --workers 3 \
   --bind 127.0.0.1:8000 \
