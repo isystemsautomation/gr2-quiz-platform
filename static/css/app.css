@@ -858,6 +858,7 @@ body {
     
     .saas-login-main {
         padding: 24px 16px;
+        gap: 24px;
     }
 }
 
