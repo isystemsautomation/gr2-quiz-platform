@@ -3,8 +3,9 @@ Django settings for gr2quiz project.
 """
 
 import os
-import warnings
 from pathlib import Path
+
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -17,30 +18,14 @@ def env_bool(name, default=False):
     return os.getenv(name, str(default)).lower() in {'1', 'true', 'yes', 'on'}
 
 
-def env_int(name, default=0):
-    raw = os.getenv(name)
-    if raw is None or raw == '':
-        return default
-    try:
-        return int(raw)
-    except ValueError:
-        warnings.warn(f'{name} has invalid integer value {raw!r}; using {default}.', RuntimeWarning)
-        return default
-
-
 # SECURITY WARNING: keep the secret key used in production secret!
-_ENV_SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
-SECRET_KEY = _ENV_SECRET_KEY or 'dev-only-unsafe-secret-key-change-me-please-1234567890'
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'dev-only-unsafe-secret-key-change-me-please-1234567890')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env_bool('DJANGO_DEBUG', default=True)
 
-if not DEBUG and _ENV_SECRET_KEY is None:
-    warnings.warn(
-        'DJANGO_SECRET_KEY is not set while DJANGO_DEBUG is false; '
-        'using an unsafe fallback key. Set DJANGO_SECRET_KEY immediately.',
-        RuntimeWarning,
-    )
+if not DEBUG and os.getenv('DJANGO_SECRET_KEY') is None:
+    raise ImproperlyConfigured('DJANGO_SECRET_KEY must be set when DJANGO_DEBUG is false.')
 
 ALLOWED_HOSTS = [h.strip() for h in os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',') if h.strip()]
 CSRF_TRUSTED_ORIGINS = [o.strip() for o in os.getenv('DJANGO_CSRF_TRUSTED_ORIGINS', '').split(',') if o.strip()]
@@ -155,15 +140,13 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/dashboard/'
 LOGOUT_REDIRECT_URL = '/accounts/login/'
 
-# HTTPS / cookie hardening
-# Keep secure cookies enabled in production by default, but keep redirect/HSTS opt-in to avoid
-# deployment outages when reverse-proxy TLS headers are not fully configured yet.
+# HTTPS / cookie hardening (automatically enabled when DEBUG is off)
 SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
-SECURE_SSL_REDIRECT = env_bool('DJANGO_SECURE_SSL_REDIRECT', default=False)
-SECURE_HSTS_SECONDS = env_int('DJANGO_SECURE_HSTS_SECONDS', default=0)
-SECURE_HSTS_INCLUDE_SUBDOMAINS = env_bool('DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS', default=False)
-SECURE_HSTS_PRELOAD = env_bool('DJANGO_SECURE_HSTS_PRELOAD', default=False)
+SECURE_SSL_REDIRECT = env_bool('DJANGO_SECURE_SSL_REDIRECT', default=not DEBUG)
+SECURE_HSTS_SECONDS = int(os.getenv('DJANGO_SECURE_HSTS_SECONDS', '31536000' if not DEBUG else '0'))
+SECURE_HSTS_INCLUDE_SUBDOMAINS = env_bool('DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS', default=not DEBUG)
+SECURE_HSTS_PRELOAD = env_bool('DJANGO_SECURE_HSTS_PRELOAD', default=not DEBUG)
 SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = 'DENY'
