@@ -101,6 +101,23 @@ body {
     color: var(--primary-blue);
 }
 
+
+.header-nav .btn-link {
+    color: var(--text-medium);
+    background: none;
+    border: 0;
+    font: inherit;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.header-nav .btn-link:hover {
+    background-color: var(--bg-light);
+    color: var(--primary-blue);
+}
+
 /* Main Content Container */
 .main-container {
     max-width: 1400px;
