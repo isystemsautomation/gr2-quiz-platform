@@ -1,5 +1,8 @@
 {
   "title": "Electrotehnică - Septembrie 2024",
+  "subject": "electrotehnica",
+  "blockSize": 20,
+  "questionCount": 271,
   "questions": [
     {
       "id": 1,
@@ -10,8 +13,9 @@
         "c": "creste"
       },
       "correct": "c",
-      "explanation": "",
-      "block": 1
+      "explanation": "Compensarea cu baterii de condensatoare introduce putere reactivă capacitivă (Qc), care reduce puterea reactivă inductivă (QL) absorbită de consumatori. Astfel, puterea reactivă cerută din rețea scade (Qrețea = QL − Qc), iar curentul total din rețea se reduce. Deoarece căderea de tensiune este proporțională cu curentul (ΔU = Z × I), reducerea curentului duce la reducerea căderii de tensiune. Ca urmare, tensiunea la consumator crește.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 2,
@@ -22,8 +26,9 @@
         "c": "compensarea curenţilor capacitivi"
       },
       "correct": "c",
-      "explanation": "",
-      "block": 1
+      "explanation": "Bobinele de stingere sunt folosite pentru a compensa curenții capacitivi care apar în rețelele electrice, în special la defecte de tip punere la pământ. Liniile electrice și cablurile au o capacitate față de pământ, iar această capacitate produce curenți capacitivi. Bobina de stingere produce un curent inductiv egal și opus curentului capacitiv, reducând curentul total de defect. Astfel, arcul electric se stinge mai ușor, iar rețeaua poate continua să funcționeze în siguranță.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 3,
@@ -34,8 +39,9 @@
         "c": "de magneţi permanenţi si de electromagneţi"
       },
       "correct": "c",
-      "explanation": "",
-      "block": 1
+      "explanation": "Câmpul magnetic poate fi produs atât de magneți permanenți, cât și de electromagneți. Magneții permanenți produc câmp magnetic în mod natural, datorită proprietăților materialului din care sunt fabricați. Electromagneții produc câmp magnetic atunci când printr-un conductor trece curent electric. Prin urmare, câmpul magnetic poate fi generat de ambele tipuri.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 4,
@@ -46,8 +52,9 @@
         "c": "50 μF"
       },
       "correct": "b",
-      "explanation": "",
-      "block": 1
+      "explanation": "La legarea condensatoarelor în paralel, capacitatea echivalentă este egală cu suma capacităților individuale:\r\n\r\nCe = C1 + C2 + C3\r\n\r\nSe înlocuiesc valorile:\r\n\r\nCe = 100 μF + 50 μF + 100 μF = 250 μF\r\n\r\nPrin urmare, capacitatea echivalentă este 250 μF.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 5,
@@ -58,8 +65,9 @@
         "c": "N-L+1 ecuaţii distincte"
       },
       "correct": "b",
-      "explanation": "",
-      "block": 1
+      "explanation": "A doua teoremă a lui Kirchhoff (teorema tensiunilor) se aplică pe ochiurile independente ale unei rețele electrice. Numărul de ecuații distincte este egal cu numărul de ochiuri independente ale rețelei.\r\n\r\nAcest număr se calculează cu formula:\r\n\r\nNumăr ecuații = L − N + 1\r\n\r\nunde:\r\nL = numărul de laturi ale rețelei\r\nN = numărul de noduri ale rețelei\r\n\r\nPrin urmare, a doua teoremă a lui Kirchhoff furnizează L − N + 1 ecuații distincte pentru analiza circuitului electric.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 6,
@@ -70,8 +78,9 @@
         "c": "reducerii pierderilor de energie pe linii."
       },
       "correct": "b",
-      "explanation": "",
-      "block": 1
+      "explanation": "AAR (Anclanșare Automată a Rezervei) este un sistem automat care comută alimentarea consumatorilor de pe o sursă principală pe o sursă de rezervă atunci când sursa principală se întrerupe sau apare un defect.\r\n\r\nAstfel, alimentarea cu energie electrică este restabilită rapid, fără intervenție manuală, iar întreruperea este foarte scurtă sau eliminată.\r\n\r\nScopul principal al AAR este asigurarea continuității alimentării cu energie electrică.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 7,
@@ -82,8 +91,9 @@
         "c": "de regulă, mai mari decât 1"
       },
       "correct": "a",
-      "explanation": "",
-      "block": 1
+      "explanation": "Alunecarea (s) a unui motor asincron reprezintă diferența relativă dintre viteza câmpului magnetic rotitor (viteza sincronă, ns) și viteza rotorului (n). Ea se calculează cu formula:\r\n\r\ns = (ns − n) / ns\r\n\r\nLa pornire, rotorul este oprit (n = 0), deci s = 1.\r\nÎn funcționare normală, rotorul se rotește puțin mai încet decât câmpul magnetic, deci s are o valoare între 0 și 1.\r\nLa sincronism, n = ns, deci s = 0.\r\n\r\nPrin urmare, alunecarea unui motor asincron are valori cuprinse între 0 și 1.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 8,
@@ -93,9 +103,10 @@
         "b": "transformator de curent;",
         "c": "transformator de tensiune"
       },
-      "correct": "c",
-      "explanation": "",
-      "block": 1
+      "correct": "b",
+      "explanation": "Pe desen, elementul notat cu C este reprezentat printr-un cerc montat pe conductor, care este simbolul standard pentru transformatorul de curent (TC).\r\n\r\nTransformatorul de curent este folosit pentru a măsura curentul din rețea și pentru a furniza semnale către aparatele de măsură și protecție (ampermetre, relee de protecție). El transformă curenții mari din rețeaua de medie tensiune în curenți mici, siguri pentru echipamentele de măsură.\r\n\r\nPrin urmare, aparatul marcat cu C este un transformator de curent",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 9,
@@ -106,8 +117,9 @@
         "c": "rezistorul"
       },
       "correct": "c",
-      "explanation": "",
-      "block": 1
+      "explanation": "Reglarea tensiunii în rețelele electrice se realizează cu echipamente care pot modifica sau compensa tensiunea, cum sunt transformatoarele cu prize de reglaj și bobinele de compensare. Acestea pot crește sau scădea tensiunea în mod controlat.\r\n\r\nRezistorul nu este folosit pentru reglarea tensiunii în rețelele electrice, deoarece el produce doar căderi de tensiune și pierderi de energie sub formă de căldură, fără a permite reglarea eficientă și controlată a tensiunii.\r\n\r\nPrin urmare, rezistorul nu se utilizează pentru reglarea tensiunii în rețelele electrice.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 10,
@@ -118,8 +130,9 @@
         "c": "motoarele asincrone"
       },
       "correct": "c",
-      "explanation": "",
-      "block": 1
+      "explanation": "Motoarele asincrone sunt cele mai utilizate pentru serviciile interne ale centralelor electrice deoarece sunt simple, robuste, fiabile și necesită întreținere redusă. Ele nu au perii sau colector, ceea ce le face mai rezistente și mai ușor de exploatat.\r\n\r\nAceste motoare sunt folosite pentru acționarea pompelor, ventilatoarelor și altor echipamente auxiliare din centrală. De asemenea, ele pot fi conectate direct la rețeaua de curent alternativ și au un cost mai redus decât alte tipuri de motoare.\r\n\r\nPrin urmare, motoarele asincrone sunt cele mai des utilizate pentru serviciile interne ale centralelor electrice.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 11,
@@ -130,8 +143,9 @@
         "c": "inductanţa mica"
       },
       "correct": "b",
-      "explanation": "",
-      "block": 1
+      "explanation": "Bobinele pentru limitarea curenților de scurtcircuit sunt folosite pentru a reduce valoarea curentului atunci când apare un scurtcircuit. Ele funcționează pe baza inductanței, care se opune variațiilor rapide ale curentului.\r\n\r\nCu cât inductanța bobinei este mai mare, cu atât opoziția la creșterea curentului este mai mare, iar curentul de scurtcircuit este limitat mai eficient.\r\n\r\nPrin urmare, bobinele pentru limitarea curenților de scurtcircuit au inductanță mare.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 12,
@@ -142,8 +156,9 @@
         "c": "inducţia magnetică"
       },
       "correct": "a",
-      "explanation": "",
-      "block": 1
+      "explanation": "Câmpul electrostatic este câmpul electric produs de sarcini electrice aflate în repaus. El este descris prin intensitatea câmpului electric (E), care arată forța exercitată asupra unei sarcini electrice aflate în acel câmp.\r\n\r\nInducția electrică este o mărime derivată din câmpul electric, iar inducția magnetică descrie câmpul magnetic, nu câmpul electrostatic.\r\n\r\nPrin urmare, câmpul electrostatic este descris prin intensitatea câmpului electric",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 13,
@@ -154,8 +169,9 @@
         "c": "necesitatea unor amenajări speciale la instalare"
       },
       "correct": "c",
-      "explanation": "",
-      "block": 1
+      "explanation": "Transformatoarele imersate folosesc ulei ca mediu de răcire și izolație. Acest ulei este inflamabil și poate produce scurgeri, ceea ce impune măsuri speciale de protecție.\r\n\r\nDin acest motiv, la instalarea transformatoarelor imersate sunt necesare amenajări speciale, cum ar fi cuve de retenție pentru ulei, sisteme de protecție împotriva incendiilor și spații dedicate.\r\n\r\nTransformatoarele uscate nu folosesc ulei și nu necesită aceste amenajări speciale.\r\n\r\nPrin urmare, transformatoarele imersate necesită amenajări speciale la instalare.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 14,
@@ -166,8 +182,9 @@
         "c": "câmpul de inducţie electromagnetică"
       },
       "correct": "c",
-      "explanation": "",
-      "block": 1
+      "explanation": "Un câmp cu surse este produs de sarcini electrice. Câmpul electric este produs de sarcini electrice, iar câmpul curenților de conducție apare deoarece sarcinile electrice se deplasează prin conductor. Deci ambele au surse.\r\n\r\nCâmpul de inducție electromagnetică (câmpul magnetic) are liniile închise și nu pornește din sarcini electrice. Din acest motiv, el nu are surse.\r\n\r\nDe aceea, câmpul fără surse este câmpul de inducție electromagnetică.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 15,
@@ -177,9 +194,10 @@
         "b": "inainte de punctele lor de racordare la barele statiei;",
         "c": "dupa punctele lor de racordare la barele statiei."
       },
-      "correct": "a",
-      "explanation": "",
-      "block": 1
+      "correct": "c",
+      "explanation": "Bobinele montate pe plecări radiale sunt instalate pe linia care pleacă din stație, după punctul de racordare la bare. Rolul lor este de a limita curentul de scurtcircuit care apare pe linia respectivă.\r\n\r\nEle limitează curentul numai pe partea unde sunt montate, adică după punctul lor de racordare la barele stației. Nu pot limita curentul înainte de acest punct, deoarece nu sunt montate acolo.\r\n\r\nPrin urmare, bobinele limitează curenții de scurtcircuit după punctele lor de racordare la barele stației.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 16,
@@ -190,8 +208,9 @@
         "c": "invers proporţionala cu rezistenta conductorului"
       },
       "correct": "b",
-      "explanation": "",
-      "block": 1
+      "explanation": "Cantitatea de căldură produsă la trecerea curentului printr-un conductor este dată de legea Joule-Lenz:\r\n\r\nQ = I² · R · t\r\n\r\nunde:\r\nQ = căldura produsă\r\nI = intensitatea curentului\r\nR = rezistența conductorului\r\nt = timpul\r\n\r\nDin formulă se observă că căldura este direct proporțională cu pătratul curentului (I²). Aceasta înseamnă că dacă curentul crește de 2 ori, căldura produsă crește de 4 ori.\r\n\r\nPrin urmare, căldura este direct proporțională cu pătratul intensității curentului.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 17,
@@ -202,8 +221,9 @@
         "c": "egală cu de două ori cantitatea de electricitate cu care se încarcă fiecare condensator"
       },
       "correct": "a",
-      "explanation": "",
-      "block": 1
+      "explanation": "La legarea condensatoarelor în serie, există un singur traseu pentru deplasarea sarcinilor electrice, deci prin toate condensatoarele trece aceeași cantitate de electricitate (aceeași sarcină electrică). Curentul este același prin toate elementele și este definit prin relația:\r\n\r\nI = Q / t\r\n\r\nDeoarece curentul este același, rezultă că fiecare condensator se încarcă cu aceeași cantitate de electricitate Q, egală cu cantitatea de electricitate a întregii baterii.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 18,
@@ -214,8 +234,9 @@
         "c": "Cs=C"
       },
       "correct": "a",
-      "explanation": "",
-      "block": 1
+      "explanation": "Capacitățile C12, C23 și C31 sunt între faze și formează o conexiune în triunghi (Δ). Pentru calculul capacității de serviciu pe fază, această conexiune se transformă într-o conexiune echivalentă în stea (Y), față de un punct neutru fictiv.\r\n\r\nImpedanța unui condensator este:\r\n\r\nZ = 1 / (jωC)\r\n\r\nLa transformarea Δ–Y pentru un sistem simetric, impedanța pe fază devine:\r\n\r\nZs = Z / 3\r\n\r\nRezultă:\r\n\r\n1 / (jωCs) = (1 / 3) · (1 / (jωC))\r\n\r\nde unde:\r\n\r\nCs = 3C\r\n\r\nPrin urmare, capacitatea de serviciu a liniei este Cs = 3C.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 19,
@@ -226,8 +247,9 @@
         "c": "C"
       },
       "correct": "b",
-      "explanation": "",
-      "block": 1
+      "explanation": "La legarea condensatoarelor în serie, capacitatea echivalentă se calculează cu formula:\r\n\r\n1 / Ce = 1 / C1 + 1 / C2\r\n\r\nPentru două condensatoare egale, cu C1 = C2 = C, rezultă:\r\n\r\n1 / Ce = 1 / C + 1 / C = 2 / C\r\n\r\nInversând relația:\r\n\r\nCe = C / 2\r\n\r\nPrin urmare, capacitatea echivalentă este C/2.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 20,
@@ -238,8 +260,9 @@
         "c": "reducerea cheltuielilor de realizare a instalaţiilor."
       },
       "correct": "a",
-      "explanation": "",
-      "block": 1
+      "explanation": "Capsularea monopolară înseamnă că fiecare fază este închisă într-o capsulă separată, cu propriul gaz izolant. Dacă apare o scurgere de gaz, aceasta afectează doar o singură fază, nu toate fazele.\r\n\r\nAstfel, riscul și efectele pierderilor de gaz izolant sunt reduse, deoarece defectul rămâne localizat la o singură capsulă.\r\n\r\nPrin urmare, capsularea monopolară duce la micșorarea riscului unor pierderi de gaz izolant.",
+      "block": 1,
+      "image_base": null
     },
     {
       "id": 21,
@@ -250,8 +273,9 @@
         "c": "ambele admit aceeaşi densitate de curent"
       },
       "correct": "b",
-      "explanation": "",
-      "block": 2
+      "explanation": "Densitatea de curent este:\r\n\r\nJ = I / S\r\n\r\nși încălzirea conductorului depinde de rezistență, conform legii Joule:\r\n\r\nP = I² · R\r\n\r\nCuprul are rezistivitate mai mică decât aluminiul (ρCu < ρAl), deci are rezistență mai mică la aceeași secțiune. Din acest motiv, la același curent, cuprul se încălzește mai puțin și poate suporta o densitate de curent mai mare fără supraîncălzire.\r\n\r\nPrin urmare, cuprul admite o densitate de curent mai mare decât aluminiul.",
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 22,
@@ -262,8 +286,9 @@
         "c": "inducţia electrică=sarcina x intensitatea câmpului electric"
       },
       "correct": "a",
-      "explanation": "",
-      "block": 2
+      "explanation": "Inducția electrică se notează cu D și este legată de intensitatea câmpului electric E prin permitivitatea mediului ε, conform relației:\r\n\r\nD = ε · E\r\n\r\nAceasta înseamnă că inducția electrică este egală cu permitivitatea mediului înmulțită cu intensitatea câmpului electric.\r\n\r\nPrin urmare, relația corectă este D = ε · E.",
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 23,
@@ -274,8 +299,9 @@
         "c": "reducerea investitiei in echiparea statiei."
       },
       "correct": "c",
-      "explanation": "",
-      "block": 2
+      "explanation": "Cupla cu funcțiuni multiple permite conectarea barelor sau a circuitelor între ele, astfel încât alimentarea să poată fi preluată dintr-o altă sursă în cazul unui defect sau al unei lucrări de întreținere.\r\n\r\nAstfel, dacă o parte a instalației se întrerupe, alimentarea poate continua prin cealaltă parte, fără întreruperea consumatorilor.\r\n\r\nPrin urmare, utilizarea unei cuple cu funcțiuni multiple are ca scop creșterea continuității în alimentare.",
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 24,
@@ -287,7 +313,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 25,
@@ -299,7 +326,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 26,
@@ -311,7 +339,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 27,
@@ -323,7 +352,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 28,
@@ -335,7 +365,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 29,
@@ -347,7 +378,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 30,
@@ -359,7 +391,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 31,
@@ -371,7 +404,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 32,
@@ -383,7 +417,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 33,
@@ -395,7 +430,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 34,
@@ -407,7 +443,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 35,
@@ -419,7 +456,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 36,
@@ -431,7 +469,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 37,
@@ -443,7 +482,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 38,
@@ -455,7 +495,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 39,
@@ -467,7 +508,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 40,
@@ -479,7 +521,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 2
+      "block": 2,
+      "image_base": null
     },
     {
       "id": 41,
@@ -491,7 +534,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 42,
@@ -503,7 +547,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 43,
@@ -515,7 +560,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 44,
@@ -527,7 +573,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 45,
@@ -539,7 +586,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 46,
@@ -551,7 +599,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 47,
@@ -563,7 +612,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 48,
@@ -575,7 +625,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 49,
@@ -587,7 +638,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 50,
@@ -599,7 +651,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 51,
@@ -611,7 +664,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 52,
@@ -623,7 +677,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 53,
@@ -635,7 +690,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 54,
@@ -647,7 +703,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 55,
@@ -659,7 +716,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 56,
@@ -671,7 +729,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 57,
@@ -683,7 +742,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 58,
@@ -695,7 +755,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 59,
@@ -707,7 +768,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 60,
@@ -719,7 +781,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 3
+      "block": 3,
+      "image_base": null
     },
     {
       "id": 61,
@@ -731,7 +794,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 62,
@@ -743,7 +807,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 63,
@@ -755,7 +820,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 64,
@@ -767,7 +833,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 65,
@@ -779,7 +846,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 66,
@@ -791,7 +859,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 67,
@@ -803,7 +872,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 68,
@@ -815,7 +885,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 69,
@@ -827,7 +898,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 70,
@@ -839,7 +911,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 71,
@@ -851,7 +924,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 72,
@@ -863,7 +937,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 73,
@@ -875,7 +950,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 74,
@@ -887,7 +963,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 75,
@@ -899,7 +976,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 76,
@@ -911,7 +989,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 77,
@@ -923,7 +1002,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 78,
@@ -935,7 +1015,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 79,
@@ -947,7 +1028,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 80,
@@ -959,7 +1041,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 4
+      "block": 4,
+      "image_base": null
     },
     {
       "id": 81,
@@ -971,7 +1054,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 82,
@@ -983,7 +1067,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 83,
@@ -995,7 +1080,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 84,
@@ -1007,7 +1093,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 85,
@@ -1019,7 +1106,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 86,
@@ -1031,7 +1119,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 87,
@@ -1043,7 +1132,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 88,
@@ -1055,7 +1145,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 89,
@@ -1067,7 +1158,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 90,
@@ -1079,7 +1171,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 91,
@@ -1091,7 +1184,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 92,
@@ -1103,7 +1197,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 93,
@@ -1115,7 +1210,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 94,
@@ -1127,7 +1223,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 95,
@@ -1139,7 +1236,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 96,
@@ -1151,7 +1249,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 97,
@@ -1163,7 +1262,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 98,
@@ -1175,7 +1275,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 99,
@@ -1187,7 +1288,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 100,
@@ -1199,7 +1301,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 5
+      "block": 5,
+      "image_base": null
     },
     {
       "id": 101,
@@ -1211,7 +1314,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 102,
@@ -1223,7 +1327,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 103,
@@ -1235,7 +1340,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 104,
@@ -1247,7 +1353,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 105,
@@ -1259,7 +1366,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 106,
@@ -1271,7 +1379,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 107,
@@ -1283,7 +1392,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 108,
@@ -1295,7 +1405,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 109,
@@ -1307,7 +1418,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 110,
@@ -1319,7 +1431,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 111,
@@ -1331,7 +1444,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 112,
@@ -1343,7 +1457,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 113,
@@ -1355,7 +1470,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 114,
@@ -1367,7 +1483,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 115,
@@ -1379,7 +1496,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 116,
@@ -1391,7 +1509,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 117,
@@ -1403,7 +1522,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 118,
@@ -1415,7 +1535,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 119,
@@ -1427,7 +1548,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 120,
@@ -1439,7 +1561,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 6
+      "block": 6,
+      "image_base": null
     },
     {
       "id": 121,
@@ -1451,7 +1574,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 122,
@@ -1463,7 +1587,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 123,
@@ -1475,7 +1600,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 124,
@@ -1487,7 +1613,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 125,
@@ -1499,7 +1626,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 126,
@@ -1511,7 +1639,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 127,
@@ -1523,7 +1652,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 128,
@@ -1535,7 +1665,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 129,
@@ -1547,7 +1678,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 130,
@@ -1559,7 +1691,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 131,
@@ -1571,7 +1704,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 132,
@@ -1583,7 +1717,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 133,
@@ -1595,7 +1730,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 134,
@@ -1607,7 +1743,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 135,
@@ -1619,7 +1756,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 136,
@@ -1631,7 +1769,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 137,
@@ -1643,7 +1782,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 138,
@@ -1655,7 +1795,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 139,
@@ -1667,7 +1808,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 140,
@@ -1679,7 +1821,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 7
+      "block": 7,
+      "image_base": null
     },
     {
       "id": 141,
@@ -1691,7 +1834,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 142,
@@ -1703,7 +1847,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 143,
@@ -1715,7 +1860,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 144,
@@ -1727,7 +1873,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 145,
@@ -1739,7 +1886,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 146,
@@ -1751,7 +1899,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 147,
@@ -1763,7 +1912,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 148,
@@ -1775,7 +1925,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 149,
@@ -1787,7 +1938,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 150,
@@ -1799,7 +1951,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 151,
@@ -1811,7 +1964,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 152,
@@ -1823,7 +1977,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 153,
@@ -1835,7 +1990,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 154,
@@ -1847,7 +2003,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 155,
@@ -1859,7 +2016,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 156,
@@ -1871,7 +2029,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 157,
@@ -1883,7 +2042,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 158,
@@ -1895,7 +2055,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 159,
@@ -1907,7 +2068,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 160,
@@ -1919,7 +2081,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8
+      "block": 8,
+      "image_base": null
     },
     {
       "id": 161,
@@ -1931,7 +2094,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 162,
@@ -1943,7 +2107,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 163,
@@ -1955,7 +2120,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 164,
@@ -1967,7 +2133,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 165,
@@ -1979,7 +2146,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 166,
@@ -1991,7 +2159,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 167,
@@ -2003,7 +2172,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 168,
@@ -2015,7 +2185,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 169,
@@ -2027,7 +2198,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 170,
@@ -2039,7 +2211,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 171,
@@ -2051,7 +2224,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 172,
@@ -2063,7 +2237,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 173,
@@ -2075,7 +2250,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 174,
@@ -2087,7 +2263,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 175,
@@ -2099,7 +2276,8 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 176,
@@ -2111,7 +2289,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 177,
@@ -2123,7 +2302,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 178,
@@ -2135,7 +2315,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 179,
@@ -2147,7 +2328,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 180,
@@ -2159,7 +2341,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9
+      "block": 9,
+      "image_base": null
     },
     {
       "id": 181,
@@ -2171,7 +2354,8 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 182,
@@ -2183,7 +2367,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 183,
@@ -2195,7 +2380,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 184,
@@ -2207,7 +2393,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 185,
@@ -2219,7 +2406,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 186,
@@ -2231,7 +2419,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 187,
@@ -2243,7 +2432,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 188,
@@ -2255,7 +2445,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 189,
@@ -2267,7 +2458,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 190,
@@ -2279,7 +2471,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 191,
@@ -2291,7 +2484,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 192,
@@ -2303,7 +2497,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 193,
@@ -2315,7 +2510,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 194,
@@ -2327,7 +2523,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 195,
@@ -2339,7 +2536,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 196,
@@ -2351,7 +2549,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 197,
@@ -2363,7 +2562,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 198,
@@ -2375,7 +2575,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 199,
@@ -2387,7 +2588,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 200,
@@ -2399,7 +2601,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10
+      "block": 10,
+      "image_base": null
     },
     {
       "id": 201,
@@ -2411,7 +2614,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 202,
@@ -2423,7 +2627,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 203,
@@ -2435,7 +2640,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 204,
@@ -2447,7 +2653,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 205,
@@ -2459,7 +2666,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 206,
@@ -2471,7 +2679,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 207,
@@ -2483,7 +2692,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 208,
@@ -2495,7 +2705,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 209,
@@ -2507,7 +2718,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 210,
@@ -2519,7 +2731,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 211,
@@ -2531,7 +2744,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 212,
@@ -2543,7 +2757,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 213,
@@ -2555,7 +2770,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 214,
@@ -2567,7 +2783,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 215,
@@ -2579,7 +2796,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 216,
@@ -2591,7 +2809,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 217,
@@ -2603,7 +2822,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 218,
@@ -2615,7 +2835,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 219,
@@ -2627,7 +2848,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 220,
@@ -2639,7 +2861,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11
+      "block": 11,
+      "image_base": null
     },
     {
       "id": 221,
@@ -2651,7 +2874,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 222,
@@ -2663,7 +2887,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 223,
@@ -2675,7 +2900,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 224,
@@ -2687,7 +2913,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 225,
@@ -2699,7 +2926,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 226,
@@ -2711,7 +2939,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 227,
@@ -2723,7 +2952,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 228,
@@ -2735,7 +2965,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 229,
@@ -2747,7 +2978,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 230,
@@ -2759,7 +2991,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 231,
@@ -2771,7 +3004,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 232,
@@ -2783,7 +3017,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 233,
@@ -2795,7 +3030,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 234,
@@ -2807,7 +3043,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 235,
@@ -2819,7 +3056,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 236,
@@ -2831,7 +3069,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 237,
@@ -2843,7 +3082,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 238,
@@ -2855,7 +3095,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 239,
@@ -2867,7 +3108,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 240,
@@ -2879,7 +3121,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12
+      "block": 12,
+      "image_base": null
     },
     {
       "id": 241,
@@ -2891,7 +3134,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 242,
@@ -2903,7 +3147,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 243,
@@ -2915,7 +3160,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 244,
@@ -2927,7 +3173,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 245,
@@ -2939,7 +3186,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 246,
@@ -2951,7 +3199,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 247,
@@ -2963,7 +3212,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 248,
@@ -2975,7 +3225,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 249,
@@ -2987,7 +3238,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 250,
@@ -2999,7 +3251,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 251,
@@ -3011,7 +3264,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 252,
@@ -3023,7 +3277,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 253,
@@ -3035,7 +3290,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 254,
@@ -3047,7 +3303,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 255,
@@ -3059,7 +3316,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 256,
@@ -3071,7 +3329,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 257,
@@ -3083,7 +3342,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 258,
@@ -3095,7 +3355,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 259,
@@ -3107,7 +3368,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 260,
@@ -3119,7 +3381,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13
+      "block": 13,
+      "image_base": null
     },
     {
       "id": 261,
@@ -3131,7 +3394,8 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 262,
@@ -3143,7 +3407,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 263,
@@ -3155,7 +3420,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 264,
@@ -3167,7 +3433,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 265,
@@ -3179,7 +3446,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 266,
@@ -3191,7 +3459,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 267,
@@ -3203,7 +3472,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 268,
@@ -3215,7 +3485,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 269,
@@ -3227,7 +3498,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 270,
@@ -3239,7 +3511,8 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     },
     {
       "id": 271,
@@ -3247,16 +3520,12 @@
       "options": {
         "a": "R/L",
         "b": "L/R",
-        "c": 1
+        "c": "1"
       },
       "correct": "a",
       "explanation": "",
-      "block": 14
+      "block": 14,
+      "image_base": null
     }
-  ],
-  "blockSize": 20,
-  "blockCount": 14,
-  "subject": "electrotehnica",
-  "source": "ELECTROTEHNICA-09.2024-2.xlsx",
-  "note": "Correct answers imported from Excel highlighted cells; missing answers left null for user completion."
+  ]
 }
