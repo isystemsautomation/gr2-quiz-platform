@@ -280,7 +280,13 @@ def question_edit(request, pk):
         # Redirect back to block page or dashboard
         redirect_to = request.GET.get('next', 'dashboard')
         if redirect_to == 'block':
-            return redirect('block_take', subject=question.subject, block_number=question.block_number)
+            # Redirect to block page with anchor to the specific question
+            from django.urls import reverse
+            block_url = reverse('block_take', kwargs={
+                'subject': question.subject,
+                'block_number': question.block_number
+            })
+            return redirect(f'{block_url}#question-{question.pk}')
         return redirect('dashboard')
     
     # GET request - show edit form

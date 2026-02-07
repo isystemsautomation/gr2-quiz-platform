@@ -44,7 +44,7 @@
 
                 {% for item in questions %}
                     {% with question=item.question %}
-                    <div class="question-card">
+                    <div class="question-card" id="question-{{ question.pk }}">
                         <div class="question-header">
                             <strong>Întrebarea {{ forloop.counter }}</strong>
                             {% if item.can_edit or user.is_superuser %}
@@ -185,6 +185,26 @@
             form.addEventListener('submit', function() {
                 localStorage.removeItem(storageKey);
             });
+        })();
+
+        // Scroll to question if URL has anchor (e.g., after editing)
+        (function() {
+            if (window.location.hash) {
+                const hash = window.location.hash.substring(1); // Remove #
+                const targetElement = document.getElementById(hash);
+                if (targetElement) {
+                    // Small delay to ensure page is fully loaded
+                    setTimeout(function() {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        // Add a subtle highlight effect
+                        targetElement.style.transition = 'box-shadow 0.3s ease';
+                        targetElement.style.boxShadow = '0 0 0 3px rgba(29, 78, 216, 0.3)';
+                        setTimeout(function() {
+                            targetElement.style.boxShadow = '';
+                        }, 2000);
+                    }, 100);
+                }
+            }
         })();
     </script>
 </body>
