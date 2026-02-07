@@ -2,8 +2,9 @@
 Django settings for gr2quiz project.
 """
 
-from pathlib import Path
 import os
+import warnings
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,13 +13,37 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
+def env_bool(name, default=False):
+    return os.getenv(name, str(default)).lower() in {'1', 'true', 'yes', 'on'}
+
+
+def env_int(name, default=0):
+    raw = os.getenv(name)
+    if raw is None or raw == '':
+        return default
+    try:
+        return int(raw)
+    except ValueError:
+        warnings.warn(f'{name} has invalid integer value {raw!r}; using {default}.', RuntimeWarning)
+        return default
+
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dev-key-change-in-production'
+_ENV_SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
+SECRET_KEY = _ENV_SECRET_KEY or 'dev-only-unsafe-secret-key-change-me-please-1234567890'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env_bool('DJANGO_DEBUG', default=True)
 
-ALLOWED_HOSTS = []
+if not DEBUG and _ENV_SECRET_KEY is None:
+    warnings.warn(
+        'DJANGO_SECRET_KEY is not set while DJANGO_DEBUG is false; '
+        'using an unsafe fallback key. Set DJANGO_SECRET_KEY immediately.',
+        RuntimeWarning,
+    )
+
+ALLOWED_HOSTS = [h.strip() for h in os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',') if h.strip()]
+CSRF_TRUSTED_ORIGINS = [o.strip() for o in os.getenv('DJANGO_CSRF_TRUSTED_ORIGINS', '').split(',') if o.strip()]
 
 
 # Application definition
@@ -130,3 +155,19 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/dashboard/'
 LOGOUT_REDIRECT_URL = '/accounts/login/'
 
+# HTTPS / cookie hardening
+# Keep secure cookies enabled in production by default, but keep redirect/HSTS opt-in to avoid
+# deployment outages when reverse-proxy TLS headers are not fully configured yet.
+SESSION_COOKIE_SECURE = not DEBUG
+CSRF_COOKIE_SECURE = not DEBUG
+SECURE_SSL_REDIRECT = env_bool('DJANGO_SECURE_SSL_REDIRECT', default=False)
+SECURE_HSTS_SECONDS = env_int('DJANGO_SECURE_HSTS_SECONDS', default=0)
+SECURE_HSTS_INCLUDE_SUBDOMAINS = env_bool('DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS', default=False)
+SECURE_HSTS_PRELOAD = env_bool('DJANGO_SECURE_HSTS_PRELOAD', default=False)
+SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
+SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
+
+# Configure when app is deployed behind a TLS-terminating reverse proxy (Nginx/Traefik/etc.)
+if env_bool('DJANGO_USE_X_FORWARDED_PROTO', default=False):
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

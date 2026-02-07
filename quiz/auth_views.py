@@ -44,10 +44,9 @@ def register_view(request):
 
 
 @login_required
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["POST"])
 def logout_view(request):
     """Logout view."""
     from django.contrib.auth import logout
     logout(request)
     return redirect('login')
-
