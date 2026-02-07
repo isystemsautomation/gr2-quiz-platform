@@ -105,10 +105,14 @@ def get_option_image_url(question, subject, option_number):
 def get_subject_slug(subject_id, subject_title):
     """
     Generate a stable, unique slug for a subject.
-    Format: slugified-title-id
-    Example: 'electrotehnica' -> 'electrotehnica-electrotehnica'
+    Format: slugified-title-id (only append id if different from title_slug)
+    Example: 'electrotehnica' -> 'electrotehnica'
+             'legislatie-gr-2' -> 'legislatie-gr-2' (no duplicate)
     """
     title_slug = slugify(subject_title)
+    # Only append subject_id if it's different from the slugified title
+    if title_slug == subject_id:
+        return subject_id
     return f"{title_slug}-{subject_id}"
 
 
@@ -125,19 +129,32 @@ def parse_subject_slug(slug):
     """
     Parse a subject slug back to subject_id.
     Returns subject_id or None if invalid.
+    Handles both formats: "subject-id" and "slugified-title-subject-id"
     """
-    # Subject slugs are: slugified-title-id
-    # We can extract the id from the end
+    # First, try to find exact match with get_subject_slug
+    try:
+        from .learn_views import list_subjects
+    except ImportError:
+        from .views import list_subjects
+    
+    for subj in list_subjects():
+        expected_slug = get_subject_slug(subj['id'], subj['title'])
+        if expected_slug == slug:
+            return subj['id']
+    
+    # Fallback: check if slug is just the subject_id
+    valid_subject_ids = [s['id'] for s in list_subjects()]
+    if slug in valid_subject_ids:
+        return slug
+    
+    # Fallback: try to extract from end (for old format compatibility)
     parts = slug.rsplit('-', 1)
-    if len(parts) == 2:
-        # Try to find matching subject
-        try:
-            from .learn_views import list_subjects
-        except ImportError:
-            from .views import list_subjects
+    if len(parts) == 2 and parts[1] in valid_subject_ids:
+        # Check if this matches any subject's expected slug
         for subj in list_subjects():
             if get_subject_slug(subj['id'], subj['title']) == slug:
                 return subj['id']
+    
     return None
 
 
