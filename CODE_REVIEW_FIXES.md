@@ -86,7 +86,6 @@
 ### New Files
 - `quiz/templatetags/__init__.py` - Template tags package
 - `quiz/templatetags/site_urls.py` - Site URL template tag
-- `quiz/context_processors.py` - Context processor (alternative approach, not used)
 - `CODE_REVIEW_FIXES.md` - This file
 
 ### Modified Files
@@ -100,7 +99,8 @@
 - `quiz/templates/learn/subject_list.html` - Dynamic URLs
 - `quiz/templates/learn/block_detail.html` - Dynamic URLs
 - `quiz/learn_views.py` - Dynamic URLs in JSON-LD
-- `gr2quiz/settings.py` - Added context processor (not used, can be removed)
+- `quiz/middleware.py` - Removed unused imports
+- `quiz/sitemaps.py` - Removed unused imports
 
 ## Testing Recommendations
 

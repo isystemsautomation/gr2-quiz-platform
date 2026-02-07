@@ -2,8 +2,6 @@
 Middleware to enforce authentication on all routes except login/register/static.
 """
 from django.shortcuts import redirect
-from django.urls import reverse
-from django.conf import settings
 
 
 class AuthenticationRequiredMiddleware:

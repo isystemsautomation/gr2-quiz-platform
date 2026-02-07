@@ -2,7 +2,6 @@
 Sitemap configuration for public learn pages.
 """
 from django.contrib.sitemaps import Sitemap
-from django.urls import reverse
 from .models import Question
 from .subjects import list_subjects
 from .utils import get_subject_slug, get_block_slug

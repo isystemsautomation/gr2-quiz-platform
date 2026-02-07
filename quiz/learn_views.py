@@ -44,7 +44,7 @@ def learn_subject_list(request):
         {'name': 'Chestionare ANRE Grupa II', 'url': '/learn/'},
     ]
     
-    # Structured data - BreadcrumbList (for backwards compatibility, but template has its own JSON-LD)
+    # Structured data - BreadcrumbList
     structured_data = json.dumps({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
