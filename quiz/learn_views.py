@@ -10,7 +10,7 @@ import json
 from .models import Question
 from .utils import (
     get_subject_slug, get_block_slug, parse_subject_slug, parse_block_slug,
-    get_question_image_url, get_option_image_url
+    get_question_image_url, get_option_image_url, build_absolute_https_url
 )
 
 
@@ -199,13 +199,20 @@ def learn_block_detail(request, subject_slug, block_slug):
             'option_c_url': option_c_url,
         })
     
-    # Breadcrumb data
+    # Breadcrumb data (absolute HTTPS URLs)
     breadcrumbs = [
-        {'name': 'Acasă', 'url': '/'},
-        {'name': 'Învață', 'url': '/learn/'},
-        {'name': subject_info['title'], 'url': f'/learn/{subject_slug}/'},
-        {'name': f'Bloc {block_number}', 'url': f'/learn/{subject_slug}/{block_slug}/'},
+        {'name': 'Acasă', 'url': home_url},
+        {'name': 'Învață', 'url': learn_url},
+        {'name': subject_info['title'], 'url': subject_url},
+        {'name': f'Bloc {block_number}', 'url': block_url},
     ]
+    
+    # Build absolute HTTPS URLs
+    base_url = build_absolute_https_url(request)
+    home_url = build_absolute_https_url(request, '/')
+    learn_url = build_absolute_https_url(request, '/learn/')
+    subject_url = build_absolute_https_url(request, f'/learn/{subject_slug}/')
+    block_url = build_absolute_https_url(request, f'/learn/{subject_slug}/{block_slug}/')
     
     # Structured data - BreadcrumbList
     breadcrumb_data = json.dumps({
@@ -216,63 +223,56 @@ def learn_block_detail(request, subject_slug, block_slug):
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Acasă",
-                "item": request.build_absolute_uri('/')
+                "item": home_url
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Învață",
-                "item": request.build_absolute_uri('/learn/')
+                "item": learn_url
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": subject_info['title'],
-                "item": request.build_absolute_uri(f'/learn/{subject_slug}/')
+                "item": subject_url
             },
             {
                 "@type": "ListItem",
                 "position": 4,
                 "name": f"Bloc {block_number}",
-                "item": request.build_absolute_uri(f'/learn/{subject_slug}/{block_slug}/')
+                "item": block_url
             }
         ]
     }, ensure_ascii=False)
     
-    # Structured data - FAQPage
-    faq_items = []
+    # Structured data - ItemList (question permalinks)
+    item_list_items = []
     for idx, item in enumerate(questions_data, 1):
         question = item['question']
-        if question.correct and question.explanation:
-            # Build accepted answer text
-            correct_option = question.get_correct_display()
-            correct_text = ""
-            if question.correct == 'a':
-                correct_text = question.option_a
-            elif question.correct == 'b':
-                correct_text = question.option_b
-            elif question.correct == 'c':
-                correct_text = question.option_c
-            
-            answer_text = f"Răspuns corect: {correct_option}. {correct_text}\n\n{question.explanation}"
-            
-            faq_items.append({
+        question_url = build_absolute_https_url(request, f'/learn/{subject_slug}/{block_slug}/{question.qid}/')
+        item_list_items.append({
+            "@type": "ListItem",
+            "position": idx,
+            "item": {
                 "@type": "Question",
-                "name": question.text,
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": answer_text
-                }
-            })
+                "name": question.text[:100] + "..." if len(question.text) > 100 else question.text,
+                "url": question_url
+            }
+        })
     
-    structured_data = [breadcrumb_data]
-    if faq_items:
-        faq_data = json.dumps({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faq_items
-        }, ensure_ascii=False)
-        structured_data.append(faq_data)
+    item_list_data = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": f"{subject_info['title']} - Bloc {block_number}",
+        "numberOfItems": len(item_list_items),
+        "itemListElement": item_list_items
+    }, ensure_ascii=False)
+    
+    structured_data = [breadcrumb_data, item_list_data]
+    
+    # Canonical URL (absolute HTTPS)
+    canonical_url = block_url
     
     return render(request, 'learn/block_detail.html', {
         'subject': subject_info,
@@ -282,6 +282,7 @@ def learn_block_detail(request, subject_slug, block_slug):
         'questions': questions_data,
         'breadcrumbs': breadcrumbs,
         'structured_data': structured_data,
+        'canonical_url': canonical_url,
     })
 
 

@@ -80,6 +80,69 @@ class LearnPagesTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
         # Check for explanation
         self.assertContains(response, self.question.explanation)
+    
+    def test_block_page_canonical_is_https(self):
+        """Test that canonical URL is HTTPS and absolute."""
+        from .utils import get_subject_slug, get_block_slug
+        subject_slug = get_subject_slug('electrotehnica', 'Electrotehnică')
+        block_slug = get_block_slug('electrotehnica', 1)
+        response = self.client.get(f'/learn/{subject_slug}/{block_slug}/')
+        self.assertEqual(response.status_code, 200)
+        content = response.content.decode('utf-8')
+        # Check canonical exists and is HTTPS
+        self.assertIn('rel="canonical"', content)
+        self.assertIn('href="https://', content)
+        # Should not contain http://
+        self.assertNotIn('href="http://', content)
+    
+    def test_block_page_meta_robots_exists(self):
+        """Test that meta robots tag exists."""
+        from .utils import get_subject_slug, get_block_slug
+        subject_slug = get_subject_slug('electrotehnica', 'Electrotehnică')
+        block_slug = get_block_slug('electrotehnica', 1)
+        response = self.client.get(f'/learn/{subject_slug}/{block_slug}/')
+        self.assertEqual(response.status_code, 200)
+        content = response.content.decode('utf-8')
+        self.assertIn('name="robots"', content)
+        self.assertIn('index,follow', content)
+    
+    def test_block_page_breadcrumb_list_exists(self):
+        """Test that BreadcrumbList JSON-LD exists with HTTPS URLs."""
+        from .utils import get_subject_slug, get_block_slug
+        subject_slug = get_subject_slug('electrotehnica', 'Electrotehnică')
+        block_slug = get_block_slug('electrotehnica', 1)
+        response = self.client.get(f'/learn/{subject_slug}/{block_slug}/')
+        self.assertEqual(response.status_code, 200)
+        content = response.content.decode('utf-8')
+        # Check for BreadcrumbList
+        self.assertIn('"@type": "BreadcrumbList"', content)
+        # Check for HTTPS URLs
+        self.assertIn('"https://', content)
+        # Should not contain http://
+        self.assertNotIn('"http://', content)
+    
+    def test_block_page_item_list_exists(self):
+        """Test that ItemList JSON-LD exists with question permalinks."""
+        from .utils import get_subject_slug, get_block_slug
+        subject_slug = get_subject_slug('electrotehnica', 'Electrotehnică')
+        block_slug = get_block_slug('electrotehnica', 1)
+        response = self.client.get(f'/learn/{subject_slug}/{block_slug}/')
+        self.assertEqual(response.status_code, 200)
+        content = response.content.decode('utf-8')
+        # Check for ItemList
+        self.assertIn('"@type": "ItemList"', content)
+        # Check for question permalink URL
+        self.assertIn(f'/learn/{subject_slug}/{block_slug}/1/', content)
+    
+    def test_block_page_contains_explicatie_label(self):
+        """Test that page contains 'Explicație:' label."""
+        from .utils import get_subject_slug, get_block_slug
+        subject_slug = get_subject_slug('electrotehnica', 'Electrotehnică')
+        block_slug = get_block_slug('electrotehnica', 1)
+        response = self.client.get(f'/learn/{subject_slug}/{block_slug}/')
+        self.assertEqual(response.status_code, 200)
+        content = response.content.decode('utf-8')
+        self.assertIn('Explicație:', content)
 
 
 class SitemapTestCase(TestCase):

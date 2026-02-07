@@ -3,105 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ subject.title }} - Bloc {{ block_number }} | Învață | Chestionare Electricieni Grupa 2</title>
-    <meta name="description" content="Întrebări și răspunsuri pentru {{ subject.title }} - Bloc {{ block_number }}. Toate întrebările cu răspunsuri corecte și explicații detaliate.">
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    
+    <!-- SEO Meta Tags -->
+    <title>{{ subject.title }} – Bloc {{ block_number }} | Chestionare ANRE Electrician Grupa II (Grupa 2)</title>
+    <meta name="description" content="Întrebări tip chestionar pentru {{ subject.title }} – Bloc {{ block_number }}. Răspunsuri corecte și explicații pentru pregătirea examenului ANRE Electrician Grupa II (Grupa 2).">
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+    <link rel="canonical" href="{{ canonical_url }}">
+    
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="{{ subject.title }} – Bloc {{ block_number }} | Chestionare ANRE Electrician Grupa II">
+    <meta property="og:description" content="Întrebări tip chestionar cu răspunsuri corecte și explicații pentru {{ subject.title }} – Bloc {{ block_number }}.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://quiz.isystemsautomation.com{{ request.path }}">
+    <meta property="og:site_name" content="Chestionare ANRE Electrician Grupa II">
+    
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    
+    <!-- Structured Data -->
     {% for data in structured_data %}
-    <script type="application/ld+json">{{ data }}</script>
+    <script type="application/ld+json">{{ data|safe }}</script>
     {% endfor %}
 </head>
 <body>
     <header class="header">
         <div class="header-container">
-            <a href="/" class="header-logo">
-                <img src="{% static 'img/logo.png' %}" alt="Siglă companie">
-                <span class="header-logo-text">Platformă internă chestionare Electricieni – Grupa 2</span>
+            <a href="{% url 'learn_subject_list' %}" class="header-logo">
+                <img src="{% static 'img/logo.png' %}" alt="ISYSTEMS AUTOMATION Logo">
+                <span class="header-logo-text">Chestionare ANRE Electrician – Grupa II (Grupa 2)</span>
             </a>
-            <nav class="header-nav">
-                <a href="/learn/">Învață</a>
-                <a href="/accounts/login/">Autentificare</a>
+            <nav class="header-nav" aria-label="Navigare principală">
+                <a href="{% url 'learn_subject_list' %}">Învață</a>
+                <a href="{% url 'login' %}">Autentificare</a>
             </nav>
         </div>
     </header>
 
-    <div class="main-container">
+    <div class="main-container learn-container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
             {% for crumb in breadcrumbs %}
                 {% if not forloop.last %}
-                    <a href="{{ crumb.url }}">{{ crumb.name }}</a> <span class="breadcrumb-separator">→</span>
+                    <a href="{{ crumb.url }}">{{ crumb.name }}</a> <span class="breadcrumb-separator">›</span>
                 {% else %}
                     <span class="breadcrumb-current">{{ crumb.name }}</span>
                 {% endif %}
             {% endfor %}
         </nav>
 
-        <div class="card">
-            <h1 class="page-title">{{ subject.title }} - Bloc {{ block_number }}</h1>
-            <p class="page-subtitle">Toate întrebările cu răspunsuri corecte și explicații detaliate.</p>
+        <div class="card learn-card">
+            <h1 class="page-title">{{ subject.title }} – Bloc {{ block_number }}</h1>
+            
+            <p class="learn-seo-intro">
+                Chestionare ANRE Electrician Grupa II (Grupa 2) pentru {{ subject.title }} – Bloc {{ block_number }}. 
+                Această pagină conține întrebări tip chestionar cu răspunsuri corecte și explicații detaliate, 
+                utile pentru pregătirea examenului ANRE Electrician Grupa II.
+            </p>
 
             {% for item in questions %}
                 {% with question=item.question %}
-                <article class="question-card" style="background: var(--bg-light); border-radius: 14px; padding: 2rem; margin-bottom: 1.5rem; border: 1px solid var(--border-color);">
-                    <h2 class="question-header" style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-dark);">
-                        Întrebarea {{ forloop.counter }}
+                <article class="question-card learn-question-card">
+                    <h2 class="question-header">
+                        <a href="{% url 'learn_question_detail' subject_slug block_slug question.qid %}" class="question-permalink">
+                            Întrebarea {{ forloop.counter }}
+                        </a>
                     </h2>
 
                     {% if item.question_img_exists and item.question_img_url %}
-                        <div class="question-image" style="margin-bottom: 1.5rem; text-align: center;">
-                            <img src="{{ item.question_img_url }}" alt="Imagine întrebare" style="max-width: 100%; max-height: 400px; border-radius: 10px; box-shadow: var(--shadow-md);">
+                        <div class="question-image">
+                            {% with question_text_truncated=question.text|truncatewords:15 %}
+                            <img 
+                                src="{{ item.question_img_url }}" 
+                                alt="Imagine pentru întrebarea {{ forloop.counter }} – {{ subject.title }} – Bloc {{ block_number }}: {{ question_text_truncated }}"
+                                loading="lazy"
+                            >
+                            {% endwith %}
                         </div>
                     {% endif %}
 
-                    <div class="question-text" style="font-size: 1.125rem; margin-bottom: 1.5rem; line-height: 1.7; color: var(--text-dark); font-weight: 500;">
+                    <div class="question-text">
                         {{ question.text }}
                     </div>
 
-                    <div class="options" style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div class="option-item {% if question.correct == 'a' %}correct-option{% endif %}" style="padding: 1rem 1.25rem; border: 2px solid {% if question.correct == 'a' %}var(--success-green){% else %}var(--border-color){% endif %}; border-radius: 10px; background: {% if question.correct == 'a' %}var(--success-light){% else %}var(--bg-white){% endif %};">
-                            <strong style="color: {% if question.correct == 'a' %}var(--success-green){% else %}var(--text-medium){% endif %};">a.</strong>
+                    <div class="options">
+                        <div class="option-item {% if question.correct == 'a' %}correct-option{% endif %}">
+                            <strong>a.</strong>
                             {% if item.option_a_exists and item.option_a_url %}
-                                <img src="{{ item.option_a_url }}" alt="Opțiunea A" style="max-width: 200px; max-height: 150px; margin: 0 0.75rem; vertical-align: middle; border-radius: 6px;">
+                                <img src="{{ item.option_a_url }}" alt="Opțiunea A – {{ question.text|truncatewords:10 }}" class="option-image" loading="lazy">
                             {% endif %}
-                            <span style="color: var(--text-medium);">{{ question.option_a }}</span>
+                            <span class="option-text">{{ question.option_a }}</span>
                             {% if question.correct == 'a' %}
-                                <span style="margin-left: 1rem; padding: 0.25rem 0.75rem; background: var(--success-green); color: white; border-radius: 6px; font-size: 0.875rem; font-weight: 600;">✓ Răspuns corect</span>
+                                <span class="correct-badge">✓ Răspuns corect</span>
                             {% endif %}
                         </div>
 
-                        <div class="option-item {% if question.correct == 'b' %}correct-option{% endif %}" style="padding: 1rem 1.25rem; border: 2px solid {% if question.correct == 'b' %}var(--success-green){% else %}var(--border-color){% endif %}; border-radius: 10px; background: {% if question.correct == 'b' %}var(--success-light){% else %}var(--bg-white){% endif %};">
-                            <strong style="color: {% if question.correct == 'b' %}var(--success-green){% else %}var(--text-medium){% endif %};">b.</strong>
+                        <div class="option-item {% if question.correct == 'b' %}correct-option{% endif %}">
+                            <strong>b.</strong>
                             {% if item.option_b_exists and item.option_b_url %}
-                                <img src="{{ item.option_b_url }}" alt="Opțiunea B" style="max-width: 200px; max-height: 150px; margin: 0 0.75rem; vertical-align: middle; border-radius: 6px;">
+                                <img src="{{ item.option_b_url }}" alt="Opțiunea B – {{ question.text|truncatewords:10 }}" class="option-image" loading="lazy">
                             {% endif %}
-                            <span style="color: var(--text-medium);">{{ question.option_b }}</span>
+                            <span class="option-text">{{ question.option_b }}</span>
                             {% if question.correct == 'b' %}
-                                <span style="margin-left: 1rem; padding: 0.25rem 0.75rem; background: var(--success-green); color: white; border-radius: 6px; font-size: 0.875rem; font-weight: 600;">✓ Răspuns corect</span>
+                                <span class="correct-badge">✓ Răspuns corect</span>
                             {% endif %}
                         </div>
 
-                        <div class="option-item {% if question.correct == 'c' %}correct-option{% endif %}" style="padding: 1rem 1.25rem; border: 2px solid {% if question.correct == 'c' %}var(--success-green){% else %}var(--border-color){% endif %}; border-radius: 10px; background: {% if question.correct == 'c' %}var(--success-light){% else %}var(--bg-white){% endif %};">
-                            <strong style="color: {% if question.correct == 'c' %}var(--success-green){% else %}var(--text-medium){% endif %};">c.</strong>
+                        <div class="option-item {% if question.correct == 'c' %}correct-option{% endif %}">
+                            <strong>c.</strong>
                             {% if item.option_c_exists and item.option_c_url %}
-                                <img src="{{ item.option_c_url }}" alt="Opțiunea C" style="max-width: 200px; max-height: 150px; margin: 0 0.75rem; vertical-align: middle; border-radius: 6px;">
+                                <img src="{{ item.option_c_url }}" alt="Opțiunea C – {{ question.text|truncatewords:10 }}" class="option-image" loading="lazy">
                             {% endif %}
-                            <span style="color: var(--text-medium);">{{ question.option_c }}</span>
+                            <span class="option-text">{{ question.option_c }}</span>
                             {% if question.correct == 'c' %}
-                                <span style="margin-left: 1rem; padding: 0.25rem 0.75rem; background: var(--success-green); color: white; border-radius: 6px; font-size: 0.875rem; font-weight: 600;">✓ Răspuns corect</span>
+                                <span class="correct-badge">✓ Răspuns corect</span>
                             {% endif %}
                         </div>
                     </div>
 
                     {% if question.explanation %}
-                        <div class="explanation" style="margin-top: 1.5rem; padding: 1.25rem; background: var(--bg-white); border-radius: 10px; border-left: 3px solid var(--primary-blue); color: var(--text-medium); line-height: 1.7;">
-                            <strong style="color: var(--text-dark);">Explicație:</strong><br>
+                        <div class="explanation">
+                            <strong>Explicație:</strong><br>
                             {{ question.explanation }}
                         </div>
                     {% endif %}
 
-                    <div style="margin-top: 1rem;">
-                        <a href="{% url 'learn_question_detail' subject_slug block_slug question.qid %}" style="color: var(--primary-blue); text-decoration: none; font-size: 0.9rem;">
+                    <div class="question-permalink-footer">
+                        <a href="{% url 'learn_question_detail' subject_slug block_slug question.qid %}" class="text-link">
                             Vezi permalink pentru această întrebare →
                         </a>
                     </div>
@@ -112,4 +138,3 @@
     </div>
 </body>
 </html>
-

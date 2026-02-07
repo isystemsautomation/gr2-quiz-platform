@@ -8,6 +8,31 @@ from django.contrib.staticfiles.finders import find
 from django.utils.text import slugify
 
 
+def build_absolute_https_url(request, path=''):
+    """
+    Build an absolute HTTPS URL from a request and path.
+    Ensures HTTPS is used even if request is HTTP.
+    
+    Args:
+        request: Django request object
+        path: URL path (defaults to request.path if empty)
+    
+    Returns:
+        str: Absolute HTTPS URL
+    """
+    if not path:
+        path = request.path
+    
+    # Get host from request
+    host = request.get_host()
+    
+    # Ensure HTTPS
+    scheme = 'https'
+    
+    # Build absolute URL
+    return f"{scheme}://{host}{path}"
+
+
 def check_static_file_exists(relative_path):
     """
     Check if a static file exists and return (exists, url).
