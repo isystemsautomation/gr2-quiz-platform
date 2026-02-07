@@ -919,6 +919,124 @@ body {
     margin: 0 4px;
 }
 
+/* Source Note Section (ANRE Disclaimer) */
+.source-note {
+    margin-top: 32px;
+    padding: 20px 24px;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-medium);
+}
+
+.source-note__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0 0 12px 0;
+}
+
+.source-note__intro {
+    margin: 0 0 16px 0;
+    color: var(--text-medium);
+}
+
+.source-note__files {
+    margin: 0 0 16px 0;
+}
+
+.source-note__files-label {
+    font-weight: 500;
+    color: var(--text-dark);
+    margin: 0 0 8px 0;
+    font-size: 13px;
+}
+
+.source-note__files-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.source-note__files-list li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    color: var(--text-dark);
+    padding: 4px 0;
+    margin: 0;
+}
+
+.source-note__files-list li:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.source-note__disclaimer {
+    margin: 0;
+    color: var(--text-medium);
+    font-size: 13px;
+}
+
+.source-note__link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.source-note__link:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* Source Note in Learn Pages */
+.learn-container .source-note {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* Source Note in Login Card */
+.saas-login-card .source-note {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    padding-top: 24px;
+}
+
+@media (max-width: 480px) {
+    .source-note {
+        padding: 16px 20px;
+        font-size: 13px;
+    }
+    
+    .source-note__title {
+        font-size: 15px;
+    }
+    
+    .source-note__files-list {
+        padding: 10px 12px;
+    }
+    
+    .source-note__files-list li {
+        font-size: 12px;
+    }
+    
+    .source-note__disclaimer {
+        font-size: 12px;
+    }
+}
+
 /* Register Info Section */
 .saas-register-info {
     background: var(--bg-light);
