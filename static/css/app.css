@@ -631,9 +631,44 @@ body {
 .saas-login-main {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 32px 24px;
+    gap: 32px;
+}
+
+/* Hero Section */
+.saas-login-hero {
+    max-width: 960px;
+    width: 100%;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.saas-login-hero__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.saas-login-hero__subtitle {
+    font-size: 16px;
+    color: var(--text-medium);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.saas-login-hero__note {
+    font-size: 14px;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.5;
 }
 
 .saas-login-card {
@@ -1087,6 +1122,27 @@ body {
 }
 
 @media (max-width: 480px) {
+    .saas-login-main {
+        padding: 24px 16px;
+        gap: 24px;
+    }
+    
+    .saas-login-hero {
+        padding: 0 16px;
+    }
+    
+    .saas-login-hero__title {
+        font-size: 24px;
+    }
+    
+    .saas-login-hero__subtitle {
+        font-size: 15px;
+    }
+    
+    .saas-login-hero__note {
+        font-size: 13px;
+    }
+    
     .saas-login-column {
         padding: 24px 20px;
     }
