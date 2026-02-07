@@ -168,20 +168,28 @@ def parse_block_slug(slug):
     if not slug.startswith('bloc-'):
         return None, None
     
-    parts = slug[5:].rsplit('-', 1)  # Remove 'bloc-' prefix
-    if len(parts) == 2:
-        try:
-            block_number = int(parts[0])
-            subject_id = parts[1]
-            # Validate subject_id
+    # Get valid subject IDs first
+    try:
+        from .learn_views import list_subjects
+    except ImportError:
+        from .views import list_subjects
+    valid_subjects = [s['id'] for s in list_subjects()]
+    
+    # Remove 'bloc-' prefix
+    remaining = slug[5:]
+    
+    # Try each valid subject_id to find a match
+    # We need to find where the block number ends and subject_id begins
+    for subject_id in valid_subjects:
+        # Check if slug ends with this subject_id
+        if remaining.endswith(f'-{subject_id}'):
+            # Extract block number (everything before the subject_id)
+            block_part = remaining[:-len(f'-{subject_id}')]
             try:
-                from .learn_views import list_subjects
-            except ImportError:
-                from .views import list_subjects
-            valid_subjects = [s['id'] for s in list_subjects()]
-            if subject_id in valid_subjects:
+                block_number = int(block_part)
                 return subject_id, block_number
-        except ValueError:
-            pass
+            except ValueError:
+                continue
+    
     return None, None
 
