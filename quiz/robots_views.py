@@ -28,7 +28,7 @@ Disallow: /question/
 
 Sitemap: {sitemap_url}
 """
-    return HttpResponse(content, content_type='text/plain')
+    return HttpResponse(content, content_type='text/plain; charset=utf-8')
 
 
 def license_view(request):
@@ -41,7 +41,7 @@ def license_view(request):
     if license_path.exists():
         with open(license_path, 'r', encoding='utf-8') as f:
             content = f.read()
-        return HttpResponse(content, content_type='text/plain')
+        return HttpResponse(content, content_type='text/plain; charset=utf-8')
     else:
-        return HttpResponse('License file not found.', status=404, content_type='text/plain')
+        return HttpResponse('License file not found.', status=404, content_type='text/plain; charset=utf-8')
 
