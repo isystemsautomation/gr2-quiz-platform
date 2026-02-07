@@ -205,11 +205,8 @@ def parse_block_slug(slug):
     if not slug.startswith('bloc-'):
         return None, None
     
-    # Get valid subject IDs first
-    try:
-        from .learn_views import list_subjects
-    except ImportError:
-        from .views import list_subjects
+    # Get valid subject IDs from centralized source
+    from .subjects import list_subjects
     valid_subjects = [s['id'] for s in list_subjects()]
     
     # Remove 'bloc-' prefix
