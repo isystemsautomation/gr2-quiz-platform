@@ -510,7 +510,7 @@ The application uses SQLite by default. The database file (`db.sqlite3`) will be
 
 1. **Install gunicorn:**
    ```bash
-   pip install gunicorn
+   pip3 install gunicorn
    ```
 
 2. **Create systemd service** (`/etc/systemd/system/gr2quiz.service`):
@@ -537,7 +537,21 @@ The application uses SQLite by default. The database file (`db.sqlite3`) will be
    sudo systemctl enable gr2quiz
    ```
 
-4. **Configure Apache** (HTTPS vhost):
+
+4. **Recommended Django security env vars (behind Apache/Nginx TLS proxy):**
+   ```bash
+   export DJANGO_DEBUG=false
+   export DJANGO_SECRET_KEY='replace-with-strong-random-secret'
+   export DJANGO_ALLOWED_HOSTS='quiz.isystemsautomation.com'
+   export DJANGO_USE_X_FORWARDED_PROTO=true
+   # Enable redirect/HSTS only after proxy HTTPS headers are verified:
+   export DJANGO_SECURE_SSL_REDIRECT=true
+   export DJANGO_SECURE_HSTS_SECONDS=31536000
+   export DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS=true
+   export DJANGO_SECURE_HSTS_PRELOAD=true
+   ```
+
+5. **Configure Apache** (HTTPS vhost):
    ```apache
    <VirtualHost *:443>
        ServerName quiz.isystemsautomation.com
