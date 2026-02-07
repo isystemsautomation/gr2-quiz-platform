@@ -3,8 +3,10 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods
+from .rate_limit import rate_limit
 
 
+@rate_limit(max_attempts=5, window_seconds=300, key_prefix='login')
 def login_view(request):
     """Login view."""
     if request.user.is_authenticated:
@@ -17,8 +19,10 @@ def login_view(request):
         
         if user is not None:
             login(request, user)
+            # Rate limit counter will be reset by decorator
             return redirect('dashboard')
         else:
+            # Failed login - rate limit counter already incremented
             return render(request, 'registration/login.html', {
                 'error': 'Invalid username or password.',
             })
@@ -26,6 +30,7 @@ def login_view(request):
     return render(request, 'registration/login.html')
 
 
+@rate_limit(max_attempts=3, window_seconds=600, key_prefix='register')
 def register_view(request):
     """Registration view."""
     if request.user.is_authenticated:
@@ -36,7 +41,9 @@ def register_view(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
+            # Rate limit counter will be reset by decorator
             return redirect('dashboard')
+        # Invalid form - rate limit counter already incremented
     else:
         form = UserCreationForm()
     

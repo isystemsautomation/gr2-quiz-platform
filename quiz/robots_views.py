@@ -10,10 +10,14 @@ def robots_txt(request):
     """
     Generate robots.txt content.
     Allows crawling of /learn/ pages, disallows admin and private routes.
+    Uses fixed SITE_DOMAIN to prevent host header poisoning.
     """
-    domain = getattr(settings, 'SITE_DOMAIN', request.get_host())
-    protocol = 'https' if request.is_secure() else 'http'
-    sitemap_url = f"{protocol}://{domain}/sitemap.xml"
+    # Use fixed domain from settings (prevents host header poisoning)
+    domain = getattr(settings, 'SITE_DOMAIN', None)
+    if not domain:
+        # Fallback only for development
+        domain = request.get_host()
+    sitemap_url = f"https://{domain}/sitemap.xml"
     
     content = f"""User-agent: *
 Allow: /learn/

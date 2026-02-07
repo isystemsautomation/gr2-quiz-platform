@@ -11,18 +11,18 @@ class AuthenticationRequiredMiddleware:
     Middleware that requires authentication for all views except:
     - /accounts/login/
     - /accounts/register/
-    - /accounts/logout/ (POST only)
+    - /accounts/logout/ (POST only, enforced by view decorator)
     - Static files
+    - Public learn pages (/learn/)
+    - SEO routes (/sitemap.xml, /robots.txt, /LICENSE)
     """
     def __init__(self, get_response):
         self.get_response = get_response
+        # Paths that don't require authentication
         self.exempt_paths = [
             '/accounts/login/',
             '/accounts/register/',
             '/static/',
-        ]
-        # Public paths that don't require authentication
-        self.public_paths = [
             '/learn/',
             '/sitemap.xml',
             '/robots.txt',
@@ -34,16 +34,12 @@ class AuthenticationRequiredMiddleware:
         if request.path.startswith('/static/'):
             return self.get_response(request)
         
-        # Allow login and register pages
+        # Allow exempt paths (login, register, public learn pages, SEO routes)
         if request.path in self.exempt_paths:
             return self.get_response(request)
         
-        # Allow public learn pages, sitemap, robots.txt, and LICENSE
-        if request.path.startswith('/learn/') or request.path in ['/sitemap.xml', '/robots.txt', '/LICENSE']:
-            return self.get_response(request)
-        
-        # Allow logout (GET or POST)
-        if request.path == '/accounts/logout/':
+        # Allow paths that start with exempt prefixes
+        if any(request.path.startswith(path) for path in self.exempt_paths if path.endswith('/')):
             return self.get_response(request)
         
         # Require authentication for all other paths

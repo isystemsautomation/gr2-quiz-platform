@@ -257,12 +257,19 @@ def question_edit(request, pk):
             messages.error(request, "Întrebarea a fost modificată între timp de un alt utilizator. Te rugăm să reîncarci pagina înainte de a salva din nou.")
             return redirect('question_edit', pk=question.pk)
 
-        # Update question
-        if not question.correct and request.POST.get('correct'):
-            question.correct = request.POST.get('correct')
+        # Update question with server-side validation
+        correct_val = request.POST.get('correct', '').strip()
+        
+        # Validate correct answer value (must be 'a', 'b', 'c', or empty)
+        if correct_val and correct_val not in ['a', 'b', 'c']:
+            messages.error(request, "Răspunsul corect trebuie să fie 'a', 'b' sau 'c'.")
+            return redirect('question_edit', pk=question.pk)
+        
+        if not question.correct and correct_val:
+            # Normal user: can only set if currently empty
+            question.correct = correct_val
         elif request.user.is_superuser:
             # Superuser can set or clear correct answer
-            correct_val = request.POST.get('correct', '').strip()
             question.correct = correct_val if correct_val else None
         
         if not question.explanation and request.POST.get('explanation'):

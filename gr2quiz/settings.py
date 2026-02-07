@@ -18,17 +18,37 @@ def env_bool(name, default=False):
     return os.getenv(name, str(default)).lower() in {'1', 'true', 'yes', 'on'}
 
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'dev-only-unsafe-secret-key-change-me-please-1234567890')
+# SECURITY: DEBUG defaults to False for production safety
+# Set DJANGO_DEBUG=true explicitly for local development
+DEBUG = env_bool('DJANGO_DEBUG', default=False)
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env_bool('DJANGO_DEBUG', default=True)
-
-if not DEBUG and os.getenv('DJANGO_SECRET_KEY') is None:
-    raise ImproperlyConfigured('DJANGO_SECRET_KEY must be set when DJANGO_DEBUG is false.')
+# SECURITY: SECRET_KEY must be set in production - fail fast if missing
+# For local development, a fallback is provided but this should never be used in production
+_secret_key = os.getenv('DJANGO_SECRET_KEY')
+if not _secret_key:
+    if DEBUG:
+        # Only allow fallback in DEBUG mode (local development)
+        _secret_key = 'dev-only-unsafe-secret-key-change-me-please-1234567890'
+        import warnings
+        warnings.warn(
+            'SECRET_KEY not set! Using insecure fallback. '
+            'Set DJANGO_SECRET_KEY environment variable for production.',
+            UserWarning
+        )
+    else:
+        # Production: fail fast if SECRET_KEY is missing
+        raise ImproperlyConfigured(
+            'SECRET_KEY must be set via DJANGO_SECRET_KEY environment variable in production. '
+            'Generate one with: python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"'
+        )
+SECRET_KEY = _secret_key
 
 ALLOWED_HOSTS = [h.strip() for h in os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',') if h.strip()]
 CSRF_TRUSTED_ORIGINS = [o.strip() for o in os.getenv('DJANGO_CSRF_TRUSTED_ORIGINS', '').split(',') if o.strip()]
+
+# Fixed domain for absolute URL generation (prevents host header poisoning)
+# Use this instead of request.get_host() for sitemaps, canonical URLs, etc.
+SITE_DOMAIN = os.getenv('DJANGO_SITE_DOMAIN', ALLOWED_HOSTS[0] if ALLOWED_HOSTS else 'localhost')
 
 
 # Application definition

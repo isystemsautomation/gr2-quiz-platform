@@ -24,6 +24,7 @@ export DJANGO_DEBUG=false
 export DJANGO_SECRET_KEY='your-strong-secret-key-here'
 export DJANGO_ALLOWED_HOSTS='quiz.isystemsautomation.com'
 export DJANGO_CSRF_TRUSTED_ORIGINS='https://quiz.isystemsautomation.com'
+export DJANGO_SITE_DOMAIN='quiz.isystemsautomation.com'
 export DJANGO_USE_X_FORWARDED_PROTO=true
 export DJANGO_SECURE_SSL_REDIRECT=true
 export DJANGO_SECURE_HSTS_SECONDS=31536000

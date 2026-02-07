@@ -11,20 +11,28 @@ from django.utils.text import slugify
 def build_absolute_https_url(request, path=''):
     """
     Build an absolute HTTPS URL from a request and path.
+    Uses fixed SITE_DOMAIN setting to prevent host header poisoning.
     Ensures HTTPS is used even if request is HTTP.
     
     Args:
-        request: Django request object
+        request: Django request object (optional, used for path if not provided)
         path: URL path (defaults to request.path if empty)
     
     Returns:
         str: Absolute HTTPS URL
     """
-    if not path:
+    if not path and request:
         path = request.path
     
-    # Get host from request
-    host = request.get_host()
+    # Use fixed domain from settings to prevent host header poisoning
+    # This is critical for sitemaps, canonical URLs, and other absolute URL generation
+    host = getattr(settings, 'SITE_DOMAIN', None)
+    if not host:
+        # Fallback to request.get_host() only if SITE_DOMAIN not set (development)
+        if request:
+            host = request.get_host()
+        else:
+            host = 'localhost'
     
     # Ensure HTTPS
     scheme = 'https'

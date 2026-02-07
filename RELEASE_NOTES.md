@@ -50,6 +50,15 @@ Production-ready release of the GR2 Quiz Platform - Chestionare ANRE Electrician
 - Optimized database queries
 - Efficient bulk import operations
 
+### Security (Critical Fixes)
+- **SECRET_KEY validation**: Fails fast in production if missing (prevents insecure fallback)
+- **DEBUG defaults to False**: Production-safe default, must explicitly enable for development
+- **Rate limiting**: Brute-force protection on login (5 attempts/5min) and registration (3 attempts/10min)
+- **Host header protection**: Fixed SITE_DOMAIN setting prevents host header poisoning
+- **Answer validation**: Server-side validation of correct answer values ('a', 'b', 'c' only)
+- **Middleware cleanup**: Removed dead code and inconsistencies
+- **Transport hardening**: Security headers enabled by default in production
+
 ### Deployment
 - Systemd service configuration
 - Environment variable-based configuration
@@ -60,17 +69,26 @@ Production-ready release of the GR2 Quiz Platform - Chestionare ANRE Electrician
 
 ### New Files
 - `quiz/signals.py` - Automatic JSON synchronization
+- `quiz/rate_limit.py` - Rate limiting for brute-force protection
 - `.gitignore` - Git ignore patterns
 - `GIT_SYNC_SETUP.md` - Git configuration guide
 - `PRODUCTION_CHECKLIST.md` - Deployment checklist
+- `SECURITY_FIXES.md` - Security fixes documentation
+- `DEPLOYMENT.md` - Deployment guide
 - `RELEASE_NOTES.md` - This file
 
 ### Modified Files
 - `quiz/apps.py` - Signal registration
+- `quiz/auth_views.py` - Added rate limiting decorators
+- `quiz/middleware.py` - Cleaned up and simplified
+- `quiz/views.py` - Added answer validation, fixed redirect to edited question
+- `quiz/utils.py` - Fixed host header poisoning (uses SITE_DOMAIN)
+- `quiz/robots_views.py` - Fixed host header poisoning
 - `quiz/management/commands/import_questions.py` - Bulk import optimization
 - `quiz/templates/registration/login.html` - Hero section and footer
+- `quiz/templates/quiz/block_take.html` - Question anchors and smooth scroll
 - `static/css/app.css` - Hero section styles
-- `gr2quiz/settings.py` - Logging configuration
+- `gr2quiz/settings.py` - Security fixes, logging, SITE_DOMAIN setting
 - `requirements.txt` - Added gunicorn
 
 ## Breaking Changes

@@ -3,10 +3,11 @@
 ## Pre-Deployment Checklist
 
 ### 1. Environment Variables
-- [ ] Set `DJANGO_DEBUG=false`
-- [ ] Set `DJANGO_SECRET_KEY` to a strong random secret
+- [ ] Set `DJANGO_DEBUG=false` (CRITICAL: defaults to False, but verify)
+- [ ] Set `DJANGO_SECRET_KEY` to a strong random secret (REQUIRED: app will fail without it)
 - [ ] Set `DJANGO_ALLOWED_HOSTS` to your domain(s)
 - [ ] Set `DJANGO_CSRF_TRUSTED_ORIGINS` to your HTTPS domain(s)
+- [ ] Set `DJANGO_SITE_DOMAIN` to your domain (prevents host header poisoning)
 - [ ] Set `DJANGO_USE_X_FORWARDED_PROTO=true` (if behind reverse proxy)
 - [ ] Set `DJANGO_SECURE_SSL_REDIRECT=true` (after verifying HTTPS works)
 - [ ] Set `DJANGO_SECURE_HSTS_SECONDS=31536000` (1 year)
@@ -44,6 +45,9 @@
 - [ ] Verify authentication middleware is working
 - [ ] Check that admin panel requires authentication
 - [ ] Verify public routes (`/learn/`, `/accounts/login/`) are accessible
+- [ ] Test rate limiting: Try 5 failed logins, should get 429 error
+- [ ] Verify SECRET_KEY is set (app should fail to start without it in production)
+- [ ] Test answer validation: Try submitting invalid answer value, should be rejected
 
 ### 7. Functionality Tests
 - [ ] Test user registration
