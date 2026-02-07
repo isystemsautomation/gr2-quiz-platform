@@ -90,7 +90,7 @@ class QuestionSitemap(Sitemap):
     
     def location(self, question):
         """Return URL for question detail page."""
-        subject_info = next((s for s in _get_subjects_list() if s['id'] == question.subject), None)
+        subject_info = next((s for s in list_subjects() if s['id'] == question.subject), None)
         if not subject_info:
             return '/learn/'  # Fallback to learn page
         subject_slug = get_subject_slug(question.subject, subject_info['title'])
