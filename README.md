@@ -225,6 +225,10 @@ Dacă ai deja un cont, autentifică-te pentru a accesa platforma.
 - **"Continuă fără cont"** – accesează modul public "Învață" fără autentificare
 - **"Autentificare"** – autentifică-te pentru salvare progres
 
+**Interfața de autentificare și acces fără cont:**
+
+![Pagina de autentificare](static/img/readme/1.png)
+
 ### 4. Dashboard și navigare
 
 După autentificare, vei ajunge pe pagina **Dashboard**, care este punctul central de navigare al platformei.
@@ -263,31 +267,9 @@ Culoarea fiecărui bloc indică performanța ta la **ultima încercare** pentru 
 - Indicator **"Notă salvată"** dacă ai salvat o notă personală pentru acest bloc
 - Preview al notei personale (dacă există)
 
-### Screenshots
+**Dashboard – selecția blocurilor și progresul salvat:**
 
-*Pagina de autentificare / Învață fără cont*
-
-![Pagina de autentificare / Învață fără cont](static/img/readme/1.png)
-
-*Dashboard – selecție blocuri și progres*
-
-![Dashboard – selecție blocuri și progres](static/img/readme/2.png)
-
-*Rezultate bloc – scor și răspunsuri corecte/greșite*
-
-![Rezultate bloc – scor și răspunsuri corecte/greșite](static/img/readme/3.png)
-
-*Întrebare – indicatori Lipsă/Existent (răspuns/explicație)*
-
-![Întrebare – indicatori Lipsă/Existent (răspuns/explicație)](static/img/readme/4.png)
-
-*Întrebare (Legislație) – exemplu cu Lipsă răspuns și Lipsă explicație*
-
-![Întrebare (Legislație) – exemplu cu Lipsă răspuns și Lipsă explicație](static/img/readme/5.png)
-
-*Editare întrebare – completare răspuns corect și explicație*
-
-![Editare întrebare – completare răspuns corect și explicație](static/img/readme/6.png)
+![Dashboard](static/img/readme/2.png)
 
 ### 5. Rezolvarea chestionarelor
 
@@ -314,6 +296,10 @@ Pentru a rezolva un chestionar, selectează un bloc din Dashboard.
 - Răspunsurile tale sunt **salvate automat** în browser (localStorage) pe măsură ce le selectezi
 - Dacă navighezi către editarea unei întrebări, răspunsurile tale vor fi **păstrate** când revii
 - Rezultatele sunt **salvate automat** în baza de date după trimitere
+
+**Exemplu de rezultate după completarea unui bloc:**
+
+![Rezultate bloc](static/img/readme/3.png)
 
 ### 6. Întrebări cu „Lipsă răspuns" sau „Lipsă explicație"
 
@@ -342,6 +328,10 @@ Platforma marchează întrebările incomplete cu badge-uri colorate pentru a ind
 - Corecta explicații existente
 - Modifica setările de imagini
 
+**Indicatori „Răspuns existent" și „Lipsă explicație":**
+
+![Indicatori întrebare](static/img/readme/4.png)
+
 ### 7. Cum completează utilizatorul o întrebare incompletă
 
 Dacă întâlnești o întrebare marcată cu **"Lipsă răspuns"** sau **"Lipsă explicație"**, poți completa informațiile lipsă.
@@ -365,6 +355,14 @@ Dacă întâlnești o întrebare marcată cu **"Lipsă răspuns"** sau **"Lipsă
 - Platforma folosește **optimistic locking** pentru a preveni suprascrierea accidentală
 - Dacă altcineva editează întrebarea în același timp, vei primi o notificare
 - Modificările sunt salvate cu timestamp pentru consistență
+
+**Exemplu întrebare fără răspuns și explicație:**
+
+![Întrebare fără răspuns](static/img/readme/5.png)
+
+**Interfața de editare pentru completarea răspunsului și explicației:**
+
+![Editare întrebare](static/img/readme/6.png)
 
 ### 8. Drepturi Administrator
 
