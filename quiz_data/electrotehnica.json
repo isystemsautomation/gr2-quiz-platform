@@ -2,7 +2,7 @@
   "title": "Electrotehnică - Septembrie 2024",
   "subject": "electrotehnica",
   "blockSize": 20,
-  "questionCount": 271,
+  "questionCount": 275,
   "questions": [
     {
       "id": 1,
@@ -292,6 +292,45 @@
     },
     {
       "id": 23,
+      "question": "Care dintre schemele alăturate permite obţinerea a două circuite de cuplă diagonală  (cruce cu întreruptor ) ?",
+      "options": {
+        "a": "",
+        "b": "",
+        "c": ""
+      },
+      "correct": "b",
+      "explanation": "",
+      "block": 2,
+      "image_base": null
+    },
+    {
+      "id": 24,
+      "question": "Care dintre schemele alăturate permite obţinerea a două circuite de cuplă  longitudinală ( cu întreruptor) ?",
+      "options": {
+        "a": "",
+        "b": "",
+        "c": ""
+      },
+      "correct": "c",
+      "explanation": "",
+      "block": 2,
+      "image_base": null
+    },
+    {
+      "id": 25,
+      "question": "Care dintre schemele alăturate permite obţinerea a două circuite de cuplă  transversală ( cu întreruptor) ?",
+      "options": {
+        "a": "",
+        "b": "",
+        "c": ""
+      },
+      "correct": "a",
+      "explanation": "",
+      "block": 2,
+      "image_base": null
+    },
+    {
+      "id": 26,
       "question": "Utilizarea unei cuple cu functiuni multiple se prefera atunci cand dorim",
       "options": {
         "a": "scurtarea duratei manevrelor",
@@ -299,12 +338,12 @@
         "c": "reducerea investitiei in echiparea statiei."
       },
       "correct": "c",
-      "explanation": "Cupla cu funcțiuni multiple permite conectarea barelor sau a circuitelor între ele, astfel încât alimentarea să poată fi preluată dintr-o altă sursă în cazul unui defect sau al unei lucrări de întreținere.\r\n\r\nAstfel, dacă o parte a instalației se întrerupe, alimentarea poate continua prin cealaltă parte, fără întreruperea consumatorilor.\r\n\r\nPrin urmare, utilizarea unei cuple cu funcțiuni multiple are ca scop creșterea continuității în alimentare.",
+      "explanation": "",
       "block": 2,
       "image_base": null
     },
     {
-      "id": 24,
+      "id": 27,
       "question": "Care este energia consumata de o rezistenta electrica r = 10 Ω, prin care trece un curent de 2 A timp de 10 ore:",
       "options": {
         "a": "200 Wh",
@@ -317,7 +356,7 @@
       "image_base": null
     },
     {
-      "id": 25,
+      "id": 28,
       "question": "Ce posibilităţi de limitare a curenţilor de scurtcirciut sunt de preferat pentru schema de mai sus ?",
       "options": {
         "a": "reducerea t.e.m., acţionând asupra circuitului de excitaţie al generatorului;",
@@ -330,7 +369,7 @@
       "image_base": null
     },
     {
-      "id": 26,
+      "id": 29,
       "question": "Curentul electric alternativ poate fi produs numai prin fenomene:",
       "options": {
         "a": "termice",
@@ -343,7 +382,7 @@
       "image_base": null
     },
     {
-      "id": 27,
+      "id": 30,
       "question": "Scheme cu un sistem de bare colectoare şi un întreruptor pe circuit sunt folosite",
       "options": {
         "a": "numai pentru staţii de conexiuni de 6 kV",
@@ -356,7 +395,7 @@
       "image_base": null
     },
     {
-      "id": 28,
+      "id": 31,
       "question": "Celulele prefabricate monobloc se caracterizează în principal prin:",
       "options": {
         "a": "securitate ridicată a persoanelor;",
@@ -369,7 +408,7 @@
       "image_base": null
     },
     {
-      "id": 29,
+      "id": 32,
       "question": "Circulaţia câmpului magnetic pe un contur închis este egală cu:",
       "options": {
         "a": "suma algebrică a curenţilor care străbat conturul",
@@ -382,7 +421,7 @@
       "image_base": null
     },
     {
-      "id": 30,
+      "id": 33,
       "question": "Comparativ cu cele imersate, transformatoarele uscate prezintă :",
       "options": {
         "a": "o bună rezistenţă la foc;",
@@ -395,7 +434,7 @@
       "image_base": null
     },
     {
-      "id": 31,
+      "id": 34,
       "question": "Daca la un circuit al unei staţii de 6 sau 20 kV care funcţionează cu neutrul izolat apare o punere monofazatã netã la pământ, tensiunea fata de pământ a celorlalte doua faze:",
       "options": {
         "a": "scade de 1,41 ori",
@@ -408,7 +447,7 @@
       "image_base": null
     },
     {
-      "id": 32,
+      "id": 35,
       "question": "Compartimentarea unei celule electrice se utilizează",
       "options": {
         "a": "în scopul evitării extinderii avariilor;",
@@ -421,7 +460,7 @@
       "image_base": null
     },
     {
-      "id": 33,
+      "id": 36,
       "question": "Compartimentul notat cu 2 pe desenul de mai sus al unei celule prefabricate de medie tensiune de tip închis, reprezintă:",
       "options": {
         "a": "compartimentul de legătură cu reţeaua electrică;",
@@ -434,7 +473,7 @@
       "image_base": null
     },
     {
-      "id": 34,
+      "id": 37,
       "question": "Compartimentul notat cu 3 pe desenul de mai sus al unei celule prefabricate de medie tensiune de tip închis, reprezintă:",
       "options": {
         "a": "compartimentul de legătură cu reţeaua electrică;",
@@ -447,7 +486,7 @@
       "image_base": null
     },
     {
-      "id": 35,
+      "id": 38,
       "question": "Componenta simetrică directă produce, în cazul unui motor electric:",
       "options": {
         "a": "cuplul util",
@@ -460,7 +499,7 @@
       "image_base": null
     },
     {
-      "id": 36,
+      "id": 39,
       "question": "Conform Legii lui Coulomb, forţa de atracţie sau de repulsie care se exercită între sarcinile electrice este:",
       "options": {
         "a": "direct proporţională cu pătratul distanţei",
@@ -473,7 +512,7 @@
       "image_base": null
     },
     {
-      "id": 37,
+      "id": 40,
       "question": "Constanta de timp a unui circuit format dintr-un rezistor de rezistenţă R înseriat cu un condensator de capacitate C, este:",
       "options": {
         "a": "RC",
@@ -486,7 +525,7 @@
       "image_base": null
     },
     {
-      "id": 38,
+      "id": 41,
       "question": "Delimitările prin pereţi între celulele unei staţii electrice de interior se utilizează în principal în scopul:",
       "options": {
         "a": "asigurării unui acces mai comod la aparataj;",
@@ -495,11 +534,11 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 2,
+      "block": 3,
       "image_base": null
     },
     {
-      "id": 39,
+      "id": 42,
       "question": "Curentul care circula printr-un circuit de curent alternativ, având rezistenta r=3 Ω, reactanţa x= 4 Ω si la bornele căruia se aplica o tensiune de 220 V este:",
       "options": {
         "a": "31,5 A",
@@ -508,11 +547,11 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 2,
+      "block": 3,
       "image_base": null
     },
     {
-      "id": 40,
+      "id": 43,
       "question": "Curentul din circuitul statoric al unui generator crește direct proporţional:",
       "options": {
         "a": "cu tensiunea între faze",
@@ -521,11 +560,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 2,
+      "block": 3,
       "image_base": null
     },
     {
-      "id": 41,
+      "id": 44,
       "question": "Durata de viata a lămpilor cu incandescenta:",
       "options": {
         "a": "creste odată cu creşterea frecventei",
@@ -538,7 +577,7 @@
       "image_base": null
     },
     {
-      "id": 42,
+      "id": 45,
       "question": "Curentul electric generat prin deplasarea cu viteza v a unui corp încărcat cu o sarcină electrică se numeşte:",
       "options": {
         "a": "curent electric de conducţie",
@@ -551,7 +590,7 @@
       "image_base": null
     },
     {
-      "id": 43,
+      "id": 46,
       "question": "Curentul produs într-un circuit care conţine elemente neliniare şi care este alimentat cu o tensiune sinusoidală este:",
       "options": {
         "a": "întotdeauna nesinusoidal",
@@ -564,7 +603,7 @@
       "image_base": null
     },
     {
-      "id": 44,
+      "id": 47,
       "question": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unei bobine este:",
       "options": {
         "a": "mai puţin deformat decât tensiunea care i-a dat naştere",
@@ -577,7 +616,7 @@
       "image_base": null
     },
     {
-      "id": 45,
+      "id": 48,
       "question": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unui condensator este:",
       "options": {
         "a": "mult mai deformat decât tensiunea care i-a dat naştere",
@@ -590,7 +629,7 @@
       "image_base": null
     },
     {
-      "id": 46,
+      "id": 49,
       "question": "Dacă două conductoare parcurse de curenţi în acelaşi sens sunt aşezate paralel, unul lângă altul:",
       "options": {
         "a": "densitatea de curent crește în părţile apropiate ale conductoarelor",
@@ -603,7 +642,7 @@
       "image_base": null
     },
     {
-      "id": 47,
+      "id": 50,
       "question": "Energia transmisă de undele electromagnetice cu intensitatea câmpului electric E şi intensitatea câmpului magnetic H se propagă după un vector:",
       "options": {
         "a": "S=E+H",
@@ -616,7 +655,7 @@
       "image_base": null
     },
     {
-      "id": 48,
+      "id": 51,
       "question": "Dacă o tensiune electromotoare E, montată în latura AB a unei reţele pasive, produce în latura CD a reţelei un curent I, montarea t.e.m. E în latura CD va produce în latura AB:",
       "options": {
         "a": "un curent - (minus) I",
@@ -629,7 +668,7 @@
       "image_base": null
     },
     {
-      "id": 49,
+      "id": 52,
       "question": "Dacă printr-un condensator circulă un curent alternativ sinusoidal, la bornele sale se produce o cădere de tensiune:",
       "options": {
         "a": "defazată cu 90 de grade în urma curentului",
@@ -642,7 +681,7 @@
       "image_base": null
     },
     {
-      "id": 50,
+      "id": 53,
       "question": "Funcţionarea în doua faze a unui transformator trifazat are ca efect:",
       "options": {
         "a": "supraîncălzirea acestuia",
@@ -655,7 +694,7 @@
       "image_base": null
     },
     {
-      "id": 51,
+      "id": 54,
       "question": "Descărcătoarele cu oxid de zinc protejează echipamentele din reţele împotriva:",
       "options": {
         "a": "supratensiunilor",
@@ -668,7 +707,7 @@
       "image_base": null
     },
     {
-      "id": 52,
+      "id": 55,
       "question": "Descărcătoarele cu oxizi de zinc sunt echipamente destinate:",
       "options": {
         "a": "protecţiei personalului de exploatare împotriva electrocutării",
@@ -681,7 +720,7 @@
       "image_base": null
     },
     {
-      "id": 53,
+      "id": 56,
       "question": "Diferenţa de potenţial la bornele a n baterii de condensatoare montate în serie este egală cu:",
       "options": {
         "a": "suma diferenţelor de potenţial la bornele fiecărui condensator",
@@ -694,7 +733,7 @@
       "image_base": null
     },
     {
-      "id": 54,
+      "id": 57,
       "question": "Două funcţii periodice sinusoidale sunt armonice între ele dacă:",
       "options": {
         "a": "raportul perioadelor lor este un număr întreg oarecare",
@@ -707,20 +746,20 @@
       "image_base": null
     },
     {
-      "id": 55,
+      "id": 58,
       "question": "Două sisteme de fazori trifazaţi oarecare, care au vârfuri comune şi origini diferite care se descompun în componente simetrice:",
       "options": {
         "a": "au numai aceleaşi componente directe (pozitive)",
         "b": "au aceleaşi componente inverse (negative)",
         "c": "au aceleaşi componente homopolare (zero)"
       },
-      "correct": null,
+      "correct": "a",
       "explanation": "",
       "block": 3,
       "image_base": null
     },
     {
-      "id": 56,
+      "id": 59,
       "question": "În cazul conexiunii în stea la transformator:",
       "options": {
         "a": "tensiunea de linie este egala cu tensiunea de faza",
@@ -733,7 +772,7 @@
       "image_base": null
     },
     {
-      "id": 57,
+      "id": 60,
       "question": "Efectul pelicular al curentului alternativ este utilizat în:",
       "options": {
         "a": "încălzirea materialelor prin inducţie",
@@ -746,7 +785,7 @@
       "image_base": null
     },
     {
-      "id": 58,
+      "id": 61,
       "question": "Efectul pelicular al unui curent alternativ care străbate un conductor masiv se datorează:",
       "options": {
         "a": "unor curenţi paraziţi induşi în conductor, simetrici faţă de axa acestuia",
@@ -755,11 +794,11 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 3,
+      "block": 4,
       "image_base": null
     },
     {
-      "id": 59,
+      "id": 62,
       "question": "Energia electrica reactiva:",
       "options": {
         "a": "este o energie electrica complementara, care serveşte la magnetizarea bobinajelor",
@@ -768,11 +807,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 3,
+      "block": 4,
       "image_base": null
     },
     {
-      "id": 60,
+      "id": 63,
       "question": "Energia magnetostatică produsă de curentul i care parcurge un circuit care conţine o inductanţă L este egală cu:",
       "options": {
         "a": "1/2 L i",
@@ -781,11 +820,11 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 3,
+      "block": 4,
       "image_base": null
     },
     {
-      "id": 61,
+      "id": 64,
       "question": "Energia electrostatică a unui conductor izolat în spaţiu, încărcat cu o sarcină q şi aflat la un potenţial V este egală cu:",
       "options": {
         "a": "1/2 q V",
@@ -798,7 +837,7 @@
       "image_base": null
     },
     {
-      "id": 62,
+      "id": 65,
       "question": "În cazul producerii unui scurtcircuit într-o instalaţie, are loc următorul fenomen:",
       "options": {
         "a": "creste tensiunea de alimentare a instalaţiei",
@@ -811,7 +850,7 @@
       "image_base": null
     },
     {
-      "id": 63,
+      "id": 66,
       "question": "Enunţul \"sarcinile electrice nu pot fi create și nici distruse, ci doar mutate\" reprezintă o consecință pentru:",
       "options": {
         "a": "legea conservării sarcinii electrice",
@@ -824,7 +863,7 @@
       "image_base": null
     },
     {
-      "id": 64,
+      "id": 67,
       "question": "Enunţul \"suma algebrică a tensiunilor electromotoare dintr-o buclă a unei reţele electrice este egală cu suma algebrică a căderilor de tensiune din buclă\" reprezintă:",
       "options": {
         "a": "Prima lege a lui Kirchhoff",
@@ -837,7 +876,7 @@
       "image_base": null
     },
     {
-      "id": 65,
+      "id": 68,
       "question": "Expresia B x i x l , unde i este intensitatea curentului care străbate un conductor de lungime l, situat perpendicular pe câmpul de inducţie magnetică de mărime B, reprezintă:",
       "options": {
         "a": "o forţă",
@@ -850,7 +889,7 @@
       "image_base": null
     },
     {
-      "id": 66,
+      "id": 69,
       "question": "Expresia matematica a legii lui Ohm pentru o porţiune de circuit este:",
       "options": {
         "a": "I = U / R",
@@ -863,7 +902,7 @@
       "image_base": null
     },
     {
-      "id": 67,
+      "id": 70,
       "question": "Extinderea domeniului de măsurare la ampermetre se realizează cu:",
       "options": {
         "a": "rezistente adiţionale",
@@ -876,7 +915,7 @@
       "image_base": null
     },
     {
-      "id": 68,
+      "id": 71,
       "question": "Extinderea domeniului de măsurare la voltmetre se realizează cu:",
       "options": {
         "a": "shunturi",
@@ -889,7 +928,20 @@
       "image_base": null
     },
     {
-      "id": 69,
+      "id": 72,
+      "question": "Factorul de atenuare al unui circuit format dintr-un rezistor de rezistenţă R înseriat cu o bobină de inductanţă L, alimentate de o tensiune electromotoare constantă este egal cu:",
+      "options": {
+        "a": "R/L",
+        "b": "L/R",
+        "c": "1"
+      },
+      "correct": "a",
+      "explanation": "",
+      "block": 4,
+      "image_base": null
+    },
+    {
+      "id": 73,
       "question": "Fluxul electric total, produs de o sarcină electrică de valoare q printr-o suprafaţă închisă care o înconjoară, este egal cu:",
       "options": {
         "a": "valoarea numerică 2q",
@@ -902,7 +954,7 @@
       "image_base": null
     },
     {
-      "id": 70,
+      "id": 74,
       "question": "Folosirea conductoarelor jumelate în construcţia LEA are ca scop principal:",
       "options": {
         "a": "reducerea pierderilor Corona",
@@ -915,7 +967,7 @@
       "image_base": null
     },
     {
-      "id": 71,
+      "id": 75,
       "question": "Formula de calcul a frecventei produsa în sistemul electroenergetic de un generator cu n [rot/min] si p perechi de poli este:",
       "options": {
         "a": "f =n p / 60",
@@ -928,7 +980,7 @@
       "image_base": null
     },
     {
-      "id": 72,
+      "id": 76,
       "question": "Formula e = B l v, unde e este tensiune electromotoare, B este inducţia magnetică, l este lungimea unui conductor, v este viteza de deplasare a acestuia, reprezintă o forma particulară a:",
       "options": {
         "a": "teoremelor Biot-Savart",
@@ -941,7 +993,7 @@
       "image_base": null
     },
     {
-      "id": 73,
+      "id": 77,
       "question": "Forţa care se exercită asupra unui conductor rectiliniu, parcurs de curentul i, aflat în câmpul de inducţie magnetică B se numeşte:",
       "options": {
         "a": "forţă electromagnetică (Laplace)",
@@ -954,7 +1006,7 @@
       "image_base": null
     },
     {
-      "id": 74,
+      "id": 78,
       "question": "Forţa care se exercită între două conductoare străbătute de curenţi electrici se numeşte:",
       "options": {
         "a": "forţă electrocinetică",
@@ -967,7 +1019,7 @@
       "image_base": null
     },
     {
-      "id": 75,
+      "id": 79,
       "question": "Tensiunea electromotoare indusă într-un circuit închis, prin variaţia fluxului magnetic, este:",
       "options": {
         "a": "direct proporţională cu variaţia în timp a fluxului magnetic",
@@ -980,7 +1032,7 @@
       "image_base": null
     },
     {
-      "id": 76,
+      "id": 80,
       "question": "Forţa electrodinamică exercitată între două conductoare filiforme, paralele, lungi, aflate la distanţa r, străbătute de câte un curent:",
       "options": {
         "a": "este direct proporţională cu distanţa r dintre conductoare",
@@ -993,7 +1045,7 @@
       "image_base": null
     },
     {
-      "id": 77,
+      "id": 81,
       "question": "Forţa F care se exercită asupra unei sarcini electrice q aflată într-un câmp electric de intensitate E are expresia:",
       "options": {
         "a": "F=E/q",
@@ -1002,11 +1054,11 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4,
+      "block": 5,
       "image_base": null
     },
     {
-      "id": 78,
+      "id": 82,
       "question": "Frecvenţa unei mărimi periodice este inversul:",
       "options": {
         "a": "amplitudinii",
@@ -1015,11 +1067,11 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 4,
+      "block": 5,
       "image_base": null
     },
     {
-      "id": 79,
+      "id": 83,
       "question": "Funcţionarea contoarelor de inducţie are la baza:",
       "options": {
         "a": "curenţii turbionari",
@@ -1028,11 +1080,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 4,
+      "block": 5,
       "image_base": null
     },
     {
-      "id": 80,
+      "id": 84,
       "question": "În instalaţiile de joasa tensiune, legarea la pământ este justificatã:",
       "options": {
         "a": "din motive economice",
@@ -1041,11 +1093,11 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 4,
+      "block": 5,
       "image_base": null
     },
     {
-      "id": 81,
+      "id": 85,
       "question": "Funcţionarea în suprasarcinã a unui transformator reprezintă:",
       "options": {
         "a": "un regim de avarie",
@@ -1058,7 +1110,7 @@
       "image_base": null
     },
     {
-      "id": 82,
+      "id": 86,
       "question": "Funcţionarea transformatoarelor electrice are la bazã:",
       "options": {
         "a": "fenomenul inducţiei electromagnetice",
@@ -1071,7 +1123,7 @@
       "image_base": null
     },
     {
-      "id": 83,
+      "id": 87,
       "question": "Henry este unitatea de măsură pentru:",
       "options": {
         "a": "fluxul magnetic",
@@ -1084,7 +1136,7 @@
       "image_base": null
     },
     {
-      "id": 84,
+      "id": 88,
       "question": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
       "options": {
         "a": "limitarea posibilităţilor de producere a unui defect în instalaţie;",
@@ -1097,20 +1149,20 @@
       "image_base": null
     },
     {
-      "id": 85,
+      "id": 89,
       "question": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
       "options": {
         "a": "numai limitarea posibilităţilor de producere a unui defect în instalaţie;",
         "b": "localizarea unor eventuale scăpări de gaz, precum şi a unor defecte interne,",
         "c": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment"
       },
-      "correct": null,
+      "correct": "a",
       "explanation": "",
       "block": 5,
       "image_base": null
     },
     {
-      "id": 86,
+      "id": 90,
       "question": "În cazul apariţiei fenomenului de rezonanţă într-un circuit de curent alternativ, alimentat de la o sursă, aceasta furnizează circuitului:",
       "options": {
         "a": "numai energie activă",
@@ -1123,7 +1175,7 @@
       "image_base": null
     },
     {
-      "id": 87,
+      "id": 91,
       "question": "În cazul circuitelor de curent alternativ, teoremele lui Kirchhoff sunt întotdeauna satisfăcute pentru:",
       "options": {
         "a": "valorile instantanee ale tensiunilor şi curenţilor",
@@ -1136,7 +1188,7 @@
       "image_base": null
     },
     {
-      "id": 88,
+      "id": 92,
       "question": "În posturi de transformare se folosesc transformatoare răcite cu lichide neinflamabile atunci când:",
       "options": {
         "a": "sunt restricţii de poluare a mediului;",
@@ -1149,7 +1201,7 @@
       "image_base": null
     },
     {
-      "id": 89,
+      "id": 93,
       "question": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
       "options": {
         "a": "siguranţa fuzibilă realizează protecţia la suprasarcină;",
@@ -1162,7 +1214,7 @@
       "image_base": null
     },
     {
-      "id": 90,
+      "id": 94,
       "question": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
       "options": {
         "a": "releele termice realizează protecţia la suprasarcină;",
@@ -1175,7 +1227,7 @@
       "image_base": null
     },
     {
-      "id": 91,
+      "id": 95,
       "question": "În cazul în care rezultanta unui sistem de fazori (de tensiune sau de curent) este nulă:",
       "options": {
         "a": "sistemul nu are componentă simetrică inversă (negativă)",
@@ -1188,7 +1240,7 @@
       "image_base": null
     },
     {
-      "id": 92,
+      "id": 96,
       "question": "În cazul pornirii stea triunghi a motoarelor asincrone, curentul de pornire la conexiunea stea este:",
       "options": {
         "a": "1/3 din curentul de pornire la conexiunea triunghi",
@@ -1201,7 +1253,7 @@
       "image_base": null
     },
     {
-      "id": 93,
+      "id": 97,
       "question": "În posturi de transformare se preferă folosirea transformatoarelor răcite cu aer atunci când:",
       "options": {
         "a": "sunt restricţii de teren;",
@@ -1214,7 +1266,7 @@
       "image_base": null
     },
     {
-      "id": 94,
+      "id": 98,
       "question": "În cazul punerii nete la pământ a fazei S         într-o reţea de 20 kV cu neutrul izolat:",
       "options": {
         "a": "tensiunea pe fazele R si T rămâne neschimbata , iar tensiunea fazei defecte S se apropie de 0",
@@ -1227,7 +1279,7 @@
       "image_base": null
     },
     {
-      "id": 95,
+      "id": 99,
       "question": "În cazul scăderii sau întreruperii tensiunii de alimentare, motoarele asincrone se pot opri, iar la restabilirea tensiunii:",
       "options": {
         "a": "ele autopornesc, indiferent de tipul constructiv al rotorului în scurtcircuit",
@@ -1240,7 +1292,7 @@
       "image_base": null
     },
     {
-      "id": 96,
+      "id": 100,
       "question": "În cazul schemelor cu două sisteme de bare colectoare şi un întreruptor pe circuit, funcţionarea cu ambele sisteme de bare sub tensiune este avantajoasă deoarece permite:",
       "options": {
         "a": "scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;",
@@ -1253,20 +1305,20 @@
       "image_base": null
     },
     {
-      "id": 97,
+      "id": 101,
       "question": "În cazul schemelor cu două sisteme de bare colectoare şi un întreruptor pe circuit, funcţionarea cu unul dintre sistemele de bare în rezervă rece ( fără tensiune) este avantajoasă",
       "options": {
         "a": "numai atunci când se doreşte scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;",
         "b": "atunci când se doreşte micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;",
         "c": "atunci când se doreşte scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
       },
-      "correct": null,
+      "correct": "a",
       "explanation": "",
-      "block": 5,
+      "block": 6,
       "image_base": null
     },
     {
-      "id": 98,
+      "id": 102,
       "question": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
       "options": {
         "a": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
@@ -1275,37 +1327,37 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 5,
+      "block": 6,
       "image_base": null
     },
     {
-      "id": 99,
+      "id": 103,
       "question": "În cazul unei staţii cu un sistem de bare colectoare secţionat longitudinal şi prevăzut cu o cuplă longitudinală cu întreruptor şi AAR, cupla se menţine:",
       "options": {
         "a": "în rezervă caldă;",
         "b": "în rezervă rece;",
         "c": "În funcţiune"
       },
-      "correct": null,
+      "correct": "a",
       "explanation": "",
-      "block": 5,
+      "block": 6,
       "image_base": null
     },
     {
-      "id": 100,
+      "id": 104,
       "question": "În echipamentul electric, uleiul electroizolant, din punct de vedere electric:",
       "options": {
         "a": "asigură doar izolarea părților sub tensiune între ele si fatã de masã",
         "b": "stinge arcul electric care apare in întrerupătoare",
         "c": "asigura ungerea mecanismelor de acţionare"
       },
-      "correct": null,
+      "correct": "a",
       "explanation": "",
-      "block": 5,
+      "block": 6,
       "image_base": null
     },
     {
-      "id": 101,
+      "id": 105,
       "question": "Într-o schemă cu 1,5 întreruptoare pe circuit:",
       "options": {
         "a": "este necesară o cuplă de ocolire;",
@@ -1318,7 +1370,7 @@
       "image_base": null
     },
     {
-      "id": 102,
+      "id": 106,
       "question": "Într-o schemă de conexiuni bara şi cupla de ocolire servesc la:",
       "options": {
         "a": "scoaterea în revizie a unui întreruptor, cu două scurte întreruperi;",
@@ -1331,7 +1383,7 @@
       "image_base": null
     },
     {
-      "id": 103,
+      "id": 107,
       "question": "În posturi de transformare se folosesc transformatoare uscate atunci când:",
       "options": {
         "a": "amplasarea postului se face în zone aglomerate;",
@@ -1344,7 +1396,7 @@
       "image_base": null
     },
     {
-      "id": 104,
+      "id": 108,
       "question": "Într-o schemă poligon cu patru laturi:",
       "options": {
         "a": "este necesară o cuplă de ocolire;",
@@ -1357,7 +1409,7 @@
       "image_base": null
     },
     {
-      "id": 105,
+      "id": 109,
       "question": "În sens general, actualizarea unui fond reprezintă:",
       "options": {
         "a": "calculul valorii acestui fond la un anumit an ales ca referinţă;",
@@ -1370,7 +1422,7 @@
       "image_base": null
     },
     {
-      "id": 106,
+      "id": 110,
       "question": "Circuitul din figură                                           reprezinta",
       "options": {
         "a": "o cupla cu functiuni multiple intr-o statie cu doua sisteme de bare colectoare",
@@ -1383,7 +1435,7 @@
       "image_base": null
     },
     {
-      "id": 107,
+      "id": 111,
       "question": "Scopul supraînaltarii echipamentelor electrice din instalatii electrice exterioare este asigurarea",
       "options": {
         "a": "accesului mai comod în instalatie",
@@ -1396,7 +1448,7 @@
       "image_base": null
     },
     {
-      "id": 108,
+      "id": 112,
       "question": "În tubul de porţelan al unei siguranţe de înalta tensiune, nisipul :",
       "options": {
         "a": "are numai rolul de a consolida elementele fuzibile",
@@ -1409,7 +1461,7 @@
       "image_base": null
     },
     {
-      "id": 109,
+      "id": 113,
       "question": "Temperatura înfăşurărilor statorice ale generatoarelor electrice este determinată:",
       "options": {
         "a": "numai de temperatura mediului ambiant",
@@ -1422,7 +1474,7 @@
       "image_base": null
     },
     {
-      "id": 110,
+      "id": 114,
       "question": "Inductanţa de serviciu ( lineică) a unei linii electrice lungi este definită prin:",
       "options": {
         "a": "inductanţa uniform răspândită l, definită prin puterea reactivă absorbită într-un element de linie infinit mic",
@@ -1435,7 +1487,7 @@
       "image_base": null
     },
     {
-      "id": 111,
+      "id": 115,
       "question": "Inductanţa proprie a unei bobine prin care trece un curent de intensitate i este raportul între ....... şi acest curent",
       "options": {
         "a": "fluxul propriu al bobinei",
@@ -1448,7 +1500,7 @@
       "image_base": null
     },
     {
-      "id": 112,
+      "id": 116,
       "question": "Intensitatea câmpului electric într-un anumit punct se măsoară",
       "options": {
         "a": "prin raportul dintre forţa exercitata asupra unei sarcini electrice în acel punct si mărimea sarcinii",
@@ -1461,7 +1513,7 @@
       "image_base": null
     },
     {
-      "id": 113,
+      "id": 117,
       "question": "Intensitatea câmpului magnetic într-un punct exterior unui conductor rectiliniu străbătut de curentul continuu de intensitate i, aflat la distanţă r de conductor este:",
       "options": {
         "a": "invers proporţională cu r",
@@ -1474,7 +1526,7 @@
       "image_base": null
     },
     {
-      "id": 114,
+      "id": 118,
       "question": "Într-o reţea cu neutrul legat la pământ, valoarea cea mai mare a intensităţii curentului de scurtcircuit, pentru acelaşi punct de defect, corespunde, de regulã, defectului:",
       "options": {
         "a": "monofazat",
@@ -1487,7 +1539,7 @@
       "image_base": null
     },
     {
-      "id": 115,
+      "id": 119,
       "question": "Într-un circuit format dintr-un rezistor de rezistenta R în serie cu o bobina de inductanţa L, în momentul alimentarii de la o sursa de curent continuu cu tensiune U:",
       "options": {
         "a": "curentul creste instantaneu la valoarea U/R",
@@ -1500,7 +1552,7 @@
       "image_base": null
     },
     {
-      "id": 116,
+      "id": 120,
       "question": "Într-un circuit R-L serie de curent alternativ, tensiunea la bornele rezistorului este de 100 V, iar tensiunea la bornele bobinei este de 70 V. Tensiunea la bornele circuitului R-L este:",
       "options": {
         "a": "170V",
@@ -1513,7 +1565,7 @@
       "image_base": null
     },
     {
-      "id": 117,
+      "id": 121,
       "question": "Într-o schemă electrică având un sistem de bare colectoare, separatorul asigură:",
       "options": {
         "a": "deconectarea unor curenţi de suprasarcină;",
@@ -1522,24 +1574,24 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 6,
+      "block": 7,
       "image_base": null
     },
     {
-      "id": 118,
+      "id": 122,
       "question": "Într-o schemă electrică prevăzută cu mai multe sisteme de bare colectoare, separatorul de bare",
       "options": {
         "a": "asigură doar selectarea sistemului de bare pe care urmează a fi conectat circuitul;",
         "b": "asigură izolarea unei părţi a circuitului de bara colectoare aflată sub tensiune;",
         "c": "comutaţia curentului în regim normal de funcţionare."
       },
-      "correct": null,
+      "correct": "a",
       "explanation": "",
-      "block": 6,
+      "block": 7,
       "image_base": null
     },
     {
-      "id": 119,
+      "id": 123,
       "question": "Într-un conductor curentul alternativ are densitatea:",
       "options": {
         "a": "uniforma",
@@ -1548,11 +1600,11 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 6,
+      "block": 7,
       "image_base": null
     },
     {
-      "id": 120,
+      "id": 124,
       "question": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
       "options": {
         "a": "se poate utiliza numai pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
@@ -1561,11 +1613,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 6,
+      "block": 7,
       "image_base": null
     },
     {
-      "id": 121,
+      "id": 125,
       "question": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
       "options": {
         "a": "nu se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
@@ -1578,7 +1630,7 @@
       "image_base": null
     },
     {
-      "id": 122,
+      "id": 126,
       "question": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
       "options": {
         "a": "se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
@@ -1591,7 +1643,7 @@
       "image_base": null
     },
     {
-      "id": 123,
+      "id": 127,
       "question": "Într-un circuit de curent alternativ în care puterea activa absorbita este 4 kW iar puterea reactiva este de 3 kVAr, factorul de putere este:",
       "options": {
         "a": "0,8",
@@ -1604,7 +1656,7 @@
       "image_base": null
     },
     {
-      "id": 124,
+      "id": 128,
       "question": "Într-un circuit electric monofazat cu caracter inductiv tensiunea este defazata fata de curent:",
       "options": {
         "a": "înainte cu 90 de grade",
@@ -1617,7 +1669,7 @@
       "image_base": null
     },
     {
-      "id": 125,
+      "id": 129,
       "question": "La conectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
       "options": {
         "a": "separatorul de linie, separatorul de bare, întreruptorul;",
@@ -1630,7 +1682,7 @@
       "image_base": null
     },
     {
-      "id": 126,
+      "id": 130,
       "question": "Într-un circuit rezistiv, având rezistenta R=5 ohm si la bornele căruia se aplica o tensiune de 100 V, curentul este de:",
       "options": {
         "a": "20 A",
@@ -1643,7 +1695,7 @@
       "image_base": null
     },
     {
-      "id": 127,
+      "id": 131,
       "question": "La deconectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
       "options": {
         "a": "separatorul de linie, întreruptorul, separatorul de bare;",
@@ -1656,7 +1708,7 @@
       "image_base": null
     },
     {
-      "id": 128,
+      "id": 132,
       "question": "Într-un circuit serie format dintr-un rezistor de rezistenţă R, o bobină de inductanţă L şi un condensator de capacitate C, curentul din circuit este defazat în urma tensiunii la borne dacă:",
       "options": {
         "a": "reactanţa totală a circuitului X este > 0",
@@ -1669,7 +1721,7 @@
       "image_base": null
     },
     {
-      "id": 129,
+      "id": 133,
       "question": "La generatorul sincron viteza de rotaţie a câmpului magnetic al statorului fata de viteza de rotaţie a rotorului maşinii este:",
       "options": {
         "a": "mai mare",
@@ -1682,7 +1734,7 @@
       "image_base": null
     },
     {
-      "id": 130,
+      "id": 134,
       "question": "Intr-un tor (solenoid de formă circulară bobinat), energia magnetică produsă de un curent care străbate bobinajul torului este localizată:",
       "options": {
         "a": "integral în câmpul magnetic din volumul torului",
@@ -1695,7 +1747,7 @@
       "image_base": null
     },
     {
-      "id": 131,
+      "id": 135,
       "question": "Inversa rezistenţei echivalente a n rezistoare legate în paralel este egală cu:",
       "options": {
         "a": "suma rezistenţelor celor n rezistoare",
@@ -1708,7 +1760,7 @@
       "image_base": null
     },
     {
-      "id": 132,
+      "id": 136,
       "question": "La maşina sincrona turaţia variază în funcţie de sarcina astfel:",
       "options": {
         "a": "creste când sarcina creste",
@@ -1721,7 +1773,7 @@
       "image_base": null
     },
     {
-      "id": 133,
+      "id": 137,
       "question": "La conectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
       "options": {
         "a": "separatorul de bare, întreruptorul, separatorul de linie;",
@@ -1734,7 +1786,7 @@
       "image_base": null
     },
     {
-      "id": 134,
+      "id": 138,
       "question": "La deconectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
       "options": {
         "a": "separatorul de linie, întreruptorul, separatorul de bare;",
@@ -1747,7 +1799,7 @@
       "image_base": null
     },
     {
-      "id": 135,
+      "id": 139,
       "question": "La un transformator cu grupa de conexiuni Y0 d-5 alimentat cu un sistem simetric de tensiuni, între neutru si pământ, în regim normal si simetric de funcţionare avem:",
       "options": {
         "a": "tensiunea de linie",
@@ -1760,7 +1812,7 @@
       "image_base": null
     },
     {
-      "id": 136,
+      "id": 140,
       "question": "La funcţionarea în gol a unei linii electrice tensiunea la capăt:",
       "options": {
         "a": "creşte faţă de tensiunea la sursă proporţional cu pătratul lungimii liniei",
@@ -1773,7 +1825,7 @@
       "image_base": null
     },
     {
-      "id": 137,
+      "id": 141,
       "question": "Legea lui Ohm pentru o porţiune de circuit este valabila:",
       "options": {
         "a": "doar în curent continuu",
@@ -1782,11 +1834,11 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7,
+      "block": 8,
       "image_base": null
     },
     {
-      "id": 138,
+      "id": 142,
       "question": "Teoremele lui Kirchhoff se aplică:",
       "options": {
         "a": "numai circuitelor liniare",
@@ -1795,11 +1847,11 @@
       },
       "correct": "c",
       "explanation": "",
-      "block": 7,
+      "block": 8,
       "image_base": null
     },
     {
-      "id": 139,
+      "id": 143,
       "question": "La o instalaţie cu mai multe condensatoare conectate în serie, căderea de tensiune pe fiecare condensator este:",
       "options": {
         "a": "direct proporţionala cu capacitatea",
@@ -1808,11 +1860,11 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 7,
+      "block": 8,
       "image_base": null
     },
     {
-      "id": 140,
+      "id": 144,
       "question": "La o maşina electrica asincrona turaţia variază:",
       "options": {
         "a": "cu curentul de excitaţie",
@@ -1821,11 +1873,11 @@
       },
       "correct": "b",
       "explanation": "",
-      "block": 7,
+      "block": 8,
       "image_base": null
     },
     {
-      "id": 141,
+      "id": 145,
       "question": "La pornirea motoarelor electrice asincrone se urmăreşte:",
       "options": {
         "a": "reducerea vibraţiilor rotorului",
@@ -1838,7 +1890,7 @@
       "image_base": null
     },
     {
-      "id": 142,
+      "id": 146,
       "question": "La transformatoarele la care comutarea ploturilor se face cu transformatorul în sarcina, comutatorul de ploturi se montează:",
       "options": {
         "a": "pe înfăşurarea de tensiune mai mica, deoarece tensiunea este mai mica",
@@ -1851,7 +1903,7 @@
       "image_base": null
     },
     {
-      "id": 143,
+      "id": 147,
       "question": "Materialele feromagnetice au permeabilitatea relativa:",
       "options": {
         "a": "mai mica decât 1",
@@ -1864,7 +1916,7 @@
       "image_base": null
     },
     {
-      "id": 144,
+      "id": 148,
       "question": "Ecuația constitutivă a bobinei ideale are forma:",
       "options": {
         "a": "u = R i",
@@ -1877,7 +1929,7 @@
       "image_base": null
     },
     {
-      "id": 145,
+      "id": 149,
       "question": "Legea lui Coulomb exprimã:",
       "options": {
         "a": "forţa de interacţiune dintre corpuri punctuale încărcate cu sarcini electrice",
@@ -1890,7 +1942,7 @@
       "image_base": null
     },
     {
-      "id": 146,
+      "id": 150,
       "question": "O reţea electricã trifazatã de medie tensiune are neutrul transformatoarelor tratat prin bobina. Pentru regimul normal de funcţionare sa se precizeze efectul bobinei:",
       "options": {
         "a": "deplasarea neutrului",
@@ -1903,7 +1955,7 @@
       "image_base": null
     },
     {
-      "id": 147,
+      "id": 151,
       "question": "O siguranţa mai mare în alimentarea consumatorilor de energie electrica se realizează prin:",
       "options": {
         "a": "reţele radiale",
@@ -1916,7 +1968,7 @@
       "image_base": null
     },
     {
-      "id": 148,
+      "id": 152,
       "question": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
       "options": {
         "a": "constanta de propagare a liniei",
@@ -1929,7 +1981,7 @@
       "image_base": null
     },
     {
-      "id": 149,
+      "id": 153,
       "question": "Mărimea caracteristică circuitelor magnetice şi care este analoagă cu rezistenţa circuitelor electrice se numeşte:",
       "options": {
         "a": "impedanţă",
@@ -1942,20 +1994,33 @@
       "image_base": null
     },
     {
-      "id": 150,
+      "id": 154,
+      "question": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+      "options": {
+        "a": "1",
+        "b": "0",
+        "c": "1,5"
+      },
+      "correct": "b",
+      "explanation": "",
+      "block": 8,
+      "image_base": null
+    },
+    {
+      "id": 155,
       "question": "Mărirea cuplului de pornire şi micşorarea curentului de pornire la motoarele asincrone cu rotorul în scurtcircuit se face:",
       "options": {
         "a": "prin deconectarea şi reconectarea lor la reţeaua de alimentare",
         "b": "numai prin utilizarea motoarelor cu rotorul în dublă colivie",
         "c": "prin utilizarea motoarelor cu rotorul în colivie cu bare înalte"
       },
-      "correct": null,
+      "correct": "b",
       "explanation": "",
       "block": 8,
       "image_base": null
     },
     {
-      "id": 151,
+      "id": 156,
       "question": "Pe liniile electrice de înaltă tensiune, unde se preferă montarea transformatoarelor de  curent ?:",
       "options": {
         "a": "între barele colectoare şi separatorul de bare;",
@@ -1968,7 +2033,7 @@
       "image_base": null
     },
     {
-      "id": 152,
+      "id": 157,
       "question": "Metoda transfigurării reţelelor electrice este folosita pentru a:",
       "options": {
         "a": "reduce pierderile de putere activa în reţea",
@@ -1981,7 +2046,7 @@
       "image_base": null
     },
     {
-      "id": 153,
+      "id": 158,
       "question": "Miezul magnetic al rotorului unei maşini electrice asincrone se realizează din tole pentru:",
       "options": {
         "a": "reducerea curenţilor turbionari",
@@ -1994,7 +2059,7 @@
       "image_base": null
     },
     {
-      "id": 154,
+      "id": 159,
       "question": "Montajul fix al aparatelor în interiorul celulelor conduce la:",
       "options": {
         "a": "realizări constructive simple, fără blocaje suplimentare;",
@@ -2007,7 +2072,7 @@
       "image_base": null
     },
     {
-      "id": 155,
+      "id": 160,
       "question": "Motoarele sincrone se utilizează rar pentru antrenarea mecanismelor de servicii proprii din centralele electrice",
       "options": {
         "a": "deoarece nu permit variaţia turaţiei în limite largi",
@@ -2020,20 +2085,20 @@
       "image_base": null
     },
     {
-      "id": 156,
+      "id": 161,
       "question": "Nivelul de tensiune în sistem se reglează",
       "options": {
         "a": "încărcarea generatoarelor cu putere activa",
         "b": "numai prin încărcarea generatoarelor cu putere reactiva",
         "c": "prin utilizare de compensatoare"
       },
-      "correct": null,
+      "correct": "b",
       "explanation": "",
-      "block": 8,
+      "block": 9,
       "image_base": null
     },
     {
-      "id": 157,
+      "id": 162,
       "question": "O linie electrică foarte lungă se comportă ca o linie adaptată:",
       "options": {
         "a": "dacă alimentează un receptor cu impedanţă egală cu impedanţa sa caracteristică",
@@ -2042,11 +2107,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8,
+      "block": 9,
       "image_base": null
     },
     {
-      "id": 158,
+      "id": 163,
       "question": "O linie electrică lungă funcţionând în gol:",
       "options": {
         "a": "produce putere reactivă",
@@ -2055,11 +2120,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8,
+      "block": 9,
       "image_base": null
     },
     {
-      "id": 159,
+      "id": 164,
       "question": "O linie electrică lungă funcţionând în scurtcircuit:",
       "options": {
         "a": "absoarbe putere reactivă",
@@ -2068,11 +2133,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8,
+      "block": 9,
       "image_base": null
     },
     {
-      "id": 160,
+      "id": 165,
       "question": "O protecţie este selectivă atunci când:",
       "options": {
         "a": "deconectează numai consumatorul defect",
@@ -2081,11 +2146,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 8,
+      "block": 9,
       "image_base": null
     },
     {
-      "id": 161,
+      "id": 166,
       "question": "Pe măsură ce creşte tensiunea la care se realizează instalaţiile electrice, costul pierderilor de putere Cp este:",
       "options": {
         "a": "constant",
@@ -2098,7 +2163,7 @@
       "image_base": null
     },
     {
-      "id": 162,
+      "id": 167,
       "question": "O schemă cu două blocuri linie-transformator cu punte între ele de tip ,, H \" inferior este de preferat unei scheme de tip ,, H \" superior atunci când:",
       "options": {
         "a": "se fac manevre dese cu circuitele de linie;",
@@ -2111,7 +2176,7 @@
       "image_base": null
     },
     {
-      "id": 163,
+      "id": 168,
       "question": "O schemă cu două blocuri linie-transformator cu punte între ele de tip ,, H \" superior este de preferat unei scheme de tip ,, H \" inferior atunci când:",
       "options": {
         "a": "se fac manevre dese cu circuitele de linie;",
@@ -2124,7 +2189,7 @@
       "image_base": null
     },
     {
-      "id": 164,
+      "id": 169,
       "question": "Pe schema de mai sus sunt aparate în plus ?",
       "options": {
         "a": "nu;",
@@ -2137,7 +2202,7 @@
       "image_base": null
     },
     {
-      "id": 165,
+      "id": 170,
       "question": "Între două noduri oarecare A şi B ale unei reţele electrice active, o sursă de tensiune de tensiune electromotoare E şi  fără impedanţă interioară, dar legată în serie cu o impedanţă Z, poate fi înlocuită cu o sursă de curent, de intensitate J şi fără admitanţă interioară, şuntată cu admitanţa Y, fără ca parametrii electrici la bornele A şi B  - tensiunea la borne şi curentul debitat prin aceste borne- să se schimbe,  dacă sunt îndeplinite condiţiile:",
       "options": {
         "a": "Z Y = 1                                        J=YE",
@@ -2150,7 +2215,7 @@
       "image_base": null
     },
     {
-      "id": 166,
+      "id": 171,
       "question": "Pentru limitarea curenţilor de scurtcircuit, puterea totalã instalatã într-o staţie trebuie:",
       "options": {
         "a": "mărită",
@@ -2163,7 +2228,7 @@
       "image_base": null
     },
     {
-      "id": 167,
+      "id": 172,
       "question": "Pentru materialele magnetice, relaţia dintre inducţia magnetică şi intensitatea câmpului magnetic:",
       "options": {
         "a": "este liniară",
@@ -2176,7 +2241,7 @@
       "image_base": null
     },
     {
-      "id": 168,
+      "id": 173,
       "question": "Pierderea de putere activa într-un element de reţea (transformator, LEA, LEC) , la aceeaşi putere aparentã vehiculatã, este direct proportionalã cu:",
       "options": {
         "a": "pătratul frecventei",
@@ -2189,7 +2254,7 @@
       "image_base": null
     },
     {
-      "id": 169,
+      "id": 174,
       "question": "Pe schema de mai sus sunt aparate în plus ?",
       "options": {
         "a": "nu;",
@@ -2202,7 +2267,7 @@
       "image_base": null
     },
     {
-      "id": 170,
+      "id": 175,
       "question": "Care dintre urmatoarele enunturi nu este adevarat:",
       "options": {
         "a": "energia electrica tranzitata            printr-un circuit este produsul dintre puterea medie si timpul de functionare;",
@@ -2215,7 +2280,7 @@
       "image_base": null
     },
     {
-      "id": 171,
+      "id": 176,
       "question": "Pentru calculul curenţilor de scurtcircuit într-o reţea prin metoda componentelor simetrice, reţeaua inversă (negativă) se compune din:",
       "options": {
         "a": "impedanţe identice cu ale reţelei directe (pozitive) pentru elemente statice și impedanţe diferite de ale reţelei directe (pozitive) pentru maşini rotative",
@@ -2228,7 +2293,7 @@
       "image_base": null
     },
     {
-      "id": 172,
+      "id": 177,
       "question": "Pentru limitarea curenţilor de scurtcircuit se utilizează bobine:",
       "options": {
         "a": "înseriate pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
@@ -2241,7 +2306,7 @@
       "image_base": null
     },
     {
-      "id": 173,
+      "id": 178,
       "question": "Puterea electrică reactivă:",
       "options": {
         "a": "permite definirea limitelor de utilizare ale unui aparat electric",
@@ -2254,7 +2319,7 @@
       "image_base": null
     },
     {
-      "id": 174,
+      "id": 179,
       "question": "Puterea nominala a unui motor electric se defineşte astfel:",
       "options": {
         "a": "puterea activã absorbitã de motor de la reţea când este alimentat la Un si absoarbe In",
@@ -2267,7 +2332,7 @@
       "image_base": null
     },
     {
-      "id": 175,
+      "id": 180,
       "question": "Pentru micşorarea pierderilor de putere prin curenţi turbionari în piesele metalice mari parcurse de fluxuri magnetice variabile:",
       "options": {
         "a": "se limitează dimensiunile pieselor",
@@ -2280,7 +2345,7 @@
       "image_base": null
     },
     {
-      "id": 176,
+      "id": 181,
       "question": "Pentru o linie electrică lungă care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei, puterea activă la extremitatea receptoare:",
       "options": {
         "a": "se numeşte putere caracteristică sau putere naturală",
@@ -2289,11 +2354,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9,
+      "block": 10,
       "image_base": null
     },
     {
-      "id": 177,
+      "id": 182,
       "question": "Pentru o linie electrică care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei:",
       "options": {
         "a": "energiile reactive, inductivă şi capacitivă, se compensează",
@@ -2302,11 +2367,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9,
+      "block": 10,
       "image_base": null
     },
     {
-      "id": 178,
+      "id": 183,
       "question": "Pentru o putere aparenta data puterea activa are valoarea maxima:",
       "options": {
         "a": "când factorul de putere =1",
@@ -2315,11 +2380,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9,
+      "block": 10,
       "image_base": null
     },
     {
-      "id": 179,
+      "id": 184,
       "question": "Permeabilitatea este o mărime:",
       "options": {
         "a": "magnetică",
@@ -2328,11 +2393,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9,
+      "block": 10,
       "image_base": null
     },
     {
-      "id": 180,
+      "id": 185,
       "question": "Permitivitatea este o mărime:",
       "options": {
         "a": "electrică",
@@ -2341,11 +2406,11 @@
       },
       "correct": "a",
       "explanation": "",
-      "block": 9,
+      "block": 10,
       "image_base": null
     },
     {
-      "id": 181,
+      "id": 186,
       "question": "Regulatorul automat de tensiune (RAT) asigurã:",
       "options": {
         "a": "deconectarea automatã a liniilor la suprasarcinã",
@@ -2358,7 +2423,7 @@
       "image_base": null
     },
     {
-      "id": 182,
+      "id": 187,
       "question": "Pierderile de putere activã si reactivã pe o linie electricã, la aceeaşi putere aparentã vehiculatã, sunt invers proporţionale cu:",
       "options": {
         "a": "pătratul curentului",
@@ -2371,7 +2436,7 @@
       "image_base": null
     },
     {
-      "id": 183,
+      "id": 188,
       "question": "Pierderile de putere într-o linie electrică prin care se transportă o putere activă P la un factor de putere = 0,9, faţă de cazul când se transportă aceeaşi putere la un factor de putere = 0,8 sunt:",
       "options": {
         "a": "mai mici",
@@ -2384,7 +2449,7 @@
       "image_base": null
     },
     {
-      "id": 184,
+      "id": 189,
       "question": "Potenţialul electrostatic în punctul M este  :",
       "options": {
         "a": "lucrul mecanic care trebuie produs spre a transporta unitatea de sarcină pozitivă de la infinit până în punctul M.",
@@ -2397,7 +2462,7 @@
       "image_base": null
     },
     {
-      "id": 185,
+      "id": 190,
       "question": "Prima teoremă a lui Kirchhoff, pentru o reţea electrică buclată cu N noduri, ne dă, pentru curenţii care circulă prin reţea:",
       "options": {
         "a": "N-1 relaţii distincte",
@@ -2410,7 +2475,7 @@
       "image_base": null
     },
     {
-      "id": 186,
+      "id": 191,
       "question": "Prin adăugarea, pe toate laturile pornind din acelaşi nod al unei reţele buclate, a unor tensiuni electromotoare (t.e.m.) egale şi la fel orientate faţă de nod (teorema lui Vaschy):",
       "options": {
         "a": "circulaţia de curenţi existentă anterior în reţea nu se modifică",
@@ -2423,7 +2488,7 @@
       "image_base": null
     },
     {
-      "id": 187,
+      "id": 192,
       "question": "Principalele elemente feromagnetice sunt:",
       "options": {
         "a": "Fierul, nichelul şi cobaltul",
@@ -2436,7 +2501,7 @@
       "image_base": null
     },
     {
-      "id": 188,
+      "id": 193,
       "question": "Carcasa  unei celule electrice",
       "options": {
         "a": "asigură numai protecţia persoanelor împotriva atingerii accidentale a pieselor aflate sub tensiune în funcţionare normală sau a pieselor în mişcare din interiorul învelişului;",
@@ -2449,7 +2514,7 @@
       "image_base": null
     },
     {
-      "id": 189,
+      "id": 194,
       "question": "Principalul avantaj al motoarelor asincrone cu rotorul în scurtcircuit cu simplă colivie îl constituie:",
       "options": {
         "a": "curentul mic de pornire",
@@ -2462,7 +2527,7 @@
       "image_base": null
     },
     {
-      "id": 190,
+      "id": 195,
       "question": "Principalul avantaj al motoarelor de curent continuu îl constituie faptul că:",
       "options": {
         "a": "permit reglarea în limite largi a turaţiei",
@@ -2475,7 +2540,7 @@
       "image_base": null
     },
     {
-      "id": 191,
+      "id": 196,
       "question": "Rezistenţa echivalentă a două rezistenţe cu valori diferite montate în paralel este:",
       "options": {
         "a": "mai mare decât rezistenţa mai mare",
@@ -2488,7 +2553,7 @@
       "image_base": null
     },
     {
-      "id": 192,
+      "id": 197,
       "question": "Reducerea nivelului de izolație din instalațiile capsulate cu SF6 poate fi provocată",
       "options": {
         "a": "numai de produse de descompunere ale SF6 şi compuşii lor cu materiale izolante sau metale, sub influenţa umidităţii;",
@@ -2501,7 +2566,7 @@
       "image_base": null
     },
     {
-      "id": 193,
+      "id": 198,
       "question": "Printre măsurile de reducere a distanţelor de izolare pot fi:",
       "options": {
         "a": "folosirea dispozitivelor de limitare a curenţilor de scurtcircuit;",
@@ -2514,7 +2579,7 @@
       "image_base": null
     },
     {
-      "id": 194,
+      "id": 199,
       "question": "Producerea dublei puneri la pământ a bobinajului rotoric al unui generator sincron are ca efect negativ",
       "options": {
         "a": "numai creșterea foarte mare a curentului prin circuitul rotoric",
@@ -2527,7 +2592,7 @@
       "image_base": null
     },
     {
-      "id": 195,
+      "id": 200,
       "question": "Releul termic se foloseşte pentru:",
       "options": {
         "a": "protejarea motoarelor electrice la scurtcircuit",
@@ -2540,7 +2605,7 @@
       "image_base": null
     },
     {
-      "id": 196,
+      "id": 201,
       "question": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 2 ohm, montate în serie este:",
       "options": {
         "a": "5 ohm",
@@ -2549,11 +2614,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10,
+      "block": 11,
       "image_base": null
     },
     {
-      "id": 197,
+      "id": 202,
       "question": "Raportul nominal de transformare al unui transformator de putere este:",
       "options": {
         "a": "raportul dintre tensiunea primara si secundara de mers în gol",
@@ -2562,11 +2627,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10,
+      "block": 11,
       "image_base": null
     },
     {
-      "id": 198,
+      "id": 203,
       "question": "Reactanţa supratranzitorie a unui motor este:",
       "options": {
         "a": "direct proporţionala cu curentul de pornire",
@@ -2575,11 +2640,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10,
+      "block": 11,
       "image_base": null
     },
     {
-      "id": 199,
+      "id": 204,
       "question": "Un regim energetic  este deformant",
       "options": {
         "a": "dacă undele de curent şi tensiune nu sunt periodice",
@@ -2588,11 +2653,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10,
+      "block": 11,
       "image_base": null
     },
     {
-      "id": 200,
+      "id": 205,
       "question": "Reglarea puterii active debitate de generatorul sincron se face variind:",
       "options": {
         "a": "tensiunea de excitaţie",
@@ -2601,11 +2666,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 10,
+      "block": 11,
       "image_base": null
     },
     {
-      "id": 201,
+      "id": 206,
       "question": "Reglarea puterii reactive debitate de generatorul sincron se face prin:",
       "options": {
         "a": "modificarea curentului de excitaţie",
@@ -2618,7 +2683,7 @@
       "image_base": null
     },
     {
-      "id": 202,
+      "id": 207,
       "question": "Comparativ cu un transformator, autotransformatorul are tensiunea de scurtcircuit:",
       "options": {
         "a": "mai mare",
@@ -2631,7 +2696,7 @@
       "image_base": null
     },
     {
-      "id": 203,
+      "id": 208,
       "question": "Relaţia între curenţii de linie si de fazã în sisteme cu generatoare si receptoare conectate în triunghi este:",
       "options": {
         "a": "curentul de linie este mai mare de 1,73 ori decât curentul de fazã",
@@ -2644,7 +2709,7 @@
       "image_base": null
     },
     {
-      "id": 204,
+      "id": 209,
       "question": "Se considera ca un transformator funcţionează în gol atunci când:",
       "options": {
         "a": "sarcina transformatorului este foarte mica",
@@ -2657,7 +2722,7 @@
       "image_base": null
     },
     {
-      "id": 205,
+      "id": 210,
       "question": "Spaţiul ocupat de o instalaţie capsulată depinde în principal de:",
       "options": {
         "a": "curentul nominal al legăturilor electrice;",
@@ -2670,7 +2735,7 @@
       "image_base": null
     },
     {
-      "id": 206,
+      "id": 211,
       "question": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 3 ohm, montate în paralel, este:",
       "options": {
         "a": "3 ohm",
@@ -2683,7 +2748,7 @@
       "image_base": null
     },
     {
-      "id": 207,
+      "id": 212,
       "question": "Rezistivitatea unui conductor electric depinde de:",
       "options": {
         "a": "natura materialului",
@@ -2696,7 +2761,7 @@
       "image_base": null
     },
     {
-      "id": 208,
+      "id": 213,
       "question": "Rezonanţa se obţine într-un circuit electric de curent alternativ dacă:",
       "options": {
         "a": "reactanţele inductivă şi capacitivă în valoare absolută sunt egale",
@@ -2709,7 +2774,7 @@
       "image_base": null
     },
     {
-      "id": 209,
+      "id": 214,
       "question": "Rolul conservatorului de ulei la transformatoarele de forţa este:",
       "options": {
         "a": "de a asigura o suprafaţa de contact a uleiului cu aerul mai mica",
@@ -2722,7 +2787,7 @@
       "image_base": null
     },
     {
-      "id": 210,
+      "id": 215,
       "question": "Rolul dominant pentru reglarea nivelului de tensiune pe o linie electrica îl are:",
       "options": {
         "a": "circulaţia de putere activa",
@@ -2735,7 +2800,7 @@
       "image_base": null
     },
     {
-      "id": 211,
+      "id": 216,
       "question": "În cazul transformatoarelor de tensiune, care dintre urmatoarele enunturi nu este adevarat:",
       "options": {
         "a": "alegerea transformatorului de tensiune presupune verificarea nivelului sau de izolatie;",
@@ -2748,7 +2813,7 @@
       "image_base": null
     },
     {
-      "id": 212,
+      "id": 217,
       "question": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit între două faze ale unei reţele izolat de pământ şi fără arc electric se compune din:",
       "options": {
         "a": "schema de secvenţă directă (pozitivă) înseriată cu triplul impedanţei arcului",
@@ -2761,7 +2826,7 @@
       "image_base": null
     },
     {
-      "id": 213,
+      "id": 218,
       "question": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit trifazat, al unei reţele, izolat de pământ se compune din:",
       "options": {
         "a": "schemele de secvenţă directă (pozitivă) , inversă (negativă) şi homopolară (zero) conectate în serie",
@@ -2774,7 +2839,7 @@
       "image_base": null
     },
     {
-      "id": 214,
+      "id": 219,
       "question": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit trifazat şi la pământ, cu arc, se compune din:",
       "options": {
         "a": "schema de secvenţă directă (pozitivă) înseriată cu triplul impedanţei arcului",
@@ -2787,7 +2852,7 @@
       "image_base": null
     },
     {
-      "id": 215,
+      "id": 220,
       "question": "Transformatoarele  de măsură se folosesc",
       "options": {
         "a": "în instalaţiile de curent alternativ de înaltă tensiune",
@@ -2800,7 +2865,7 @@
       "image_base": null
     },
     {
-      "id": 216,
+      "id": 221,
       "question": "Scopul normării distanţelor de izolare în aer minime admisibile pentru instalaţiile electrice este asigurarea:",
       "options": {
         "a": "protecţiei personalului de exploatare a instalaţiei;",
@@ -2809,11 +2874,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11,
+      "block": 12,
       "image_base": null
     },
     {
-      "id": 217,
+      "id": 222,
       "question": "Susceptanţa unui circuit de curent alternativ sinusoidal este inversul:",
       "options": {
         "a": "impedanţei",
@@ -2822,11 +2887,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11,
+      "block": 12,
       "image_base": null
     },
     {
-      "id": 218,
+      "id": 223,
       "question": "Transformatoarele de măsurare de curent:",
       "options": {
         "a": "pot fi racordate în circuitul primar cu înfăşurarea secundara deschisa",
@@ -2835,11 +2900,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11,
+      "block": 12,
       "image_base": null
     },
     {
-      "id": 219,
+      "id": 224,
       "question": "Secţionarea barelor colectoare ale unei staţii electrice conduce",
       "options": {
         "a": "la mărirea continuităţii în alimentare a consumatorilor racordaţi la bare;",
@@ -2848,11 +2913,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11,
+      "block": 12,
       "image_base": null
     },
     {
-      "id": 220,
+      "id": 225,
       "question": "Secţionarea barelor colectoare în staţiile electrice are scopul:",
       "options": {
         "a": "de limitare a curenţilor de scurtcircuit",
@@ -2861,11 +2926,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 11,
+      "block": 12,
       "image_base": null
     },
     {
-      "id": 221,
+      "id": 226,
       "question": "Sensul puterii deformante într-un circuit format dintr-un generator care produce o undă sinusoidală şi o bobină cu miez de fier saturat este:",
       "options": {
         "a": "de la generator spre bobină",
@@ -2878,7 +2943,7 @@
       "image_base": null
     },
     {
-      "id": 222,
+      "id": 227,
       "question": "Separatorul, ca echipament în cadrul unei staţii electrice, are rolul:",
       "options": {
         "a": "de a proteja circuitul la supracurenţi",
@@ -2891,7 +2956,7 @@
       "image_base": null
     },
     {
-      "id": 223,
+      "id": 228,
       "question": "Siguranţele electrice au rolul de a:",
       "options": {
         "a": "proteja instalaţia din aval la defecte la scurtcircuit ca si la suprasarcini de lunga durata",
@@ -2904,7 +2969,7 @@
       "image_base": null
     },
     {
-      "id": 224,
+      "id": 229,
       "question": "Siguranţele electrice sunt aparate electrice care împiedica:",
       "options": {
         "a": "creşterea tensiunii peste o valoare limita",
@@ -2917,7 +2982,7 @@
       "image_base": null
     },
     {
-      "id": 225,
+      "id": 230,
       "question": "Siguranţele fuzibile sunt aparate utilizate pentru protecţie la:",
       "options": {
         "a": "supratensiuni",
@@ -2930,7 +2995,7 @@
       "image_base": null
     },
     {
-      "id": 226,
+      "id": 231,
       "question": "Singurele mărimi fizice reale în curent alternativ sunt:",
       "options": {
         "a": "mărimile efective de curent sau de tensiune",
@@ -2943,7 +3008,7 @@
       "image_base": null
     },
     {
-      "id": 227,
+      "id": 232,
       "question": "Sistemele simetrice de fazori în care se descompun sistemele de tensiuni sau de curenţi dezechilibraţi:",
       "options": {
         "a": "corespund unor realităţi fizice",
@@ -2956,7 +3021,7 @@
       "image_base": null
     },
     {
-      "id": 228,
+      "id": 233,
       "question": "Sistemul de tensiuni al unei reţele racordate la un generator electric care produce tensiuni electromotoare simetrice:",
       "options": {
         "a": "este întotdeauna simetric",
@@ -2969,7 +3034,7 @@
       "image_base": null
     },
     {
-      "id": 229,
+      "id": 234,
       "question": "Transformatoarele de măsurare de tensiune se construiesc pentru tensiuni în secundar de:",
       "options": {
         "a": "10 V",
@@ -2982,7 +3047,7 @@
       "image_base": null
     },
     {
-      "id": 230,
+      "id": 235,
       "question": "Suma tensiunilor electromotoare ale unui sistem trifazat simetric este:",
       "options": {
         "a": "egală cu 1",
@@ -2995,7 +3060,7 @@
       "image_base": null
     },
     {
-      "id": 231,
+      "id": 236,
       "question": "Supratensiunile de trăsnet pot fi:",
       "options": {
         "a": "numai directe",
@@ -3008,7 +3073,7 @@
       "image_base": null
     },
     {
-      "id": 232,
+      "id": 237,
       "question": "Un conductor în care circulaţia curentului electric nu se supune legii lui Ohm se numeşte:",
       "options": {
         "a": "liniar",
@@ -3021,7 +3086,7 @@
       "image_base": null
     },
     {
-      "id": 233,
+      "id": 238,
       "question": "Teoremele (formulele) Biot Savart Laplace se referă la:",
       "options": {
         "a": "intensitatea câmpului magnetic produs de un curent care circulă printr-un conductor",
@@ -3034,7 +3099,7 @@
       "image_base": null
     },
     {
-      "id": 234,
+      "id": 239,
       "question": "Tesla este unitatea de măsură a:",
       "options": {
         "a": "inducţiei magnetice",
@@ -3047,7 +3112,7 @@
       "image_base": null
     },
     {
-      "id": 235,
+      "id": 240,
       "question": "Transformatoarele cu ulei prevăzute cu conservator prezintă următoarele caracteristici:",
       "options": {
         "a": "dilatarea lichidului este compensată prin deformarea elastică a pereţilor cuvei;",
@@ -3060,7 +3125,7 @@
       "image_base": null
     },
     {
-      "id": 236,
+      "id": 241,
       "question": "Transformatoarele de măsurare a curenţilor se construiesc pentru curenţi secundari de:",
       "options": {
         "a": "1 sau 5 A",
@@ -3069,11 +3134,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12,
+      "block": 13,
       "image_base": null
     },
     {
-      "id": 237,
+      "id": 242,
       "question": "Un motor electric trifazat legat în stea este în funcţiune si alimentat la 0,4 kV. Tensiunea între neutrul stelei si una dintre faze este:",
       "options": {
         "a": "0,4 kV",
@@ -3082,11 +3147,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12,
+      "block": 13,
       "image_base": null
     },
     {
-      "id": 238,
+      "id": 243,
       "question": "Un separator pe un circuit de înalta tensiune poate fi manevrat:",
       "options": {
         "a": "sub tensiune si cu curent",
@@ -3095,11 +3160,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12,
+      "block": 13,
       "image_base": null
     },
     {
-      "id": 239,
+      "id": 244,
       "question": "Transformatoarele de măsurare de tensiune:",
       "options": {
         "a": "nu pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
@@ -3108,11 +3173,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12,
+      "block": 13,
       "image_base": null
     },
     {
-      "id": 240,
+      "id": 245,
       "question": "Un circuit de curent alternativ, pentru care factorul de putere este egal cu 1, este un circuit:",
       "options": {
         "a": "pur rezistiv",
@@ -3121,11 +3186,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 12,
+      "block": 13,
       "image_base": null
     },
     {
-      "id": 241,
+      "id": 246,
       "question": "Utilizarea unei cuple longo-transversale se preferă atunci când dorim:",
       "options": {
         "a": "scurtarea manevrelor;",
@@ -3138,7 +3203,7 @@
       "image_base": null
     },
     {
-      "id": 242,
+      "id": 247,
       "question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
       "options": {
         "a": "prin conducţie",
@@ -3151,20 +3216,20 @@
       "image_base": null
     },
     {
-      "id": 243,
+      "id": 248,
       "question": "Un întreruptor debroşabil asigură:",
       "options": {
         "a": "numai protecţia în caz de scurtcircuit;",
         "b": "protecţia la supratensiuni;",
         "c": "izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
-      "correct": "a",
+      "correct": null,
       "explanation": "",
       "block": 13,
       "image_base": null
     },
     {
-      "id": 244,
+      "id": 249,
       "question": "Un întreruptor debroşabil asigură:",
       "options": {
         "a": "protecţia în caz de scurtcircuit;",
@@ -3177,7 +3242,7 @@
       "image_base": null
     },
     {
-      "id": 245,
+      "id": 250,
       "question": "Un motor electric sincron, care funcţionează subexcitat:",
       "options": {
         "a": "absoarbe putere activă şi putere reactivă",
@@ -3190,7 +3255,7 @@
       "image_base": null
     },
     {
-      "id": 246,
+      "id": 251,
       "question": "Valoarea conductivităţii electrice este în ordine crescătoare la următoarele materiale:",
       "options": {
         "a": "aluminiu, argint, cupru",
@@ -3203,7 +3268,7 @@
       "image_base": null
     },
     {
-      "id": 247,
+      "id": 252,
       "question": "Un număr de n surse  având fiecare tensiunea electromotoare continua e si rezistenta interioara r, legate în paralel pot fi înlocuite printr-o sursa echivalenta având:",
       "options": {
         "a": "tensiunea electromotoare e si rezistenta r/n",
@@ -3216,7 +3281,7 @@
       "image_base": null
     },
     {
-      "id": 248,
+      "id": 253,
       "question": "Un receptor electric de rezistenţă R conectat la bornele AB ale unui circuit de alimentare oarecare absoarbe puterea maximă dacă:",
       "options": {
         "a": "rezistenţa R este egală cu rezistenţa totală a circuitului văzută prin bornele AB",
@@ -3229,7 +3294,7 @@
       "image_base": null
     },
     {
-      "id": 249,
+      "id": 254,
       "question": "Valoarea intensităţii câmpului electric produs de o sarcină electrică la distanţa r este:",
       "options": {
         "a": "direct proporţională cu r",
@@ -3242,7 +3307,7 @@
       "image_base": null
     },
     {
-      "id": 250,
+      "id": 255,
       "question": "Un transformator de măsurare de curent nu poate fi lăsat cu secundarul în gol, deoarece:",
       "options": {
         "a": "împiedica circulaţia curentului primar",
@@ -3255,7 +3320,7 @@
       "image_base": null
     },
     {
-      "id": 251,
+      "id": 256,
       "question": "Unitatea de măsură a capacităţii unui condensator este:",
       "options": {
         "a": "F",
@@ -3268,7 +3333,7 @@
       "image_base": null
     },
     {
-      "id": 252,
+      "id": 257,
       "question": "Unitatea de măsură a fluxului electric este:",
       "options": {
         "a": "V/m",
@@ -3281,7 +3346,7 @@
       "image_base": null
     },
     {
-      "id": 253,
+      "id": 258,
       "question": "Unitatea de măsură a fluxului magnetic este:",
       "options": {
         "a": "Tesla",
@@ -3294,7 +3359,7 @@
       "image_base": null
     },
     {
-      "id": 254,
+      "id": 259,
       "question": "Unitatea de măsură a frecvenţei mărimilor periodice se numeşte:",
       "options": {
         "a": "Weber",
@@ -3307,7 +3372,7 @@
       "image_base": null
     },
     {
-      "id": 255,
+      "id": 260,
       "question": "Unitatea de măsură a sarcinii electrice este:",
       "options": {
         "a": "V/m",
@@ -3320,7 +3385,7 @@
       "image_base": null
     },
     {
-      "id": 256,
+      "id": 261,
       "question": "Unitatea de măsură ohm x mmp / m este pentru:",
       "options": {
         "a": "rezistivitate",
@@ -3329,11 +3394,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13,
+      "block": 14,
       "image_base": null
     },
     {
-      "id": 257,
+      "id": 262,
       "question": "Unitatea de măsură pentru măsurarea puterii active este:",
       "options": {
         "a": "kWh",
@@ -3342,11 +3407,11 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13,
+      "block": 14,
       "image_base": null
     },
     {
-      "id": 258,
+      "id": 263,
       "question": "Unitatea de măsură pentru puterea reactiva este:",
       "options": {
         "a": "kVAr",
@@ -3355,24 +3420,24 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13,
+      "block": 14,
       "image_base": null
     },
     {
-      "id": 259,
+      "id": 264,
       "question": "Utilizarea întreruptoarelor debroşabile:",
       "options": {
         "a": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
         "b": "asigură scurtarea duratei reviziilor la celule;",
         "c": "asigură numai izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
-      "correct": "a",
+      "correct": null,
       "explanation": "",
-      "block": 13,
+      "block": 14,
       "image_base": null
     },
     {
-      "id": 260,
+      "id": 265,
       "question": "Autotransformatoarele sunt folosite",
       "options": {
         "a": "între reţelele de                     110 kV şi 220 kV",
@@ -3381,24 +3446,24 @@
       },
       "correct": null,
       "explanation": "",
-      "block": 13,
+      "block": 14,
       "image_base": null
     },
     {
-      "id": 261,
+      "id": 266,
       "question": "Utilizarea întreruptoarelor debroşabile:",
       "options": {
         "a": "asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
         "b": "nu asigură scurtarea duratei reviziilor la celule;",
         "c": "nu asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
       },
-      "correct": "a",
+      "correct": null,
       "explanation": "",
       "block": 14,
       "image_base": null
     },
     {
-      "id": 262,
+      "id": 267,
       "question": "Utilizarea întreruptoarelor debroşabile:",
       "options": {
         "a": "asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
@@ -3411,7 +3476,7 @@
       "image_base": null
     },
     {
-      "id": 263,
+      "id": 268,
       "question": "Utilizarea întreruptorului debroşabil:",
       "options": {
         "a": "asigură doar compactarea celulei;",
@@ -3424,7 +3489,7 @@
       "image_base": null
     },
     {
-      "id": 264,
+      "id": 269,
       "question": "Utilizarea SF6 ca mediu de izolare",
       "options": {
         "a": "conduce la realizarea unor celule cu pericol de incendiu",
@@ -3437,7 +3502,7 @@
       "image_base": null
     },
     {
-      "id": 265,
+      "id": 270,
       "question": "Utilizarea SF6 ca mediu de stingere a arcului electric permite",
       "options": {
         "a": "doar realizarea unor întreruptoare fără pericol de incendiu;",
@@ -3450,7 +3515,7 @@
       "image_base": null
     },
     {
-      "id": 266,
+      "id": 271,
       "question": "Utilizarea vidului ca mediu de stingere a arcului electric:",
       "options": {
         "a": "reduce pericolul de incendiu;",
@@ -3463,7 +3528,7 @@
       "image_base": null
     },
     {
-      "id": 267,
+      "id": 272,
       "question": "Valoarea frecventei în sistemul electroenergetic este determinata în principal de:",
       "options": {
         "a": "bilanţul puterilor active",
@@ -3476,7 +3541,7 @@
       "image_base": null
     },
     {
-      "id": 268,
+      "id": 273,
       "question": "Valoarea medie a capacităţii lineice pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
       "options": {
         "a": "egală",
@@ -3489,7 +3554,7 @@
       "image_base": null
     },
     {
-      "id": 269,
+      "id": 274,
       "question": "Valoarea medie a inductanţei de serviciu pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
       "options": {
         "a": "egală",
@@ -3502,7 +3567,7 @@
       "image_base": null
     },
     {
-      "id": 270,
+      "id": 275,
       "question": "Valoarea medie pătratică a unei mărimi periodice se mai numeşte şi:",
       "options": {
         "a": "amplitudine",
@@ -3510,19 +3575,6 @@
         "c": "valoare efectivă sau valoarea eficace"
       },
       "correct": null,
-      "explanation": "",
-      "block": 14,
-      "image_base": null
-    },
-    {
-      "id": 271,
-      "question": "Factorul de atenuare al unui circuit format dintr-un rezistor de rezistenţă R înseriat cu o bobină de inductanţă L, alimentate de o tensiune electromotoare constantă este egal cu:",
-      "options": {
-        "a": "R/L",
-        "b": "L/R",
-        "c": "1"
-      },
-      "correct": "a",
       "explanation": "",
       "block": 14,
       "image_base": null
